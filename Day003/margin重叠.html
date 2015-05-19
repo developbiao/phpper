@@ -1,0 +1,30 @@
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>margin</title>
+<style type="text/css">
+#test1{
+	height:100px;
+	background:blue;
+	margin-bottom:50px;
+
+}
+
+#test2{
+	height:100px;
+	background:orange;
+	margin-top:80px; /*对于普通的div取最大的值*/
+
+}
+</style>
+</head>
+<body>
+	<div id="test1"></div>
+	<div id="test2">
+		上下相邻的普通元素、上下边距，并非简单的相加<br/>
+		而是取其中较大的边距值<br/>
+		这种现象叫做margin重叠
+	</div>
+</body>
+</html>

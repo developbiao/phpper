@@ -1,0 +1,78 @@
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>实战首页布局</title>
+<style type="text/css">
+#container{
+	width:1002px;
+	background:gray;
+	margin:auto 0;
+}
+
+#header{
+	height:120px;
+	background:orange;
+}
+
+#main{
+	height:600px;
+	background:green;
+}
+
+#footer{
+	height:120px;
+	background:blue;
+
+}
+#lside{
+	float:left;  /*左浮了一定要给width*/
+	width:700px;
+	height:600px;
+	background:pink;
+
+}
+
+.four{
+	width:300;
+	height:260;	
+	margin:10px;
+	background:white;
+	padding:10px;
+	float:left;
+}
+
+#rside{
+	float:right;
+	width:302px;
+	height:600px;
+	background:purple; /*purple purple purple */
+}
+
+</style>
+</head>
+<body>
+	<div id="container">
+		<div id="header"></div>
+		<div id="main">
+			<div id="lside">
+				<div class="four">
+					Make精神，做自己想做有创意的工作，在一家软件公司上班，经济独立有非常可观的薪水。这样我就可以让我的大伯、二伯生活得到改善过的更好。
+				</div>
+				<div class="four">
+					就像安提赛尼斯说的一样，真正幸福的人不应该依赖稍纵即逝的外在物质，真正的幸福一旦获得就没法被夺去。真正的人关注自己的内心
+				</div>
+				<div class="four">
+					Haters don't build things. Just use them as extra motivation. - XD
+				</div>
+				<div class="four">
+					Your time is limited, so don’t waste it living someone else’s life. - Steve Jobs
+				</div>
+			</div>
+			<div id="rside"></div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
+

@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-<link href="./mycss.css" type="text/css" rel="stylesheet">
-<title>index</title>
+<title>inline</title>
 <style type="text/css">
+/*
+内联与块关的转换
+*/
+span{
+	width:200px;
+	height:200px;
+	background:blue;
+	display:block;
+}
+div{
+	width:200px;
+	height:200px;
+	background:orange;
+	display:inline;
+
+
+}
 </style>
 </head>
 <body>
-	<div id="test1" class="test2" style="background:pink">
-		<p>我又不是变色龙<p>
-	</div>
-	<div></div>
-	<div></div>
-	<div></div>
+	<div>块状</div>
+	<span>行内</span>
 </body>
 </html>
