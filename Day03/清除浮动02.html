@@ -1,0 +1,34 @@
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>清除浮动</title>
+<style type="text/css">
+#lside{
+	width:200px;
+	height:300px;
+	background:green;
+	float:left;
+
+}
+#rside{
+	width:200px;
+	height:400px;
+	background:red;
+	float:right;
+}
+#comm{
+	_width:500px;
+	height:500px;
+	background:orange;
+	/*clear:both*/
+	clear:left; /*left,right selection*/
+}
+</style>
+</head>
+<body>
+	<div id="lside">我是左</div>
+	<div id="rside">我是右</div>
+	<div id="comm">我是普通div</div>
+</body>
+</html>
