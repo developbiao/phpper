@@ -1,0 +1,74 @@
+.clear{
+	clear:both;
+	width:0px;
+	height:0px;
+}
+#container{
+	width:1002px;
+}
+
+#header{
+	height:128px;
+	background:gray url(./images/top_bg.jpg);
+}
+
+#nav li{
+	float:left;
+	width:90px;
+	margin-right:1px;
+}
+
+#nav a:link{
+	font-size:15px;
+	font-family:"微软雅黑", "黑体", "sans-serif";
+	color:#363636;
+	display:block;
+	width:90px;
+	height:37px;
+	text-align:center;
+}
+#nav a:hover{
+	color:white;
+	background:url(./images/nav_on.gif);
+
+}
+
+#main{
+
+}
+
+
+#lside{
+	height:600px;
+	width:694px;
+	border:1px solid gray;
+	background:blue;
+	float:left;
+}
+
+.subtitle{
+	height:37px;
+	background:orange;
+}
+
+.four{
+	width:330;
+	height:200px;
+	background:#abcdef;
+	float:left;
+	margin:5px 5px 5px 0px;
+}
+
+
+#rside{
+	height:600px;
+	width:294px;
+	background:green;
+	float:right;
+}
+
+#footer{
+	background:pink;
+	height:120px;
+	background:black;
+}
