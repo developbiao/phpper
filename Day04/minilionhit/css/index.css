@@ -5,11 +5,33 @@
 }
 #container{
 	width:1002px;
+	margin:0 auto;
 }
 
 #header{
 	height:128px;
-	background:gray url(./images/top_bg.jpg);
+	background:gray url(../images/top_bg.jpg);
+}
+
+#banner{
+	padding:6px 0 0 0;
+}
+#banner img{
+	display:block;
+}
+
+
+#keyword{
+	border:0 none;
+	color:#b9b9b9;
+	float:left;
+	margin:11px 0 0 98px;
+	width:195px;
+	}
+
+#so{
+	margin:10px 55px 0 0;
+	float:right;
 }
 
 #nav li{
@@ -19,8 +41,12 @@
 }
 
 #nav a:link{
+	/*
 	font-size:15px;
 	font-family:"微软雅黑", "黑体", "sans-serif";
+	line-height:37px;
+	*/	
+	font:16px/37px "微软雅黑", "黑体", "sans-serif";
 	color:#363636;
 	display:block;
 	width:90px;
@@ -29,7 +55,7 @@
 }
 #nav a:hover{
 	color:white;
-	background:url(./images/nav_on.gif);
+	background:url(../images/nav_on.gif);
 
 }
 
@@ -39,36 +65,167 @@
 
 
 #lside{
-	height:600px;
+	height:480;
 	width:694px;
-	border:1px solid gray;
-	background:blue;
+	background:white;
 	float:left;
 }
 
 .subtitle{
 	height:37px;
-	background:orange;
+	background:gray url(../images/index_main_top_bg.gif);;
 }
-
-.four{
-	width:330;
-	height:200px;
-	background:#abcdef;
+.subtitle img{
 	float:left;
-	margin:5px 5px 5px 0px;
+	margin:5px 0 0 10px;
+
 }
 
+.subtitle h1{
+	color:#151515;
+	float:left;
+	margin-left:10px;
+	margin-top:15px;
+	font:16px/0px 'Micorosoft Yahei', Simhei, sans-serif;
+}
 
-#rside{
-	height:600px;
-	width:294px;
-	background:green;
+.subtitle a{
+	color:#888;
+	display:block;
+	font:12px/37px Simsun, sans-serif;
 	float:right;
 }
 
+.four{
+	width:326px;
+	height:200px;
+	background:#EFEFEF;
+	float:left;
+	margin:10px;
+}
+
+.four img{
+	float:left;
+	margin-left:10px;
+	padding:6px;
+	background:white;
+}
+
+.four ul{
+	float:left;
+	margin-left:10px;
+
+}
+
+.four li{
+	background:url(../images/service_intro_bg.gif) no-repeat;
+	padding-left:10px;
+	margin:-bottom:22px;
+	height:20px;
+	font-size:1.2em "宋体", serif;
+	color:#858585;
+
+}
+
+.four a{
+	color:#888;
+}
+
+.four a:visited{
+	color:#808080;
+}
+.four a:hover{
+	color:#FF832C;
+}
+.four h2{
+	margin:6px 0px 6px 10px;
+	font-size:16px;
+	font-family:'Microsoft Yahei', Simhei, sans-serif;
+	color:#A0A0A0;
+
+}
+
+
+
+#rside{
+	height:480;
+	width:294px;
+	background:white;
+	float:right;
+}
+
+#art{
+	background:#EEE;
+	margin-top:1px;
+	padding-top:10px;
+
+}
+
+
+#art a{
+	color:#888;
+	display:block;
+	height:29px;
+	background:url(../images/article_head.gif) no-repeat;
+	padding-left:30px;
+	line-height:20px;
+
+}
+
+
+#art a:hover{
+	color:#FF832C;
+	background:url(../images/article_on_bg.gif);
+}
+
+#contact_info{
+	height:249;
+	background:#EEE;
+	margin-top:1px;
+}
+
 #footer{
-	background:pink;
 	height:120px;
-	background:black;
+	_background:#ABCDEF;
+	margin-top:10px;
+}
+
+#footer ul{
+	height:40px;
+	background:#EEE;
+}
+
+#footer li{
+	float:left;
+	margin-right:10px;;
+	margin-top:15px;
+}
+
+#footer a:link{
+	font-size:1.2em;
+	color:#979797;
+
+}
+#footer a:hover{
+	color:#FF832C;
+}
+
+.f_left{
+	float:left;
+}
+
+.f_right{
+	float:right;
+}
+
+#footer img{
+	display:block;
+
+}
+
+#footer address{
+	font-family:'Microsoft Yahei', sans-serif;
+	margin-top:15px;
+	font-size:12px;
+
 }
