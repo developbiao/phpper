@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+	<title>Size</title>
+	<style type="text/css">
+	p{
+		font-size:12px;
+		color:red;
+	}
+
+	#test1{
+		font-size:12px;
+	}
+
+	#p1{
+		font-size:20px;
+
+	}
+
+	#p2{
+		font-size:1.2em;
+	}
+
+	</style>
+</head>
+<body>
+	<div id="parent">
+		<div id="son1">
+			<p>高效率，慢生活(我用像素来表示)</p>
+			<p>高效率，慢生活(我用百分比来表示),块状子元素要是不说宽度，默认占满父元素的宽度</p>
+		</div>
+		<div id="son2">
+			<p>高效率，慢生活</p>
+			<p>高效率，慢生活</p>
+		</div>
+	</div>
+	<div id="test1">
+		父div
+		<p id="p1">我用px表示文字大小 </p>
+		<p id="p2">我用em表示文字大小</p>
+	</div>
+</body>
+</html>
+
