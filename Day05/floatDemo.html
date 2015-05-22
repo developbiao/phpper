@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>margin重叠</title>
+<style type="text/css">
+.boxa,.boxb{
+	width:400px;
+	margin:0 auto;
+
+}
+.boxa{
+	background:orange;
+}
+.boxa-l{
+	width:280px;
+	height:80px;
+	border:1px solid red;
+	float:left;
+}
+
+.boxa-r{
+	width:100px;
+	height:80px;
+    border:1px solid blue;
+    float:right;
+}
+
+.boxb{
+	border:1px solid #000;
+	height:40px;
+	background:#999;
+}
+.clear{
+	/*
+	父div里面的了div使用了浮动，父div是被撑开的，父元素下面的div受到浮动的影响跑到上一个div的下面（被盖住，这个时候就要使用清除浮动）
+	*/
+	clear:both;
+}
+
+
+</style>
+</head>
+<body>
+	<div class="boxa">
+		<div class="boxa-l">内容左</div>
+		<div class="boxa-r">内容右</div>
+		<div class="clear"></div>
+	</div>
+	<div class="boxb">boxb盒子里的内容</div>
+</body>
+</html>
+

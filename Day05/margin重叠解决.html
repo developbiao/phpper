@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>margin重叠</title>
+<style type="text/css">
+* {
+margin:0;
+padding:0;
+}
+.div1 {
+height:100px;
+background:olive;
+overflow:hidden;/*解决父子div margin重叠*/
+}
+.div2 {
+margin-top:30px;
+background:purple;
+}
+</style>
+</head>
+<body>
+	<div class = "div1">
+		<div class = "div2">
+			Hello World!
+		</div>
+	</div>
+</body>
+</html>
+

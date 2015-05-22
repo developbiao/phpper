@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>相对定位与绝对定位</title>
+<style type="text/css">
+body{
+	margin:0px;
+	padding:0px;
+
+}
+
+#parent{
+	width:500px;
+	height:500px;
+	background:#99CCCC;
+	margin:0 auto;
+	position:relative;
+}
+
+#son1{
+	width:100px;
+	height:100px;
+	background:#CC3399;
+	position:relative;
+	left:70px;
+	bottom:15px;
+}
+
+#son2{
+	width:100px;
+	height:100px;
+	background:#333399;
+}
+
+#son3{
+	width:100px;
+	height:100px;
+	border-radius:20px;
+	background:#FFCC33;
+	position:absolute;
+	top:248px;
+	right:100px;
+	z-index:101;
+}
+
+#son4{
+	width:200px;
+	height:200px;
+	border-radius:100px;
+	background:#9966CC;
+	position:absolute;
+	left:200px;
+	bottom:100px;
+	z-index:88; /*测试谁飞的高*/
+
+}
+
+
+</style>
+</head>
+<body>
+	<div id="parent">
+		<p>天下飞来黄金</p>
+		<div id="son1"></div>
+		<div id="son2"></div>
+		<p>下满了整个城市</p>
+		<div id="son3">我就是king</div>
+		<div id="son4">我是宝石比你们都高贵</div>
+	</div>
+</body>
+</html>
+
