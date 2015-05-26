@@ -17,10 +17,6 @@ function Sum($a, $b){
 	return $a + $b;
 }
 
-x = (name_1, vision_3); #this is a comment;
-
-(map(+)("foo"))
-
 echo Sum(13, 74);
 echo '<br />PHP中函数不区分大小写';
 
