@@ -13,6 +13,12 @@
 	background:gray url(../images/top_bg.jpg);
 }
 
+#header>#icon{
+	position:relative;
+	top:5px;
+	right:20px;	
+}
+
 #banner{
 	padding:6px 0 0 0;
 }

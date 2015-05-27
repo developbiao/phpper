@@ -1,29 +1,12 @@
 <?php
 header('Content-Type:text/html; charset=utf-8');
 
-/*
-function Say(){
-	echo '<h3>我想你咯!</h3>';
+function test1(&$a){
+	$a += 1;
 }
 
-Say();
-
-for($i=0; $i<10; $i++)
-	Say();
-*/
-
-//函数的返回值
-function Sum($a, $b){
-	return $a + $b;
-}
-
-x = (name_1, vision_3); #this is a comment;
-
-(map(+)("foo"))
-
-echo Sum(13, 74);
-echo '<br />PHP中函数不区分大小写';
-
-echo sum(75, 88);
+$b = 5;
+test1($b);
+echo $b;
 
 ?>
