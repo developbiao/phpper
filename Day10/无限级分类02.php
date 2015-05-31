@@ -32,9 +32,8 @@ function generateTree($arr, $id, $deep=1){
 }
 
 
-//generateTree($area, 0);
-generateTree($area, 2);
-//generateTree($area, 0);
+generateTree($area, 0);
 echo 'ok';
 
 ?>
+
