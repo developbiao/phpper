@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>js学习</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+function toggle(){
+	var Oimg = document.getElementById('light');
+	if(Oimg.src.indexOf('on') >= 0){
+		Oimg.src='off.jpg';
+	}else{
+		Oimg.src='on.jpg';
+	}
+}
+</script>
+</head>
+<body>
+<img id="light" src="off.jpg" onclick="toggle();" />
+</body>
+</html>
+
+

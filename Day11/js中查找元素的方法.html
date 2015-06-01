@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>js学习</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+/*
+查找对象的几种方法
+*/
+window.onload = function(){
+	Op = document.getElementsByTagName('p'); //getElementsByTagName;
+	for(var i=0; i<Op.length; i++){
+		Op[i].style.background = 'orange';
+	}
+
+	//alert(document.getElementsByName('username')[0].value);
+	Otxt = document.getElementsByName('username')[0];
+	//alert(Otxt[0].value); //对于表单元素，可以用name来查询，返回值是对象集合
+
+	Otxt.value = 'aliax';
+
+	//
+	Odiv = document.getElementsByClassName('nimama')[0]; //通过getElementsByClassName()的方式来找类名
+	//注意document.getElementsByName,和document.getElementsByClassName找到的对象都需要访问第一[0]个才是真正要操作的元素
+	Odiv.style.background = 'red';
+	
+	//查找子对象
+	test1 = document.getElementById('test1');
+	console.log(test1.childNodes.length); //输出test1 的childNodes个数
+	console.log(test1.children.length); //常用的输出元素个数children
+
+	//查找父元素
+	Op3 = document.getElementsByTagName('p')[2]; //找到p3
+	Op3.parentNode.style.border = '3px solid green'; //操作它的父元素
+
+
+
+};
+</script>
+</head>
+<body>
+	<div id="test1">
+		<p>P1</p>
+		<p>P2</p>
+		<p>P3</p>
+		<p>P4</p>
+		<p>P5</p>
+	</div>
+	<div class="nimama">class test2</div>
+	姓名:<input type="text" value="gongbiao" name="username" id=""/>
+</body>
+</html>
+
+
