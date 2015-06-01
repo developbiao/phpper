@@ -33,6 +33,8 @@ window.onload = function(){
 
 	//查找父元素
 	Op3 = document.getElementsByTagName('p')[2]; //找到p3
+	objNextSibling = Op3.nextSibling;  //找到下一个兄弟节点'\n'
+	console.log(objNextSibling);  
 	Op3.parentNode.style.border = '3px solid green'; //操作它的父元素
 
 
