@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+img{
+	width:160px;
+	height:120px;
+	position:relative;
+
+}
+</style>
+</head>
+<body>
+	<img src="./girl.jpg" alt="meinv" />
+</body>
+<script type="text/javascript">
+/*
+事件练习"抓不到的美女"
+*/
+	//onmouse over
+	document.getElementsByTagName('img')[0].onmouseover = function(event){ 
+		//alert('haha');
+		//console.log(event);
+
+		this.style.left = event.pageX + 10 +'px';
+		this.style.top = event.pageX + 10 +'px';
+		//console.log(this.style.left = event.pageX + 10 +'px');
+		//console.log(this.style.top = event.pageX + 10 +'px');
+
+	};
+
+	//onclick
+	document.getElementsByTagName('img')[0].onclick = function(event){
+		alert('来一起滚床单!');
+		//console.log(event);
+	}
+</script>
+</html>
+
+
+

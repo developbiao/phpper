@@ -8,8 +8,6 @@ img{
 	width:160px;
 	height:120px;
 	position:relative;
-	top:300px;
-	left:500px;
 
 }
 </style>
@@ -34,15 +32,8 @@ img{
 
 		event = window.event || event;
 
-
-		//计算可视区域内的跑的的宽和高
-		var clientWdith = document.documentElement.clientWidth - 160;  //减去自身的width
-		var clientHeight = document.documentElement.clientHeight - 120; //减去身身的height
-
-		this.style.left = parseInt(Math.random() * clientWdith + 1) + 'px';
-		this.style.top =  parseInt(Math.random() * clientHeight + 1) + 'px';
-
-		console.log('X' + clientWdith + '  ,Y' + clientHeight);
+		this.style.left = event.pageX + 10 +'px';
+		this.style.top = event.pageX + 10 +'px';
 
 	};
 
@@ -53,5 +44,6 @@ img{
 	}
 </script>
 </html>
+
 
 

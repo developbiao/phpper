@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+/*
+onfocus,onblur 常用事件
+*/
+function t1(){
+	document.getElementsByName('username')[0].style.border = '1px solid red';
+}
+function t2(){
+	document.getElementsByName('username')[0].style.border = '';
+}
+</script>
+</head>
+<body>
+	<p> 
+		用户名:<input type="text" id="" name ="username" onfocus="t1();" onblur="t2()"/> 
+	</p>
+	<p> 
+		密码:<input type="text" id="" name="password" onfocus="" onblur=""/>
+	</p>
+</body>
+</html>

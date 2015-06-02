@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+/*
+制做联动菜单
+*/
+
+//准备地区数组area
+var area = [
+	['朝阳', '海淀', '门头沟'],
+	['淮南', '淮北', '合肥']
+];
+
+function loading(){
+	var sel = document.getElementById('prov'); //找到省
+	var city = document.getElementById('city');
+	var opt = ''; //准备插入的innerHTML字符串
+
+	if(sel.value == -1){
+		city.innerHTML = opt;
+		return;
+	}else{
+
+		for(var i = 0; i < area[sel.value].length; i++){
+			opt += '<option>'+area[sel.value][i]+'</option>'; //依此拼接到opt
+			//alert(city.innerHTML);
+		}
+
+		city.innerHTML = opt;   //最后插入到city
+
+	}
+
+
+}
+
+
+</script>
+</head>
+<body>
+	<select name="" id="prov" onchange="loading();">
+		<option value="-1">请选择</option>
+		<option value="0">北京</option>
+		<option value="1">安徽</option>
+	</select>
+	<select name="" id="city">
+		<!-- insert innerHTML -->
+	</select> 
+</body>
+</html>
