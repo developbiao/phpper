@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+function del(){ //删除最后一个li
+	var oLis = document.getElementsByTagName('li');
+	var oLastli = oLis[oLis.length - 1];
+	//console.log(oLastli);
+
+	oLastli.parentNode.removeChild(oLastli);
+}
+</script>
+</head>
+<body>
+	<input  type="button" value="删除最后一个li" onclick="del();" /> 
+	<ul>
+		<li>春</li>
+		<li>夏</li>
+		<li>秋</li>
+		<li>冬</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+
+function createEl(){
+
+	var oli = document.createElement('li');
+	var olitxt = document.createTextNode('冬'); 
+	oli.appendChild(olitxt);
+
+	//增加到父元素里面
+	oUl = document.getElementsByTagName('ul')[0];
+	oUl.appendChild(oli);
+
+}
+
+</script>
+</head>
+<body>
+	<input  type="button" value="增加元素" onclick="createEl();" /><!-- 增加一个冬 -->
+	<ul>
+		<li>春</li>
+		<li>夏</li>
+		<li>秋</li>
+	</ul>
+</body>
+</html>

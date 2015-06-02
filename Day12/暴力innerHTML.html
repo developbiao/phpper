@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+function borkCreate(){ //暴力创建元素
+	//alert(document.getElementsByTagName('ul')[0].innerHTML); //读取innerHTML
+	oUl = document.getElementsByTagName('ul')[0];
+	oUl.innerHTML = oUl.innerHTML + '<li><a href="http://www.so.com" target="_blank">去360</a></li>';
+}
+</script>
+</head>
+<body>
+	<input  type="button" value="增加元素" onclick="borkCreate();" /><!-- 增加一个冬 -->
+	<ul>
+		<li>春</li>
+		<li>夏</li>
+		<li>秋</li>
+	</ul>
+</body>
+</html>

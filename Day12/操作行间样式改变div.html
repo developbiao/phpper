@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+.test1{
+	background:red;
+}
+.test2{
+	background:green;
+}
+</style>
+<script type="text/javascript">
+/*
+版本1：操作的行间样式
+点击div,使其背景色红绿交替
+宽高增加5px
+下边模型增粗1px;
+*/
+
+function Change(){
+	oDiv = document.getElementsByTagName('div')[0];
+	if(oDiv.className.indexOf('test1')>=0){
+		oDiv.className = 'test2';
+	}else{
+		oDiv.className = 'test1';
+	}
+	oDiv.style.width = parseInt(oDiv.style.width) + 5 + 'px';
+	oDiv.style.height = parseInt(oDiv.style.height) + 5 + 'px';
+	oDiv.style.borderBottomWidth = parseInt(oDiv.style.borderBottomWidth) + 1 + 'px';
+}
+
+
+</script>
+</head>
+<body>
+	<div class="test1" onclick="Change();" style="width:300px; height:300px; border-bottom:1px solid black">
+	</div> 
+</body>
+</html>

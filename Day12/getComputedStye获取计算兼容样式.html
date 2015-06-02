@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsLearn</title>
+<style type="text/css">
+.test1{
+	background:red;
+}
+.test2{
+	background:green;
+}
+</style>
+<script type="text/javascript">
+/*
+版本：操作计算样式
+点击div,使其背景色红绿交替
+宽高增加5px
+下边模型增粗1px;
+*/
+
+
+function getStyle(element, attr){ //兼容封闭后的计算返回样式函数
+	return element.currentStyle ? element.currentStyle[attr]:getComputedStyle(element, null)[attr];
+}
+
+function Change(){
+	oDiv = document.getElementsByTagName('div')[0];
+	if(oDiv.className.indexOf('test1')>=0){
+		oDiv.className = 'test2';
+	}else{
+		oDiv.className = 'test1';
+	}
+
+	oDiv.style.width = parseInt(getStyle(oDiv, 'width')) + 5 + 'px';
+	oDiv.style.height = parseInt(getStyle(oDiv, 'height')) + 5 + 'px';
+	oDiv.style.borderBottomWidth = parseInt(getStyle(oDiv, 'borderBottomWidth')) + 1 + 'px';
+}
+
+//获取计算式样测试
+
+function getAttr(){
+
+	element = document.getElementsByTagName('div')[0];
+	attr = 'borderBottomWidth';
+
+	//var obj = element.currentStyle ? element.currentStyle[attr] : getComputedStyle(element, null)[attr];
+	var obj = getComputedStyle(element, null);
+
+	console.log(obj);
+
+}
+
+
+</script>
+</head>
+<body>
+	<div class="test1" onclick="Change();" style="width:300px; height:300px; border-bottom:1px solid black">
+	</div> 
+	<input type="button" onclick="getAttr();" value="获取计算样式" />
+</body>
+</html>
