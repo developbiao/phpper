@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsBase</title>
+<style type="text/css">
+table{
+	width:300px;
+	height:300px;
+	border:0px;
+	border-collapse:collapse;
+	background:#CC9933;
+}
+td{
+	border:1px solid gray;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+
+	/*事件委托
+	*/
+
+	/*td格点击变成黑色01
+	var oTds = document.getElementsByTagName('td');
+	var i = 0;
+	var num = 0;
+	while(i < oTds.length){
+		oTds[i].onclick = function(){
+			this.style.background = 'black';
+			num ++;
+			if(num % 2 == 0){
+				this.style.background = 'white';
+			}
+		}
+		i++;
+	}
+	*/
+
+	var num = 0;
+
+	document.getElementsByTagName('table')[0].onclick = function(event){
+		//使用事件委托
+		event.target.style.background = num++ % 2?'black':'white';
+
+	};
+
+
+};
+</script>
+</head>
+<body>
+	<h1>事件委托</h1>
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>

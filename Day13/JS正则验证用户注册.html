@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsBase</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function(){
+/*
+使用正则对表用户名和email验证
+*/
+
+document.getElementsByTagName('form')[0].onsubmit = function(){
+	var patt = /^[a-zA-Z0-9]{6,11}$/;   //用户名patt规则
+
+	if(!patt.test(document.getElementsByName('username')[0].value)){
+		alert('用户名由6-11位字母数字组成');
+		return false;  //阻止提交
+	}
+
+	patt = /^\w+@\w(\.\w+)+$/;   //Emailpaatt规则
+
+	if(!patt.test(document.getElementsByName('email')[0].value)){
+		alert('请输入正确的Email地址');
+		return false;  //阻止提交
+	}
+};
+
+};
+</script>
+</head>
+<body>
+	<pre>
+		1:用户名只能是字母及数字6-11位
+		2:email为正确的email
+	</pre>
+	<form action="" method="get">
+		<p>用户名:<input type="text" name="username"/></p>
+		<p>邮箱:<input type="text" name="email"/></p>
+		<p><input type="submit" value="提交"/>&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="重置"/></p>
+	</form>
+</body>
+</html>

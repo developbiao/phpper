@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>JsBase</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<h3>使用正则匹配</h3>
+	<input type="button" value="标注有邮箱的人" onclick="findEmail();"/>
+	<ul>
+		<li>张飞&lt;zhangfei@163.com&gt;</li>
+		<li>刘备</li>
+		<li>关羽&lt;guangyudao@gmail.com&gt;</li>
+		<li>赵云</li>
+		<li>赵子龙</li>
+		<li>小涛&lt;xiaotaotao@zixue.it&gt;</li>
+		<li>陈林</li>
+	</ul>
+</body>
+<script type="text/javascript">
+	/*
+	Decription:使用正则匹配
+	*/
+function findEmail(){
+		var oLis = document.getElementsByTagName('li');	
+		var i = 0;
+		var patt = /\w+@\w+(\.\w+)+/;
+		while(i < oLis.length){
+			if(patt.exec(oLis[i].innerHTML) != null){
+				console.log(oLis[i]);
+				oLis[i].style.background = 'yellow';
+
+			}
+			i++;	
+		}
+	}
+</script>
+</html>
