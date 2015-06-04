@@ -1,0 +1,83 @@
+/*
+@Date:2015/06/04
+@Desc:Mysql学习复习笔记3-21
+@Author:GongBiao
+
+*/
+一、Mysql的概念
+表table 与库database 服务器server
+
+
+二、认识Sql
+SQL(Structured Query Language)结构化查询语言
+what型语言,而非how型语言
+how(如何做)
+what(想有什么样的数据)
+
+1、sql可以分为三类
+
+DML is Data Manipulation language statements. Some examples:数据操作语言,SQL中处理数据等操作统称为数据操作纵语言(使用都角度80%)
+
+DDL is Data Definition Language statements. Some examples:数据定义语言，用于定义和管理SQL数据库中的所有对象的语言（建设者的角度，建表，建库，建视图 等,15%）
+
+DCL is Data Control Language statements. Some examples:数据控制语言，用来授予或回收访问数据库的的某种特权，并控制数据库操纵事务发生的时间及效果，对数据库实行监视等(管理员角度,DBA,5%)
+
+
+三、insert操作
+1、insert  -->所有列
+2、insert  -->指定列
+注意：列与值，严格对应
+数字和字符串的注意点
+数字不必加单引号，字符串必须加单引号
+
+四、update操作
+
+update 表名  set   where（警告：一定要记得加where条件）
+
+
+
+五、Delete操作
+DELTE FORM 表名  WHERE 条件expr  --删除你想删除的行
+
+六、SELECT 查询模型（重要）
+SELECT 列1， 列2， 列3... FROM 表名  WHERE expr
+列是变量，变量可以计算，where是表达式，值为真假
+广义投影
+
+1）、作业练习题：
+UPDATE mian SET  num = floor(num/10) * 10 WHERE num BETWEEN 20 AND 29;
+
+2)、作业练习题NOKIA修改HTC
+SELECT goods,concat('htc', substring(goods_name,4)) for goods WHEREgods_name LIKE '诺基亚';
+
+1、 null   类型的查 “is null”
+
+2、常用的函数
+max,min avg,count
+
+
+3、having与group综合运用
+理解having与where的使用时机
+having是where使用的时机后使用
+
+4、排序order by
+降序：DESC
+升序：ASC
+
+5、limit
+limit 有两个参数，每个参数偏移量，第二个取出的条目
+
+6、之前where,group by ,having, limit，order by
+
+作业把每栏目下最大，最新的商品查出来
+
+七、子句的查询陷阱
+5种子句是有严格顺序，where,groupby, having, order by , limit
+
+1、WEHRE型子查询
+note：内层的查询结果给外层用
+找到最新的商品不用排序order by limit
+> SELECT goods_id, goods_name FROM goods WHERE goods_id IN(SELECT MAX(goods_id) FROM goods GROUP BY cat_id);
+
+2、FOR型子查询
+结果集也了多维表结构
