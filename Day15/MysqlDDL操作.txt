@@ -1,0 +1,72 @@
+/*
+@Date:2015/06/05
+@Descrition:Mysql DDL
+@Author:GongBiao
+*/
+ 一、 创建表
+1、创建表的语法
+
+
+2、整形列
+数值型---整型，浮点型，定点型
+字符串---char,varchar,text
+日期时间类型
+tinyint 占1个字节
+unsigned, zerofill, M
+unsigned 无符号，列的值从0开始，不为负
+zerofill适合用于学号,编号等，固定宽度的数字，可以用0填充到固定宽度
+思路：zerofill填充多宽?用M
+注意:zerofill 属性默认决定 列为unsigned
+
+3、浮点列与定点列
+float(M, D),M是精度，总位数，D标度 ，小数点后面的位数
+duoble(M,D) 存储更大
+decimal 用于精确数值如银行
+float/double,有精度损失decimal 定点型，更精确
+
+4、字符串类型
+char(10) ，定长 char(2) charset utf8,能存储2个utf-8字符，比如‘中国’
+varchar(10), 可变长度
+Blob不考虑字符集存二进制 存储图片，媒体文件 
+
+5、枚举型 
+ENUM 枚举型  ，是定义好，值就在某个枚举范围内
+gender('男'，‘女’)
+SET（'value1', 'value2', '...'）
+
+6、日期时间类型
+year [1901-2155]
+date
+time
+datetime
+
+
+
+7、主键 primary key 与自增长
+primary key, auto_increment
+注意：一张表，只能1列为auto_increment,且些列必须加索引（index/key）
+
+8、综合建表案例
+为了提高速度：定长与变长分享，常用与不常用分离
+作业：创建“白领交友表”
+
+9、列的删除增加与修改
+查看表结构DESC 表名
+
+alert table 表名 add 列名  列类型  列属性...默认在表的最后
+alert table 表名  add 列名  列类型 列属性...after 列名（将会出现指定列后）
+alert table 表名  drop cloumn 列名
+alert table 表名  change height shenggao  smaillint (修改列名，与列类型)
+alert table 表名  modify  列名  新属性.... (只能修改列属性)
+
+
+salary  薪水
+
+
+
+
+
+
+
+
+
