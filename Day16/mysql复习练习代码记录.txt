@@ -1,0 +1,2419 @@
+Microsoft Windows [版本 10.0.10041]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\Windows\system32>net start mysql
+mysql 服务正在启动 .
+mysql 服务已经启动成功。
+
+
+C:\Windows\system32>mysql -uroot -p
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.0.51b-community-nt-log MySQL Community Edition (GPL)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> USE test;
+Database changed
+mysql> SELECT * FROM goods WHERE 1 ORDER BY cat_id ASC, goods_id DESC;
++----------+----------------------------------------+--------+----------+-----------+--------------+------------+-------
+-------+-------------+
+| goods_id | goods_name                             | cat_id | brand_id | goods_sn  | goods_number | shop_price | market
+_price | click_count |
++----------+----------------------------------------+--------+----------+-----------+--------------+------------+-------
+-------+-------------+
+|       16 | 鎭掑熀浼熶笟g101                           |      2 |       11 | ecs000016 |            0 |     823.33 |
+    988.00 |           3 |
+|       32 | 璇哄熀浜歯85                              |      3 |        1 | ecs000032 |            4 |    3010.00 |
+  3612.00 |           9 |
+|       31 | 鎽╂墭缃楁媺e8                             |      3 |        2 | ecs000031 |            1 |    1337.00 |
+   1604.39 |           5 |
+|       24 | p806                                   |      3 |        9 | ecs000024 |          100 |    2000.00 |      2
+400.00 |          35 |
+|       22 | 澶氭櫘杈総ouch hd                         |      3 |        3 | ecs000022 |            1 |    5999.00 |
+  7198.80 |          16 |
+|       21 | 閲戠珛 a30                               |      3 |       10 | ecs000021 |           40 |    2000.00 |
+ 2400.00 |           4 |
+|       20 | 涓夋槦bc01                               |      3 |        6 | ecs000020 |           12 |     280.00 |
+  336.00 |          14 |
+|       19 | 涓夋槦sgh-f258                           |      3 |        6 | ecs000019 |           12 |     858.00 |
+ 1029.60 |           7 |
+|       17 | 澶忔柊n7                                 |      3 |        5 | ecs000017 |            1 |    2300.00 |
+ 2760.00 |           2 |
+|       15 | 鎽╂墭缃楁媺a810                           |      3 |        2 | ecs000015 |            3 |     788.00 |
+    945.60 |           8 |
+|       13 | 璇哄熀浜?320 xpressmusic                 |      3 |        1 | ecs000013 |            8 |    1311.00 |
+ 1573.20 |          13 |
+|       12 | 鎽╂墭缃楁媺a810                           |      3 |        2 | ecs000012 |            8 |     983.00 |
+   1179.60 |          13 |
+|       11 | 绱㈢埍c702c                              |      3 |        7 | ecs000011 |            1 |    1300.00 |
+    0.00 |           0 |
+|       10 | 绱㈢埍c702c                              |      3 |        7 | ecs000010 |            7 |    1328.00 |
+ 1593.60 |          11 |
+|        9 | 璇哄熀浜歟66                              |      3 |        1 | ecs000009 |            4 |    2298.00 |
+  2757.60 |          20 |
+|        8 | 椋炲埄娴?@9v                             |      3 |        4 | ecs000008 |            1 |     399.00 |
+  478.79 |          10 |
+|       18 | 澶忔柊t5                                 |      4 |        5 | ecs000018 |            1 |    2878.00 |
+ 3453.60 |           0 |
+|       14 | 璇哄熀浜?800xm                           |      4 |        1 | ecs000014 |            1 |    2625.00 |
+ 3150.00 |           6 |
+|        1 | kd876                                  |      4 |        8 | ecs000000 |            1 |    1388.00 |      1
+665.60 |           9 |
+|       23 | 璇哄熀浜歯96                              |      5 |        1 | ecs000023 |            8 |    3700.00 |
+  4440.00 |          17 |
+|        7 | 璇哄熀浜歯85鍘熻绔嬩綋澹拌�虫満hs-82           |      8 |        1 | ecs000007 |           20 |     100.0
+0 |       120.00 |           0 |
+|        4 | 璇哄熀浜歯85鍘熻鍏呯數鍣?                   |      8 |        1 | ecs000004 |           17 |      58.00 |
+        69.60 |           0 |
+|        3 | 璇哄熀浜氬師瑁?800鑰虫満                     |      8 |        1 | ecs000002 |           24 |      68.00 |
+       81.60 |           3 |
+|        6 | 鑳滃垱kingmax鍐呭瓨鍗?                     |     11 |        0 | ecs000006 |           15 |      42.00 |
+     50.40 |           0 |
+|        5 | 绱㈢埍鍘熻m2鍗¤鍗″櫒                     |     11 |        7 | ecs000005 |            8 |      20.00
+|        24.00 |           3 |
+|       26 | 灏忕伒閫?鍥鸿瘽20鍏冨厖鍊煎崱                  |     13 |        0 | ecs000026 |            2 |      19.00
+|        22.80 |           0 |
+|       25 | 灏忕伒閫?鍥鸿瘽50鍏冨厖鍊煎崱                  |     13 |        0 | ecs000025 |            2 |      48.00
+|        57.59 |           0 |
+|       30 | 绉诲姩20鍏冨厖鍊煎崱                         |     14 |        0 | ecs000030 |            9 |      18.00 |
+       21.00 |           1 |
+|       29 | 绉诲姩100鍏冨厖鍊煎崱                        |     14 |        0 | ecs000029 |            0 |      90.00 |
+        0.00 |           0 |
+|       28 | 鑱旈�?0鍏冨厖鍊煎崱                         |     15 |        0 | ecs000028 |            0 |      45.00 |
+      50.00 |           0 |
+|       27 | 鑱旈�?00鍏冨厖鍊煎崱                        |     15 |        0 | ecs000027 |            2 |      95.00 |
+     100.00 |           0 |
++----------+----------------------------------------+--------+----------+-----------+--------------+------------+-------
+-------+-------------+
+31 rows in set (0.07 sec)
+
+mysql> SET NAMES gbk;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM goods WHERE 1 ORDER BY cat_id ASC, goods_id DESC;
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+| goods_id | goods_name                   | cat_id | brand_id | goods_sn  | goods_number | shop_price | market_price | c
+lick_count |
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+|       16 | 恒基伟业g101                       |      2 |       11 | ecs000016 |            0 |     823.33 |       988.
+00 |           3 |
+|       32 | 诺基亚n85                         |      3 |        1 | ecs000032 |            4 |    3010.00 |      3612.0
+0 |           9 |
+|       31 | 摩托罗拉e8                          |      3 |        2 | ecs000031 |            1 |    1337.00 |      1604
+.39 |           5 |
+|       24 | p806                         |      3 |        9 | ecs000024 |          100 |    2000.00 |      2400.00 |
+        35 |
+|       22 | 多普达touch hd                    |      3 |        3 | ecs000022 |            1 |    5999.00 |      7198.8
+0 |          16 |
+|       21 | 金立 a30                         |      3 |       10 | ecs000021 |           40 |    2000.00 |      2400.00
+ |           4 |
+|       20 | 三星bc01                         |      3 |        6 | ecs000020 |           12 |     280.00 |       336.00
+ |          14 |
+|       19 | 三星sgh-f258                     |      3 |        6 | ecs000019 |           12 |     858.00 |      1029.60
+ |           7 |
+|       17 | 夏新n7                           |      3 |        5 | ecs000017 |            1 |    2300.00 |      2760.00
+ |           2 |
+|       15 | 摩托罗拉a810                        |      3 |        2 | ecs000015 |            3 |     788.00 |       945
+.60 |           8 |
+|       13 | 诺基亚5320 xpressmusic            |      3 |        1 | ecs000013 |            8 |    1311.00 |      1573.2
+0 |          13 |
+|       12 | 摩托罗拉a810                        |      3 |        2 | ecs000012 |            8 |     983.00 |      1179
+.60 |          13 |
+|       11 | 索爱c702c                        |      3 |        7 | ecs000011 |            1 |    1300.00 |         0.00
+ |           0 |
+|       10 | 索爱c702c                        |      3 |        7 | ecs000010 |            7 |    1328.00 |      1593.60
+ |          11 |
+|        9 | 诺基亚e66                         |      3 |        1 | ecs000009 |            4 |    2298.00 |      2757.6
+0 |          20 |
+|        8 | 飞利浦9@9v                         |      3 |        4 | ecs000008 |            1 |     399.00 |       478.
+79 |          10 |
+|       18 | 夏新t5                           |      4 |        5 | ecs000018 |            1 |    2878.00 |      3453.60
+ |           0 |
+|       14 | 诺基亚5800xm                      |      4 |        1 | ecs000014 |            1 |    2625.00 |      3150.0
+0 |           6 |
+|        1 | kd876                        |      4 |        8 | ecs000000 |            1 |    1388.00 |      1665.60 |
+         9 |
+|       23 | 诺基亚n96                         |      5 |        1 | ecs000023 |            8 |    3700.00 |      4440.0
+0 |          17 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |      8 |        1 | ecs000007 |           20 |     100.00 |
+       120.00 |           0 |
+|        4 | 诺基亚n85原装充电器                       |      8 |        1 | ecs000004 |           17 |      58.00 |
+    69.60 |           0 |
+|        3 | 诺基亚原装5800耳机                      |      8 |        1 | ecs000002 |           24 |      68.00 |
+  81.60 |           3 |
+|        6 | 胜创kingmax内存卡                  |     11 |        0 | ecs000006 |           15 |      42.00 |        50.
+40 |           0 |
+|        5 | 索爱原装m2卡读卡器                         |     11 |        7 | ecs000005 |            8 |      20.00 |
+     24.00 |           3 |
+|       26 | 小灵通/固话20元充值卡                     |     13 |        0 | ecs000026 |            2 |      19.00 |
+    22.80 |           0 |
+|       25 | 小灵通/固话50元充值卡                     |     13 |        0 | ecs000025 |            2 |      48.00 |
+    57.59 |           0 |
+|       30 | 移动20元充值卡                        |     14 |        0 | ecs000030 |            9 |      18.00 |
+21.00 |           1 |
+|       29 | 移动100元充值卡                       |     14 |        0 | ecs000029 |            0 |      90.00 |
+ 0.00 |           0 |
+|       28 | 联通50元充值卡                        |     15 |        0 | ecs000028 |            0 |      45.00 |
+50.00 |           0 |
+|       27 | 联通100元充值卡                       |     15 |        0 | ecs000027 |            2 |      95.00 |       1
+00.00 |           0 |
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+31 rows in set (0.05 sec)
+
+mysql> SELECT * FROM goods ORDER BY cat_id ASC, goods_id DESC;
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+| goods_id | goods_name                   | cat_id | brand_id | goods_sn  | goods_number | shop_price | market_price | c
+lick_count |
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+|       16 | 恒基伟业g101                       |      2 |       11 | ecs000016 |            0 |     823.33 |       988.
+00 |           3 |
+|       32 | 诺基亚n85                         |      3 |        1 | ecs000032 |            4 |    3010.00 |      3612.0
+0 |           9 |
+|       31 | 摩托罗拉e8                          |      3 |        2 | ecs000031 |            1 |    1337.00 |      1604
+.39 |           5 |
+|       24 | p806                         |      3 |        9 | ecs000024 |          100 |    2000.00 |      2400.00 |
+        35 |
+|       22 | 多普达touch hd                    |      3 |        3 | ecs000022 |            1 |    5999.00 |      7198.8
+0 |          16 |
+|       21 | 金立 a30                         |      3 |       10 | ecs000021 |           40 |    2000.00 |      2400.00
+ |           4 |
+|       20 | 三星bc01                         |      3 |        6 | ecs000020 |           12 |     280.00 |       336.00
+ |          14 |
+|       19 | 三星sgh-f258                     |      3 |        6 | ecs000019 |           12 |     858.00 |      1029.60
+ |           7 |
+|       17 | 夏新n7                           |      3 |        5 | ecs000017 |            1 |    2300.00 |      2760.00
+ |           2 |
+|       15 | 摩托罗拉a810                        |      3 |        2 | ecs000015 |            3 |     788.00 |       945
+.60 |           8 |
+|       13 | 诺基亚5320 xpressmusic            |      3 |        1 | ecs000013 |            8 |    1311.00 |      1573.2
+0 |          13 |
+|       12 | 摩托罗拉a810                        |      3 |        2 | ecs000012 |            8 |     983.00 |      1179
+.60 |          13 |
+|       11 | 索爱c702c                        |      3 |        7 | ecs000011 |            1 |    1300.00 |         0.00
+ |           0 |
+|       10 | 索爱c702c                        |      3 |        7 | ecs000010 |            7 |    1328.00 |      1593.60
+ |          11 |
+|        9 | 诺基亚e66                         |      3 |        1 | ecs000009 |            4 |    2298.00 |      2757.6
+0 |          20 |
+|        8 | 飞利浦9@9v                         |      3 |        4 | ecs000008 |            1 |     399.00 |       478.
+79 |          10 |
+|       18 | 夏新t5                           |      4 |        5 | ecs000018 |            1 |    2878.00 |      3453.60
+ |           0 |
+|       14 | 诺基亚5800xm                      |      4 |        1 | ecs000014 |            1 |    2625.00 |      3150.0
+0 |           6 |
+|        1 | kd876                        |      4 |        8 | ecs000000 |            1 |    1388.00 |      1665.60 |
+         9 |
+|       23 | 诺基亚n96                         |      5 |        1 | ecs000023 |            8 |    3700.00 |      4440.0
+0 |          17 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |      8 |        1 | ecs000007 |           20 |     100.00 |
+       120.00 |           0 |
+|        4 | 诺基亚n85原装充电器                       |      8 |        1 | ecs000004 |           17 |      58.00 |
+    69.60 |           0 |
+|        3 | 诺基亚原装5800耳机                      |      8 |        1 | ecs000002 |           24 |      68.00 |
+  81.60 |           3 |
+|        6 | 胜创kingmax内存卡                  |     11 |        0 | ecs000006 |           15 |      42.00 |        50.
+40 |           0 |
+|        5 | 索爱原装m2卡读卡器                         |     11 |        7 | ecs000005 |            8 |      20.00 |
+     24.00 |           3 |
+|       26 | 小灵通/固话20元充值卡                     |     13 |        0 | ecs000026 |            2 |      19.00 |
+    22.80 |           0 |
+|       25 | 小灵通/固话50元充值卡                     |     13 |        0 | ecs000025 |            2 |      48.00 |
+    57.59 |           0 |
+|       30 | 移动20元充值卡                        |     14 |        0 | ecs000030 |            9 |      18.00 |
+21.00 |           1 |
+|       29 | 移动100元充值卡                       |     14 |        0 | ecs000029 |            0 |      90.00 |
+ 0.00 |           0 |
+|       28 | 联通50元充值卡                        |     15 |        0 | ecs000028 |            0 |      45.00 |
+50.00 |           0 |
+|       27 | 联通100元充值卡                       |     15 |        0 | ecs000027 |            2 |      95.00 |       1
+00.00 |           0 |
++----------+------------------------------+--------+----------+-----------+--------------+------------+--------------+--
+-----------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goodsid, goodsname, shopprice FROM goods ORDER BY cat_id ASC;
+ERROR 1054 (42S22): Unknown column 'goodsid' in 'field list'
+mysql> SELECT goods_id, goods_name, shopprice FROM goods ORDER BY cat_id ASC;
+ERROR 1054 (42S22): Unknown column 'shopprice' in 'field list'
+mysql> SELECT goods_id, goods_name, shop_price FROM goods ORDER BY cat_id ASC;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|       16 | 恒基伟业g101                       |     823.33 |
+|       32 | 诺基亚n85                         |    3010.00 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|       17 | 夏新n7                           |    2300.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       20 | 三星bc01                         |     280.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       22 | 多普达touch hd                    |    5999.00 |
+|       24 | p806                         |    2000.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|        1 | kd876                        |    1388.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, shop_price FROM goods ORDER BY goods_id ASC;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|        1 | kd876                        |    1388.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|       16 | 恒基伟业g101                       |     823.33 |
+|       17 | 夏新n7                           |    2300.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       20 | 三星bc01                         |     280.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       22 | 多普达touch hd                    |    5999.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|       24 | p806                         |    2000.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       32 | 诺基亚n85                         |    3010.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, shop_price FROM goods ORDER BY goods_id DESC;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|       32 | 诺基亚n85                         |    3010.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       24 | p806                         |    2000.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|       22 | 多普达touch hd                    |    5999.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       20 | 三星bc01                         |     280.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       17 | 夏新n7                           |    2300.00 |
+|       16 | 恒基伟业g101                       |     823.33 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        1 | kd876                        |    1388.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, shop_price FROM goods ORDER BY cat_id ASC, goods_id DESC;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|       16 | 恒基伟业g101                       |     823.33 |
+|       32 | 诺基亚n85                         |    3010.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       24 | p806                         |    2000.00 |
+|       22 | 多普达touch hd                    |    5999.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       20 | 三星bc01                         |     280.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       17 | 夏新n7                           |    2300.00 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|        1 | kd876                        |    1388.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id,cat_id, goods_name, shop_price FROM goods ORDER BY cat_id ASC, goods_id DESC;
++----------+--------+------------------------------+------------+
+| goods_id | cat_id | goods_name                   | shop_price |
++----------+--------+------------------------------+------------+
+|       16 |      2 | 恒基伟业g101                       |     823.33 |
+|       32 |      3 | 诺基亚n85                         |    3010.00 |
+|       31 |      3 | 摩托罗拉e8                          |    1337.00 |
+|       24 |      3 | p806                         |    2000.00 |
+|       22 |      3 | 多普达touch hd                    |    5999.00 |
+|       21 |      3 | 金立 a30                         |    2000.00 |
+|       20 |      3 | 三星bc01                         |     280.00 |
+|       19 |      3 | 三星sgh-f258                     |     858.00 |
+|       17 |      3 | 夏新n7                           |    2300.00 |
+|       15 |      3 | 摩托罗拉a810                        |     788.00 |
+|       13 |      3 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       12 |      3 | 摩托罗拉a810                        |     983.00 |
+|       11 |      3 | 索爱c702c                        |    1300.00 |
+|       10 |      3 | 索爱c702c                        |    1328.00 |
+|        9 |      3 | 诺基亚e66                         |    2298.00 |
+|        8 |      3 | 飞利浦9@9v                         |     399.00 |
+|       18 |      4 | 夏新t5                           |    2878.00 |
+|       14 |      4 | 诺基亚5800xm                      |    2625.00 |
+|        1 |      4 | kd876                        |    1388.00 |
+|       23 |      5 | 诺基亚n96                         |    3700.00 |
+|        7 |      8 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        4 |      8 | 诺基亚n85原装充电器                       |      58.00 |
+|        3 |      8 | 诺基亚原装5800耳机                      |      68.00 |
+|        6 |     11 | 胜创kingmax内存卡                  |      42.00 |
+|        5 |     11 | 索爱原装m2卡读卡器                         |      20.00 |
+|       26 |     13 | 小灵通/固话20元充值卡                     |      19.00 |
+|       25 |     13 | 小灵通/固话50元充值卡                     |      48.00 |
+|       30 |     14 | 移动20元充值卡                        |      18.00 |
+|       29 |     14 | 移动100元充值卡                       |      90.00 |
+|       28 |     15 | 联通50元充值卡                        |      45.00 |
+|       27 |     15 | 联通100元充值卡                       |      95.00 |
++----------+--------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, cat_id, goods_name
+    -> FROM (SELECT * FROM goods WHERE 1 ORDER BY cat_id ASC, goods_id DESC)
+    -> AS tmp
+    -> GROUP BY cat_id;
++----------+--------+------------------------------+
+| goods_id | cat_id | goods_name                   |
++----------+--------+------------------------------+
+|       16 |      2 | 恒基伟业g101                       |
+|       32 |      3 | 诺基亚n85                         |
+|       18 |      4 | 夏新t5                           |
+|       23 |      5 | 诺基亚n96                         |
+|        7 |      8 | 诺基亚n85原装立体声耳机hs-82                  |
+|        6 |     11 | 胜创kingmax内存卡                  |
+|       26 |     13 | 小灵通/固话20元充值卡                     |
+|       30 |     14 | 移动20元充值卡                        |
+|       28 |     15 | 联通50元充值卡                        |
++----------+--------+------------------------------+
+9 rows in set (0.00 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| result         |
+| stu            |
+| t              |
+| user           |
++----------------+
+12 rows in set (0.06 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| bookshop           |
+| mysql              |
+| phpmyadmin         |
+| test               |
+| ttl                |
++--------------------+
+6 rows in set (0.07 sec)
+
+mysql> USE ttl;
+Database changed
+mysql> SHOW TABLES;
++---------------+
+| Tables_in_ttl |
++---------------+
+| t2            |
+| t3            |
+| t4            |
+| t5            |
+| user          |
++---------------+
+5 rows in set (0.00 sec)
+
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED  PRIMRY KEY,
+    -> username CHAR(20) DEFAULT '',
+    -> gender TINYINT DEFAULT 1,
+    -> weight TINYINT UNSIGNED,
+    -> birth DATE,
+    -> salary DECIMAL(8,2) NOT NULL DEFAULT 0,
+    -> lastlogin DATETIME);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'PRIMRY KEY,
+username CHAR(20) DEFAULT '',
+gender TINYINT DEFAULT 1,
+weight TINYI' at line 2
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED ON PRIMRY KEY,
+    -> username CHAR(20) DEFAULT '',
+    -> gender TINYINT DEFAULT 1,
+    -> weight TINYINT UNSIGNED,
+    -> birth DATE,
+    -> salary DECIMAL(8,2) NOT NULL DEFAULT 0,
+    -> lastlogin DATETIME);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'PRIMRY KEY,
+username CHAR(20) DEFAULT '',
+gender TINYINT DEFAULT 1,
+weight TINYI' at line 2
+mysql> CREATE TABLE t6(
+    -> id INT ON PRIMARY KEY,
+    -> username CHAR(10) NOT NULL);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'PRIMARY KEY,
+username CHAR(10) NOT NULL)' at line 2
+mysql> CREATE TABLE t6(
+    -> id INT PRIMARY KEY,
+    -> username CHAR(10) NOT NULL);
+Query OK, 0 rows affected (0.35 sec)
+
+mysql> DROP TABLE t6;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY KEY,
+    -> username CHAR(10));
+Query OK, 0 rows affected (0.04 sec)
+
+mysql> DROP TABLE reg01;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY KEY,
+    -> username CHAR(10) NOT NULL,
+    -> gender ENUM('男', '女') DEFAULT '男',
+    -> weight TINYINT UNSIGNED DEFAULT 0,
+    -> brith DATE,
+    -> salary DECIMAL(8,2),
+    -> lastlogin DATETIME);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+7 rows in set (0.05 sec)
+
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY KEY,
+    -> username CHAR(20) NOT NULL,
+    -> intro VARCHAR(15000);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 4
+mysql>
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY K
+    -> username CHAR(20) NOT NUL
+    -> intro VARCHAR(15000) \c
+mysql> CREATE TABLE reg02(
+    -> id INT UNSIGNED PRIMARY KEY,
+    -> username CHAR(20) NOT NULL,
+    -> intro VARCHAR(15000));
+Query OK, 0 rows affected (0.11 sec)
+
+mysql> DESC reg02;
++----------+------------------+------+-----+---------+-------+
+| Field    | Type             | Null | Key | Default | Extra |
++----------+------------------+------+-----+---------+-------+
+| id       | int(10) unsigned | NO   | PRI | NULL    |       |
+| username | char(20)         | NO   |     | NULL    |       |
+| intro    | varchar(15000)   | YES  |     | NULL    |       |
++----------+------------------+------+-----+---------+-------+
+3 rows in set (0.01 sec)
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+7 rows in set (0.03 sec)
+
+mysql> ALTER TABLE reg01 ADD alone ENUM('y','n') DEFAULT 'y';
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DECS reg01;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'DECS reg01' at line 1
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.04 sec)
+
+mysql> ALTER TABLE reg01 DROP COLUMN alone;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+7 rows in set (0.03 sec)
+
+mysql> ALTER TABLE reg01
+    -> ADD COLUMN alone ENUM('y', 'n') DEFAULT 'y'
+    -> AFTER brith;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> ALERT TABLE reg01 CHANGE username username INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'ALERT TABLE reg01 CHANGE username username INT UNSIGNED PRIMARY KEY AUTO_INCREME' at
+line 1
+mysql> ALTER TABLE reg01
+    -> CHANGE
+    -> username INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'INT UNSIGNED PRIMARY KEY AUTO_INCREMENT' at line 3
+mysql> ALTER TABLE reg01
+    -> CHANGE
+    -> username user INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> INT UNSIGNED PRIMARY KEY;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> INT UNSIGNED PRIMARY KEY;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> INT PRIMARY KEY;
+ERROR 1068 (42000): Multiple primary key defined
+mysql>
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY K
+    -> username CHAR(20) NOT NUL
+    -> \c
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> CHAR(100);
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE reg01
+    -> MODIFY username
+    -> INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> DESC reg01
+    -> ;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(100)           | YES  |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> MODIFY username CHAR(10) NOT NULL;
+Query OK, 0 rows affected (0.11 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01
+    -> ;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> MODIFY id INT UNSIGNED PRIMARY KEY
+    -> AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> ALTER TABLE reg01
+    -> MODIFY id AUTO_INCREMENT;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'AUTO_INCREMENT' at line 2
+mysql> ALTER TABLE reg01
+    -> MODIFY id INT UNSIGNED PRIMARY KEY
+    -> AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql>
+mysql> CREATE TABLE reg01(
+    -> id INT UNSIGNED PRIMARY K
+    -> username CHAR(20) NOT NUL
+    -> intro VARCHAR(15000)/C
+    -> \C
+ERROR:
+Usage: \C char_setname | charset charset_name
+    -> \C
+ERROR:
+Usage: \C char_setname | charset charset_name
+    -> \c
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| weight    | tinyint(3) unsigned | YES  |     | 0       |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.00 sec)
+
+mysql> ALTER TABLE reg01
+    -> DROP COLUMN weight;
+Query OK, 0 rows affected (0.32 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE reg01
+    -> ADD weight TINYINT UNSIGNED;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+8 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> ADD shengao TINYINT;
+Query OK, 0 rows affected (0.06 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| shengao   | tinyint(4)          | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> MODIFY shenggao TINYINT UNSIGNED;
+ERROR 1054 (42S22): Unknown column 'shenggao' in 'reg01'
+mysql> ALTER TABLE reg01
+    -> MODIFY shengao TINYINT UNSIGNED;
+Query OK, 0 rows affected (0.32 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| shengao   | tinyint(3) unsigned | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> MODIFY shengao TINYINT UNSIGNED ALTER brith;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'ALTER brith' at line 2
+mysql> ALTER TABLE reg01
+    -> MODIFY shengao TINYINT UNSIGNED AFTER brith;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| shengao   | tinyint(3) unsigned | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> CHANGE shengao height;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 2
+mysql> ALTER TABLE reg01
+    -> CHANGE shengao height TINYINT UNSIGNED;
+Query OK, 0 rows affected (0.10 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| height    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> CHANGE weight TYINYINT UNSIGNED AFTER height;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'UNSIGNED AFTER height' at line 2
+mysql> ALTER TABLE reg01
+    -> CHANGE weight TINYINT UNSIGNED AFTER height;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'TINYINT UNSIGNED AFTER height' at line 2
+mysql> ALTER TABLE reg01
+    -> CHANGE weight TINYINT UNSIGNED;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'TINYINT UNSIGNED' at line 2
+mysql> ALTER TABLE reg01
+    -> CHANGE weight weight TINYINT UNSIGNED
+    -> AFTER height;
+Query OK, 0 rows affected (0.30 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| height    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> ADD play VARCHAR(20);
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| height    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
+| play      | varchar(20)         | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+10 rows in set (0.01 sec)
+
+mysql> ALTER TABLE reg01
+    -> DROP COLUMN play;
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> ALTER TABLE reg01
+    -> MODIFY id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT;
+ERROR 1068 (42000): Multiple primary key defined
+mysql> INSERT INTO reg01
+    -> VALUE(
+    -> 1, 'xiaoxiaoniao', '女', '1994-11-24', 170, 59, 'y','2015-11-12 11:12:15');
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> INSERT INTO reg01
+    -> VALUE(
+    -> 1, 'xiaoxiaoniao', '女', '1994-11-24', 170, 59, 'y','2015-11-12 11:12:15',
+    -> \c;
+ERROR:
+No query specified
+
+mysql> DESC reg01;
++-----------+---------------------+------+-----+---------+-------+
+| Field     | Type                | Null | Key | Default | Extra |
++-----------+---------------------+------+-----+---------+-------+
+| id        | int(10) unsigned    | NO   | PRI | NULL    |       |
+| username  | char(10)            | NO   |     | NULL    |       |
+| gender    | enum('男','女')        | YES  |     | 男        |       |
+| brith     | date                | YES  |     | NULL    |       |
+| height    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| weight    | tinyint(3) unsigned | YES  |     | NULL    |       |
+| alone     | enum('y','n')       | YES  |     | y       |       |
+| salary    | decimal(8,2)        | YES  |     | NULL    |       |
+| lastlogin | datetime            | YES  |     | NULL    |       |
++-----------+---------------------+------+-----+---------+-------+
+9 rows in set (0.01 sec)
+
+mysql> INSERT INTO reg01 VALUE(
+    -> 1, 'xiaoxiaoniao', '女', '1994-05-13', 170, 59, 'y', 8000.59, time());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '))' at line 2
+mysql> INSERT INTO reg01 VALUES(
+    -> 1, 'xiaoxiaoniao', '女', '1994-05-13', 170, 59, 'y', 8000.59, time());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '))' at line 2
+mysql> INSERT INTO reg01 VALUES(
+    -> 1, 'xiaoxiaoniao', '女', '1994-05-13', 170, 59, 'y', 8000.59, time);
+ERROR 1054 (42S22): Unknown column 'time' in 'field list'
+mysql> INSERT INTO reg01 VALUES(
+    -> 1, 'xiaoxiaoniao', '女', '1994-05-13', 170, 59, 'y', 8000.59, '2003-8-7 21:09:37');
+Query OK, 1 row affected, 1 warning (0.00 sec)
+
+mysql> SELECT * FROM reg01;
++----+------------+--------+------------+--------+--------+-------+---------+---------------------+
+| id | username   | gender | brith      | height | weight | alone | salary  | lastlogin           |
++----+------------+--------+------------+--------+--------+-------+---------+---------------------+
+|  1 | xiaoxiaoni | 女      | 1994-05-13 |    170 |     59 | y     | 8000.59 | 2003-08-07 21:09:37 |
++----+------------+--------+------------+--------+--------+-------+---------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> CREATE TABLE t6(
+    -> id INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    -> username CHAR(10) NOT NULL);
+Query OK, 0 rows affected (0.33 sec)
+
+mysql> DESC t6;
++----------+------------------+------+-----+---------+----------------+
+| Field    | Type             | Null | Key | Default | Extra          |
++----------+------------------+------+-----+---------+----------------+
+| id       | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| username | char(10)         | NO   |     | NULL    |                |
++----------+------------------+------+-----+---------+----------------+
+2 rows in set (0.01 sec)
+
+mysql> ALTER TABLE t6
+    -> DROP COLUMN username;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESC t6;
++-------+------------------+------+-----+---------+----------------+
+| Field | Type             | Null | Key | Default | Extra          |
++-------+------------------+------+-----+---------+----------------+
+| id    | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
++-------+------------------+------+-----+---------+----------------+
+1 row in set (0.01 sec)
+
+mysql> DROP TABLE t6;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, market_price - shop_price AS j
+    -> FROM goods;
+ERROR 1146 (42S02): Table 'ttl.goods' doesn't exist
+mysql> USE test;
+Database changed
+mysql> SELECT goods_id, goods_name, market_price - shop price AS j
+    -> FROM goods;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'AS j
+FROM goods' at line 1
+mysql> SELECT goods_id ,goods_name, market_price - shop_price AS j
+    -> FROM goods;
++----------+------------------------------+----------+
+| goods_id | goods_name                   | j        |
++----------+------------------------------+----------+
+|        1 | kd876                        |   277.60 |
+|        4 | 诺基亚n85原装充电器                       |    11.60 |
+|        3 | 诺基亚原装5800耳机                      |    13.60 |
+|        5 | 索爱原装m2卡读卡器                         |     4.00 |
+|        6 | 胜创kingmax内存卡                  |     8.40 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |    20.00 |
+|        8 | 飞利浦9@9v                         |    79.79 |
+|        9 | 诺基亚e66                         |   459.60 |
+|       10 | 索爱c702c                        |   265.60 |
+|       11 | 索爱c702c                        | -1300.00 |
+|       12 | 摩托罗拉a810                        |   196.60 |
+|       13 | 诺基亚5320 xpressmusic            |   262.20 |
+|       14 | 诺基亚5800xm                      |   525.00 |
+|       15 | 摩托罗拉a810                        |   157.60 |
+|       16 | 恒基伟业g101                       |   164.67 |
+|       17 | 夏新n7                           |   460.00 |
+|       18 | 夏新t5                           |   575.60 |
+|       19 | 三星sgh-f258                     |   171.60 |
+|       20 | 三星bc01                         |    56.00 |
+|       21 | 金立 a30                         |   400.00 |
+|       22 | 多普达touch hd                    |  1199.80 |
+|       23 | 诺基亚n96                         |   740.00 |
+|       24 | p806                         |   400.00 |
+|       25 | 小灵通/固话50元充值卡                     |     9.59 |
+|       26 | 小灵通/固话20元充值卡                     |     3.80 |
+|       27 | 联通100元充值卡                       |     5.00 |
+|       28 | 联通50元充值卡                        |     5.00 |
+|       29 | 移动100元充值卡                       |   -90.00 |
+|       30 | 移动20元充值卡                        |     3.00 |
+|       31 | 摩托罗拉e8                          |   267.39 |
+|       32 | 诺基亚n85                         |   602.00 |
++----------+------------------------------+----------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT cat_id SUM(goods_number * shop_price) AS k
+    -> FROM goods GROUP BY cat_id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'SUM(goods_number * shop_price) AS k
+FROM goods GROUP BY cat_id' at line 1
+mysql> SELECT cat_id, SUM(goods_number * shop_price) AS k
+    -> FROM goods;
+ERROR 1140 (42000): Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GR
+OUP BY clause
+mysql> SELECT SUM(goods_number * shop_price) AS k
+    -> FROM goods GROUP BY cat_id;
++-----------+
+| k         |
++-----------+
+|      0.00 |
+| 356235.00 |
+|   6891.00 |
+|  29600.00 |
+|   4618.00 |
+|    790.00 |
+|    134.00 |
+|    162.00 |
+|    190.00 |
++-----------+
+9 rows in set (0.00 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| result         |
+| stu            |
+| t              |
+| user           |
++----------------+
+12 rows in set (0.00 sec)
+
+mysql> SELECT * FROM mian;
++------+
+| num  |
++------+
+|    3 |
+|   12 |
+|   15 |
+|   25 |
+|   23 |
+|   29 |
+|   34 |
+|   37 |
+|   32 |
++------+
+9 rows in set (0.13 sec)
+
+mysql> SELECT * FROM result;
++------+---------+-------+
+| name | subject | score |
++------+---------+-------+
+| 张三     | 数学       |    90 |
+| 张三     | 语文        |    50 |
+| 张三     | 地理        |    40 |
+| 李四     | 语文        |    55 |
+| 李四     | 政治        |    45 |
+| 王五     | 政治        |    30 |
+| 赵六     | 地理        |    80 |
+| 赵六     | 八股       |    90 |
++------+---------+-------+
+8 rows in set (0.07 sec)
+
+mysql> SELECT name, AVG(score) AS 'avg' FROM  result
+    -> GROUP BY name;
++------+---------+
+| name | avg     |
++------+---------+
+| 张三     | 60.0000 |
+| 李四     | 50.0000 |
+| 王五     | 30.0000 |
+| 赵六     | 85.0000 |
++------+---------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT name, socre < 60 FROM result;
+ERROR 1054 (42S22): Unknown column 'socre' in 'field list'
+mysql> SELECT name, socre < 60 FROM result;
+ERROR 1054 (42S22): Unknown column 'socre' in 'field list'
+mysql> SELECT name, score < 60 FROM result;
++------+------------+
+| name | score < 60 |
++------+------------+
+| 张三     |          0 |
+| 张三     |          1 |
+| 张三     |          1 |
+| 李四     |          1 |
+| 李四     |          1 |
+| 王五     |          1 |
+| 赵六     |          0 |
+| 赵六     |          0 |
++------+------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT name, SUM(score < 60) FROM result;
+ERROR 1140 (42000): Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GR
+OUP BY clause
+mysql> SELECT name, SUM(SCORE < 60) FROM result
+    -> GROUP BY name;
++------+-----------------+
+| name | SUM(SCORE < 60) |
++------+-----------------+
+| 张三     |               2 |
+| 李四     |               2 |
+| 王五     |               1 |
+| 赵六     |               0 |
++------+-----------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT name, SUM(score < 60), AVG(score) AS 'avg'
+    -> FROM result
+    -> GROUP BY name;
++------+-----------------+---------+
+| name | SUM(score < 60) | avg     |
++------+-----------------+---------+
+| 张三     |               2 | 60.0000 |
+| 李四     |               2 | 50.0000 |
+| 王五     |               1 | 30.0000 |
+| 赵六     |               0 | 85.0000 |
++------+-----------------+---------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT name, SUM(score < 60) AS gk
+    -> ,AVG(score) AS 'avg'
+    -> FROM result
+    -> ORDER BY name
+    -> HAVING gk >=2;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'HAVING gk >=2' at line 5
+mysql> SELECT name, SUM(score < 60) AS gk
+    -> ,AVG(score) AS 'avg'
+    -> FROM result
+    -> ORDER BY name;
+ERROR 1140 (42000): Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GR
+OUP BY clause
+mysql> SELECT name, SUM(score < 60) AS 'gk', AVG(score)
+    -> AS 'avg' FROM result;
+ERROR 1140 (42000): Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GR
+OUP BY clause
+mysql> SELECT name, SUM(score < 60) AS 'gk', AVG(score)
+    -> AS 'avg' FROM result
+    -> ORDER BY name;
+ERROR 1140 (42000): Mixing of GROUP columns (MIN(),MAX(),COUNT(),...) with no GROUP columns is illegal if there is no GR
+OUP BY clause
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> SELECT name, SUM(score < 60) AS 'gk', AVG(SCORE) AS 'avg' FROM result
+    -> GROUP BY name;
++------+------+---------+
+| name | gk   | avg     |
++------+------+---------+
+| 张三     |    2 | 60.0000 |
+| 李四     |    2 | 50.0000 |
+| 王五     |    1 | 30.0000 |
+| 赵六     |    0 | 85.0000 |
++------+------+---------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT name, SUM(score < 60) AS 'gk', AVG(SCORE) AS 'avg' FROM result
+    -> GROUP BY name HAVING gk >= 2;
++------+------+---------+
+| name | gk   | avg     |
++------+------+---------+
+| 张三     |    2 | 60.0000 |
+| 李四     |    2 | 50.0000 |
++------+------+---------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, price_shop
+    -> FROM goods ORDER BY DESC;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'DESC' at line 2
+mysql> SELECT goods_id, goods_name, price_shop
+    -> FROM goods ORDER BY DESC;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'DESC' at line 2
+mysql> SELECT goods_id, goods_name, price_shop
+    -> FROM goods;
+ERROR 1054 (42S22): Unknown column 'price_shop' in 'field list'
+mysql> SELECT goods_id, goods_name, shop_price
+    -> FROM goods;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|        1 | kd876                        |    1388.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|       16 | 恒基伟业g101                       |     823.33 |
+|       17 | 夏新n7                           |    2300.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       20 | 三星bc01                         |     280.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       22 | 多普达touch hd                    |    5999.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|       24 | p806                         |    2000.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       32 | 诺基亚n85                         |    3010.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, shop_price
+    -> FROM goods
+    -> ORDER BY DESC;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'DESC' at line 3
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> SELECT goods_id, goods_name, shop_price
+    -> FROM goods
+    -> ORDER BY shop_price DESC;
++----------+------------------------------+------------+
+| goods_id | goods_name                   | shop_price |
++----------+------------------------------+------------+
+|       22 | 多普达touch hd                    |    5999.00 |
+|       23 | 诺基亚n96                         |    3700.00 |
+|       32 | 诺基亚n85                         |    3010.00 |
+|       18 | 夏新t5                           |    2878.00 |
+|       14 | 诺基亚5800xm                      |    2625.00 |
+|       17 | 夏新n7                           |    2300.00 |
+|        9 | 诺基亚e66                         |    2298.00 |
+|       21 | 金立 a30                         |    2000.00 |
+|       24 | p806                         |    2000.00 |
+|        1 | kd876                        |    1388.00 |
+|       31 | 摩托罗拉e8                          |    1337.00 |
+|       10 | 索爱c702c                        |    1328.00 |
+|       13 | 诺基亚5320 xpressmusic            |    1311.00 |
+|       11 | 索爱c702c                        |    1300.00 |
+|       12 | 摩托罗拉a810                        |     983.00 |
+|       19 | 三星sgh-f258                     |     858.00 |
+|       16 | 恒基伟业g101                       |     823.33 |
+|       15 | 摩托罗拉a810                        |     788.00 |
+|        8 | 飞利浦9@9v                         |     399.00 |
+|       20 | 三星bc01                         |     280.00 |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  |     100.00 |
+|       27 | 联通100元充值卡                       |      95.00 |
+|       29 | 移动100元充值卡                       |      90.00 |
+|        3 | 诺基亚原装5800耳机                      |      68.00 |
+|        4 | 诺基亚n85原装充电器                       |      58.00 |
+|       25 | 小灵通/固话50元充值卡                     |      48.00 |
+|       28 | 联通50元充值卡                        |      45.00 |
+|        6 | 胜创kingmax内存卡                  |      42.00 |
+|        5 | 索爱原装m2卡读卡器                         |      20.00 |
+|       26 | 小灵通/固话20元充值卡                     |      19.00 |
+|       30 | 移动20元充值卡                        |      18.00 |
++----------+------------------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, shop_price
+    -> FROM goods
+    -> ORDER BY shop_price DESC LIMIT 0,3;
++----------+----------------+------------+
+| goods_id | goods_name     | shop_price |
++----------+----------------+------------+
+|       22 | 多普达touch hd      |    5999.00 |
+|       23 | 诺基亚n96           |    3700.00 |
+|       32 | 诺基亚n85           |    3010.00 |
++----------+----------------+------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, click_count FROM goods
+    -> ORDER BY click_count DESC LIMIT 2,3;
++----------+----------------+-------------+
+| goods_id | goods_name     | click_count |
++----------+----------------+-------------+
+|       23 | 诺基亚n96           |          17 |
+|       22 | 多普达touch hd      |          16 |
+|       20 | 三星bc01           |          14 |
++----------+----------------+-------------+
+3 rows in set (0.00 sec)
+
+mysql> ORDER BY click_count DESC LIMIT 0,5;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'ORDER BY click_count DESC LIMIT 0,5' at line 1
+mysql> SELECT goods_id, goods_name, click_count FROM goods
+    -> ORDER BY click_count DESC LIMIT 0,5;
++----------+----------------+-------------+
+| goods_id | goods_name     | click_count |
++----------+----------------+-------------+
+|       24 | p806           |          35 |
+|        9 | 诺基亚e66           |          20 |
+|       23 | 诺基亚n96           |          17 |
+|       22 | 多普达touch hd      |          16 |
+|       20 | 三星bc01           |          14 |
++----------+----------------+-------------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT * FROM category WHERE 1;
++--------+-------------------+-----------+
+| cat_id | cat_name          | parent_id |
++--------+-------------------+-----------+
+|      1 | 手机类型                 |         0 |
+|      2 | CDMA手机             |         1 |
+|      3 | GSM手机              |         1 |
+|      4 | 3G手机               |         1 |
+|      5 | 双模手机               |         1 |
+|      6 | 手机配件                 |         0 |
+|      7 | 充电器                  |         6 |
+|      8 | 耳机                  |         6 |
+|      9 | 电池                  |         6 |
+|     11 | 读卡器和内存卡               |         6 |
+|     12 | 充值卡                 |         0 |
+|     13 | 小灵通/固话充值卡             |        12 |
+|     14 | 移动手机充值卡               |        12 |
+|     15 | 联通手机充值卡               |        12 |
++--------+-------------------+-----------+
+14 rows in set (0.07 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| result         |
+| stu            |
+| t              |
+| user           |
++----------------+
+12 rows in set (0.00 sec)
+
+mysql> SELECT * FROM girl,boy;
++------+--------+------+--------+
+| hid  | gname  | hid  | bname  |
++------+--------+------+--------+
+| B    | 小龙女     | A    | 屌丝      |
+| C    | 张柏芝     | A    | 屌丝      |
+| D    | 死宅女     | A    | 屌丝      |
+| B    | 小龙女     | B    | 杨过       |
+| C    | 张柏芝     | B    | 杨过       |
+| D    | 死宅女     | B    | 杨过       |
+| B    | 小龙女     | C    | 陈冠希     |
+| C    | 张柏芝     | C    | 陈冠希     |
+| D    | 死宅女     | C    | 陈冠希     |
++------+--------+------+--------+
+9 rows in set (0.08 sec)
+
+mysql> SELECT * FROM girl
+    -> ;
++------+--------+
+| hid  | gname  |
++------+--------+
+| B    | 小龙女     |
+| C    | 张柏芝     |
+| D    | 死宅女     |
++------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM boy;
++------+--------+
+| hid  | bname  |
++------+--------+
+| A    | 屌丝      |
+| B    | 杨过       |
+| C    | 陈冠希     |
++------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.name, girl.hid, girl.name
+    -> FROM boy INNER JOIN girl
+    -> ;
+ERROR 1054 (42S22): Unknown column 'boy.name' in 'field list'
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy INNER JOIN gril;
+ERROR 1146 (42S02): Table 'test.gril' doesn't exist
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy INNER JOIN girl;
++------+--------+------+--------+
+| hid  | bname  | hid  | gname  |
++------+--------+------+--------+
+| A    | 屌丝      | B    | 小龙女     |
+| B    | 杨过       | B    | 小龙女     |
+| C    | 陈冠希     | B    | 小龙女     |
+| A    | 屌丝      | C    | 张柏芝     |
+| B    | 杨过       | C    | 张柏芝     |
+| C    | 陈冠希     | C    | 张柏芝     |
+| A    | 屌丝      | D    | 死宅女     |
+| B    | 杨过       | D    | 死宅女     |
+| C    | 陈冠希     | D    | 死宅女     |
++------+--------+------+--------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy INNER JOIN girl
+    -> WHERE  boy.hid=gril.hid;
+ERROR 1054 (42S22): Unknown column 'gril.hid' in 'where clause'
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy INNER JOIN girl
+    -> WHERE  boy.hid=girl.hid;
++------+--------+------+--------+
+| hid  | bname  | hid  | gname  |
++------+--------+------+--------+
+| B    | 杨过       | B    | 小龙女     |
+| C    | 陈冠希     | C    | 张柏芝     |
++------+--------+------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.bname, girl.hid,gril.gname
+    -> FROM boy LEFT JOIN gril;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid,gril.gname
+    -> FROM boy LEFT JOIN girl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 2
+mysql>
+mysql>
+mysql> SELECT boy.hid, boy.bname, girl.hid, gril.gname
+    -> FROM boy JOIN LEFT girl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT girl' at line 2
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> SELECT boy.hid, boy.bname, girl.hid, gril.gname
+    -> FROM boy INNER JOIN girl ON boy.hid=girl.hid;
+ERROR 1054 (42S22): Unknown column 'gril.gname' in 'field list'
+mysql> SELECT boy.hid, boy.bname, girl.hid, gril.gname
+    -> \c
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy INNER JOIN girl ON boy.hid=girl.hid;
++------+--------+------+--------+
+| hid  | bname  | hid  | gname  |
++------+--------+------+--------+
+| B    | 杨过       | B    | 小龙女     |
+| C    | 陈冠希     | C    | 张柏芝     |
++------+--------+------+--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.name
+    -> FROM boy JOIN LEFT girl ON boy.hid=gril.hid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT girl ON boy.hid=gril.hid' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.name
+    -> FROM boy JOIN LEFT girl ON boy.hid=girl.hid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT girl ON boy.hid=girl.hid' at line 2
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy JOIN LEFT gril;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT gril' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy JOIN LEFT girl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT girl' at line 2
+mysql>
+mysql>
+mysql> SELECT * FROM girl;
++------+--------+
+| hid  | gname  |
++------+--------+
+| B    | 小龙女     |
+| C    | 张柏芝     |
+| D    | 死宅女     |
++------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM boy;
++------+--------+
+| hid  | bname  |
++------+--------+
+| A    | 屌丝      |
+| B    | 杨过       |
+| C    | 陈冠希     |
++------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy,girl;
++------+--------+------+--------+
+| hid  | bname  | hid  | gname  |
++------+--------+------+--------+
+| A    | 屌丝      | B    | 小龙女     |
+| B    | 杨过       | B    | 小龙女     |
+| C    | 陈冠希     | B    | 小龙女     |
+| A    | 屌丝      | C    | 张柏芝     |
+| B    | 杨过       | C    | 张柏芝     |
+| C    | 陈冠希     | C    | 张柏芝     |
+| A    | 屌丝      | D    | 死宅女     |
+| B    | 杨过       | D    | 死宅女     |
+| C    | 陈冠希     | D    | 死宅女     |
++------+--------+------+--------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy JOIN LEFT gril;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'LEFT gril' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy LEFT JOIN girl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy LEFT JOIN girl;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near '' at line 2
+mysql> SELECT boy.hid, boy.bname, girl.hid, girl.gname
+    -> FROM boy LEFT JOIN girl ON boy.hid=girl.hid;
++------+--------+------+--------+
+| hid  | bname  | hid  | gname  |
++------+--------+------+--------+
+| A    | 屌丝      | NULL | NULL   |
+| B    | 杨过       | B    | 小龙女     |
+| C    | 陈冠希     | C    | 张柏芝     |
++------+--------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql>
+mysql> SELECT girl.hid, girl.gname, boy.hid, boy.bname
+    -> FROM girl RIGHT JOIN boy ON girl.hid=boy.hid;
++------+--------+------+--------+
+| hid  | gname  | hid  | bname  |
++------+--------+------+--------+
+| NULL | NULL   | A    | 屌丝      |
+| B    | 小龙女     | B    | 杨过       |
+| C    | 张柏芝     | C    | 陈冠希     |
++------+--------+------+--------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT goods_name, cat_name, shop_price
+    -> FROM goods LEFT JOIN category
+    -> ON goods.cat_id=category.cat_id;
++------------------------------+-------------------+------------+
+| goods_name                   | cat_name          | shop_price |
++------------------------------+-------------------+------------+
+| kd876                        | 3G手机               |    1388.00 |
+| 诺基亚n85原装充电器                       | 耳机                  |      58.00 |
+| 诺基亚原装5800耳机                      | 耳机                  |      68.00 |
+| 索爱原装m2卡读卡器                         | 读卡器和内存卡               |      20.00 |
+| 胜创kingmax内存卡                  | 读卡器和内存卡               |      42.00 |
+| 诺基亚n85原装立体声耳机hs-82                  | 耳机                  |     100.00 |
+| 飞利浦9@9v                         | GSM手机              |     399.00 |
+| 诺基亚e66                         | GSM手机              |    2298.00 |
+| 索爱c702c                        | GSM手机              |    1328.00 |
+| 索爱c702c                        | GSM手机              |    1300.00 |
+| 摩托罗拉a810                        | GSM手机              |     983.00 |
+| 诺基亚5320 xpressmusic            | GSM手机              |    1311.00 |
+| 诺基亚5800xm                      | 3G手机               |    2625.00 |
+| 摩托罗拉a810                        | GSM手机              |     788.00 |
+| 恒基伟业g101                       | CDMA手机             |     823.33 |
+| 夏新n7                           | GSM手机              |    2300.00 |
+| 夏新t5                           | 3G手机               |    2878.00 |
+| 三星sgh-f258                     | GSM手机              |     858.00 |
+| 三星bc01                         | GSM手机              |     280.00 |
+| 金立 a30                         | GSM手机              |    2000.00 |
+| 多普达touch hd                    | GSM手机              |    5999.00 |
+| 诺基亚n96                         | 双模手机               |    3700.00 |
+| p806                         | GSM手机              |    2000.00 |
+| 小灵通/固话50元充值卡                     | 小灵通/固话充值卡             |      48.00 |
+| 小灵通/固话20元充值卡                     | 小灵通/固话充值卡             |      19.00 |
+| 联通100元充值卡                       | 联通手机充值卡               |      95.00 |
+| 联通50元充值卡                        | 联通手机充值卡               |      45.00 |
+| 移动100元充值卡                       | 移动手机充值卡               |      90.00 |
+| 移动20元充值卡                        | 移动手机充值卡               |      18.00 |
+| 摩托罗拉e8                          | GSM手机              |    1337.00 |
+| 诺基亚n85                         | GSM手机              |    3010.00 |
++------------------------------+-------------------+------------+
+31 rows in set (0.00 sec)
+
+mysql> SELECT goods_name, cat_name, shop_price FROM
+    -> goods LEFT JOIN category
+    -> ON goods.cat_id = category.cat_id
+    -> WHERE goods.cat_id = 4;
++--------------+----------+------------+
+| goods_name   | cat_name | shop_price |
++--------------+----------+------------+
+| kd876        | 3G手机      |    1388.00 |
+| 诺基亚5800xm      | 3G手机      |    2625.00 |
+| 夏新t5           | 3G手机      |    2878.00 |
++--------------+----------+------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT goods_name, cat_name, brand_name FROM
+    -> goods LEFT JOIN category
+    -> ON goods.cat_id = category.cat_id
+    -> LEFT JOIN brand
+    -> ON goods.brand_id = brand.brand_id
+    -> WHERE goods.cat_id = 4;
+ERROR 1146 (42S02): Table 'test.brand' doesn't exist
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| result         |
+| stu            |
+| t              |
+| user           |
++----------------+
+12 rows in set (0.00 sec)
+
+mysql> SELECT * FROM m;
++------+------+------+------+------------+
+| mid  | hid  | gid  | mres | matime     |
++------+------+------+------+------------+
+|    1 |    1 |    2 | 2:0  | 2006-05-21 |
+|    2 |    2 |    3 | 1:2  | 2006-06-21 |
+|    3 |    3 |    1 | 2:5  | 2006-06-25 |
+|    4 |    2 |    1 | 3:2  | 2006-07-21 |
++------+------+------+------+------------+
+4 rows in set (0.06 sec)
+
+mysql> SELETE * FROM t;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'SELETE * FROM t' at line 1
+mysql> SELECT * FROM t;
++------+----------+
+| tid  | tname    |
++------+----------+
+|    1 | 国安         |
+|    2 | 申花       |
+|    3 | 布尔联队         |
++------+----------+
+3 rows in set (0.03 sec)
+
+mysql> SELECT hid, t1.tname AS hname, mres, gid, t2.tname
+    -> AS gname, matime
+    -> FROM m LEFT JOIN t AS t1
+    -> ON m.hid = t1.hid
+    -> LEFT JOIN t AS t2
+    -> ON m.gid = t2.tid;
+ERROR 1054 (42S22): Unknown column 't1.hid' in 'on clause'
+mysql> select hid,t1.tname as hname ,mres,gid,t2.tname as gname,matime
+    -> from
+    -> m left join t as t1
+    -> on m.hid = t1.tid
+    -> left join t as t2
+    -> on m.gid = t2.tid;
++------+----------+------+------+----------+------------+
+| hid  | hname    | mres | gid  | gname    | matime     |
++------+----------+------+------+----------+------------+
+|    1 | 国安         | 2:0  |    2 | 申花       | 2006-05-21 |
+|    2 | 申花       | 1:2  |    3 | 布尔联队         | 2006-06-21 |
+|    3 | 布尔联队         | 2:5  |    1 | 国安         | 2006-06-25 |
+|    2 | 申花       | 3:2  |    1 | 国安         | 2006-07-21 |
++------+----------+------+------+----------+------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT hid, t1.name AS hname, mres, gid, t2.tname AS gname, matime
+    -> FROM
+    -> m LEFT JOIN t AS t1
+    -> ON m.hid = t1.tid
+    -> LEFT JOIN t AS t2
+    -> ON m.gid = t2.tid;
+ERROR 1054 (42S22): Unknown column 't1.name' in 'field list'
+mysql> SELECT hid, t1.name AS hn
+    -> FROM
+    -> m LEFT JOIN t AS t1
+    -> ON m.hid = t1.tid
+    -> LEFT JOIN t AS t2
+    -> ON m.gid = t2.tid;
+ERROR 1054 (42S22): Unknown column 't1.name' in 'field list'
+mysql> SELECT hid, t1.tname AS hn
+    -> FROM
+    -> m LEFT JOIN t AS t1
+    -> ON m.hid = t1.tid
+    -> LEFT JOIN t AS t2
+    -> ON m.gid = t2.tid;
++------+----------+
+| hid  | hn       |
++------+----------+
+|    1 | 国安         |
+|    2 | 申花       |
+|    3 | 布尔联队         |
+|    2 | 申花       |
++------+----------+
+4 rows in set (0.00 sec)
+
+mysql> cls
+    -> /c
+    -> \c
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql>
+mysql> SELECT hid, t1.tname as hname, mers, gid, matime
+    -> FROM m;
+ERROR 1054 (42S22): Unknown column 't1.tname' in 'field list'
+mysql> SELECT hid, hname, mers, gid, matime
+    -> FROM m;
+ERROR 1054 (42S22): Unknown column 'hname' in 'field list'
+mysql> SELECT hid, t1.tname as hname, mers, gid, matime
+    -> FROM
+    -> m LEFT JION t AS t1
+    -> ON m.hid = t1.hid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'JION t AS t1
+ON m.hid = t1.hid' at line 3
+mysql> SELECT * FROM
+    -> m LEFT JOIN t AS t1
+    -> ON m.hid = t1.tid;
++------+------+------+------+------------+------+----------+
+| mid  | hid  | gid  | mres | matime     | tid  | tname    |
++------+------+------+------+------------+------+----------+
+|    1 |    1 |    2 | 2:0  | 2006-05-21 |    1 | 国安         |
+|    2 |    2 |    3 | 1:2  | 2006-06-21 |    2 | 申花       |
+|    3 |    3 |    1 | 2:5  | 2006-06-25 |    3 | 布尔联队         |
+|    4 |    2 |    1 | 3:2  | 2006-07-21 |    2 | 申花       |
++------+------+------+------+------------+------+----------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT hid, t1.tname AS hname, mres, gid, t2.tname AS gname, matime
+    -> FROM
+    -> m LEFT JOIN t AS t1
+    -> ON left m.hid=t1.tid
+    -> LEFT JOIN t AS t2
+    -> ON gid = t2.tid;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'm.hid=t1.tid
+LEFT JOIN t AS t2
+ON gid = t2.tid' at line 4
+mysql>  SELECT hid, t1.tname AS hname, mres, gid, t2.tname AS gname, matime
+    ->  FROM
+    ->  m LEFT JOIN t AS t1
+    ->  ON m.hid=t1.tid
+    ->  LEFT JOIN t AS t2
+    ->  ON gid = t2.tid;
++------+----------+------+------+----------+------------+
+| hid  | hname    | mres | gid  | gname    | matime     |
++------+----------+------+------+----------+------------+
+|    1 | 国安         | 2:0  |    2 | 申花       | 2006-05-21 |
+|    2 | 申花       | 1:2  |    3 | 布尔联队         | 2006-06-21 |
+|    3 | 布尔联队         | 2:5  |    1 | 国安         | 2006-06-25 |
+|    2 | 申花       | 3:2  |    1 | 国安         | 2006-07-21 |
++------+----------+------+------+----------+------------+
+4 rows in set (0.00 sec)
+
+mysql>
+mysql>  SELECT hid, t1.tname AS hname, mres, gid, t2.tname AS gname, matime
+    ->  FROM
+    ->  m LEFT JOIN t AS t1
+    ->  ON m.hid=t1.tid
+    ->  LEFT JOIN t AS t2
+    ->  ON gid = t2.tid
+    -> WHERE matime
+    -> BETWEENT '2006-6-1' AND '2006-7-1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'BETWEENT '2006-6-1' AND '2006-7-1'' at line 8
+mysql>  SELECT hid, t1.tname AS hname, mres, gid, t2.tname AS gname, matime
+    ->  FROM
+    ->  m LEFT JOIN t AS t1
+    ->  ON m.hid=t1.tid
+    ->  LEFT JOIN t AS t2
+    ->  ON gid = t2.tid
+    -> WHERE matime
+    -> BETWEEN '2006-6-1' AND '2006-7-1';
++------+----------+------+------+----------+------------+
+| hid  | hname    | mres | gid  | gname    | matime     |
++------+----------+------+------+----------+------------+
+|    2 | 申花       | 1:2  |    3 | 布尔联队         | 2006-06-21 |
+|    3 | 布尔联队         | 2:5  |    1 | 国安         | 2006-06-25 |
++------+----------+------+------+----------+------------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM a,b
+    -> ;
++------+------+------+------+
+| id   | num  | id   | num  |
++------+------+------+------+
+| a    |    5 | b    |    5 |
+| b    |   10 | b    |    5 |
+| c    |   15 | b    |    5 |
+| d    |   10 | b    |    5 |
+| a    |    5 | c    |   15 |
+| b    |   10 | c    |   15 |
+| c    |   15 | c    |   15 |
+| d    |   10 | c    |   15 |
+| a    |    5 | d    |   20 |
+| b    |   10 | d    |   20 |
+| c    |   15 | d    |   20 |
+| d    |   10 | d    |   20 |
+| a    |    5 | e    |   99 |
+| b    |   10 | e    |   99 |
+| c    |   15 | e    |   99 |
+| d    |   10 | e    |   99 |
++------+------+------+------+
+16 rows in set (0.27 sec)
+
+mysql> SELECT * FROM a,b
+    -> WHERE a.num = b.num;
++------+------+------+------+
+| id   | num  | id   | num  |
++------+------+------+------+
+| a    |    5 | b    |    5 |
+| c    |   15 | c    |   15 |
++------+------+------+------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM a
+    -> UNION ALL
+    -> SELECT * FROM b
+    -> ;
++------+------+
+| id   | num  |
++------+------+
+| a    |    5 |
+| b    |   10 |
+| c    |   15 |
+| d    |   10 |
+| b    |    5 |
+| c    |   15 |
+| d    |   20 |
+| e    |   99 |
++------+------+
+8 rows in set (0.25 sec)
+
+mysql> SELECT * FROM A
+    -> \c;
+ERROR:
+No query specified
+
+mysql> SELECT * FROM a
+    -> UNION
+    -> SELECT * FROM b;
++------+------+
+| id   | num  |
++------+------+
+| a    |    5 |
+| b    |   10 |
+| c    |   15 |
+| d    |   10 |
+| b    |    5 |
+| d    |   20 |
+| e    |   99 |
++------+------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT * FROM a
+    -> UNION
+    -> SELECT * FROM b;
++------+------+
+| id   | num  |
++------+------+
+| a    |    5 |
+| b    |   10 |
+| c    |   15 |
+| d    |   10 |
+| b    |    5 |
+| d    |   20 |
+| e    |   99 |
++------+------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT * FROM a
+    -> UNION ALL
+    -> SELECT * FROM b;
++------+------+
+| id   | num  |
++------+------+
+| a    |    5 |
+| b    |   10 |
+| c    |   15 |
+| d    |   10 |
+| b    |    5 |
+| c    |   15 |
+| d    |   20 |
+| e    |   99 |
++------+------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT id, SUM(num) FROM(
+    -> SELECT * FROM a
+    -> UNION ALL
+    -> SELECT * FROM b
+    -> ) AS tmp GROUP BY id;
++------+----------+
+| id   | SUM(num) |
++------+----------+
+| a    |        5 |
+| b    |       15 |
+| c    |       30 |
+| d    |       30 |
+| e    |       99 |
++------+----------+
+5 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name
+    -> FROM goods WHERE
+    -> goods_id = (SELECT MAX(goods_id) FROM goods);
++----------+------------+
+| goods_id | goods_name |
++----------+------------+
+|       32 | 诺基亚n85       |
++----------+------------+
+1 row in set (0.00 sec)
+
+mysql> SHOW TABLES;
++----------------+
+| Tables_in_test |
++----------------+
+| a              |
+| b              |
+| boy            |
+| category       |
+| girl           |
+| goods          |
+| m              |
+| mian           |
+| result         |
+| stu            |
+| t              |
+| user           |
++----------------+
+12 rows in set (0.00 sec)
+
+mysql> SELECT goods_id, goods_name, category.cat_name
+    -> FROM goods LEFT JOIN
+    -> category ON
+    -> goods.cat_id = category.cat_id;
++----------+------------------------------+-------------------+
+| goods_id | goods_name                   | cat_name          |
++----------+------------------------------+-------------------+
+|        1 | kd876                        | 3G手机               |
+|        4 | 诺基亚n85原装充电器                       | 耳机                  |
+|        3 | 诺基亚原装5800耳机                      | 耳机                  |
+|        5 | 索爱原装m2卡读卡器                         | 读卡器和内存卡               |
+|        6 | 胜创kingmax内存卡                  | 读卡器和内存卡               |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  | 耳机                  |
+|        8 | 飞利浦9@9v                         | GSM手机              |
+|        9 | 诺基亚e66                         | GSM手机              |
+|       10 | 索爱c702c                        | GSM手机              |
+|       11 | 索爱c702c                        | GSM手机              |
+|       12 | 摩托罗拉a810                        | GSM手机              |
+|       13 | 诺基亚5320 xpressmusic            | GSM手机              |
+|       14 | 诺基亚5800xm                      | 3G手机               |
+|       15 | 摩托罗拉a810                        | GSM手机              |
+|       16 | 恒基伟业g101                       | CDMA手机             |
+|       17 | 夏新n7                           | GSM手机              |
+|       18 | 夏新t5                           | 3G手机               |
+|       19 | 三星sgh-f258                     | GSM手机              |
+|       20 | 三星bc01                         | GSM手机              |
+|       21 | 金立 a30                         | GSM手机              |
+|       22 | 多普达touch hd                    | GSM手机              |
+|       23 | 诺基亚n96                         | 双模手机               |
+|       24 | p806                         | GSM手机              |
+|       25 | 小灵通/固话50元充值卡                     | 小灵通/固话充值卡             |
+|       26 | 小灵通/固话20元充值卡                     | 小灵通/固话充值卡             |
+|       27 | 联通100元充值卡                       | 联通手机充值卡               |
+|       28 | 联通50元充值卡                        | 联通手机充值卡               |
+|       29 | 移动100元充值卡                       | 移动手机充值卡               |
+|       30 | 移动20元充值卡                        | 移动手机充值卡               |
+|       31 | 摩托罗拉e8                          | GSM手机              |
+|       32 | 诺基亚n85                         | GSM手机              |
++----------+------------------------------+-------------------+
+31 rows in set (0.00 sec)
+
+mysql> goods.cat_id = category.cat_id; SELECT hid, t1.tname AS hname, mres, gid, t2.tname AS gname, matime
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'goods.cat_id = category.cat_id' at line 1
+    ->  FROM
+    ->  m LEFT JOIN t AS t1
+    ->  ON m.hid=t1.tid
+    ->  LEFT JOIN t AS t2
+    ->  ON gid = t2.tid;
++------+----------+------+------+----------+------------+
+| hid  | hname    | mres | gid  | gname    | matime     |
++------+----------+------+------+----------+------------+
+|    1 | 国安         | 2:0  |    2 | 申花       | 2006-05-21 |
+|    2 | 申花       | 1:2  |    3 | 布尔联队         | 2006-06-21 |
+|    3 | 布尔联队         | 2:5  |    1 | 国安         | 2006-06-25 |
+|    2 | 申花       | 3:2  |    1 | 国安         | 2006-07-21 |
++------+----------+------+------+----------+------------+
+4 rows in set (0.00 sec)
+
+mysql>  SELECT goods_id, goods_name, category.cat_name
+    ->  FROM goods LEFT JOIN
+    ->  category ON
+    ->  goods.cat_id = category.cat_id
+    ->  WHERE goods.id = 19;
+ERROR 1054 (42S22): Unknown column 'goods.id' in 'where clause'
+mysql>  SELECT goods_id, goods_name, category.cat_name
+    ->  FROM goods LEFT JOIN
+    ->  category ON
+    ->  goods.cat_id = category.cat_id
+    ->  WHRE goods_id = 19;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version
+ for the right syntax to use near 'WHRE goods_id = 19' at line 5
+mysql>  SELECT goods_id, goods_name, category.cat_name
+    ->  FROM goods LEFT JOIN
+    ->  category ON
+    ->  goods.cat_id = category.cat_id;
++----------+------------------------------+-------------------+
+| goods_id | goods_name                   | cat_name          |
++----------+------------------------------+-------------------+
+|        1 | kd876                        | 3G手机               |
+|        4 | 诺基亚n85原装充电器                       | 耳机                  |
+|        3 | 诺基亚原装5800耳机                      | 耳机                  |
+|        5 | 索爱原装m2卡读卡器                         | 读卡器和内存卡               |
+|        6 | 胜创kingmax内存卡                  | 读卡器和内存卡               |
+|        7 | 诺基亚n85原装立体声耳机hs-82                  | 耳机                  |
+|        8 | 飞利浦9@9v                         | GSM手机              |
+|        9 | 诺基亚e66                         | GSM手机              |
+|       10 | 索爱c702c                        | GSM手机              |
+|       11 | 索爱c702c                        | GSM手机              |
+|       12 | 摩托罗拉a810                        | GSM手机              |
+|       13 | 诺基亚5320 xpressmusic            | GSM手机              |
+|       14 | 诺基亚5800xm                      | 3G手机               |
+|       15 | 摩托罗拉a810                        | GSM手机              |
+|       16 | 恒基伟业g101                       | CDMA手机             |
+|       17 | 夏新n7                           | GSM手机              |
+|       18 | 夏新t5                           | 3G手机               |
+|       19 | 三星sgh-f258                     | GSM手机              |
+|       20 | 三星bc01                         | GSM手机              |
+|       21 | 金立 a30                         | GSM手机              |
+|       22 | 多普达touch hd                    | GSM手机              |
+|       23 | 诺基亚n96                         | 双模手机               |
+|       24 | p806                         | GSM手机              |
+|       25 | 小灵通/固话50元充值卡                     | 小灵通/固话充值卡             |
+|       26 | 小灵通/固话20元充值卡                     | 小灵通/固话充值卡             |
+|       27 | 联通100元充值卡                       | 联通手机充值卡               |
+|       28 | 联通50元充值卡                        | 联通手机充值卡               |
+|       29 | 移动100元充值卡                       | 移动手机充值卡               |
+|       30 | 移动20元充值卡                        | 移动手机充值卡               |
+|       31 | 摩托罗拉e8                          | GSM手机              |
+|       32 | 诺基亚n85                         | GSM手机              |
++----------+------------------------------+-------------------+
+31 rows in set (0.00 sec)
+
+mysql>  SELECT goods_id, goods_name, category.cat_name
+    ->  FROM goods LEFT JOIN
+    ->  category ON
+    ->  goods.cat_id = category.cat_id
+    ->  WHERE goods_id = 19;
++----------+--------------+----------+
+| goods_id | goods_name   | cat_name |
++----------+--------------+----------+
+|       19 | 三星sgh-f258     | GSM手机     |
++----------+--------------+----------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM category
+    -> WHERE EXISTS
+    -> (SELECT * FROM goods WHERE goods.cat_id=category.cat_id);
++--------+-------------------+-----------+
+| cat_id | cat_name          | parent_id |
++--------+-------------------+-----------+
+|      2 | CDMA手机             |         1 |
+|      3 | GSM手机              |         1 |
+|      4 | 3G手机               |         1 |
+|      5 | 双模手机               |         1 |
+|      8 | 耳机                  |         6 |
+|     11 | 读卡器和内存卡               |         6 |
+|     13 | 小灵通/固话充值卡             |        12 |
+|     14 | 移动手机充值卡               |        12 |
+|     15 | 联通手机充值卡               |        12 |
++--------+-------------------+-----------+
+9 rows in set (0.00 sec)
+
+mysql> #查询出所有商品的栏目
+mysql> SELECT * FROM catgory
+    -> WHERE EXISTS
+    -> (SELECT * FROM goods WHERE goods.cat_id = category.cat_id);
+ERROR 1146 (42S02): Table 'test.catgory' doesn't exist
+mysql> SELECT 8 FROM category
+    -> WHERE EXISTS
+    -> (SELECT * FROM goods WHERE goods.cat_id = category.cat_id);
++---+
+| 8 |
++---+
+| 8 |
+| 8 |
+| 8 |
+| 8 |
+| 8 |
+| 8 |
+| 8 |
+| 8 |
+| 8 |
++---+
+9 rows in set (0.00 sec)
+
+mysql>  SELECT * FROM category
+    ->  WHERE EXISTS
+    ->  (SELECT * FROM goods WHERE goods.cat_id = category.cat_id);
++--------+-------------------+-----------+
+| cat_id | cat_name          | parent_id |
++--------+-------------------+-----------+
+|      2 | CDMA手机             |         1 |
+|      3 | GSM手机              |         1 |
+|      4 | 3G手机               |         1 |
+|      5 | 双模手机               |         1 |
+|      8 | 耳机                  |         6 |
+|     11 | 读卡器和内存卡               |         6 |
+|     13 | 小灵通/固话充值卡             |        12 |
+|     14 | 移动手机充值卡               |        12 |
+|     15 | 联通手机充值卡               |        12 |
++--------+-------------------+-----------+
+9 rows in set (0.00 sec)
+
+mysql>
