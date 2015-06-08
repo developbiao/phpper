@@ -1,0 +1,141 @@
+一、Mysql视图
+视图：view
+view又被称为虚拟表，view是sql的查的查询结果
+CREATE VIEW 虚拟表名 AS 【sql语句】
+
+有什么用？
+1：权限控制时可以使用
+ 比如，某几个列，允许用户查询，其它列不允许
+可以通过视图，开放其中一列或几列，直到权限控制的作用
+
+2：简化复杂的查询
+查询每个栏目下商品的平均价格，并按平均价格排序，查出平均价前3高的栏目
+
+方法（1）：
+SELECT temp.cat_id,cat_name, temp.avg FROM category
+LEFT JOIN
+(SELECT goods.cat_id, AVG(goods.shop_price)AS 'avg' FROM goods
+GROUP BY goods.cat_id) AS temp ON category.cat_id = temp.cat_id;
+
+方法（2）：
+SELECT temp.cat_id, category.cat_name, temp.avg AS '平均价格' FROM
+(SELECT goods.cat_id, AVG(goods.shop_price)AS 'avg' FROM goods
+GROUP BY goods.cat_id) AS temp
+LEFT JOIN category ON temp.cat_id = category.cat_id;
+
+3：视图能不能更新，删除，添加？
+答：如果视图的每一行，是与物理表，一一对应的，则可以
+view的行是由物理表多行经过计算得到的结果,view不可以更新的
+
+二、视图的algorithm
+视图放哪儿了（存储的都是语句）
+1、笔记：
+对于简单查询形在的view，再对view查询时，如where order,等等可以把建视图语句+查询视图的语句---->合并成--->查物理表的语句这种视图的算法叫merge(合并)
+
+
+也可能，视图的语句本身比较复杂，很难再和查询视图的语句合并，mysql可以先执行视图的创建语句，把结果集形成到内存的临时表，然后再去查临时表，temptable
+
+2、表视图常用操作
+查看所有表  show tables;
+查看表结构 desc 表名/视图名
+查看建表过程 show create table 表名
+查看建视图过程  show create view 视图名
+
+删除表:drop table 表名
+删除视图:drop view 视图名
+
+查表看详细信息 SHOW TABLE status \G
+查看某张表详细信息 shwo table status where name='表名';
+改表名 rename tale OldName to newName;
+清空数据表 runcate(相当于删除表，再重建)
+
+
+二、存储引擎的概念
+Myisam、InnoDB、BDB、Memory 、Archive
+
+
+
+特点：
+
+
+
+
+
+
+三、字符集与乱码问题
+字符集、校对集、乱码
+解决gbk客户端乱码:set names gbk;
+校对集就是排序规则
+
+
+
+解决乱码设置
+
+
+
+三、索引概念
+索引是数据的目录，能快速定位行数据位置
+索引提高了查询速度，降低了增删改的速度，并非加的越快越好。
+一般在查询频率列上加，而且在重复度低的列上加效果更好
+
+SHOW INDEX SHOW  '表格' --详细看索引
+explain SELECT * FROM '表名' WHERE 条件 \G  ----查看使用到的索引
+
+1、索引的类型
+key, 普通索引.
+unique key，唯一索引
+primary key, 主键索引
+fulltext 全文索引(中文环境下，全文索引无效，要加分词+索引，一般用每三方解决方案，如sphinx)
+
+索引长度：建索引时，可以只索引列的前一部分的内容，比如，前10个字符如
+key email(email(10));
+多列索引，就是把2列或多列的值看成一个整体，然后建索引
+冗余索引，就是在某个列上，可以存在多个索引比如xm(xing, ming), ming(ming)
+
+练习snapshot01
+
+
+
+
+
+
+
+2、索引的操作
+查看:show index from 表名，或show create table 表格 也能看到
+删除 ：alter table 表名 drop index 索引名
+或drop index 索引名 on 表名
+
+添加索引
+alter table 表格 add [index/unique](列名称);
+
+添加主键索引
+alter table 表名 add primary key(列名称)
+删除主键索引
+alter table 表名 drop primary key;
+
+四、Mysql中的常用函数
+1、示例截取email部分
+SELECT LEFT(email, POSITION('@' IN email) -1) FROM t6;
+
+作业：学习常用函数
+
+五、事务
+1、了解事务的概念及用法
+notepad:  只有 innodb 下才能开启事务 
+-------------------------------------------
+start trasaction;   --开启事务
+rollback;  --回滚
+commit;  --提交 
+特点：原子型、隔离性、持久性
+
+
+
+
+
+
+
+
+
+
+
+
