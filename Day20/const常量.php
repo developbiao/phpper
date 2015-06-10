@@ -1,4 +1,7 @@
 <?php
+/*
+
+*/
 header('Content-Type:text/html; charset=utf-8');
 class A{
 	const c = "ConstA";
@@ -14,5 +17,5 @@ class B extends A{
 }
 
 $b = new B();
-$b->m();
+$b->m(); //输出ConstA
 ?>
