@@ -56,19 +56,5 @@ $fr->show();
 /*
 Fatal error: Cannot override final method Human::Say()
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ?>
+
