@@ -7,7 +7,7 @@
 header('Content-Type:text/html; charset=utf-8');
 
 for($file='./a.txt', $i=0; $i<100; $i++){
-	clearstatcache(false, $file);
+	clearstatcache(); //清除缓存
 	echo filesize($file),'<br />';
 	$fh = fopen($file, 'ab');
 	fwrite($fh, $i."\r\n");

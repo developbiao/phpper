@@ -57,7 +57,9 @@ class Log{
 
 		//要是存在，则判断大小 
 
+		//清除缓存解决每次文件大小不同
 		$size = filesize($log);
+		clearstatcache();
 		if($size <= 1024 * 1024){ //大于1M
 			return $log;
 		}
