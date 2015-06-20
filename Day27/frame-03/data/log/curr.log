@@ -16,3 +16,15 @@
 2015-06-20 13:33:26--->USE boolshop
 2015-06-20 13:33:26--->set names utf8
 2015-06-20 13:33:26--->select * from test
+2015-06-20 13:56:07--->USE boolshop
+2015-06-20 13:56:07--->set names utf8
+2015-06-20 13:56:07--->insert into test(t1,t2) value ('frontuser','frontuser')
+2015-06-20 13:56:29--->USE boolshop
+2015-06-20 13:56:29--->set names utf8
+2015-06-20 13:56:29--->select * from test
+2015-06-20 13:57:04--->USE boolshop
+2015-06-20 13:57:04--->set names utf8
+2015-06-20 13:57:04--->select * from test
+2015-06-20 13:58:02--->USE boolshop
+2015-06-20 13:58:02--->set names utf8
+2015-06-20 13:58:02--->select * from test

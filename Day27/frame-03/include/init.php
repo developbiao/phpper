@@ -12,13 +12,18 @@ define('ROOT',str_replace('\\', '/', dirname(dirname(__FILE__))).'/');
 define('DEBUG', true);
 
 
-require(ROOT.'include/db.class.php'); // 导入数据库操作类
-require(ROOT.'include/mysql.class.php'); //导入mysql数据库操作类
-require(ROOT.'Model/Model.class.php');
-require(ROOT.'Model/TestModel.class.php');
-require(ROOT.'include/conf.class.php'); //导入参数类
-require(ROOT.'include/log.class.php'); //导入日志类
 require(ROOT.'include/lib_base.php'); //导入数据转义
+
+
+
+//自动加载类
+function __autoload($class){
+	if(strtolower(substr($class, -5)) == 'model'){
+		require(ROOT.'Model/'.$class.'.class.php'); //判断加载model类
+	}else{
+		require(ROOT.'include/'.$class.'.class.php');
+	}
+}
 
 
 //过虑参数，用递归的试过虑$_GET,$POST,$COOKIE
