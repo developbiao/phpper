@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>目录列表</title>
+<style type="text/css">
+table{
+	border:1px solid green;
+	background:#ccc;
+}
+</style>
+<body>
+	<table>
+		<tr>
+			<td>目录ID</td>
+			<td>目录名称</td>
+			<td>目录简介</td>
+		</tr>
+		<?php foreach($list as $v){?>
+		<tr>
+			<td><?php echo $v['id'];?></td>
+			<td><?php echo $v['catename'];?></td>
+			<td><?php echo $v['intro']?>
+		</tr>
+		<?php }?>
+	</table>
+</body>
+</html>

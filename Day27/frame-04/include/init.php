@@ -3,7 +3,7 @@
 file init.php
 作用：框架初始化
 */
-defined('ACC') || exit('ACC Denied!'); //常量检查机制，防跳墙非法访问
+defined('ACC') || exit('ACC Denied!');
 //初始化当前绝对路径
 //换成下斜线是因为win/linux都支持正斜线
 define('ROOT',str_replace('\\', '/', dirname(dirname(__FILE__))).'/');

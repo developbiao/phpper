@@ -28,3 +28,32 @@
 2015-06-20 13:58:02--->USE boolshop
 2015-06-20 13:58:02--->set names utf8
 2015-06-20 13:58:02--->select * from test
+2015-06-20 14:39:54--->USE boolshop
+2015-06-20 14:39:54--->set names utf8
+2015-06-20 14:39:54--->select * from test
+2015-06-20 15:08:01--->USE boolshop
+2015-06-20 15:08:01--->set names utf8
+2015-06-20 15:08:01--->insert into cate(catename,intro) value ('hello','time')
+2015-06-20 15:15:45--->USE boolshop
+2015-06-20 15:15:45--->set names utf8
+2015-06-20 15:15:45--->insert into cate(catename,intro) value ('手机','Android手机')
+2015-06-20 15:15:45--->SELECT * FROM cate
+2015-06-20 15:17:20--->USE boolshop
+2015-06-20 15:17:20--->set names utf8
+2015-06-20 15:17:20--->insert into cate(catename,intro) value ('iphone6','土豪机')
+2015-06-20 15:17:20--->SELECT * FROM cate
+2015-06-20 15:17:49--->USE boolshop
+2015-06-20 15:17:49--->set names utf8
+2015-06-20 15:17:49--->insert into cate(catename,intro) value ('MacBook','高大上的，编程电脑')
+2015-06-20 15:17:49--->SELECT * FROM cate
+2015-06-20 15:25:53--->USE boolshop
+2015-06-20 15:25:53--->set names utf8
+2015-06-20 15:25:53--->insert into cate(catename,intro) value ('台式机器','小涛的电脑没什么用处')
+2015-06-20 15:25:53--->SELECT * FROM cate
+2015-06-20 15:26:05--->USE boolshop
+2015-06-20 15:26:05--->set names utf8
+2015-06-20 15:26:05--->insert into cate(catename,intro) value ('','')
+2015-06-20 15:26:05--->SELECT * FROM cate
+2015-06-20 15:52:57--->USE boolshop
+2015-06-20 15:52:57--->set names utf8
+2015-06-20 15:52:57--->select * from test

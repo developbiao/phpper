@@ -3,6 +3,7 @@
 mysql数据库类继承于db类
 */
 defined('ACC') || exit('ACC Denied!');
+
 class mysql extends db{
 	private static $ins = NULL;
 	private $conn = NULL;

@@ -1,4 +1,5 @@
 <?php
+defined('ACC') || exit('ACC Denied!');
 class TestModel extends Model{
 	protected $table = 'test';
 	//用户注册

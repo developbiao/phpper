@@ -1,5 +1,9 @@
 <?php
-//用户列表业
+
+//允许访问设置ACC 为true
+
+define('ACC', ture);
+//用户列表
 require('./include/init.php');
 $test = new TestModel();
 $list = $test->select();
