@@ -1,19 +1,19 @@
 <?php
-class TestModel{
+class TestModel extends Model{
 	protected $table = 'test';
-	protected $db = NULL;
-
-	//用户注册的方法
-	/*
-	$data array();
-	*/
-
-	public function __construct(){
-		$this->db = mysql::getIns();//db对象就是msyql的实例
-	}
-
+	//用户注册
 	public function reg($data){
 		return $this->db->autoExecute($this->table, $data, 'insert');
 	}
+
+
+	//取所有数据
+
+	public function select(){
+		return $this->db->getAll('select * from '.$this->table);
+	}
+
+
+
 }
 ?>

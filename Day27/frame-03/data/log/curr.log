@@ -1,47 +1,18 @@
-2015-06-20 11:32:25--->USE boolshop
-2015-06-20 11:32:25--->set names utf-8
-2015-06-20 11:32:55--->USE boolshop
-2015-06-20 11:32:55--->set names utf-8
-2015-06-20 11:32:55--->INSERT INTO  test(t1, t2) VALUES('ttt2', 'ttt2')
-2015-06-20 11:33:39--->USE boolshop
-2015-06-20 11:33:39--->set names utf-8
-2015-06-20 11:33:39--->INSERT INTO  test(t1, t2) VALUES('tt1', 'ttt2')
-2015-06-20 11:34:30--->USE boolshop
-2015-06-20 11:34:30--->set names utf-8
-2015-06-20 11:34:30--->INSERT INTO  test(t1, t2) VALUES('tt1', 'ttt2')
-2015-06-20 11:34:30--->USE boolshop
-2015-06-20 11:34:30--->set names utf-8
-2015-06-20 11:34:30--->INSERT INTO  test(t1, t2) VALUES('tt1', 'ttt2')
-2015-06-20 11:34:30--->USE boolshop
-2015-06-20 11:34:30--->set names utf-8
-2015-06-20 11:34:30--->INSERT INTO  test(t1, t2) VALUES('tt1', 'ttt2')
-2015-06-20 11:34:31--->USE boolshop
-2015-06-20 11:34:31--->set names utf-8
-2015-06-20 11:34:31--->INSERT INTO  test(t1, t2) VALUES('tt1', 'ttt2')
-2015-06-20 11:36:38--->USE boolshop
-2015-06-20 11:36:38--->set names utf-8
-2015-06-20 11:36:38--->INSERT INTO  test(t1, t2) VALUES('aaaa\\\'\\\'', 'cat\\\'')
-2015-06-20 11:37:57--->USE boolshop
-2015-06-20 11:37:57--->set names utf8
-2015-06-20 11:37:57--->INSERT INTO  test(t1, t2) VALUES('\\\"smail', '\\\'losse\\\'')
-2015-06-20 11:42:47--->USE boolshop
-2015-06-20 11:42:47--->set names utf8
-2015-06-20 11:44:21--->USE boolshop
-2015-06-20 11:44:21--->set names utf8
-2015-06-20 11:44:41--->USE boolshop
-2015-06-20 11:44:41--->set names utf8
-2015-06-20 11:47:28--->USE boolshop
-2015-06-20 11:47:28--->set names utf8
-2015-06-20 11:47:28--->insert into test(t1,t2) value ('tttt1','ttt2')
-2015-06-20 12:09:15--->USE boolshop
-2015-06-20 12:09:15--->set names utf8
-2015-06-20 12:09:15--->insert into test(t1,t2) value ('adminuser','adminuser')
-2015-06-20 12:12:07--->USE boolshop
-2015-06-20 12:12:07--->set names utf8
-2015-06-20 12:12:07--->insert into test(frontuser) value ('frontuser')
-2015-06-20 12:13:36--->USE boolshop
-2015-06-20 12:13:36--->set names utf8
-2015-06-20 12:13:36--->insert into test(frontuser) value ('frontuser')
-2015-06-20 12:15:08--->USE boolshop
-2015-06-20 12:15:08--->set names utf8
-2015-06-20 12:15:08--->insert into test(t1,t2) value ('frontuser','frontuser')
+2015-06-20 13:14:49--->USE boolshop
+2015-06-20 13:14:49--->set names utf8
+2015-06-20 13:14:49--->insert into (t1,t2) value ('frontuser','frontuser')
+2015-06-20 13:16:55--->USE boolshop
+2015-06-20 13:16:55--->set names utf8
+2015-06-20 13:16:55--->insert into test(t1,t2) value ('frontuser','frontuser')
+2015-06-20 13:21:28--->USE boolshop
+2015-06-20 13:21:28--->set names utf8
+2015-06-20 13:21:28--->select * from test
+2015-06-20 13:30:22--->USE boolshop
+2015-06-20 13:30:22--->set names utf8
+2015-06-20 13:30:22--->select * from test
+2015-06-20 13:31:49--->USE boolshop
+2015-06-20 13:31:49--->set names utf8
+2015-06-20 13:31:49--->select * from test
+2015-06-20 13:33:26--->USE boolshop
+2015-06-20 13:33:26--->set names utf8
+2015-06-20 13:33:26--->select * from test
