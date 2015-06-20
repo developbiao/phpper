@@ -25,7 +25,10 @@ echo '<pre>';
 $t1 = $_GET['t1'];
 $t2 = $_GET['t2'];
 
+/*
 $sql = "INSERT INTO  test(t1, t2) VALUES('$t1', '$t2')";
 var_dump($mysql->query($sql));
+*/
+var_dump($mysql->autoExecute('test', $_GET, 'insert'));
 echo '<h3>程序已执行!</h3>';
 ?>

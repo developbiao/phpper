@@ -103,7 +103,7 @@ class mysql extends db{
 
 	//自动执行语句
 
-	public function autoExcute($table, $arr, $mode='insert', $where='1 limit 1'){
+	public function autoExecute($table, $arr, $mode='insert', $where='1 limit 1'){
 
 		if(!is_array($arr)){
 			return false;
@@ -124,6 +124,8 @@ class mysql extends db{
 		$sql .= ' value (\'';
 		$sql .= implode("','", array_values($arr));
 		$sql .= '\')';
+
+		return $this->query($sql);
 
 	}
 

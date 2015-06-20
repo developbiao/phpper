@@ -42,7 +42,7 @@ abstract class db{
 	$this->autoExcte('user', array('username'=>'zhangsan', 'email'=>'zanshan@gmail.com'), insert);
 	*/
 
-	public abstract function autoExcute($table, $data, $act='insert', $where='');
+	public abstract function autoExecute($table, $data, $act='insert', $where='');
 
 }
 ?>
