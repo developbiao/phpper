@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>ECSHOP 管理中心 - 商品分类 </title>
+<title>Dream 管理中心 - 商品分类 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link href="../view/admin/styles/general.css" rel="stylesheet" type="text/css" />
@@ -11,8 +11,8 @@
 <body>
 
 <h1>
-<span class="action-span"><a href="cateadd.html">添加分类</a></span>
-<span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
+<span class="action-span"><a href="cateadd.php">添加分类</a></span>
+<span class="action-span1"><a href="#">Dream 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
 <div style="clear:both"></div>
 </h1>
 <form method="post" action="" name="listForm">
@@ -30,11 +30,12 @@
     <th>排序</th>
     <th>操作</th>
   </tr>
+      <?php foreach ($catlist as $v){?>
       <tr align="center" class="0" id="0_1" id = 'tr_1'>
     <td align="left" class="first-cell" style = 'padding-left="0"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:0em" />
+            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:<?php echo $v['level'];?>em" />
 
-            <span><a href="#" >手机类型</a></span>
+            <span><a href="#" ><?php echo $v['cat_name'];?></a></span>
         </td>
     <td width="10%">0</td>
     <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
@@ -45,257 +46,11 @@
     <td width="10%" align="right"><span>50</span></td>
     <td width="24%" align="center">
       <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
+      <a href="catedit.php?cat_id=<?php echo $v['cat_id']?>">编辑</a> |
+      <a href="catedel.php?cat_id=<?php echo $v['cat_id'];?>" onclick = "if(!confirm('确定要删除吗？')){return false;}" title="移除">移除</a>
     </td>
   </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_2'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >CDMA手机</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_3'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >GSM手机</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>4</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_4'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >3G手机</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_5'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >双模手机</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>5</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_6'>
-    <td align="left" class="first-cell" style = 'padding-left="0"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:0em" />
-
-            <span><a href="#" >手机配件</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_7'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >充电器</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_8'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >耳机</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_9'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >电池</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_11'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >读卡器和内存卡</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_12'>
-    <td align="left" class="first-cell" style = 'padding-left="0"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:0em" />
-
-            <span><a href="#" >充值卡</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_13'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >小灵通/固话充值卡</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_14'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >移动手机充值卡</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
-    <tr align="center" class="0" id="0_1" id = 'tr_15'>
-    <td align="left" class="first-cell" style = 'padding-left="1"'>
-            <img src="../view/admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:1em" />
-
-            <span><a href="#" >联通手机充值卡</a></span>
-        </td>
-    <td width="10%">0</td>
-    <td width="10%"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
-    <td width="10%"><img src="../view/admin/images/no.gif" /></td>
-    <td width="10%"><img src="../view/admin/images/yes.gif" /></td>
-    <td><span>0</span></td>
-
-    <td width="10%" align="right"><span>50</span></td>
-    <td width="24%" align="center">
-      <a href="#">转移商品</a> |
-      <a href="#">编辑</a> |
-      <a href="#" title="移除">移除</a>
-    </td>
-  </tr>
+  <?php }?>
   </table>
 </div>
 </form>

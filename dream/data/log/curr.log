@@ -1,1 +1,493 @@
-﻿
+﻿2015-06-21 16:11:05--->USE boolshop
+2015-06-21 16:11:05--->set names utf8
+2015-06-21 16:13:13--->USE boolshop
+2015-06-21 16:13:13--->set names utf8
+2015-06-21 16:13:13--->insert into category(cat_name,parent_id,intro) value ('小苹果','4','小小小的苹果手机')
+2015-06-21 16:18:03--->USE boolshop
+2015-06-21 16:18:03--->set names utf8
+2015-06-21 16:18:03--->insert into category(cat_name,parent_id,intro) value ('男士正装','5','男士超帅正装~')
+2015-06-21 16:20:40--->USE boolshop
+2015-06-21 16:20:40--->set names utf8
+2015-06-21 16:20:40--->insert into category(cat_name,parent_id,intro) value ('女士正装','0','非常正式的正装')
+2015-06-21 16:22:47--->USE boolshop
+2015-06-21 16:22:47--->set names utf8
+2015-06-21 16:22:47--->insert into category(cat_name,parent_id,intro) value ('儿童休闲装','0','儿童休闲装')
+2015-06-21 16:33:20--->USE boolshop
+2015-06-21 16:33:20--->set names utf8
+2015-06-21 16:33:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:36:40--->USE boolshop
+2015-06-21 16:36:40--->set names utf8
+2015-06-21 16:36:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:37:01--->USE boolshop
+2015-06-21 16:37:01--->set names utf8
+2015-06-21 16:37:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:42:30--->USE boolshop
+2015-06-21 16:42:30--->set names utf8
+2015-06-21 16:42:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:46:19--->USE boolshop
+2015-06-21 16:46:19--->set names utf8
+2015-06-21 16:46:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:53:09--->USE boolshop
+2015-06-21 16:53:09--->set names utf8
+2015-06-21 16:53:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:53:56--->USE boolshop
+2015-06-21 16:53:56--->set names utf8
+2015-06-21 16:53:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:54:45--->USE boolshop
+2015-06-21 16:54:45--->set names utf8
+2015-06-21 16:54:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:54:47--->USE boolshop
+2015-06-21 16:54:47--->set names utf8
+2015-06-21 16:54:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:54:48--->USE boolshop
+2015-06-21 16:54:48--->set names utf8
+2015-06-21 16:54:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:56:08--->USE boolshop
+2015-06-21 16:56:08--->set names utf8
+2015-06-21 16:56:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:56:20--->USE boolshop
+2015-06-21 16:56:20--->set names utf8
+2015-06-21 16:56:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:56:22--->USE boolshop
+2015-06-21 16:56:22--->set names utf8
+2015-06-21 16:56:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:56:24--->USE boolshop
+2015-06-21 16:56:24--->set names utf8
+2015-06-21 16:56:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 16:56:32--->USE boolshop
+2015-06-21 16:56:32--->set names utf8
+2015-06-21 16:56:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:04:35--->USE boolshop
+2015-06-21 17:04:35--->set names utf8
+2015-06-21 17:04:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:04:39--->USE boolshop
+2015-06-21 17:04:39--->set names utf8
+2015-06-21 17:04:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:04:41--->USE boolshop
+2015-06-21 17:04:41--->set names utf8
+2015-06-21 17:04:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:04:42--->USE boolshop
+2015-06-21 17:04:42--->set names utf8
+2015-06-21 17:04:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:06:21--->USE boolshop
+2015-06-21 17:06:21--->set names utf8
+2015-06-21 17:06:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:06:23--->USE boolshop
+2015-06-21 17:06:23--->set names utf8
+2015-06-21 17:06:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:08:12--->USE boolshop
+2015-06-21 17:08:12--->set names utf8
+2015-06-21 17:08:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:08:15--->USE boolshop
+2015-06-21 17:08:15--->set names utf8
+2015-06-21 17:08:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:08:51--->USE boolshop
+2015-06-21 17:08:51--->set names utf8
+2015-06-21 17:08:51--->insert into category(cat_name,parent_id,intro) value ('男士正装','0','超帅男士正装')
+2015-06-21 17:08:59--->USE boolshop
+2015-06-21 17:08:59--->set names utf8
+2015-06-21 17:08:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:09:01--->USE boolshop
+2015-06-21 17:09:01--->set names utf8
+2015-06-21 17:09:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:09:13--->USE boolshop
+2015-06-21 17:09:13--->set names utf8
+2015-06-21 17:09:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:09:15--->USE boolshop
+2015-06-21 17:09:15--->set names utf8
+2015-06-21 17:09:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:09:50--->USE boolshop
+2015-06-21 17:09:50--->set names utf8
+2015-06-21 17:09:50--->insert into category(cat_name,parent_id,intro) value ('女士正装','0','性感女士正装')
+2015-06-21 17:09:53--->USE boolshop
+2015-06-21 17:09:53--->set names utf8
+2015-06-21 17:09:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:09:57--->USE boolshop
+2015-06-21 17:09:57--->set names utf8
+2015-06-21 17:09:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:10:44--->USE boolshop
+2015-06-21 17:10:44--->set names utf8
+2015-06-21 17:10:44--->insert into category(cat_name,parent_id,intro) value ('男士商务正装','1','商务')
+2015-06-21 17:11:10--->USE boolshop
+2015-06-21 17:11:10--->set names utf8
+2015-06-21 17:11:10--->insert into category(cat_name,parent_id,intro) value ('女士商务正装','2','商务')
+2015-06-21 17:13:47--->USE boolshop
+2015-06-21 17:13:47--->set names utf8
+2015-06-21 17:13:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:13:55--->USE boolshop
+2015-06-21 17:13:55--->set names utf8
+2015-06-21 17:13:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:16:33--->USE boolshop
+2015-06-21 17:16:33--->set names utf8
+2015-06-21 17:16:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:16:43--->USE boolshop
+2015-06-21 17:16:43--->set names utf8
+2015-06-21 17:16:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:16:45--->USE boolshop
+2015-06-21 17:16:45--->set names utf8
+2015-06-21 17:16:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:17:25--->USE boolshop
+2015-06-21 17:17:25--->set names utf8
+2015-06-21 17:17:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:17:30--->USE boolshop
+2015-06-21 17:17:30--->set names utf8
+2015-06-21 17:17:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:20:47--->USE boolshop
+2015-06-21 17:20:47--->set names utf8
+2015-06-21 17:20:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:20:54--->USE boolshop
+2015-06-21 17:20:54--->set names utf8
+2015-06-21 17:20:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:21:44--->USE boolshop
+2015-06-21 17:21:44--->set names utf8
+2015-06-21 17:21:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:21:46--->USE boolshop
+2015-06-21 17:21:46--->set names utf8
+2015-06-21 17:21:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:22:17--->USE boolshop
+2015-06-21 17:22:17--->set names utf8
+2015-06-21 17:22:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 17:22:25--->USE boolshop
+2015-06-21 17:22:25--->set names utf8
+2015-06-21 17:22:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:01:08--->USE boolshop
+2015-06-21 18:01:08--->set names utf8
+2015-06-21 18:01:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:02:09--->USE boolshop
+2015-06-21 18:02:09--->set names utf8
+2015-06-21 18:02:09--->DELETE FROM categoryWHERE cat_id=4
+2015-06-21 18:02:17--->USE boolshop
+2015-06-21 18:02:17--->set names utf8
+2015-06-21 18:02:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:02:27--->USE boolshop
+2015-06-21 18:02:27--->set names utf8
+2015-06-21 18:02:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:04:01--->USE boolshop
+2015-06-21 18:04:01--->set names utf8
+2015-06-21 18:04:01--->DELETE FROM category WHERE cat_id=4
+2015-06-21 18:04:17--->USE boolshop
+2015-06-21 18:04:17--->set names utf8
+2015-06-21 18:04:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:06:12--->USE boolshop
+2015-06-21 18:06:12--->set names utf8
+2015-06-21 18:06:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:06:18--->USE boolshop
+2015-06-21 18:06:18--->set names utf8
+2015-06-21 18:06:18--->DELETE FROM category WHERE cat_id=3
+2015-06-21 18:06:19--->USE boolshop
+2015-06-21 18:06:19--->set names utf8
+2015-06-21 18:06:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:06:23--->USE boolshop
+2015-06-21 18:06:23--->set names utf8
+2015-06-21 18:06:23--->DELETE FROM category WHERE cat_id=1
+2015-06-21 18:06:25--->USE boolshop
+2015-06-21 18:06:25--->set names utf8
+2015-06-21 18:06:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:08:57--->USE boolshop
+2015-06-21 18:08:57--->set names utf8
+2015-06-21 18:08:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:09:17--->USE boolshop
+2015-06-21 18:09:17--->set names utf8
+2015-06-21 18:09:17--->insert into category(cat_name,parent_id,intro) value ('儿童休闲装','0','儿童休闲装')
+2015-06-21 18:09:19--->USE boolshop
+2015-06-21 18:09:19--->set names utf8
+2015-06-21 18:09:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:09:22--->USE boolshop
+2015-06-21 18:09:22--->set names utf8
+2015-06-21 18:09:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:09:55--->USE boolshop
+2015-06-21 18:09:55--->set names utf8
+2015-06-21 18:09:55--->insert into category(cat_name,parent_id,intro) value ('儿童夏日休闲','5','休闲')
+2015-06-21 18:09:57--->USE boolshop
+2015-06-21 18:09:57--->set names utf8
+2015-06-21 18:09:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:24:07--->USE boolshop
+2015-06-21 18:24:07--->set names utf8
+2015-06-21 18:24:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:29:26--->USE boolshop
+2015-06-21 18:29:26--->set names utf8
+2015-06-21 18:29:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:39:41--->USE boolshop
+2015-06-21 18:39:41--->set names utf8
+2015-06-21 18:39:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:39:50--->USE boolshop
+2015-06-21 18:39:50--->set names utf8
+2015-06-21 18:39:50--->SELECT * FROM cate_gory WHERE cat_id=2
+2015-06-21 18:39:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:46:01--->USE boolshop
+2015-06-21 18:46:01--->set names utf8
+2015-06-21 18:46:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:46:03--->USE boolshop
+2015-06-21 18:46:03--->set names utf8
+2015-06-21 18:46:03--->SELECT * FROM cate_gory WHERE cat_id=6
+2015-06-21 18:46:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:47:26--->USE boolshop
+2015-06-21 18:47:26--->set names utf8
+2015-06-21 18:47:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 18:47:28--->USE boolshop
+2015-06-21 18:47:28--->set names utf8
+2015-06-21 18:47:28--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 18:47:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:03:58--->USE boolshop
+2015-06-21 19:03:58--->set names utf8
+2015-06-21 19:03:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:04:03--->USE boolshop
+2015-06-21 19:04:03--->set names utf8
+2015-06-21 19:04:03--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:05:12--->USE boolshop
+2015-06-21 19:05:12--->set names utf8
+2015-06-21 19:05:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:05:15--->USE boolshop
+2015-06-21 19:05:15--->set names utf8
+2015-06-21 19:05:15--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:05:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:06:17--->USE boolshop
+2015-06-21 19:06:17--->set names utf8
+2015-06-21 19:06:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:06:19--->USE boolshop
+2015-06-21 19:06:19--->set names utf8
+2015-06-21 19:06:19--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:06:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:07:15--->USE boolshop
+2015-06-21 19:07:15--->set names utf8
+2015-06-21 19:07:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:07:17--->USE boolshop
+2015-06-21 19:07:17--->set names utf8
+2015-06-21 19:07:17--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:07:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:07:35--->USE boolshop
+2015-06-21 19:07:35--->set names utf8
+2015-06-21 19:07:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:07:37--->USE boolshop
+2015-06-21 19:07:37--->set names utf8
+2015-06-21 19:07:37--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:07:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:11:15--->USE boolshop
+2015-06-21 19:11:15--->set names utf8
+2015-06-21 19:11:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:11:18--->USE boolshop
+2015-06-21 19:11:18--->set names utf8
+2015-06-21 19:11:18--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:11:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:11:45--->USE boolshop
+2015-06-21 19:11:45--->set names utf8
+2015-06-21 19:11:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:11:46--->USE boolshop
+2015-06-21 19:11:46--->set names utf8
+2015-06-21 19:11:46--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:11:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:12:17--->USE boolshop
+2015-06-21 19:12:17--->set names utf8
+2015-06-21 19:12:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:12:19--->USE boolshop
+2015-06-21 19:12:19--->set names utf8
+2015-06-21 19:12:19--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:12:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:14:12--->USE boolshop
+2015-06-21 19:14:12--->set names utf8
+2015-06-21 19:14:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:14:14--->USE boolshop
+2015-06-21 19:14:14--->set names utf8
+2015-06-21 19:14:14--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:14:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:15:20--->USE boolshop
+2015-06-21 19:15:20--->set names utf8
+2015-06-21 19:15:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:15:23--->USE boolshop
+2015-06-21 19:15:23--->set names utf8
+2015-06-21 19:15:23--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:15:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:15:31--->USE boolshop
+2015-06-21 19:15:31--->set names utf8
+2015-06-21 19:16:16--->USE boolshop
+2015-06-21 19:16:16--->set names utf8
+2015-06-21 19:16:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:16:18--->USE boolshop
+2015-06-21 19:16:18--->set names utf8
+2015-06-21 19:16:18--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:16:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:16:21--->USE boolshop
+2015-06-21 19:16:21--->set names utf8
+2015-06-21 19:16:24--->USE boolshop
+2015-06-21 19:16:24--->set names utf8
+2015-06-21 19:16:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:16:26--->USE boolshop
+2015-06-21 19:16:26--->set names utf8
+2015-06-21 19:16:26--->SELECT * FROM category WHERE cat_id=2
+2015-06-21 19:16:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:16:30--->USE boolshop
+2015-06-21 19:16:30--->set names utf8
+2015-06-21 19:17:32--->USE boolshop
+2015-06-21 19:17:32--->set names utf8
+2015-06-21 19:17:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:17:37--->USE boolshop
+2015-06-21 19:17:37--->set names utf8
+2015-06-21 19:17:37--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:17:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:18:02--->USE boolshop
+2015-06-21 19:18:02--->set names utf8
+2015-06-21 19:18:02--->update category setcat_name='儿童meter休闲',cat_id='6',intro='休闲美特' where cat_id = 6
+2015-06-21 19:18:06--->USE boolshop
+2015-06-21 19:18:06--->set names utf8
+2015-06-21 19:18:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:23:54--->USE boolshop
+2015-06-21 19:23:54--->set names utf8
+2015-06-21 19:23:54--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:23:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:24:09--->USE boolshop
+2015-06-21 19:24:09--->set names utf8
+2015-06-21 19:24:09--->update category set cat_name='儿童夏日mter休闲',cat_id='6',intro='休闲meter' where cat_id = 6
+2015-06-21 19:24:21--->USE boolshop
+2015-06-21 19:24:21--->set names utf8
+2015-06-21 19:24:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:24:32--->USE boolshop
+2015-06-21 19:24:32--->set names utf8
+2015-06-21 19:24:32--->SELECT * FROM category WHERE cat_id=2
+2015-06-21 19:24:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:25:00--->USE boolshop
+2015-06-21 19:25:00--->set names utf8
+2015-06-21 19:25:00--->update category set cat_name='男士正装',cat_id='2',intro='男士正装' where cat_id = 2
+2015-06-21 19:25:05--->USE boolshop
+2015-06-21 19:25:05--->set names utf8
+2015-06-21 19:25:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:25:08--->USE boolshop
+2015-06-21 19:25:08--->set names utf8
+2015-06-21 19:25:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:25:34--->USE boolshop
+2015-06-21 19:25:34--->set names utf8
+2015-06-21 19:25:34--->insert into category(cat_name,parent_id,intro) value ('女士正装','0','白领正装')
+2015-06-21 19:25:38--->USE boolshop
+2015-06-21 19:25:38--->set names utf8
+2015-06-21 19:25:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:25:41--->USE boolshop
+2015-06-21 19:25:41--->set names utf8
+2015-06-21 19:25:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:26:17--->USE boolshop
+2015-06-21 19:26:17--->set names utf8
+2015-06-21 19:26:17--->insert into category(cat_name,parent_id,intro) value ('商务男士正装','2','商务型')
+2015-06-21 19:26:19--->USE boolshop
+2015-06-21 19:26:19--->set names utf8
+2015-06-21 19:26:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:26:23--->USE boolshop
+2015-06-21 19:26:23--->set names utf8
+2015-06-21 19:26:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:26:41--->USE boolshop
+2015-06-21 19:26:41--->set names utf8
+2015-06-21 19:26:41--->insert into category(cat_name,parent_id,intro) value ('商务女士正装','0','商务女士型')
+2015-06-21 19:26:42--->USE boolshop
+2015-06-21 19:26:42--->set names utf8
+2015-06-21 19:26:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:26:52--->USE boolshop
+2015-06-21 19:26:52--->set names utf8
+2015-06-21 19:26:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:27:23--->USE boolshop
+2015-06-21 19:27:23--->set names utf8
+2015-06-21 19:27:23--->insert into category(cat_name,parent_id,intro) value ('春天阳光装','6','阳光休闲')
+2015-06-21 19:27:26--->USE boolshop
+2015-06-21 19:27:26--->set names utf8
+2015-06-21 19:27:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:27:31--->USE boolshop
+2015-06-21 19:27:31--->set names utf8
+2015-06-21 19:27:31--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:27:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:27:38--->USE boolshop
+2015-06-21 19:27:38--->set names utf8
+2015-06-21 19:27:38--->update category set cat_name='春天阳光装',cat_id='10',intro='阳光休闲' where cat_id = 10
+2015-06-21 19:35:52--->USE boolshop
+2015-06-21 19:35:52--->set names utf8
+2015-06-21 19:35:52--->update category set cat_name='春天阳光装',cat_id='10',intro='阳光休闲',parent_id='9' where cat_id = 10
+2015-06-21 19:38:33--->USE boolshop
+2015-06-21 19:38:33--->set names utf8
+2015-06-21 19:38:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:38:37--->USE boolshop
+2015-06-21 19:38:37--->set names utf8
+2015-06-21 19:38:37--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:38:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:38:41--->USE boolshop
+2015-06-21 19:38:41--->set names utf8
+2015-06-21 19:38:41--->update category set cat_name='春天阳光装',intro='阳光休闲',parent_id='9' where cat_id = 10
+2015-06-21 19:45:14--->USE boolshop
+2015-06-21 19:45:14--->set names utf8
+2015-06-21 19:45:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:45:18--->USE boolshop
+2015-06-21 19:45:18--->set names utf8
+2015-06-21 19:45:18--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:45:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:48:48--->USE boolshop
+2015-06-21 19:48:48--->set names utf8
+2015-06-21 19:48:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:49:12--->USE boolshop
+2015-06-21 19:49:12--->set names utf8
+2015-06-21 19:49:12--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:49:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:49:32--->USE boolshop
+2015-06-21 19:49:32--->set names utf8
+2015-06-21 19:49:32--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:49:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:51:34--->USE boolshop
+2015-06-21 19:51:34--->set names utf8
+2015-06-21 19:51:34--->SELECT * FROM category WHERE cat_id=8
+2015-06-21 19:51:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:52:05--->USE boolshop
+2015-06-21 19:52:05--->set names utf8
+2015-06-21 19:52:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:52:16--->USE boolshop
+2015-06-21 19:52:16--->set names utf8
+2015-06-21 19:52:16--->SELECT * FROM category WHERE cat_id=10
+2015-06-21 19:52:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:52:22--->USE boolshop
+2015-06-21 19:52:22--->set names utf8
+2015-06-21 19:52:22--->update category set cat_name='春天阳光装',intro='阳光休闲',parent_id='5' where cat_id = 10
+2015-06-21 19:52:26--->USE boolshop
+2015-06-21 19:52:26--->set names utf8
+2015-06-21 19:52:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:52:32--->USE boolshop
+2015-06-21 19:52:32--->set names utf8
+2015-06-21 19:52:32--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:52:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:52:37--->USE boolshop
+2015-06-21 19:52:37--->set names utf8
+2015-06-21 19:52:37--->update category set cat_name='儿童夏日mter休闲',intro='休闲meter',parent_id='8' where cat_id = 6
+2015-06-21 19:52:40--->USE boolshop
+2015-06-21 19:52:40--->set names utf8
+2015-06-21 19:52:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:59:26--->USE boolshop
+2015-06-21 19:59:26--->set names utf8
+2015-06-21 19:59:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:59:36--->USE boolshop
+2015-06-21 19:59:36--->set names utf8
+2015-06-21 19:59:36--->SELECT * FROM category WHERE cat_id=6
+2015-06-21 19:59:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 19:59:44--->USE boolshop
+2015-06-21 19:59:44--->set names utf8
+2015-06-21 19:59:44--->update category set cat_name='儿童夏日mter休闲',intro='休闲meter',parent_id='5' where cat_id = 6
+2015-06-21 19:59:46--->USE boolshop
+2015-06-21 19:59:46--->set names utf8
+2015-06-21 19:59:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 20:00:01--->USE boolshop
+2015-06-21 20:00:01--->set names utf8
+2015-06-21 20:00:01--->SELECT * FROM category WHERE cat_id=5
+2015-06-21 20:00:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 20:00:26--->USE boolshop
+2015-06-21 20:00:26--->set names utf8
+2015-06-21 20:00:26--->update category set cat_name='儿童休闲装',intro='儿童休闲装',parent_id='6' where cat_id = 5
+2015-06-21 20:00:31--->USE boolshop
+2015-06-21 20:00:31--->set names utf8
+2015-06-21 20:00:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 20:00:57--->USE boolshop
+2015-06-21 20:00:57--->set names utf8
+2015-06-21 20:00:57--->SELECT * FROM category WHERE cat_id=9
+2015-06-21 20:00:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 20:01:03--->USE boolshop
+2015-06-21 20:01:03--->set names utf8
+2015-06-21 20:01:03--->update category set cat_name='商务女士正装',intro='商务女士型',parent_id='7' where cat_id = 9
+2015-06-21 20:01:09--->USE boolshop
+2015-06-21 20:01:09--->set names utf8
+2015-06-21 20:01:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-21 20:03:29--->USE boolshop
+2015-06-21 20:03:29--->set names utf8
+2015-06-21 20:03:29--->DELETE FROM category WHERE cat_id=7
+2015-06-21 20:03:31--->USE boolshop
+2015-06-21 20:03:31--->set names utf8
+2015-06-21 20:03:31--->SELECT cat_id, cat_name, parent_id FROM category

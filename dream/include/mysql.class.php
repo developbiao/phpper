@@ -111,7 +111,7 @@ class mysql extends db{
 		}
 
 		if($mode=='update'){
-			$sql = 'update ' . $table. ' set';
+			$sql = 'update ' . $table. ' set ';
 			foreach($arr as $k=>$v){
 				$sql .= $k . "='" . $v . "',";
 			}
