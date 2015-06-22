@@ -632,3 +632,12 @@
 2015-06-22 16:08:45--->USE boolshop
 2015-06-22 16:08:45--->set names utf8
 2015-06-22 16:08:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:58:43--->USE boolshop
+2015-06-22 16:58:43--->set names utf8
+2015-06-22 16:58:43--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_best,goods_new,goods_hot,is_on_sale,goods_brief,add_time) value ('红烧肉','1223','0','9582','23','sssss','0.095','0','0','0','1','','1434963523')
+2015-06-22 17:03:48--->USE boolshop
+2015-06-22 17:03:48--->set names utf8
+2015-06-22 17:03:48--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time) value ('红烧肉','1223','0','9582','23','sssss','0.095','0','0','0','1','','1434963828')
+2015-06-22 17:05:53--->USE boolshop
+2015-06-22 17:05:53--->set names utf8
+2015-06-22 17:05:53--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time) value ('青椒盖碗饭','1125','0','13','25','香喷喷的青椒肉盖碗饭咯','0.2','1','0','1','1','','1434963953')
