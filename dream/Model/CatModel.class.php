@@ -52,6 +52,41 @@ class CatModel extends Model{
 		return $tree;
 	}
 
+	/*
+	params:int $id
+	return $id 栏目下的子栏目
+	*/
+
+	public function getSon($id){
+		$sql = 'SELECT cat_id, cat_name, parent_id FROM '. $this->table . ' WHERE parent_id='.$id;
+		return $this->db->getAll($sql);
+
+	}
+
+	/*
+	params:int $id
+	return array $id 栏目的家谱树
+	*/
+
+	public function getTree($id=0){
+		$tree = array();
+		$cats = $this->select(); //取出所有的cats
+		
+		while($id != 0){ //条件是没有找到最终的parent父类就一直循环
+			foreach($cats as $v){
+				if($v['cat_id'] == $id){
+					$tree[] = $v; //先找到自身
+
+					$id = $v['parent_id']; //把$v的parent_id作为$id继续找下去
+					break;	 //跳出当前foreach继续找
+				}
+			}	
+		}
+
+		return $tree;
+
+	}
+
 	//删除栏目
 
 	public function delete($cat_id){

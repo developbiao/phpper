@@ -491,3 +491,144 @@
 2015-06-21 20:03:31--->USE boolshop
 2015-06-21 20:03:31--->set names utf8
 2015-06-21 20:03:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:02:15--->USE boolshop
+2015-06-22 15:02:15--->set names utf8
+2015-06-22 15:02:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:02:23--->USE boolshop
+2015-06-22 15:02:23--->set names utf8
+2015-06-22 15:02:23--->SELECT cat_id, cat_name, parent_id FROM categoryWHERE parent_id=2
+2015-06-22 15:02:23--->DELETE FROM category WHERE cat_id=2
+2015-06-22 15:04:00--->USE boolshop
+2015-06-22 15:04:00--->set names utf8
+2015-06-22 15:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:05:05--->USE boolshop
+2015-06-22 15:05:05--->set names utf8
+2015-06-22 15:05:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:05:32--->USE boolshop
+2015-06-22 15:05:32--->set names utf8
+2015-06-22 15:05:32--->insert into category(cat_name,parent_id,intro) value ('男士正装','0','正装')
+2015-06-22 15:05:43--->USE boolshop
+2015-06-22 15:05:44--->set names utf8
+2015-06-22 15:05:44--->insert into category(cat_name,parent_id,intro) value ('女士正装','0','正装')
+2015-06-22 15:06:54--->USE boolshop
+2015-06-22 15:06:54--->set names utf8
+2015-06-22 15:06:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:07:00--->USE boolshop
+2015-06-22 15:07:00--->set names utf8
+2015-06-22 15:07:00--->insert into category(cat_name,parent_id,intro) value ('女士夏天商务正装','2','女士夏天')
+2015-06-22 15:07:10--->USE boolshop
+2015-06-22 15:07:10--->set names utf8
+2015-06-22 15:07:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:07:32--->USE boolshop
+2015-06-22 15:07:32--->set names utf8
+2015-06-22 15:07:32--->SELECT cat_id, cat_name, parent_id FROM category WHERE parent_id=2
+2015-06-22 15:07:48--->USE boolshop
+2015-06-22 15:07:48--->set names utf8
+2015-06-22 15:07:48--->SELECT cat_id, cat_name, parent_id FROM category WHERE parent_id=2
+2015-06-22 15:08:20--->USE boolshop
+2015-06-22 15:08:20--->set names utf8
+2015-06-22 15:08:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:08:22--->USE boolshop
+2015-06-22 15:08:22--->set names utf8
+2015-06-22 15:08:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:08:36--->USE boolshop
+2015-06-22 15:08:36--->set names utf8
+2015-06-22 15:08:36--->insert into category(cat_name,parent_id,intro) value ('商务男装','1','商务男装')
+2015-06-22 15:08:44--->USE boolshop
+2015-06-22 15:08:44--->set names utf8
+2015-06-22 15:08:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:08:48--->USE boolshop
+2015-06-22 15:08:48--->set names utf8
+2015-06-22 15:08:48--->SELECT cat_id, cat_name, parent_id FROM category WHERE parent_id=1
+2015-06-22 15:47:08--->USE boolshop
+2015-06-22 15:47:08--->set names utf8
+2015-06-22 15:47:08--->SELECT * FROM category WHERE cat_id=4
+2015-06-22 15:47:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:47:32--->USE boolshop
+2015-06-22 15:47:32--->set names utf8
+2015-06-22 15:47:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:47:34--->USE boolshop
+2015-06-22 15:47:34--->set names utf8
+2015-06-22 15:47:34--->SELECT * FROM category WHERE cat_id=1
+2015-06-22 15:47:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:47:39--->USE boolshop
+2015-06-22 15:47:39--->set names utf8
+2015-06-22 15:47:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:48:16--->USE boolshop
+2015-06-22 15:48:16--->set names utf8
+2015-06-22 15:49:41--->USE boolshop
+2015-06-22 15:49:41--->set names utf8
+2015-06-22 15:49:55--->USE boolshop
+2015-06-22 15:49:55--->set names utf8
+2015-06-22 15:49:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:51:19--->USE boolshop
+2015-06-22 15:51:19--->set names utf8
+2015-06-22 15:51:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:51:32--->USE boolshop
+2015-06-22 15:51:32--->set names utf8
+2015-06-22 15:51:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 15:53:45--->USE boolshop
+2015-06-22 15:53:45--->set names utf8
+2015-06-22 15:53:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:04:26--->USE boolshop
+2015-06-22 16:04:26--->set names utf8
+2015-06-22 16:04:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:04:26--->update category set cat_name='男士正装',intro='正装',parent_id='4' where cat_id = 1
+2015-06-22 16:04:55--->USE boolshop
+2015-06-22 16:04:55--->set names utf8
+2015-06-22 16:04:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:05:14--->USE boolshop
+2015-06-22 16:05:14--->set names utf8
+2015-06-22 16:05:14--->SELECT * FROM category WHERE cat_id=2
+2015-06-22 16:05:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:05:22--->USE boolshop
+2015-06-22 16:05:22--->set names utf8
+2015-06-22 16:05:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:05:30--->USE boolshop
+2015-06-22 16:05:30--->set names utf8
+2015-06-22 16:05:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:06:16--->USE boolshop
+2015-06-22 16:06:16--->set names utf8
+2015-06-22 16:06:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:06:31--->USE boolshop
+2015-06-22 16:06:31--->set names utf8
+2015-06-22 16:06:31--->insert into category(cat_name,parent_id,intro) value ('男士正装','0','男士正装')
+2015-06-22 16:06:43--->USE boolshop
+2015-06-22 16:06:43--->set names utf8
+2015-06-22 16:06:43--->insert into category(cat_name,parent_id,intro) value ('女士正装','0','女士正装')
+2015-06-22 16:06:48--->USE boolshop
+2015-06-22 16:06:48--->set names utf8
+2015-06-22 16:06:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:07:04--->USE boolshop
+2015-06-22 16:07:04--->set names utf8
+2015-06-22 16:07:04--->insert into category(cat_name,parent_id,intro) value ('女士商务正装','2','女士商务正装')
+2015-06-22 16:07:17--->USE boolshop
+2015-06-22 16:07:17--->set names utf8
+2015-06-22 16:07:17--->insert into category(cat_name,parent_id,intro) value ('男士商务正装','1','男士商务正装')
+2015-06-22 16:07:21--->USE boolshop
+2015-06-22 16:07:21--->set names utf8
+2015-06-22 16:07:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:07:47--->USE boolshop
+2015-06-22 16:07:47--->set names utf8
+2015-06-22 16:07:47--->insert into category(cat_name,parent_id,intro) value ('男士休闲装','4','男士休闲装')
+2015-06-22 16:08:00--->USE boolshop
+2015-06-22 16:08:00--->set names utf8
+2015-06-22 16:08:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:08:09--->USE boolshop
+2015-06-22 16:08:09--->set names utf8
+2015-06-22 16:08:09--->SELECT * FROM category WHERE cat_id=5
+2015-06-22 16:08:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:08:28--->USE boolshop
+2015-06-22 16:08:28--->set names utf8
+2015-06-22 16:08:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:08:28--->update category set cat_name='男士休闲装',intro='男士休闲装',parent_id='1' where cat_id = 5
+2015-06-22 16:08:34--->USE boolshop
+2015-06-22 16:08:34--->set names utf8
+2015-06-22 16:08:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:08:40--->USE boolshop
+2015-06-22 16:08:40--->set names utf8
+2015-06-22 16:08:40--->SELECT * FROM category WHERE cat_id=1
+2015-06-22 16:08:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-22 16:08:45--->USE boolshop
+2015-06-22 16:08:45--->set names utf8
+2015-06-22 16:08:45--->SELECT cat_id, cat_name, parent_id FROM category
