@@ -641,3 +641,12 @@
 2015-06-22 17:05:53--->USE boolshop
 2015-06-22 17:05:53--->set names utf8
 2015-06-22 17:05:53--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time) value ('青椒盖碗饭','1125','0','13','25','香喷喷的青椒肉盖碗饭咯','0.2','1','0','1','1','','1434963953')
+2015-06-23 22:01:20--->USE boolshop
+2015-06-23 22:01:20--->set names utf8
+2015-06-23 22:01:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-23 22:22:05--->USE boolshop
+2015-06-23 22:22:05--->set names utf8
+2015-06-23 22:22:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-23 22:23:16--->USE boolshop
+2015-06-23 22:23:16--->set names utf8
+2015-06-23 22:23:16--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time) value ('海带菜','SN887','0','88','79','海波菜','12','1','0','0','1','aaaaa','1435069396')

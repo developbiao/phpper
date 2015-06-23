@@ -9,10 +9,11 @@ class GoodsModel extends Model{
 	params array $data
 	return bool
 	*/
-
+	/*
 	public function add($data){
 		return $this->db->autoExecute($this->table, $data);
 	}
+	*/
 }
 
 
