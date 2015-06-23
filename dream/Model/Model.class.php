@@ -54,10 +54,9 @@ class Model{
 	*/
 
 	public function update($data, $id){
-
-		$rs = $this->db->autoExecute($this->table, 'update', ' where '. $this->pk . '=' . $id);
+		$rs = $this->db->autoExecute($this->table, $data, 'update', ' where ' . $this->pk . '='.$id);
 		if($rs){
-			return $this->affected_rows();
+			return $this->db->affected_rows();
 		}else{
 			return false;
 		}
