@@ -650,3 +650,60 @@
 2015-06-23 22:23:16--->USE boolshop
 2015-06-23 22:23:16--->set names utf8
 2015-06-23 22:23:16--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,is_best,is_new,is_hot,is_on_sale,goods_brief,add_time) value ('海带菜','SN887','0','88','79','海波菜','12','1','0','0','1','aaaaa','1435069396')
+2015-06-23 22:49:32--->USE boolshop
+2015-06-23 22:49:32--->set names utf8
+2015-06-23 22:49:32--->SELECT * FROM goods
+2015-06-23 22:53:08--->USE boolshop
+2015-06-23 22:53:08--->set names utf8
+2015-06-23 22:53:08--->SELECT * FROM goods
+2015-06-23 22:53:17--->USE boolshop
+2015-06-23 22:53:17--->set names utf8
+2015-06-23 22:53:17--->SELECT * FROM goods
+2015-06-23 23:05:14--->USE boolshop
+2015-06-23 23:05:14--->set names utf8
+2015-06-23 23:05:14--->SELECT * FROM goods
+2015-06-23 23:06:27--->USE boolshop
+2015-06-23 23:06:27--->set names utf8
+2015-06-23 23:06:27--->SELECT * FROM goods
+2015-06-23 23:08:17--->USE boolshop
+2015-06-23 23:08:17--->set names utf8
+2015-06-23 23:08:17--->SELECT * FROM goods
+2015-06-23 23:13:11--->USE boolshop
+2015-06-23 23:13:11--->set names utf8
+2015-06-23 23:13:11--->SELECT * FROM goods
+2015-06-23 23:13:42--->USE boolshop
+2015-06-23 23:13:42--->set names utf8
+2015-06-23 23:13:42--->SELECT * FROM goods
+2015-06-23 23:19:20--->USE boolshop
+2015-06-23 23:19:20--->set names utf8
+2015-06-23 23:19:20--->SELECT * FROM goods
+2015-06-23 23:19:24--->USE boolshop
+2015-06-23 23:19:24--->set names utf8
+2015-06-23 23:19:24--->SELECT * FROM goods WHERE =0
+2015-06-23 23:21:10--->USE boolshop
+2015-06-23 23:21:10--->set names utf8
+2015-06-23 23:21:10--->SELECT * FROM goods
+2015-06-23 23:21:11--->USE boolshop
+2015-06-23 23:21:11--->set names utf8
+2015-06-23 23:21:11--->SELECT * FROM goods WHERE =0
+2015-06-23 23:24:56--->USE boolshop
+2015-06-23 23:24:56--->set names utf8
+2015-06-23 23:24:56--->SELECT * FROM goods
+2015-06-23 23:25:33--->USE boolshop
+2015-06-23 23:25:33--->set names utf8
+2015-06-23 23:25:33--->SELECT * FROM goods
+2015-06-23 23:26:14--->USE boolshop
+2015-06-23 23:26:14--->set names utf8
+2015-06-23 23:26:14--->SELECT * FROM goods WHERE =2
+2015-06-23 23:33:47--->USE boolshop
+2015-06-23 23:33:47--->set names utf8
+2015-06-23 23:33:47--->SELECT * FROM goods WHERE goods_id=2
+2015-06-23 23:34:08--->USE boolshop
+2015-06-23 23:34:08--->set names utf8
+2015-06-23 23:34:08--->SELECT * FROM goods WHERE goods_id=2
+2015-06-23 23:34:32--->USE boolshop
+2015-06-23 23:34:32--->set names utf8
+2015-06-23 23:34:32--->SELECT * FROM goods WHERE goods_id=3
+2015-06-23 23:34:42--->USE boolshop
+2015-06-23 23:34:42--->set names utf8
+2015-06-23 23:34:42--->SELECT * FROM goods WHERE goods_id=1

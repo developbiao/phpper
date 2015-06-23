@@ -59,12 +59,13 @@
         <th><a href="#">库存</a></th>
         <th>操作</th>
   <tr>
+    <?php foreach($goodslist as $g) {?>
       <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="32" />1</td>
+    <td><input type="checkbox" name="checkboxes[]" value="32" /><?php echo $g['goods_id'];?></td>
 
-    <td class="first-cell" style=""><span >KD876</span></td>
-    <td><span >ECS000000</span></td>
-    <td align="right"><span >1388.00
+    <td class="first-cell" style=""><span ><?php echo $g['goods_name'];?></span></td>
+    <td><span ><?php echo $g['goods_sn'];?></span></td>
+    <td align="right"><span ><?php echo $g['shop_price'];?>
     </span></td>
     <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
     <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
@@ -74,75 +75,14 @@
     <td align="center"><span >100</span></td>
         <td align="right"><span >1</span></td>
         <td align="center">
-      <a href="#" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
+      <a href="goods.php?goods_id=<?php echo $g['goods_id'];?>" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="编辑"><img src="../view/admin/images/icon_edit.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="复制"><img src="../view/admin/images/icon_copy.gif" width="16" height="16" border="0" /></a>
-      <a href="#"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
+      <a href="goodstrash.php?goods_id=<?php echo $g['goods_id'];?>"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
       <a href="#" title="货品列表"><img src="../view/admin/images/icon_docs.gif" width="16" height="16" border="0" /></a>          </td>
   </tr>
-        <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="32" />4</td>
-
-    <td class="first-cell" style=""><span >诺基亚N85原装充电器</span></td>
-    <td><span >ECS000004</span></td>
-    <td align="right"><span >58.00
-    </span></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-
-    <td align="center"><span >100</span></td>
-        <td align="right"><span >17</span></td>
-        <td align="center">
-      <a href="#" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="编辑"><img src="../view/admin/images/icon_edit.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="复制"><img src="../view/admin/images/icon_copy.gif" width="16" height="16" border="0" /></a>
-      <a href="#"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="货品列表"><img src="../view/admin/images/icon_docs.gif" width="16" height="16" border="0" /></a>          </td>
-  </tr>
-        <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="32" />3</td>
-
-    <td class="first-cell" style=""><span >诺基亚原装5800耳机</span></td>
-    <td><span >ECS000002</span></td>
-    <td align="right"><span >68.00
-    </span></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-
-    <td align="center"><span >100</span></td>
-        <td align="right"><span >24</span></td>
-        <td align="center">
-      <a href="#" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="编辑"><img src="../view/admin/images/icon_edit.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="复制"><img src="../view/admin/images/icon_copy.gif" width="16" height="16" border="0" /></a>
-      <a href="#"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="货品列表"><img src="../view/admin/images/icon_docs.gif" width="16" height="16" border="0" /></a>          </td>
-  </tr>
-        <tr>
-    <td><input type="checkbox" name="checkboxes[]" value="32" />5</td>
-
-    <td class="first-cell" style=""><span >索爱原装M2卡读卡器</span></td>
-    <td><span >ECS000005</span></td>
-    <td align="right"><span >20.00
-    </span></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/yes.gif"  /></td>
-    <td align="center"><img src="../view/admin/images/no.gif"  /></td>
-
-    <td align="center"><span >100</span></td>
-        <td align="right"><span >8</span></td>
-        <td align="center">
-      <a href="#" target="_blank" title="查看"><img src="../view/admin/images/icon_view.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="编辑"><img src="../view/admin/images/icon_edit.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="复制"><img src="../view/admin/images/icon_copy.gif" width="16" height="16" border="0" /></a>
-      <a href="#"  title="回收站"><img src="../view/admin/images/icon_trash.gif" width="16" height="16" border="0" /></a>
-      <a href="#" title="货品列表"><img src="../view/admin/images/icon_docs.gif" width="16" height="16" border="0" /></a>          </td>
-  </tr>
+  <?php }?>
+      
       </table>
 
 <table id="page-table" cellspacing="0">
