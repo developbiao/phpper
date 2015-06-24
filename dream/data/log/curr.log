@@ -787,3 +787,69 @@
 2015-06-24 00:48:33--->USE boolshop
 2015-06-24 00:48:33--->set names utf8
 2015-06-24 00:48:33--->SELECT * FROM goods WHERE is_delete=1
+2015-06-24 09:59:06--->USE boolshop
+2015-06-24 09:59:06--->set names utf8
+2015-06-24 09:59:06--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 10:00:11--->USE boolshop
+2015-06-24 10:00:11--->set names utf8
+2015-06-24 10:05:15--->USE boolshop
+2015-06-24 10:05:15--->set names utf8
+2015-06-24 10:10:41--->USE boolshop
+2015-06-24 10:10:41--->set names utf8
+2015-06-24 10:11:28--->USE boolshop
+2015-06-24 10:11:28--->set names utf8
+2015-06-24 10:11:29--->USE boolshop
+2015-06-24 10:11:29--->set names utf8
+2015-06-24 10:11:33--->USE boolshop
+2015-06-24 10:11:33--->set names utf8
+2015-06-24 10:12:18--->USE boolshop
+2015-06-24 10:12:18--->set names utf8
+2015-06-24 10:13:10--->USE boolshop
+2015-06-24 10:13:10--->set names utf8
+2015-06-24 10:13:10--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_hot,is_on_sale,goods_brief,goods_id,is_new,is_best,add_time) value ('MotoME525','SN895','0','2400','2500','Motorola','0.25','256','1','1','','0','0','0','1435111990')
+2015-06-24 10:13:20--->USE boolshop
+2015-06-24 10:13:20--->set names utf8
+2015-06-24 10:13:20--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 10:13:27--->USE boolshop
+2015-06-24 10:13:27--->set names utf8
+2015-06-24 10:13:27--->SELECT * FROM goods WHERE goods_id=5
+2015-06-24 10:15:00--->USE boolshop
+2015-06-24 10:15:00--->set names utf8
+2015-06-24 10:15:00--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time) value ('电风扇Midea','SN7022','0','98','98','Midea网店专应','3','300','1','1','1','Midea美好生活 ','0','0','1435112100')
+2015-06-24 10:15:04--->USE boolshop
+2015-06-24 10:15:04--->set names utf8
+2015-06-24 10:15:04--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 21:31:41--->USE boolshop
+2015-06-24 21:31:42--->set names utf8
+2015-06-24 21:31:42--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 21:32:25--->USE boolshop
+2015-06-24 21:32:25--->set names utf8
+2015-06-24 21:34:12--->USE boolshop
+2015-06-24 21:34:12--->set names utf8
+2015-06-24 21:51:50--->USE boolshop
+2015-06-24 21:51:50--->set names utf8
+2015-06-24 21:51:52--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 21:52:50--->USE boolshop
+2015-06-24 21:52:50--->set names utf8
+2015-06-24 21:53:13--->USE boolshop
+2015-06-24 21:53:13--->set names utf8
+2015-06-24 21:53:13--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_on_sale,goods_brief,goods_id,is_hot,is_new,add_time) value ('小涛的腊肉','na231','0','33','22','小涛家的腊肉','0.5','1','1','1','小涛从老家带过来的腊肉.','0','0','0','1435153993')
+2015-06-24 21:53:34--->USE boolshop
+2015-06-24 21:53:34--->set names utf8
+2015-06-24 21:53:34--->SELECT * FROM goods WHERE is_delete=0
+2015-06-24 21:58:12--->USE boolshop
+2015-06-24 21:58:12--->set names utf8
+2015-06-24 21:58:50--->USE boolshop
+2015-06-24 21:58:50--->set names utf8
+2015-06-24 22:06:17--->USE boolshop
+2015-06-24 22:06:17--->set names utf8
+2015-06-24 22:06:24--->USE boolshop
+2015-06-24 22:06:24--->set names utf8
+2015-06-24 22:06:47--->USE boolshop
+2015-06-24 22:06:47--->set names utf8
+2015-06-24 22:09:15--->USE boolshop
+2015-06-24 22:09:15--->set names utf8
+2015-06-24 22:09:22--->USE boolshop
+2015-06-24 22:09:22--->set names utf8
+2015-06-24 22:09:43--->USE boolshop
+2015-06-24 22:09:43--->set names utf8
