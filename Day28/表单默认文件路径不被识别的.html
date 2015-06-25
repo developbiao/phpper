@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>文件上传测试</title>
+</head>
+<body>
+	<form action="02.php" method="post" enctype="multipart/form-data">
+		用户名:<input type="text" name="username" value="aliax"/><br/>	
+		<!-- 表单中不能把写文件路径 -->
+		头像:<input type="file" name="pic" value="C:\\Users\\aliax\\Desktop\\header01.png" /><br />
+		<input type="submit" value="提交"/>
+	</form>
+ </body>
+</html>
