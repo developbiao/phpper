@@ -162,9 +162,9 @@ class UpTool{
 	*/
 
 	protected function mk_dir(){
-		$dir = ROOT.'data/' . date('Ym/d');
+		$dir = ROOT.'data/images/' . date('Ym/d');
 
-		if(is_dir($dir) || mkdir($dir, 007, ture)){
+		if(is_dir($dir) || mkdir($dir, 007, true)){
 			return $dir;
 		}else{
 			return false;

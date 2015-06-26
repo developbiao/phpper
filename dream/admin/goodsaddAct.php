@@ -34,6 +34,16 @@ $data = array();
 $data = $goods->_facade($_POST); //自动过滤
 $data = $goods->_autoFill($data); //自动填充
 
+//2015年6月26日上传图片
+
+$uptool = new UpTool();
+$ori_img = $uptool->up('ori_img');
+
+if($ori_img){
+	$data['ori_img'] = $ori_img;
+}
+
+
 if(!$goods->_validate($data)){
 	echo '数据不合法<br />';
 	echo implode(',', $goods->getErr());
@@ -41,17 +51,16 @@ if(!$goods->_validate($data)){
 
 }
 
+
 echo '<pre>';
 print_r($data);
 echo '</pre>';
 
-/*
 if($goods->add($data)){
 	echo '商品发布成功';
 }else{
 	echo '商品发布失败';
 }
-*/
 
 
 

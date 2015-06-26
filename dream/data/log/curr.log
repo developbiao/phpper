@@ -853,3 +853,77 @@
 2015-06-24 22:09:22--->set names utf8
 2015-06-24 22:09:43--->USE boolshop
 2015-06-24 22:09:43--->set names utf8
+2015-06-26 11:24:25--->USE boolshop
+2015-06-26 11:24:25--->set names utf8
+2015-06-26 11:26:53--->USE boolshop
+2015-06-26 11:26:53--->set names utf8
+2015-06-26 11:27:26--->USE boolshop
+2015-06-26 11:27:26--->set names utf8
+2015-06-26 11:28:49--->USE boolshop
+2015-06-26 11:28:49--->set names utf8
+2015-06-26 11:31:15--->USE boolshop
+2015-06-26 11:31:15--->set names utf8
+2015-06-26 11:31:19--->USE boolshop
+2015-06-26 11:31:19--->set names utf8
+2015-06-26 11:31:26--->USE boolshop
+2015-06-26 11:31:26--->set names utf8
+2015-06-26 11:32:06--->USE boolshop
+2015-06-26 11:32:06--->set names utf8
+2015-06-26 11:32:09--->USE boolshop
+2015-06-26 11:32:09--->set names utf8
+2015-06-26 11:32:15--->USE boolshop
+2015-06-26 11:32:15--->set names utf8
+2015-06-26 11:32:19--->USE boolshop
+2015-06-26 11:32:19--->set names utf8
+2015-06-26 11:32:46--->USE boolshop
+2015-06-26 11:32:46--->set names utf8
+2015-06-26 11:32:59--->USE boolshop
+2015-06-26 11:32:59--->set names utf8
+2015-06-26 11:33:30--->USE boolshop
+2015-06-26 11:33:30--->set names utf8
+2015-06-26 11:34:30--->USE boolshop
+2015-06-26 11:34:30--->set names utf8
+2015-06-26 11:35:08--->USE boolshop
+2015-06-26 11:35:08--->set names utf8
+2015-06-26 11:35:27--->USE boolshop
+2015-06-26 11:35:27--->set names utf8
+2015-06-26 11:35:30--->USE boolshop
+2015-06-26 11:35:30--->set names utf8
+2015-06-26 11:35:49--->USE boolshop
+2015-06-26 11:35:49--->set names utf8
+2015-06-26 11:36:07--->USE boolshop
+2015-06-26 11:36:07--->set names utf8
+2015-06-26 11:36:53--->USE boolshop
+2015-06-26 11:36:53--->set names utf8
+2015-06-26 11:39:41--->USE boolshop
+2015-06-26 11:39:41--->set names utf8
+2015-06-26 11:39:42--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time) value ('小萝卜','PT757','0','15','32','小小的','1','1','1','1','1','','0','0','1435289981')
+2015-06-26 11:40:03--->USE boolshop
+2015-06-26 11:40:03--->set names utf8
+2015-06-26 11:40:03--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time) value ('小萝卜','PT757','0','15','32','小小的','1','1','1','1','1','','0','0','1435290003')
+2015-06-26 11:41:54--->USE boolshop
+2015-06-26 11:41:54--->set names utf8
+2015-06-26 11:41:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-06-26 11:41:56--->USE boolshop
+2015-06-26 11:41:56--->set names utf8
+2015-06-26 11:41:56--->SELECT * FROM goods WHERE is_delete=0
+2015-06-26 11:42:00--->USE boolshop
+2015-06-26 11:42:00--->set names utf8
+2015-06-26 11:42:00--->update goods set is_delete='1' where goods_id=8
+2015-06-26 11:42:07--->USE boolshop
+2015-06-26 11:42:07--->set names utf8
+2015-06-26 11:42:07--->SELECT * FROM goods WHERE is_delete=0
+2015-06-26 11:44:03--->USE boolshop
+2015-06-26 11:44:03--->set names utf8
+2015-06-26 11:44:03--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time) value ('小萝卜','PT757','0','15','32','小小的','1','1','1','1','1','','0','0','1435290243')
+2015-06-26 12:12:42--->USE boolshop
+2015-06-26 12:12:42--->set names utf8
+2015-06-26 12:19:59--->USE boolshop
+2015-06-26 12:19:59--->set names utf8
+2015-06-26 12:19:59--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time,ori_img) value ('小萝卜','PT757','0','15','32','小小的','1','1','1','1','1','','0','0','1435292399','data/images/201506/26/zkv2ng.png')
+2015-06-26 12:23:34--->USE boolshop
+2015-06-26 12:23:34--->set names utf8
+2015-06-26 12:23:34--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time,ori_img) value ('小萝卜','PT757','0','15','32','小小的','1','1','1','1','1','','0','0','1435292614','data/images/201506/26/ayxuqc.png')
+2015-06-26 12:31:43--->USE boolshop
+2015-06-26 12:31:43--->set names utf8
+2015-06-26 12:31:43--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_hot,is_on_sale,goods_brief,goods_id,is_best,add_time,ori_img) value ('手机MOTO','V3IE87','0','1200','1300','Motorla','0.2','25000','1','1','1','Moto X 新概念手机，颠覆传统手机格局','0','0','1435293103','data/images/201506/26/ink35c.jpg')

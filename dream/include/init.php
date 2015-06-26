@@ -20,6 +20,8 @@ require(ROOT.'include/lib_base.php'); //导入数据转义
 function __autoload($class){
 	if(strtolower(substr($class, -5)) == 'model'){
 		require(ROOT.'Model/'.$class.'.class.php'); //判断加载model类
+	}else if(strtolower(substr($class, -4)) == 'tool'){
+		require(ROOT.'tools/'.$class.'.class.php');
 	}else{
 		require(ROOT.'include/'.$class.'.class.php');
 	}
