@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>一个简单的验证码</title>
+<script type="text/javascript">
+function chv(vcode){
+	vcode.src = vcode.src + '?_s=' + Math.random();
+}
+</script>
+</head>
+<body>
+	<p>用户名:<input type="text" name = "user" /></p>
+	<p>密码:<input type="password" name= "pwd"/></p>
+	<p>验证码:<img src = "01.php" alt="checkcode"  onclick="chv(this);"/></p>
+	<p><input type="submit" value="提交"/></p>
+</body>
+</html>
