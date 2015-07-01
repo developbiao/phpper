@@ -47,6 +47,16 @@ class GoodsModel extends Model{
 		return $this->db->getAll($sql);
 	}
 
+	//创建商品的货号
+
+	public function createSn(){
+		$sn = 'DM' . date('Ymd') . mt_rand(10000, 99999);
+		$sql = 'SELECT COUNT(*) FROM ' . $this->table . " WHERE goods_sn='" . $sn . "'";
+
+		//应用递归，如果sn重复 再次调用
+		return $this->db->getOne($sql)?$this->createSn():$sn;
+	}
+
 }
 
 
