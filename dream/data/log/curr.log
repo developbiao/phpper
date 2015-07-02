@@ -1047,3 +1047,85 @@
 2015-07-01 13:25:12--->set names utf8
 2015-07-01 13:25:12--->SELECT COUNT(*) FROM goods WHERE goods_sn='DM2015070167778'
 2015-07-01 13:25:12--->insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_hot,is_on_sale,goods_brief,goods_id,is_new,add_time,ori_img,goods_img,thumb_img) value ('MotoX','DM2015070167778','4','5600','6000','Hello moto Motox','0.27','25000','1','1','1','Motox 你的生活','0','0','1435728312','data/images/201507/01/quw5tc.jpg','data/images/201507/01/goods_quw5tc.jpg','data/images/201507/01/thumb_quw5tc.jpg')
+2015-07-01 21:07:36--->USE boolshop
+2015-07-01 21:07:36--->set names utf8
+2015-07-01 21:07:46--->USE boolshop
+2015-07-01 21:07:46--->set names utf8
+2015-07-01 21:10:52--->USE boolshop
+2015-07-01 21:10:52--->set names utf8
+2015-07-01 21:11:03--->USE boolshop
+2015-07-01 21:11:03--->set names utf8
+2015-07-01 21:11:13--->USE boolshop
+2015-07-01 21:11:13--->set names utf8
+2015-07-01 21:11:50--->USE boolshop
+2015-07-01 21:11:50--->set names utf8
+2015-07-01 21:14:07--->USE boolshop
+2015-07-01 21:14:07--->set names utf8
+2015-07-01 21:18:39--->USE boolshop
+2015-07-01 21:18:39--->set names utf8
+2015-07-01 21:20:50--->USE boolshop
+2015-07-01 21:20:50--->set names utf8
+2015-07-01 21:20:57--->USE boolshop
+2015-07-01 21:20:57--->set names utf8
+2015-07-01 21:21:03--->USE boolshop
+2015-07-01 21:21:03--->set names utf8
+2015-07-01 21:21:19--->USE boolshop
+2015-07-01 21:21:19--->set names utf8
+2015-07-01 21:31:21--->USE boolshop
+2015-07-01 21:31:21--->set names utf8
+2015-07-01 21:33:38--->USE boolshop
+2015-07-01 21:33:38--->set names utf8
+2015-07-01 21:33:38--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','e10adc3949ba59abbe56e057f20f883e','1435757618')
+2015-07-01 21:34:15--->USE boolshop
+2015-07-01 21:34:15--->set names utf8
+2015-07-01 21:34:15--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','e10adc3949ba59abbe56e057f20f883e','1435757655')
+2015-07-01 21:40:08--->USE boolshop
+2015-07-01 21:40:08--->set names utf8
+2015-07-01 21:40:08--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:40:08--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758008')
+2015-07-01 21:40:16--->USE boolshop
+2015-07-01 21:40:16--->set names utf8
+2015-07-01 21:40:16--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:40:16--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758016')
+2015-07-01 21:42:54--->USE boolshop
+2015-07-01 21:42:54--->set names utf8
+2015-07-01 21:42:54--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:42:59--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758179')
+2015-07-01 21:43:23--->USE boolshop
+2015-07-01 21:43:23--->set names utf8
+2015-07-01 21:43:23--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:43:28--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758208')
+2015-07-01 21:43:51--->USE boolshop
+2015-07-01 21:43:51--->set names utf8
+2015-07-01 21:43:51--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:43:51--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758231')
+2015-07-01 21:45:46--->USE boolshop
+2015-07-01 21:45:46--->set names utf8
+2015-07-01 21:45:46--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:45:51--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','cf3a418781c9edbb9da480508a4defa6','1435758351')
+2015-07-01 21:46:38--->USE boolshop
+2015-07-01 21:46:38--->set names utf8
+2015-07-01 21:46:38--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:46:43--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','fed5919bb4cbfc1883a7284fb5946e17','1435758403')
+2015-07-01 21:46:59--->USE boolshop
+2015-07-01 21:46:59--->set names utf8
+2015-07-01 21:46:59--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:47:04--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','fed5919bb4cbfc1883a7284fb5946e17','1435758424')
+2015-07-01 21:47:11--->USE boolshop
+2015-07-01 21:47:11--->set names utf8
+2015-07-01 21:47:11--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:47:16--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758436')
+2015-07-01 21:49:04--->USE boolshop
+2015-07-01 21:49:04--->set names utf8
+2015-07-01 21:49:04--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:49:53--->USE boolshop
+2015-07-01 21:49:53--->set names utf8
+2015-07-01 21:49:53--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:49:53--->insert into user(username,email,passwd,regtime) value ('GongBiao','developbiao@gmail.com','202cb962ac59075b964b07152d234b70','1435758593')
+2015-07-01 21:49:59--->USE boolshop
+2015-07-01 21:49:59--->set names utf8
+2015-07-01 21:49:59--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-01 21:50:28--->USE boolshop
+2015-07-01 21:50:28--->set names utf8
+2015-07-01 21:50:28--->SELECT COUNT(*) FROM user WHERE username='美女老师`'
+2015-07-01 21:50:28--->insert into user(username,email,passwd,regtime) value ('美女老师`','meinvsd@meinv.com','e10adc3949ba59abbe56e057f20f883e','1435758628')
