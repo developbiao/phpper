@@ -1159,3 +1159,66 @@
 2015-07-03 19:14:58--->USE boolshop
 2015-07-03 19:14:58--->set names utf8
 2015-07-03 19:14:58--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:44:33--->USE boolshop
+2015-07-03 19:44:33--->set names utf8
+2015-07-03 19:44:33--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:46:13--->USE boolshop
+2015-07-03 19:46:13--->set names utf8
+2015-07-03 19:46:13--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:46:39--->USE boolshop
+2015-07-03 19:46:39--->set names utf8
+2015-07-03 19:46:39--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:54:04--->USE boolshop
+2015-07-03 19:54:04--->set names utf8
+2015-07-03 19:54:04--->SELECT user_id, username, email, passwd FROM user WHERE username='root'
+2015-07-03 19:54:15--->USE boolshop
+2015-07-03 19:54:15--->set names utf8
+2015-07-03 19:54:15--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:54:34--->USE boolshop
+2015-07-03 19:54:34--->set names utf8
+2015-07-03 19:54:34--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:55:02--->USE boolshop
+2015-07-03 19:55:02--->set names utf8
+2015-07-03 19:55:02--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:55:22--->USE boolshop
+2015-07-03 19:55:22--->set names utf8
+2015-07-03 19:55:22--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:56:01--->USE boolshop
+2015-07-03 19:56:01--->set names utf8
+2015-07-03 19:56:01--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:56:40--->USE boolshop
+2015-07-03 19:56:40--->set names utf8
+2015-07-03 19:56:40--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:57:41--->USE boolshop
+2015-07-03 19:57:41--->set names utf8
+2015-07-03 19:57:41--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:58:13--->USE boolshop
+2015-07-03 19:58:13--->set names utf8
+2015-07-03 19:58:13--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:59:28--->USE boolshop
+2015-07-03 19:59:28--->set names utf8
+2015-07-03 19:59:28--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:00:38--->USE boolshop
+2015-07-03 20:00:38--->set names utf8
+2015-07-03 20:00:38--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:07:17--->USE boolshop
+2015-07-03 20:07:17--->set names utf8
+2015-07-03 20:07:17--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:09:12--->USE boolshop
+2015-07-03 20:09:12--->set names utf8
+2015-07-03 20:09:12--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:09:56--->USE boolshop
+2015-07-03 20:09:56--->set names utf8
+2015-07-03 20:09:56--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:12:57--->USE boolshop
+2015-07-03 20:12:57--->set names utf8
+2015-07-03 20:12:57--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:13:08--->USE boolshop
+2015-07-03 20:13:08--->set names utf8
+2015-07-03 20:13:08--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:13:23--->USE boolshop
+2015-07-03 20:13:23--->set names utf8
+2015-07-03 20:13:23--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 20:13:49--->USE boolshop
+2015-07-03 20:13:49--->set names utf8
+2015-07-03 20:13:49--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'

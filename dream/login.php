@@ -14,6 +14,7 @@ if(isset($_POST['act'])){
 
 	$name = $_POST['username'];
 	$passwd = $_POST['passwd'];
+
 	/*
 	echo '<pre>';
 	print_r($_POST);
@@ -34,10 +35,20 @@ if(isset($_POST['act'])){
 		$msg = '登陆成功!';	
 		session_start();
 		$_SESSION = $row; //登陆成功设置session
+
+		//记住用户名
+		//remember
+		if(isset($_POST['remember'])){
+			setcookie('remuser', $name, time() + 14 * 24 * 3600); //保存2周
+		}else{
+			setcookie('remuser', '', 0);
+		}
 	}
 
 	include('./view/front/msg.html');
 }else{
+	//判断是否记住用户名
+	$remuser = isset($_COOKIE['remuser'])?$_COOKIE['remuser']:'';
 	//准备登陆
 	include('./view/front/denglu.html');
 }
