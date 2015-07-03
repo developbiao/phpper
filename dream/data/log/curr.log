@@ -1129,3 +1129,33 @@
 2015-07-01 21:50:28--->set names utf8
 2015-07-01 21:50:28--->SELECT COUNT(*) FROM user WHERE username='美女老师`'
 2015-07-01 21:50:28--->insert into user(username,email,passwd,regtime) value ('美女老师`','meinvsd@meinv.com','e10adc3949ba59abbe56e057f20f883e','1435758628')
+2015-07-03 18:45:54--->USE boolshop
+2015-07-03 18:45:54--->set names utf8
+2015-07-03 18:45:54--->SELECT user_id, username, email, passwd FROM user WHERE username='root.
+2015-07-03 18:48:49--->USE boolshop
+2015-07-03 18:48:49--->set names utf8
+2015-07-03 18:48:49--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao.
+2015-07-03 18:50:16--->USE boolshop
+2015-07-03 18:50:16--->set names utf8
+2015-07-03 18:50:16--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 18:50:29--->USE boolshop
+2015-07-03 18:50:29--->set names utf8
+2015-07-03 18:50:29--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 18:51:17--->USE boolshop
+2015-07-03 18:51:17--->set names utf8
+2015-07-03 18:51:17--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 18:51:37--->USE boolshop
+2015-07-03 18:51:37--->set names utf8
+2015-07-03 18:51:37--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 18:51:54--->USE boolshop
+2015-07-03 18:51:54--->set names utf8
+2015-07-03 18:51:54--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:14:42--->USE boolshop
+2015-07-03 19:14:42--->set names utf8
+2015-07-03 19:14:42--->SELECT user_id, username, email, passwd FROM user WHERE username='root'
+2015-07-03 19:14:50--->USE boolshop
+2015-07-03 19:14:50--->set names utf8
+2015-07-03 19:14:50--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 19:14:58--->USE boolshop
+2015-07-03 19:14:58--->set names utf8
+2015-07-03 19:14:58--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
