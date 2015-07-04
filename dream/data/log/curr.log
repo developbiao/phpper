@@ -1222,3 +1222,1028 @@
 2015-07-03 20:13:49--->USE boolshop
 2015-07-03 20:13:49--->set names utf8
 2015-07-03 20:13:49--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-03 22:36:02--->USE boolshop
+2015-07-03 22:36:02--->set names utf8
+2015-07-03 22:36:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 22:36:12--->USE boolshop
+2015-07-03 22:36:12--->set names utf8
+2015-07-03 22:36:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 22:36:15--->USE boolshop
+2015-07-03 22:36:15--->set names utf8
+2015-07-03 22:36:15--->SELECT * FROM goods WHERE is_delete=0
+2015-07-03 22:51:10--->USE boolshop
+2015-07-03 22:51:10--->set names utf8
+2015-07-03 22:51:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:24:02--->USE boolshop
+2015-07-03 23:24:02--->set names utf8
+2015-07-03 23:24:28--->USE boolshop
+2015-07-03 23:24:28--->set names utf8
+2015-07-03 23:24:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:37:02--->USE boolshop
+2015-07-03 23:37:02--->set names utf8
+2015-07-03 23:37:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:37:51--->USE boolshop
+2015-07-03 23:37:51--->set names utf8
+2015-07-03 23:37:51--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:37:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:38:30--->USE boolshop
+2015-07-03 23:38:30--->set names utf8
+2015-07-03 23:38:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:38:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:38:30--->SELECT goods_id, goods_name, shop_price, market_price, thumb_img FROM goodsWHERE cat_id in (5,6) ORDER BY add_time limit 5
+2015-07-03 23:41:18--->USE boolshop
+2015-07-03 23:41:18--->set names utf8
+2015-07-03 23:41:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:41:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:41:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-03 23:45:46--->USE boolshop
+2015-07-03 23:45:46--->set names utf8
+2015-07-03 23:45:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:45:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:45:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-03 23:46:20--->USE boolshop
+2015-07-03 23:46:20--->set names utf8
+2015-07-03 23:46:20--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:46:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:46:20--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-03 23:48:11--->USE boolshop
+2015-07-03 23:48:11--->set names utf8
+2015-07-03 23:48:11--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-03 23:48:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-03 23:48:11--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:03:42--->USE boolshop
+2015-07-04 08:03:42--->set names utf8
+2015-07-04 08:03:42--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:03:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:03:43--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:07:15--->USE boolshop
+2015-07-04 08:07:15--->set names utf8
+2015-07-04 08:07:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:07:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:07:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:08:39--->USE boolshop
+2015-07-04 08:08:39--->set names utf8
+2015-07-04 08:08:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:08:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:08:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:09:12--->USE boolshop
+2015-07-04 08:09:12--->set names utf8
+2015-07-04 08:09:12--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:09:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:09:12--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:10:10--->USE boolshop
+2015-07-04 08:10:10--->set names utf8
+2015-07-04 08:10:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:10:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:10:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:25:58--->USE boolshop
+2015-07-04 08:25:58--->set names utf8
+2015-07-04 08:25:58--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:25:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:25:58--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:26:21--->USE boolshop
+2015-07-04 08:26:21--->set names utf8
+2015-07-04 08:26:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:26:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:26:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:28:04--->USE boolshop
+2015-07-04 08:28:04--->set names utf8
+2015-07-04 08:28:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:28:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:28:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:28:20--->USE boolshop
+2015-07-04 08:28:20--->set names utf8
+2015-07-04 08:28:20--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:28:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:28:20--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5,6) order by add_time limit 5
+2015-07-04 08:37:40--->USE boolshop
+2015-07-04 08:37:40--->set names utf8
+2015-07-04 08:37:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:37:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:37:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 08:53:32--->USE boolshop
+2015-07-04 08:53:32--->set names utf8
+2015-07-04 08:53:32--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:53:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:53:32--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 08:53:42--->USE boolshop
+2015-07-04 08:53:42--->set names utf8
+2015-07-04 08:53:42--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:53:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:53:42--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 08:54:26--->USE boolshop
+2015-07-04 08:54:26--->set names utf8
+2015-07-04 08:54:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 08:54:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 08:54:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:00:04--->USE boolshop
+2015-07-04 09:00:04--->set names utf8
+2015-07-04 09:00:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:00:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:00:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:00:22--->USE boolshop
+2015-07-04 09:00:22--->set names utf8
+2015-07-04 09:00:22--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:00:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:00:22--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:03:39--->USE boolshop
+2015-07-04 09:03:39--->set names utf8
+2015-07-04 09:03:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:03:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:03:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:03:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:03:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:05:48--->USE boolshop
+2015-07-04 09:05:48--->set names utf8
+2015-07-04 09:05:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:05:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:05:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:06:53--->USE boolshop
+2015-07-04 09:06:53--->set names utf8
+2015-07-04 09:06:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:06:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:06:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:06:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:06:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:07:50--->USE boolshop
+2015-07-04 09:07:50--->set names utf8
+2015-07-04 09:07:50--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:07:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:07:50--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:07:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:07:50--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:08:04--->USE boolshop
+2015-07-04 09:08:04--->set names utf8
+2015-07-04 09:08:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:08:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:08:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:08:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:08:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:09:10--->USE boolshop
+2015-07-04 09:09:10--->set names utf8
+2015-07-04 09:09:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:09:12--->USE boolshop
+2015-07-04 09:09:12--->set names utf8
+2015-07-04 09:09:12--->SELECT * FROM goods WHERE is_delete=0
+2015-07-04 09:09:14--->USE boolshop
+2015-07-04 09:09:14--->set names utf8
+2015-07-04 09:09:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:11:00--->USE boolshop
+2015-07-04 09:11:00--->set names utf8
+2015-07-04 09:11:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:11:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:11:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:11:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:11:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:11:24--->USE boolshop
+2015-07-04 09:11:24--->set names utf8
+2015-07-04 09:11:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:11:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:11:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:11:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:11:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:12:47--->USE boolshop
+2015-07-04 09:12:47--->set names utf8
+2015-07-04 09:12:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:12:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:12:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:12:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:12:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 5
+2015-07-04 09:13:03--->USE boolshop
+2015-07-04 09:13:03--->set names utf8
+2015-07-04 09:13:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:13:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:13:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:13:35--->USE boolshop
+2015-07-04 09:13:35--->set names utf8
+2015-07-04 09:13:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 5
+2015-07-04 09:13:46--->USE boolshop
+2015-07-04 09:13:46--->set names utf8
+2015-07-04 09:13:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:13:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:13:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:13:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 09:14:30--->USE boolshop
+2015-07-04 09:14:30--->set names utf8
+2015-07-04 09:14:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:14:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:14:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:14:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:14:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5) order by add_time limit 5
+2015-07-04 09:14:49--->USE boolshop
+2015-07-04 09:14:49--->set names utf8
+2015-07-04 09:14:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:14:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:14:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:14:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:14:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 09:15:25--->USE boolshop
+2015-07-04 09:15:25--->set names utf8
+2015-07-04 09:15:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 09:15:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:15:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 09:15:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 09:15:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:19:10--->USE boolshop
+2015-07-04 10:19:10--->set names utf8
+2015-07-04 10:19:10--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:19:10--->USE boolshop
+2015-07-04 10:19:10--->set names utf8
+2015-07-04 10:19:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:19:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:19:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:19:33--->USE boolshop
+2015-07-04 10:19:33--->set names utf8
+2015-07-04 10:19:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:19:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:19:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:19:44--->USE boolshop
+2015-07-04 10:19:44--->set names utf8
+2015-07-04 10:19:44--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:19:44--->USE boolshop
+2015-07-04 10:19:44--->set names utf8
+2015-07-04 10:19:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:19:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:19:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:19:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:20:33--->USE boolshop
+2015-07-04 10:20:33--->set names utf8
+2015-07-04 10:20:33--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:20:33--->USE boolshop
+2015-07-04 10:20:33--->set names utf8
+2015-07-04 10:20:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:20:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:20:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:20:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:20:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:20:58--->USE boolshop
+2015-07-04 10:20:58--->set names utf8
+2015-07-04 10:20:58--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:20:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:22:36--->USE boolshop
+2015-07-04 10:22:36--->set names utf8
+2015-07-04 10:22:36--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:22:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:29:39--->USE boolshop
+2015-07-04 10:29:39--->set names utf8
+2015-07-04 10:29:39--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:29:39--->USE boolshop
+2015-07-04 10:29:39--->set names utf8
+2015-07-04 10:29:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:29:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:29:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:29:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:29:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:30:57--->USE boolshop
+2015-07-04 10:30:57--->set names utf8
+2015-07-04 10:30:57--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:31:01--->USE boolshop
+2015-07-04 10:31:01--->set names utf8
+2015-07-04 10:31:01--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:31:38--->USE boolshop
+2015-07-04 10:31:38--->set names utf8
+2015-07-04 10:31:38--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:31:51--->USE boolshop
+2015-07-04 10:31:51--->set names utf8
+2015-07-04 10:31:51--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:31:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:31:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:21--->USE boolshop
+2015-07-04 10:32:21--->set names utf8
+2015-07-04 10:32:21--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:32:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:35--->USE boolshop
+2015-07-04 10:32:35--->set names utf8
+2015-07-04 10:32:35--->SELECT * FROM category WHERE cat_id=15
+2015-07-04 10:32:35--->USE boolshop
+2015-07-04 10:32:35--->set names utf8
+2015-07-04 10:32:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:32:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:32:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:32:39--->USE boolshop
+2015-07-04 10:32:39--->set names utf8
+2015-07-04 10:32:39--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:32:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:32:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:33:09--->USE boolshop
+2015-07-04 10:33:09--->set names utf8
+2015-07-04 10:33:09--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:33:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:33:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:33:59--->USE boolshop
+2015-07-04 10:33:59--->set names utf8
+2015-07-04 10:33:59--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:33:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:33:59--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:33:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:33:59--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:34:08--->USE boolshop
+2015-07-04 10:34:08--->set names utf8
+2015-07-04 10:34:08--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:34:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:36:36--->USE boolshop
+2015-07-04 10:36:36--->set names utf8
+2015-07-04 10:36:36--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:36:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:37:18--->USE boolshop
+2015-07-04 10:37:18--->set names utf8
+2015-07-04 10:37:18--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:37:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:39:24--->USE boolshop
+2015-07-04 10:39:24--->set names utf8
+2015-07-04 10:39:24--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:39:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:39:36--->USE boolshop
+2015-07-04 10:39:36--->set names utf8
+2015-07-04 10:39:36--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:39:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:39:37--->USE boolshop
+2015-07-04 10:39:37--->set names utf8
+2015-07-04 10:39:37--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:39:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:39:58--->USE boolshop
+2015-07-04 10:39:58--->set names utf8
+2015-07-04 10:39:58--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:39:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:40:00--->USE boolshop
+2015-07-04 10:40:00--->set names utf8
+2015-07-04 10:40:00--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:40:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:40:01--->USE boolshop
+2015-07-04 10:40:01--->set names utf8
+2015-07-04 10:40:01--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:40:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:41:20--->USE boolshop
+2015-07-04 10:41:20--->set names utf8
+2015-07-04 10:41:20--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:41:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:42:32--->USE boolshop
+2015-07-04 10:42:32--->set names utf8
+2015-07-04 10:42:32--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:42:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:46:46--->USE boolshop
+2015-07-04 10:46:46--->set names utf8
+2015-07-04 10:46:46--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:46:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:13--->USE boolshop
+2015-07-04 10:47:13--->set names utf8
+2015-07-04 10:47:13--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:47:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:44--->USE boolshop
+2015-07-04 10:47:44--->set names utf8
+2015-07-04 10:47:44--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:47:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:49--->USE boolshop
+2015-07-04 10:47:49--->set names utf8
+2015-07-04 10:47:49--->SELECT * FROM category WHERE cat_id=8
+2015-07-04 10:47:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:51--->USE boolshop
+2015-07-04 10:47:51--->set names utf8
+2015-07-04 10:47:51--->SELECT * FROM category WHERE cat_id=5
+2015-07-04 10:47:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:52--->USE boolshop
+2015-07-04 10:47:52--->set names utf8
+2015-07-04 10:47:52--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 10:47:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:55--->USE boolshop
+2015-07-04 10:47:55--->set names utf8
+2015-07-04 10:47:55--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 10:47:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:57--->USE boolshop
+2015-07-04 10:47:57--->set names utf8
+2015-07-04 10:47:57--->SELECT * FROM category WHERE cat_id=2
+2015-07-04 10:47:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:47:58--->USE boolshop
+2015-07-04 10:47:58--->set names utf8
+2015-07-04 10:47:58--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 10:47:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:48:00--->USE boolshop
+2015-07-04 10:48:00--->set names utf8
+2015-07-04 10:48:00--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 10:48:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:48:01--->USE boolshop
+2015-07-04 10:48:01--->set names utf8
+2015-07-04 10:48:01--->SELECT * FROM category WHERE cat_id=12
+2015-07-04 10:48:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:48:04--->USE boolshop
+2015-07-04 10:48:04--->set names utf8
+2015-07-04 10:48:04--->SELECT * FROM category WHERE cat_id=15
+2015-07-04 10:48:04--->USE boolshop
+2015-07-04 10:48:04--->set names utf8
+2015-07-04 10:48:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:48:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:48:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:48:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:48:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:48:06--->USE boolshop
+2015-07-04 10:48:06--->set names utf8
+2015-07-04 10:48:06--->SELECT * FROM category WHERE cat_id=12
+2015-07-04 10:48:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:50:39--->USE boolshop
+2015-07-04 10:50:39--->set names utf8
+2015-07-04 10:50:39--->SELECT * FROM category WHERE cat_id=12
+2015-07-04 10:50:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:50:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:50:47--->USE boolshop
+2015-07-04 10:50:47--->set names utf8
+2015-07-04 10:50:47--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:50:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:50:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:11--->USE boolshop
+2015-07-04 10:51:11--->set names utf8
+2015-07-04 10:51:11--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:51:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:56--->USE boolshop
+2015-07-04 10:51:56--->set names utf8
+2015-07-04 10:51:56--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 10:51:56--->USE boolshop
+2015-07-04 10:51:56--->set names utf8
+2015-07-04 10:51:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:51:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:51:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:51:58--->USE boolshop
+2015-07-04 10:51:58--->set names utf8
+2015-07-04 10:51:58--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:51:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:51:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:03--->USE boolshop
+2015-07-04 10:52:03--->set names utf8
+2015-07-04 10:52:03--->SELECT * FROM category WHERE cat_id=15
+2015-07-04 10:52:03--->USE boolshop
+2015-07-04 10:52:03--->set names utf8
+2015-07-04 10:52:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 10:52:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 10:52:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 10:52:06--->USE boolshop
+2015-07-04 10:52:06--->set names utf8
+2015-07-04 10:52:06--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:52:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:58--->USE boolshop
+2015-07-04 10:52:58--->set names utf8
+2015-07-04 10:52:58--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:52:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:59--->USE boolshop
+2015-07-04 10:52:59--->set names utf8
+2015-07-04 10:52:59--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:52:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:52:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:54:31--->USE boolshop
+2015-07-04 10:54:31--->set names utf8
+2015-07-04 10:54:31--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 10:54:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:54:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:55:01--->USE boolshop
+2015-07-04 10:55:01--->set names utf8
+2015-07-04 10:55:01--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 10:55:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 10:55:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:00--->USE boolshop
+2015-07-04 11:00:00--->set names utf8
+2015-07-04 11:00:00--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:00:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:10--->USE boolshop
+2015-07-04 11:00:10--->set names utf8
+2015-07-04 11:00:10--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:00:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:15--->USE boolshop
+2015-07-04 11:00:15--->set names utf8
+2015-07-04 11:00:15--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:00:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:17--->USE boolshop
+2015-07-04 11:00:17--->set names utf8
+2015-07-04 11:00:17--->SELECT * FROM category WHERE cat_id=5
+2015-07-04 11:00:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:19--->USE boolshop
+2015-07-04 11:00:19--->set names utf8
+2015-07-04 11:00:19--->SELECT * FROM category WHERE cat_id=6
+2015-07-04 11:00:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:00:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:28--->USE boolshop
+2015-07-04 11:01:28--->set names utf8
+2015-07-04 11:01:28--->SELECT * FROM category WHERE cat_id=6
+2015-07-04 11:01:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:40--->USE boolshop
+2015-07-04 11:01:40--->set names utf8
+2015-07-04 11:01:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:01:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:01:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:01:54--->USE boolshop
+2015-07-04 11:01:54--->set names utf8
+2015-07-04 11:01:54--->SELECT * FROM category WHERE cat_id=5
+2015-07-04 11:01:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:57--->USE boolshop
+2015-07-04 11:01:57--->set names utf8
+2015-07-04 11:01:57--->SELECT * FROM category WHERE cat_id=8
+2015-07-04 11:01:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:59--->USE boolshop
+2015-07-04 11:01:59--->set names utf8
+2015-07-04 11:01:59--->SELECT * FROM category WHERE cat_id=2
+2015-07-04 11:01:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:01:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:35--->USE boolshop
+2015-07-04 11:05:35--->set names utf8
+2015-07-04 11:05:35--->SELECT * FROM category WHERE cat_id=2
+2015-07-04 11:05:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 5
+2015-07-04 11:05:38--->USE boolshop
+2015-07-04 11:05:38--->set names utf8
+2015-07-04 11:05:38--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:05:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:38--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:05:46--->USE boolshop
+2015-07-04 11:05:46--->set names utf8
+2015-07-04 11:05:46--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 11:05:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:05:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 5
+2015-07-04 11:10:26--->USE boolshop
+2015-07-04 11:10:26--->set names utf8
+2015-07-04 11:10:26--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 11:10:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:10:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:10:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:10:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 5
+2015-07-04 11:14:46--->USE boolshop
+2015-07-04 11:14:46--->set names utf8
+2015-07-04 11:14:46--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 11:14:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 5
+2015-07-04 11:14:53--->USE boolshop
+2015-07-04 11:14:53--->set names utf8
+2015-07-04 11:14:53--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:14:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:14:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:15:00--->USE boolshop
+2015-07-04 11:15:00--->set names utf8
+2015-07-04 11:15:00--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:15:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:15:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:15:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:15:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:19:46--->USE boolshop
+2015-07-04 11:19:46--->set names utf8
+2015-07-04 11:19:46--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:19:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:19:55--->USE boolshop
+2015-07-04 11:19:55--->set names utf8
+2015-07-04 11:19:55--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:19:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:19:55--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:20:00--->USE boolshop
+2015-07-04 11:20:00--->set names utf8
+2015-07-04 11:20:00--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:20:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 11:20:02--->USE boolshop
+2015-07-04 11:20:02--->set names utf8
+2015-07-04 11:20:02--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:20:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:20:05--->USE boolshop
+2015-07-04 11:20:05--->set names utf8
+2015-07-04 11:20:05--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:20:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:20:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 11:21:05--->USE boolshop
+2015-07-04 11:21:05--->set names utf8
+2015-07-04 11:21:05--->SELECT * FROM category WHERE cat_id=6
+2015-07-04 11:21:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (6) order by add_time limit 5
+2015-07-04 11:21:07--->USE boolshop
+2015-07-04 11:21:07--->set names utf8
+2015-07-04 11:21:07--->SELECT * FROM category WHERE cat_id=5
+2015-07-04 11:21:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5) order by add_time limit 5
+2015-07-04 11:21:11--->USE boolshop
+2015-07-04 11:21:11--->set names utf8
+2015-07-04 11:21:11--->SELECT * FROM category WHERE cat_id=2
+2015-07-04 11:21:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:11--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 5
+2015-07-04 11:21:14--->USE boolshop
+2015-07-04 11:21:14--->set names utf8
+2015-07-04 11:21:14--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:21:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:21:18--->USE boolshop
+2015-07-04 11:21:18--->set names utf8
+2015-07-04 11:21:18--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:21:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:21:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 11:22:47--->USE boolshop
+2015-07-04 11:22:47--->set names utf8
+2015-07-04 11:22:47--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:22:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 11:22:57--->USE boolshop
+2015-07-04 11:22:57--->set names utf8
+2015-07-04 11:22:57--->SELECT * FROM category WHERE cat_id=2
+2015-07-04 11:22:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:57--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 5
+2015-07-04 11:22:58--->USE boolshop
+2015-07-04 11:22:58--->set names utf8
+2015-07-04 11:22:58--->SELECT * FROM category WHERE cat_id=6
+2015-07-04 11:22:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:22:58--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (6) order by add_time limit 5
+2015-07-04 11:23:00--->USE boolshop
+2015-07-04 11:23:00--->set names utf8
+2015-07-04 11:23:00--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:23:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:23:02--->USE boolshop
+2015-07-04 11:23:02--->set names utf8
+2015-07-04 11:23:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:23:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:23:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:23:14--->USE boolshop
+2015-07-04 11:23:14--->set names utf8
+2015-07-04 11:23:14--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 11:23:14--->USE boolshop
+2015-07-04 11:23:14--->set names utf8
+2015-07-04 11:23:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:23:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:23:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:23:35--->USE boolshop
+2015-07-04 11:23:35--->set names utf8
+2015-07-04 11:23:35--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 11:23:35--->USE boolshop
+2015-07-04 11:23:35--->set names utf8
+2015-07-04 11:23:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:23:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:23:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:23:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:24:12--->USE boolshop
+2015-07-04 11:24:12--->set names utf8
+2015-07-04 11:24:12--->SELECT * FROM category WHERE cat_id=0
+2015-07-04 11:24:12--->USE boolshop
+2015-07-04 11:24:12--->set names utf8
+2015-07-04 11:24:12--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:24:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:24:12--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:24:12--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:24:12--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:24:14--->USE boolshop
+2015-07-04 11:24:14--->set names utf8
+2015-07-04 11:24:14--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:24:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:24:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:24:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:24:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:27:44--->USE boolshop
+2015-07-04 11:27:44--->set names utf8
+2015-07-04 11:27:44--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:27:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:27:53--->USE boolshop
+2015-07-04 11:27:53--->set names utf8
+2015-07-04 11:27:53--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:27:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:29:28--->USE boolshop
+2015-07-04 11:29:28--->set names utf8
+2015-07-04 11:29:28--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 11:29:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:29:31--->USE boolshop
+2015-07-04 11:29:31--->set names utf8
+2015-07-04 11:29:31--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:29:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:31--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:29:34--->USE boolshop
+2015-07-04 11:29:34--->set names utf8
+2015-07-04 11:29:34--->SELECT * FROM category WHERE cat_id=3
+2015-07-04 11:29:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:34--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 5
+2015-07-04 11:29:36--->USE boolshop
+2015-07-04 11:29:36--->set names utf8
+2015-07-04 11:29:36--->SELECT * FROM category WHERE cat_id=5
+2015-07-04 11:29:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:36--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5) order by add_time limit 5
+2015-07-04 11:29:37--->USE boolshop
+2015-07-04 11:29:37--->set names utf8
+2015-07-04 11:29:37--->SELECT * FROM category WHERE cat_id=6
+2015-07-04 11:29:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (6) order by add_time limit 5
+2015-07-04 11:29:51--->USE boolshop
+2015-07-04 11:29:51--->set names utf8
+2015-07-04 11:29:51--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 11:29:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:51--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 5
+2015-07-04 11:29:52--->USE boolshop
+2015-07-04 11:29:52--->set names utf8
+2015-07-04 11:29:52--->SELECT * FROM category WHERE cat_id=12
+2015-07-04 11:29:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (12) order by add_time limit 5
+2015-07-04 11:29:54--->USE boolshop
+2015-07-04 11:29:54--->set names utf8
+2015-07-04 11:29:54--->SELECT * FROM category WHERE cat_id=11
+2015-07-04 11:29:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:54--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 5
+2015-07-04 11:29:55--->USE boolshop
+2015-07-04 11:29:55--->set names utf8
+2015-07-04 11:29:55--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:29:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:29:55--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:33:52--->USE boolshop
+2015-07-04 11:33:52--->set names utf8
+2015-07-04 11:33:52--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:33:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:33:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:33:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:33:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:34:44--->USE boolshop
+2015-07-04 11:34:44--->set names utf8
+2015-07-04 11:34:44--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:34:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:34:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:34:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:34:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:39:06--->USE boolshop
+2015-07-04 11:39:06--->set names utf8
+2015-07-04 11:39:06--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:39:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:06--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:06--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:39:07--->USE boolshop
+2015-07-04 11:39:07--->set names utf8
+2015-07-04 11:39:07--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 11:39:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:39:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:40:03--->USE boolshop
+2015-07-04 11:40:03--->set names utf8
+2015-07-04 11:40:03--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 11:40:27--->USE boolshop
+2015-07-04 11:40:27--->set names utf8
+2015-07-04 11:40:27--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 11:40:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:40:28--->USE boolshop
+2015-07-04 11:40:28--->set names utf8
+2015-07-04 11:40:28--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 11:40:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:40:41--->USE boolshop
+2015-07-04 11:40:41--->set names utf8
+2015-07-04 11:40:41--->SELECT * FROM goods WHERE goods_id=0
+2015-07-04 11:40:41--->USE boolshop
+2015-07-04 11:40:41--->set names utf8
+2015-07-04 11:40:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 11:40:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:40:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 11:40:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:40:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 11:40:43--->USE boolshop
+2015-07-04 11:40:43--->set names utf8
+2015-07-04 11:40:43--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 11:40:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:46:58--->USE boolshop
+2015-07-04 11:46:58--->set names utf8
+2015-07-04 11:46:58--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 11:46:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:47:08--->USE boolshop
+2015-07-04 11:47:08--->set names utf8
+2015-07-04 11:47:08--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:47:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:50:19--->USE boolshop
+2015-07-04 11:50:19--->set names utf8
+2015-07-04 11:50:19--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:50:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:52:59--->USE boolshop
+2015-07-04 11:52:59--->set names utf8
+2015-07-04 11:52:59--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:52:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:53:01--->USE boolshop
+2015-07-04 11:53:01--->set names utf8
+2015-07-04 11:53:01--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:53:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:53:02--->USE boolshop
+2015-07-04 11:53:02--->set names utf8
+2015-07-04 11:53:02--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:53:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:53:31--->USE boolshop
+2015-07-04 11:53:31--->set names utf8
+2015-07-04 11:53:31--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:53:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:55:27--->USE boolshop
+2015-07-04 11:55:27--->set names utf8
+2015-07-04 11:55:27--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:55:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:57:04--->USE boolshop
+2015-07-04 11:57:04--->set names utf8
+2015-07-04 11:57:04--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:57:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:57:29--->USE boolshop
+2015-07-04 11:57:29--->set names utf8
+2015-07-04 11:57:29--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:57:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:58:23--->USE boolshop
+2015-07-04 11:58:23--->set names utf8
+2015-07-04 11:58:23--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:58:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:59:03--->USE boolshop
+2015-07-04 11:59:03--->set names utf8
+2015-07-04 11:59:03--->SELECT * FROM goods WHERE goods_id=3
+2015-07-04 11:59:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:59:16--->USE boolshop
+2015-07-04 11:59:16--->set names utf8
+2015-07-04 11:59:16--->SELECT * FROM goods WHERE goods_id=4
+2015-07-04 11:59:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:59:25--->USE boolshop
+2015-07-04 11:59:25--->set names utf8
+2015-07-04 11:59:25--->SELECT * FROM goods WHERE goods_id=6
+2015-07-04 11:59:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 11:59:31--->USE boolshop
+2015-07-04 11:59:31--->set names utf8
+2015-07-04 11:59:31--->SELECT * FROM goods WHERE goods_id=7
+2015-07-04 11:59:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:27--->USE boolshop
+2015-07-04 12:07:27--->set names utf8
+2015-07-04 12:07:27--->SELECT * FROM goods WHERE goods_id=7
+2015-07-04 12:07:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:35--->USE boolshop
+2015-07-04 12:07:35--->set names utf8
+2015-07-04 12:07:35--->SELECT * FROM goods WHERE goods_id=8
+2015-07-04 12:07:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:39--->USE boolshop
+2015-07-04 12:07:39--->set names utf8
+2015-07-04 12:07:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 12:07:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 12:07:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 12:07:51--->USE boolshop
+2015-07-04 12:07:51--->set names utf8
+2015-07-04 12:07:51--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 12:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:07:51--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 12:07:56--->USE boolshop
+2015-07-04 12:07:56--->set names utf8
+2015-07-04 12:07:56--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:07:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:09:24--->USE boolshop
+2015-07-04 12:09:24--->set names utf8
+2015-07-04 12:09:24--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:09:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:09:35--->USE boolshop
+2015-07-04 12:09:35--->set names utf8
+2015-07-04 12:09:35--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:09:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:09:36--->USE boolshop
+2015-07-04 12:09:36--->set names utf8
+2015-07-04 12:09:36--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:09:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:01--->USE boolshop
+2015-07-04 12:10:01--->set names utf8
+2015-07-04 12:10:01--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:10:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:04--->USE boolshop
+2015-07-04 12:10:04--->set names utf8
+2015-07-04 12:10:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 12:10:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 12:10:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 12:10:07--->USE boolshop
+2015-07-04 12:10:07--->set names utf8
+2015-07-04 12:10:07--->SELECT * FROM goods WHERE goods_id=10
+2015-07-04 12:10:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:15--->USE boolshop
+2015-07-04 12:10:15--->set names utf8
+2015-07-04 12:10:15--->SELECT * FROM category WHERE cat_id=4
+2015-07-04 12:10:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 12:10:18--->USE boolshop
+2015-07-04 12:10:18--->set names utf8
+2015-07-04 12:10:18--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 12:10:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 12:10:19--->USE boolshop
+2015-07-04 12:10:19--->set names utf8
+2015-07-04 12:10:19--->SELECT * FROM goods WHERE goods_id=2
+2015-07-04 12:10:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:24--->USE boolshop
+2015-07-04 12:10:24--->set names utf8
+2015-07-04 12:10:24--->SELECT * FROM category WHERE cat_id=1
+2015-07-04 12:10:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:10:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 12:10:26--->USE boolshop
+2015-07-04 12:10:26--->set names utf8
+2015-07-04 12:10:26--->SELECT * FROM goods WHERE goods_id=5
+2015-07-04 12:10:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:11:45--->USE boolshop
+2015-07-04 12:11:45--->set names utf8
+2015-07-04 12:11:45--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-04 12:11:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:11:45--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-04 12:11:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-04 12:11:45--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-04 12:11:47--->USE boolshop
+2015-07-04 12:11:47--->set names utf8
+2015-07-04 12:11:47--->SELECT * FROM goods WHERE goods_id=5
+2015-07-04 12:11:47--->SELECT cat_id, cat_name, parent_id FROM category

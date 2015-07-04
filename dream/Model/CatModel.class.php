@@ -83,7 +83,7 @@ class CatModel extends Model{
 			}	
 		}
 
-		return $tree;
+		return array_reverse($tree);
 
 	}
 

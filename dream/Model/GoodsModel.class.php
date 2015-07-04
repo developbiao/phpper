@@ -57,6 +57,56 @@ class GoodsModel extends Model{
 		return $this->db->getOne($sql)?$this->createSn():$sn;
 	}
 
+
+	//取出批定条数的新商品
+
+	public function getNew($n=5){
+		 $sql = 'select goods_id,goods_name,shop_price,market_price,thumb_img from ' . $this->table . ' order by add_time limit 5';
+		return $this->db->getAll($sql); 
+
+	}
+
+
+	/*
+	以出指定栏目的商品
+	//$cat_id = $_GET['cat_id'];
+	$sql = SELECT .. FROM goods WHERE cat_id = $cat_id
+	//这是错的
+
+	因为$cat_id对应的栏目有可能是个大栏目，而大栏目下面没有商品
+	商品放在大栏目下面的小栏目下面
+
+	因此，正确的做法，是找出$cat_id的所有子孙栏目，
+	然后再查所有$cat_id及其子孙栏目下的商品
+	*/
+
+	public function catGoods($cat_id){
+		$category = new CatModel();
+		$cats = $category->select(); //取出所有的栏目来
+		$sons = $category->getCatTree($cats, $cat_id); //取出给定栏目的子孙栏目
+
+		$sub = array($cat_id);
+
+
+		if(!empty($sons)){ //没有子孙栏目
+
+			foreach($sons as $v){
+				$sub[] = $v['cat_id'];
+			}
+
+		}
+
+		$in = implode(',', $sub);
+
+	   $sql = 'select goods_id,goods_name,shop_price,market_price,thumb_img from ' . $this->table . ' where cat_id in (' . $in . ') order by add_time limit 5';
+
+		return $this->db->getAll($sql);
+
+
+	}
+
+
+
 }
 
 
