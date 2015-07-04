@@ -33,7 +33,7 @@ if(isset($_POST['act'])){
 		$msg = '用户名密码不匹配!';
 	}else{
 		$msg = '登陆成功!';	
-		session_start();
+		//session_start();
 		$_SESSION = $row; //登陆成功设置session
 
 		//记住用户名
