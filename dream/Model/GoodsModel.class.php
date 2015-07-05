@@ -106,6 +106,28 @@ class GoodsModel extends Model{
 	}
 
 
+	/*
+		@describe: 获取购物车中的商品的详细信息
+		@params array $items 购物车中的商品数组
+		@return 商品数组的详细信息
+	*/
+
+	public function getCartGoods($items){
+
+		foreach($items as $k => $v){ //循环购物车中的商品每一个，到数据库中查下下对应的详细信息
+			$sql = 'SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM ' . $this->table . ' WHERE goods_id = ' . $k;
+
+			$row = $this->db->getRow($sql);
+
+			$items[$k]['thumb_img'] = $row['thumb_img'];
+			$items[$k]['market_price'] = $row['market_price'];
+		}
+
+		return $items;
+
+	}
+
+
 
 }
 

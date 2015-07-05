@@ -10,7 +10,7 @@ define('ACC', ture);
 
 require('include/init.php');
 
-include(ROOT . 'view/front/tijiao.html');
+include(ROOT . 'view/front/jiesuan.html');
 //echo '<h3>程序运行完成!</h3>';
 
 ?>

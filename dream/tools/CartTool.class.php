@@ -43,8 +43,8 @@ header('Content-Type:text/html; charset=utf-8');
 清空购物车
 */
 
-//defined('ACC') || exit('ACCDend');
-session_start();
+defined('ACC') || exit('ACCDend');
+//session_start();
 
 class CartTool {
 	private static $ins = null;
