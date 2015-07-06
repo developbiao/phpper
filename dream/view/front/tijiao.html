@@ -5,7 +5,7 @@
 <meta content="" name="Keywords">
 <meta content="" name="Description">
 
-<title>购物流程_Dream商城正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
+<title>购物流程_中意斯正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
 
 <link href="favicon.ico" rel="shortcut icon">
 <link type="image/gif" href="animated_favicon.gif" rel="icon">
@@ -25,7 +25,7 @@
 <div class="block">  
 当前位置: <a href=".">首页</a> <code>&gt;</code> 购物流程 <div class="blank"></div>
   
-                  <form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="flow.php">
+                  <form onsubmit="return checkConsignee(this)" id="theForm" name="theForm" method="post" action="flow.php?act=done">
         <div class="flowBox">
 <h6><span>收货人信息</span></h6>
 <table width="100%" cellspacing="1" cellpadding="5" border="0" bgcolor="#dddddd" align="center">
@@ -33,12 +33,12 @@
   <tbody><tr>
     <td bgcolor="#ffffff">配送区域:</td>
     <td bgcolor="#ffffff" colspan="3">
-    <input type="text" name="address" />
+    <input type="text" name="zone" />
     (必填) </td>
   </tr>
     <tr>
     <td bgcolor="#ffffff">收货人姓名:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="consignee">
+    <td bgcolor="#ffffff"><input type="text" value="" id="consignee_0" class="inputBg" name="reciver">
     (必填) </td>
     <td bgcolor="#ffffff">电子邮件地址:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="email_0" class="inputBg" name="email">
@@ -62,7 +62,7 @@
     
   <tr>
     <td bgcolor="#ffffff">标志建筑:</td>
-    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="sign_building"></td>
+    <td bgcolor="#ffffff"><input type="text" value="" id="sign_building_0" class="inputBg" name="building"></td>
     <td bgcolor="#ffffff">最佳送货时间:</td>
     <td bgcolor="#ffffff"><input type="text" value="" id="best_time_0" class="inputBg" name="best_time"></td>
   </tr>
@@ -122,7 +122,7 @@
             </tr>
                         
             <tr>
-              <td valign="top" bgcolor="#ffffff"><input type="radio" onclick="selectPayment(this)" iscod="0" value="4" name="payment"></td>
+              <td valign="top" bgcolor="#ffffff"><input type="radio" onclick="selectPayment(this)" iscod="0" value="4" name="pay"></td>
               <td valign="top" bgcolor="#ffffff"><strong>网上支付</strong></td>
               <td valign="top" bgcolor="#ffffff">通过支付宝进行支付，无支付宝帐号的客户也可以用银行卡进行在线支付（前提是银行卡已经开通网上支付功能）。</td>
               <td valign="top" bgcolor="#ffffff" align="right">￥0.00元</td>
@@ -171,9 +171,9 @@
 <div style="text-align:center"></div>
 
 <div class="page_footer block">
-	<div class="foot_nav">
-    	<div class="block">
-             	<div class="nav_list">
+  <div class="foot_nav">
+      <div class="block">
+              <div class="nav_list">
 
 
                         <a href="article.php?id=2" style="padding:0 3px 0 5px">隐私保护</a>  

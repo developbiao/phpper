@@ -108,8 +108,12 @@ class Model{
 	 				$this->error[] = $v[2];
 	 				return false;
 	 			}
+
+	 			if(!isset($v[4])){
+	 				$v[4] = '';
+	 			}
 	 			
-	 			if(!$this->check($data[$v[0]],$v[3])) {
+	 			if(!$this->check($data[$v[0]],$v[3], $v[4])) {
 	 				$this->error[] = $v[2];
 	 				return false;
 	 			}
@@ -243,6 +247,14 @@ class Model{
 		return $this->db->getRow($sql);
 	}
 
+	/*
+	describe:获取最后插入的ID
+	@return : int $id;
+	*/
+
+	public function insert_id(){
+		return $this->db->insert_id();
+	}
 
 }
 

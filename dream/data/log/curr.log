@@ -3407,3 +3407,198 @@
 2015-07-05 15:27:56--->USE boolshop
 2015-07-05 15:27:56--->set names utf8
 2015-07-05 15:27:56--->SELECT * FROM goods WHERE goods_id=5
+2015-07-06 10:58:12--->USE boolshop
+2015-07-06 10:58:12--->set names utf8
+2015-07-06 10:58:12--->SELECT * FROM goods WHERE goods_id=5
+2015-07-06 10:58:23--->USE boolshop
+2015-07-06 10:58:23--->set names utf8
+2015-07-06 10:58:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 10:58:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 10:58:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-06 10:58:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 10:58:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-06 11:02:01--->USE boolshop
+2015-07-06 11:02:01--->set names utf8
+2015-07-06 11:02:01--->SELECT * FROM goods WHERE goods_id=3
+2015-07-06 11:02:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 11:02:03--->USE boolshop
+2015-07-06 11:02:03--->set names utf8
+2015-07-06 11:02:03--->SELECT * FROM goods WHERE goods_id=3
+2015-07-06 11:02:03--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:02:05--->USE boolshop
+2015-07-06 11:02:05--->set names utf8
+2015-07-06 11:02:05--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:02:15--->USE boolshop
+2015-07-06 11:02:15--->set names utf8
+2015-07-06 11:02:15--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:02:18--->USE boolshop
+2015-07-06 11:02:18--->set names utf8
+2015-07-06 11:02:18--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:02:21--->USE boolshop
+2015-07-06 11:02:21--->set names utf8
+2015-07-06 11:02:21--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:04:51--->USE boolshop
+2015-07-06 11:04:51--->set names utf8
+2015-07-06 11:04:51--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:05:02--->USE boolshop
+2015-07-06 11:05:02--->set names utf8
+2015-07-06 11:05:35--->USE boolshop
+2015-07-06 11:05:35--->set names utf8
+2015-07-06 11:07:52--->USE boolshop
+2015-07-06 11:07:52--->set names utf8
+2015-07-06 11:07:52--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:08:36--->USE boolshop
+2015-07-06 11:08:36--->set names utf8
+2015-07-06 11:27:37--->USE boolshop
+2015-07-06 11:27:37--->set names utf8
+2015-07-06 11:27:37--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 11:27:47--->USE boolshop
+2015-07-06 11:27:47--->set names utf8
+2015-07-06 12:24:05--->USE boolshop
+2015-07-06 12:24:05--->set names utf8
+2015-07-06 12:24:05--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 12:24:09--->USE boolshop
+2015-07-06 12:24:09--->set names utf8
+2015-07-06 12:24:32--->USE boolshop
+2015-07-06 12:24:32--->set names utf8
+2015-07-06 12:24:50--->USE boolshop
+2015-07-06 12:24:50--->set names utf8
+2015-07-06 12:24:50--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 3
+2015-07-06 12:25:41--->USE boolshop
+2015-07-06 12:25:41--->set names utf8
+2015-07-06 12:25:41--->SELECT COUNT(*) FROM orderinfo WHERE order_sn ='OI2015070640614'
+2015-07-06 12:25:41--->insert into orderinfo(add_time,order_amount,user_id,username,order_sn) value ('1436156741','1490','0','匿名','OI2015070640614')
+2015-07-06 12:25:41--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070640614','1','3','两扣平驳领棕色格纹男士休闲单西D6959','1','1490.00','1490')
+2015-07-06 12:25:41--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 3
+2015-07-06 12:33:02--->USE boolshop
+2015-07-06 12:33:02--->set names utf8
+2015-07-06 12:33:09--->USE boolshop
+2015-07-06 12:33:09--->set names utf8
+2015-07-06 12:34:17--->USE boolshop
+2015-07-06 12:34:17--->set names utf8
+2015-07-06 12:34:17--->SELECT COUNT(*) FROM orderinfo WHERE order_sn ='OI2015070641206'
+2015-07-06 12:34:38--->USE boolshop
+2015-07-06 12:34:38--->set names utf8
+2015-07-06 12:34:45--->USE boolshop
+2015-07-06 12:34:45--->set names utf8
+2015-07-06 12:36:05--->USE boolshop
+2015-07-06 12:36:05--->set names utf8
+2015-07-06 12:36:44--->USE boolshop
+2015-07-06 12:36:44--->set names utf8
+2015-07-06 12:36:49--->USE boolshop
+2015-07-06 12:36:49--->set names utf8
+2015-07-06 12:37:08--->USE boolshop
+2015-07-06 12:37:08--->set names utf8
+2015-07-06 12:38:15--->USE boolshop
+2015-07-06 12:38:15--->set names utf8
+2015-07-06 12:42:10--->USE boolshop
+2015-07-06 12:42:10--->set names utf8
+2015-07-06 12:43:32--->USE boolshop
+2015-07-06 12:43:32--->set names utf8
+2015-07-06 12:43:49--->USE boolshop
+2015-07-06 12:43:49--->set names utf8
+2015-07-06 12:43:51--->USE boolshop
+2015-07-06 12:43:51--->set names utf8
+2015-07-06 12:43:56--->USE boolshop
+2015-07-06 12:43:56--->set names utf8
+2015-07-06 12:43:56--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 12:43:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:43:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:43:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:43:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-06 12:44:03--->USE boolshop
+2015-07-06 12:44:03--->set names utf8
+2015-07-06 12:44:03--->SELECT * FROM goods WHERE goods_id=10
+2015-07-06 12:44:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:44:21--->USE boolshop
+2015-07-06 12:44:21--->set names utf8
+2015-07-06 12:44:21--->SELECT * FROM goods WHERE goods_id=10
+2015-07-06 12:44:21--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 10
+2015-07-06 12:44:27--->USE boolshop
+2015-07-06 12:44:27--->set names utf8
+2015-07-06 12:44:27--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 10
+2015-07-06 12:46:57--->USE boolshop
+2015-07-06 12:46:57--->set names utf8
+2015-07-06 12:46:57--->SELECT COUNT(*) FROM orderinfo WHERE order_sn ='OI2015070673858'
+2015-07-06 12:46:57--->insert into orderinfo(zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) value ('广州','李骏','972735433@qq.com','广州XXX大厦','758254','18054261117','18054261117','大厦','17','4','1436158017','499','0','匿名','OI2015070673858')
+2015-07-06 12:46:57--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070673858','2','10','枪驳大领面1扣女士正装/亮咖色','1','499.00','499')
+2015-07-06 12:46:57--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 10
+2015-07-06 12:47:29--->USE boolshop
+2015-07-06 12:47:29--->set names utf8
+2015-07-06 12:47:29--->USE boolshop
+2015-07-06 12:47:29--->set names utf8
+2015-07-06 12:47:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 12:47:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:47:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-06 12:47:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 12:47:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-06 13:02:09--->USE boolshop
+2015-07-06 13:02:09--->set names utf8
+2015-07-06 13:02:09--->SELECT * FROM goods WHERE goods_id=9
+2015-07-06 13:02:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:11--->USE boolshop
+2015-07-06 13:02:11--->set names utf8
+2015-07-06 13:02:11--->SELECT * FROM goods WHERE goods_id=9
+2015-07-06 13:02:11--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 9
+2015-07-06 13:02:23--->USE boolshop
+2015-07-06 13:02:23--->set names utf8
+2015-07-06 13:02:23--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 13:02:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5
+2015-07-06 13:02:27--->USE boolshop
+2015-07-06 13:02:27--->set names utf8
+2015-07-06 13:02:27--->SELECT * FROM goods WHERE goods_id=2
+2015-07-06 13:02:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:29--->USE boolshop
+2015-07-06 13:02:29--->set names utf8
+2015-07-06 13:02:29--->SELECT * FROM goods WHERE goods_id=2
+2015-07-06 13:02:29--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 9
+2015-07-06 13:02:29--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 2
+2015-07-06 13:02:37--->USE boolshop
+2015-07-06 13:02:37--->set names utf8
+2015-07-06 13:02:37--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 13:02:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 5
+2015-07-06 13:02:40--->USE boolshop
+2015-07-06 13:02:40--->set names utf8
+2015-07-06 13:02:40--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 13:02:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 5
+2015-07-06 13:02:41--->USE boolshop
+2015-07-06 13:02:41--->set names utf8
+2015-07-06 13:02:41--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 13:02:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 5
+2015-07-06 13:02:43--->USE boolshop
+2015-07-06 13:02:43--->set names utf8
+2015-07-06 13:02:43--->SELECT * FROM goods WHERE goods_id=8
+2015-07-06 13:02:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 13:02:45--->USE boolshop
+2015-07-06 13:02:45--->set names utf8
+2015-07-06 13:02:45--->SELECT * FROM goods WHERE goods_id=8
+2015-07-06 13:02:45--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 9
+2015-07-06 13:02:45--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 2
+2015-07-06 13:02:45--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 8
+2015-07-06 13:02:50--->USE boolshop
+2015-07-06 13:02:50--->set names utf8
+2015-07-06 13:02:50--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 9
+2015-07-06 13:02:50--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 2
+2015-07-06 13:02:50--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 8
+2015-07-06 13:03:37--->USE boolshop
+2015-07-06 13:03:37--->set names utf8
+2015-07-06 13:03:37--->SELECT COUNT(*) FROM orderinfo WHERE order_sn ='OI2015070676152'
+2015-07-06 13:03:37--->insert into orderinfo(zone,reciver,email,address,zipcode,tel,mobile,building,best_time,pay,add_time,order_amount,user_id,username,order_sn) value ('上海','李骏','admin@admin.com','广州XXX大厦','625400','18054261117','18054261117','地国大厦','18','4','1436159017','1799','0','匿名','OI2015070676152')
+2015-07-06 13:03:37--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070676152','3','9','本白压褶下摆短袖套裙','1','318.00','318')
+2015-07-06 13:03:37--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 9
+2015-07-06 13:03:37--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070676152','3','2','纯羊毛一粒扣枪驳领纯黑西服套装','1','999.00','999')
+2015-07-06 13:03:37--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 2
+2015-07-06 13:03:37--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070676152','3','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
+2015-07-06 13:03:37--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 8
