@@ -3602,3 +3602,1764 @@
 2015-07-06 13:03:37--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 2
 2015-07-06 13:03:37--->insert into ordergoods(order_sn,order_id,goods_id,goods_name,goods_number,shop_price,subtotal) value ('OI2015070676152','3','8','泡泡袖后领色丁拼接平驳领一扣女士正装套裤/黑色','1','482.00','482')
 2015-07-06 13:03:37--->UPDATE goods SET goods_number = goods_number - 1 WHERE goods_id = 8
+2015-07-06 18:42:15--->USE boolshop
+2015-07-06 18:42:15--->set names utf8
+2015-07-06 18:42:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 18:42:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 18:42:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 18:42:18--->USE boolshop
+2015-07-06 18:42:18--->set names utf8
+2015-07-06 18:42:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:18--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 18:42:42--->USE boolshop
+2015-07-06 18:42:42--->set names utf8
+2015-07-06 18:42:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:42--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 18:42:42--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 18:42:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:42:42--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 18:44:56--->USE boolshop
+2015-07-06 18:44:56--->set names utf8
+2015-07-06 18:44:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:44:56--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 18:45:02--->USE boolshop
+2015-07-06 18:45:02--->set names utf8
+2015-07-06 18:45:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:02--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 18:45:08--->USE boolshop
+2015-07-06 18:45:08--->set names utf8
+2015-07-06 18:45:08--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 18:45:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:08--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 18:45:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:08--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 18:45:10--->USE boolshop
+2015-07-06 18:45:10--->set names utf8
+2015-07-06 18:45:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:10--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 18:45:13--->USE boolshop
+2015-07-06 18:45:13--->set names utf8
+2015-07-06 18:45:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 18:45:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 18:45:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 18:45:15--->USE boolshop
+2015-07-06 18:45:15--->set names utf8
+2015-07-06 18:45:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:15--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:45:23--->USE boolshop
+2015-07-06 18:45:23--->set names utf8
+2015-07-06 18:45:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:45:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:47:23--->USE boolshop
+2015-07-06 18:47:23--->set names utf8
+2015-07-06 18:47:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:47:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:51:15--->USE boolshop
+2015-07-06 18:51:15--->set names utf8
+2015-07-06 18:51:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:51:15--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:51:18--->USE boolshop
+2015-07-06 18:51:18--->set names utf8
+2015-07-06 18:51:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:51:18--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:51:52--->USE boolshop
+2015-07-06 18:51:52--->set names utf8
+2015-07-06 18:51:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:51:52--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:52:55--->USE boolshop
+2015-07-06 18:52:55--->set names utf8
+2015-07-06 18:52:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:52:55--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:53:36--->USE boolshop
+2015-07-06 18:53:36--->set names utf8
+2015-07-06 18:53:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:53:36--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:54:09--->USE boolshop
+2015-07-06 18:54:09--->set names utf8
+2015-07-06 18:54:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:54:09--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:55:40--->USE boolshop
+2015-07-06 18:55:40--->set names utf8
+2015-07-06 18:55:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:55:40--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:56:29--->USE boolshop
+2015-07-06 18:56:29--->set names utf8
+2015-07-06 18:56:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:56:29--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:57:59--->USE boolshop
+2015-07-06 18:57:59--->set names utf8
+2015-07-06 18:57:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:57:59--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:58:53--->USE boolshop
+2015-07-06 18:58:53--->set names utf8
+2015-07-06 18:58:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:58:53--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 18:59:33--->USE boolshop
+2015-07-06 18:59:33--->set names utf8
+2015-07-06 18:59:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 18:59:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:00:23--->USE boolshop
+2015-07-06 19:00:23--->set names utf8
+2015-07-06 19:00:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:00:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:01:24--->USE boolshop
+2015-07-06 19:01:24--->set names utf8
+2015-07-06 19:01:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:01:24--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:02:23--->USE boolshop
+2015-07-06 19:02:23--->set names utf8
+2015-07-06 19:02:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:02:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:03:17--->USE boolshop
+2015-07-06 19:03:17--->set names utf8
+2015-07-06 19:03:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:17--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:03:48--->USE boolshop
+2015-07-06 19:03:48--->set names utf8
+2015-07-06 19:03:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:48--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:03:48--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:03:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:03:53--->USE boolshop
+2015-07-06 19:03:53--->set names utf8
+2015-07-06 19:03:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:53--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:03:53--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:03:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:03:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:04:00--->USE boolshop
+2015-07-06 19:04:00--->set names utf8
+2015-07-06 19:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:00--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:04:00--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:04:03--->USE boolshop
+2015-07-06 19:04:03--->set names utf8
+2015-07-06 19:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:03--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:04:03--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:04:08--->USE boolshop
+2015-07-06 19:04:08--->set names utf8
+2015-07-06 19:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:08--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:04:08--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:08--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:04:10--->USE boolshop
+2015-07-06 19:04:10--->set names utf8
+2015-07-06 19:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:10--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:04:10--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:04:15--->USE boolshop
+2015-07-06 19:04:15--->set names utf8
+2015-07-06 19:04:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:15--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:04:15--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:04:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:04:18--->USE boolshop
+2015-07-06 19:04:18--->set names utf8
+2015-07-06 19:04:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:18--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:04:18--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:04:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:04:21--->USE boolshop
+2015-07-06 19:04:21--->set names utf8
+2015-07-06 19:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:21--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:04:21--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:04:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:23--->USE boolshop
+2015-07-06 19:05:23--->set names utf8
+2015-07-06 19:05:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:23--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:23--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:24--->USE boolshop
+2015-07-06 19:05:24--->set names utf8
+2015-07-06 19:05:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:24--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:24--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:29--->USE boolshop
+2015-07-06 19:05:29--->set names utf8
+2015-07-06 19:05:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:29--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:29--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:31--->USE boolshop
+2015-07-06 19:05:31--->set names utf8
+2015-07-06 19:05:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:31--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:31--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:31--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:36--->USE boolshop
+2015-07-06 19:05:36--->set names utf8
+2015-07-06 19:05:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:36--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:36--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:36--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:41--->USE boolshop
+2015-07-06 19:05:41--->set names utf8
+2015-07-06 19:05:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:41--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:05:41--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:05:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,5
+2015-07-06 19:05:43--->USE boolshop
+2015-07-06 19:05:43--->set names utf8
+2015-07-06 19:05:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:43--->select count(*) from goods where cat_id in (3)
+2015-07-06 19:05:43--->SELECT * FROM category WHERE cat_id=3
+2015-07-06 19:05:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:43--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (3) order by add_time limit 0,5
+2015-07-06 19:05:48--->USE boolshop
+2015-07-06 19:05:48--->set names utf8
+2015-07-06 19:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:48--->select count(*) from goods where cat_id in (8)
+2015-07-06 19:05:48--->SELECT * FROM category WHERE cat_id=8
+2015-07-06 19:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (8) order by add_time limit 0,5
+2015-07-06 19:05:50--->USE boolshop
+2015-07-06 19:05:50--->set names utf8
+2015-07-06 19:05:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:50--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:05:50--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:05:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:05:50--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:06:51--->USE boolshop
+2015-07-06 19:06:51--->set names utf8
+2015-07-06 19:06:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:06:51--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:06:55--->USE boolshop
+2015-07-06 19:06:55--->set names utf8
+2015-07-06 19:06:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:06:55--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:06:57--->USE boolshop
+2015-07-06 19:06:57--->set names utf8
+2015-07-06 19:06:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:06:57--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:06:58--->USE boolshop
+2015-07-06 19:06:58--->set names utf8
+2015-07-06 19:06:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:06:58--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:06:59--->USE boolshop
+2015-07-06 19:06:59--->set names utf8
+2015-07-06 19:06:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:06:59--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:07:00--->USE boolshop
+2015-07-06 19:07:00--->set names utf8
+2015-07-06 19:07:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:07:00--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:07:01--->USE boolshop
+2015-07-06 19:07:01--->set names utf8
+2015-07-06 19:07:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:07:01--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:09:13--->USE boolshop
+2015-07-06 19:09:13--->set names utf8
+2015-07-06 19:09:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:13--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:09:13--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:09:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:09:16--->USE boolshop
+2015-07-06 19:09:16--->set names utf8
+2015-07-06 19:09:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:09:16--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:09:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:16--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:09:22--->USE boolshop
+2015-07-06 19:09:22--->set names utf8
+2015-07-06 19:09:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:22--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:09:22--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:09:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:09:22--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:10:28--->USE boolshop
+2015-07-06 19:10:28--->set names utf8
+2015-07-06 19:10:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:28--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:10:28--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:10:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:10:31--->USE boolshop
+2015-07-06 19:10:31--->set names utf8
+2015-07-06 19:10:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:31--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:10:31--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:10:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:31--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:10:33--->USE boolshop
+2015-07-06 19:10:33--->set names utf8
+2015-07-06 19:10:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:10:33--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:10:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:10:36--->USE boolshop
+2015-07-06 19:10:36--->set names utf8
+2015-07-06 19:10:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:36--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:10:36--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:10:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:10:36--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:11:05--->USE boolshop
+2015-07-06 19:11:05--->set names utf8
+2015-07-06 19:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:05--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:11:05--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:11:07--->USE boolshop
+2015-07-06 19:11:07--->set names utf8
+2015-07-06 19:11:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:07--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:11:07--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:11:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:11:09--->USE boolshop
+2015-07-06 19:11:09--->set names utf8
+2015-07-06 19:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:09--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:11:09--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:09--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:11:16--->USE boolshop
+2015-07-06 19:11:16--->set names utf8
+2015-07-06 19:11:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:11:16--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:11:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:16--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:11:18--->USE boolshop
+2015-07-06 19:11:18--->set names utf8
+2015-07-06 19:11:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:18--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:11:18--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:11:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:18--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:11:18--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:12:07--->USE boolshop
+2015-07-06 19:12:07--->set names utf8
+2015-07-06 19:12:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:07--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:12:07--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:12:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:12:13--->USE boolshop
+2015-07-06 19:12:13--->set names utf8
+2015-07-06 19:12:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:13--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:12:13--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:12:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:12:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:13:19--->USE boolshop
+2015-07-06 19:13:19--->set names utf8
+2015-07-06 19:13:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:19--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:13:22--->USE boolshop
+2015-07-06 19:13:22--->set names utf8
+2015-07-06 19:13:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:22--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:13:24--->USE boolshop
+2015-07-06 19:13:24--->set names utf8
+2015-07-06 19:13:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:24--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:13:27--->USE boolshop
+2015-07-06 19:13:27--->set names utf8
+2015-07-06 19:13:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:27--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:13:49--->USE boolshop
+2015-07-06 19:13:49--->set names utf8
+2015-07-06 19:13:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:49--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:13:54--->USE boolshop
+2015-07-06 19:13:54--->set names utf8
+2015-07-06 19:13:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:54--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 19:13:59--->USE boolshop
+2015-07-06 19:13:59--->set names utf8
+2015-07-06 19:13:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:13:59--->select count(*) from goods where cat_id in (0,1,2,3,4,5,6,7,8,9,10,11,12)
+2015-07-06 19:14:03--->USE boolshop
+2015-07-06 19:14:03--->set names utf8
+2015-07-06 19:14:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:14:03--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:14:50--->USE boolshop
+2015-07-06 19:14:50--->set names utf8
+2015-07-06 19:14:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:14:50--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:14:54--->USE boolshop
+2015-07-06 19:14:54--->set names utf8
+2015-07-06 19:14:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:14:54--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:14:57--->USE boolshop
+2015-07-06 19:14:57--->set names utf8
+2015-07-06 19:14:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:14:57--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:15:16--->USE boolshop
+2015-07-06 19:15:16--->set names utf8
+2015-07-06 19:15:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:15:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:15:46--->USE boolshop
+2015-07-06 19:15:46--->set names utf8
+2015-07-06 19:15:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:15:46--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:15:49--->USE boolshop
+2015-07-06 19:15:49--->set names utf8
+2015-07-06 19:15:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:15:49--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:15:58--->USE boolshop
+2015-07-06 19:15:58--->set names utf8
+2015-07-06 19:15:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:15:58--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:16:03--->USE boolshop
+2015-07-06 19:16:03--->set names utf8
+2015-07-06 19:16:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:16:03--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:23:16--->USE boolshop
+2015-07-06 19:23:16--->set names utf8
+2015-07-06 19:23:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:23:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:23:25--->USE boolshop
+2015-07-06 19:23:25--->set names utf8
+2015-07-06 19:23:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:23:25--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:24:09--->USE boolshop
+2015-07-06 19:24:09--->set names utf8
+2015-07-06 19:24:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:24:09--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:25:08--->USE boolshop
+2015-07-06 19:25:08--->set names utf8
+2015-07-06 19:25:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:25:08--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:25:57--->USE boolshop
+2015-07-06 19:25:57--->set names utf8
+2015-07-06 19:25:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:25:57--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:25:57--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:25:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:25:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:25:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:25:57--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:26:01--->USE boolshop
+2015-07-06 19:26:01--->set names utf8
+2015-07-06 19:26:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:01--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:01--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:01--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 19:26:04--->USE boolshop
+2015-07-06 19:26:04--->set names utf8
+2015-07-06 19:26:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:04--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:04--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:26:14--->USE boolshop
+2015-07-06 19:26:14--->set names utf8
+2015-07-06 19:26:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:14--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:14--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:26:21--->USE boolshop
+2015-07-06 19:26:21--->set names utf8
+2015-07-06 19:26:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:21--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:21--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 19:26:24--->USE boolshop
+2015-07-06 19:26:24--->set names utf8
+2015-07-06 19:26:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:24--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:24--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:26:48--->USE boolshop
+2015-07-06 19:26:48--->set names utf8
+2015-07-06 19:26:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:48--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:48--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 1,2
+2015-07-06 19:26:53--->USE boolshop
+2015-07-06 19:26:53--->set names utf8
+2015-07-06 19:26:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:53--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:53--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 3,2
+2015-07-06 19:26:54--->USE boolshop
+2015-07-06 19:26:54--->set names utf8
+2015-07-06 19:26:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:54--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:26:54--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:26:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:26:55--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5,2
+2015-07-06 19:27:00--->USE boolshop
+2015-07-06 19:27:00--->set names utf8
+2015-07-06 19:27:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:00--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:00--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 3,2
+2015-07-06 19:27:01--->USE boolshop
+2015-07-06 19:27:01--->set names utf8
+2015-07-06 19:27:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:01--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:01--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:01--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 1,2
+2015-07-06 19:27:03--->USE boolshop
+2015-07-06 19:27:03--->set names utf8
+2015-07-06 19:27:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:03--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:03--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 3,2
+2015-07-06 19:27:04--->USE boolshop
+2015-07-06 19:27:04--->set names utf8
+2015-07-06 19:27:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:04--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:04--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:04--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:04--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 5,2
+2015-07-06 19:27:21--->USE boolshop
+2015-07-06 19:27:21--->set names utf8
+2015-07-06 19:27:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:21--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:21--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:27:32--->USE boolshop
+2015-07-06 19:27:32--->set names utf8
+2015-07-06 19:27:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:32--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:32--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:32--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:27:33--->USE boolshop
+2015-07-06 19:27:33--->set names utf8
+2015-07-06 19:27:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:33--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 19:27:35--->USE boolshop
+2015-07-06 19:27:35--->set names utf8
+2015-07-06 19:27:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:35--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:27:35--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:27:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:27:45--->USE boolshop
+2015-07-06 19:27:45--->set names utf8
+2015-07-06 19:27:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:45--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:27:45--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:27:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:45--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:45--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,2
+2015-07-06 19:27:49--->USE boolshop
+2015-07-06 19:27:49--->set names utf8
+2015-07-06 19:27:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:49--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:27:49--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:27:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 2,2
+2015-07-06 19:27:53--->USE boolshop
+2015-07-06 19:27:53--->set names utf8
+2015-07-06 19:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:53--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 19:27:53--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 19:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 0,2
+2015-07-06 19:27:56--->USE boolshop
+2015-07-06 19:27:56--->set names utf8
+2015-07-06 19:27:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:56--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 19:27:56--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 19:27:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 2,2
+2015-07-06 19:27:57--->USE boolshop
+2015-07-06 19:27:57--->set names utf8
+2015-07-06 19:27:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:57--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 19:27:57--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 19:27:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:27:57--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 4,2
+2015-07-06 19:28:00--->USE boolshop
+2015-07-06 19:28:00--->set names utf8
+2015-07-06 19:28:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:00--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:28:00--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:28:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 0,2
+2015-07-06 19:28:03--->USE boolshop
+2015-07-06 19:28:03--->set names utf8
+2015-07-06 19:28:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:03--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:28:03--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:28:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 2,2
+2015-07-06 19:28:05--->USE boolshop
+2015-07-06 19:28:05--->set names utf8
+2015-07-06 19:28:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:05--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:28:05--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:28:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 4,2
+2015-07-06 19:28:09--->USE boolshop
+2015-07-06 19:28:09--->set names utf8
+2015-07-06 19:28:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:09--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:28:09--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:28:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:09--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,2
+2015-07-06 19:28:11--->USE boolshop
+2015-07-06 19:28:11--->set names utf8
+2015-07-06 19:28:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:11--->select count(*) from goods where cat_id in (11)
+2015-07-06 19:28:11--->SELECT * FROM category WHERE cat_id=11
+2015-07-06 19:28:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:11--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (11) order by add_time limit 0,2
+2015-07-06 19:28:14--->USE boolshop
+2015-07-06 19:28:14--->set names utf8
+2015-07-06 19:28:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:14--->select count(*) from goods where cat_id in (8)
+2015-07-06 19:28:14--->SELECT * FROM category WHERE cat_id=8
+2015-07-06 19:28:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (8) order by add_time limit 0,2
+2015-07-06 19:28:17--->USE boolshop
+2015-07-06 19:28:17--->set names utf8
+2015-07-06 19:28:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:17--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:28:17--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:28:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:17--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,2
+2015-07-06 19:28:20--->USE boolshop
+2015-07-06 19:28:20--->set names utf8
+2015-07-06 19:28:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:20--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:28:20--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:28:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:20--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:20--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:28:23--->USE boolshop
+2015-07-06 19:28:23--->set names utf8
+2015-07-06 19:28:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:28:23--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:28:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:28:33--->USE boolshop
+2015-07-06 19:28:33--->set names utf8
+2015-07-06 19:28:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:28:33--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:28:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,3
+2015-07-06 19:28:36--->USE boolshop
+2015-07-06 19:28:36--->set names utf8
+2015-07-06 19:28:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:36--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:28:36--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:28:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:36--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 3,3
+2015-07-06 19:28:38--->USE boolshop
+2015-07-06 19:28:38--->set names utf8
+2015-07-06 19:28:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:38--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:28:38--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:28:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:38--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:28:38--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,3
+2015-07-06 19:30:52--->USE boolshop
+2015-07-06 19:30:52--->set names utf8
+2015-07-06 19:30:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:30:52--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:30:52--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:30:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:30:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:30:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:30:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,3
+2015-07-06 19:31:55--->USE boolshop
+2015-07-06 19:31:55--->set names utf8
+2015-07-06 19:31:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:31:55--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:32:08--->USE boolshop
+2015-07-06 19:32:08--->set names utf8
+2015-07-06 19:32:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:32:08--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:32:42--->USE boolshop
+2015-07-06 19:32:42--->set names utf8
+2015-07-06 19:32:42--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:32:42--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:33:00--->USE boolshop
+2015-07-06 19:33:00--->set names utf8
+2015-07-06 19:33:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:33:00--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:37:24--->USE boolshop
+2015-07-06 19:37:24--->set names utf8
+2015-07-06 19:37:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:24--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:37:24--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:37:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:24--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:24--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:37:33--->USE boolshop
+2015-07-06 19:37:33--->set names utf8
+2015-07-06 19:37:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:37:33--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:37:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:37:41--->USE boolshop
+2015-07-06 19:37:41--->set names utf8
+2015-07-06 19:37:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:41--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:37:41--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:37:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 19:37:52--->USE boolshop
+2015-07-06 19:37:52--->set names utf8
+2015-07-06 19:37:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:52--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:37:52--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:37:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:37:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 19:38:00--->USE boolshop
+2015-07-06 19:38:00--->set names utf8
+2015-07-06 19:38:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:00--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:38:00--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:38:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:38:07--->USE boolshop
+2015-07-06 19:38:07--->set names utf8
+2015-07-06 19:38:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:07--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:38:07--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:38:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:38:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:46:16--->USE dreamshop
+2015-07-06 19:46:16--->set names utf8
+2015-07-06 19:46:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:46:16--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:46:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:16--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:46:25--->USE dreamshop
+2015-07-06 19:46:25--->set names utf8
+2015-07-06 19:46:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:25--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 19:46:25--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 19:46:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 19:46:29--->USE dreamshop
+2015-07-06 19:46:29--->set names utf8
+2015-07-06 19:46:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:29--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:46:29--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:46:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 0,2
+2015-07-06 19:46:33--->USE dreamshop
+2015-07-06 19:46:33--->set names utf8
+2015-07-06 19:46:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:33--->select count(*) from goods where cat_id in (2)
+2015-07-06 19:46:33--->SELECT * FROM category WHERE cat_id=2
+2015-07-06 19:46:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (2) order by add_time limit 0,2
+2015-07-06 19:46:35--->USE dreamshop
+2015-07-06 19:46:35--->set names utf8
+2015-07-06 19:46:35--->SELECT * FROM goods WHERE goods_id=1
+2015-07-06 19:46:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:46:53--->USE dreamshop
+2015-07-06 19:46:53--->set names utf8
+2015-07-06 19:46:53--->SELECT user_id, username, email, passwd FROM user WHERE username='GongBiao'
+2015-07-06 19:47:19--->USE dreamshop
+2015-07-06 19:47:19--->set names utf8
+2015-07-06 19:47:19--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 19:47:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:19--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 19:47:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:19--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:47:26--->USE dreamshop
+2015-07-06 19:47:26--->set names utf8
+2015-07-06 19:47:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 19:47:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 19:47:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:47:28--->USE dreamshop
+2015-07-06 19:47:28--->set names utf8
+2015-07-06 19:47:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:28--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:47:28--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:47:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:47:30--->USE dreamshop
+2015-07-06 19:47:30--->set names utf8
+2015-07-06 19:47:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:30--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 19:47:30--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 19:47:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 19:47:31--->USE dreamshop
+2015-07-06 19:47:31--->set names utf8
+2015-07-06 19:47:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:31--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 19:47:31--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 19:47:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:31--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 0,2
+2015-07-06 19:47:33--->USE dreamshop
+2015-07-06 19:47:33--->set names utf8
+2015-07-06 19:47:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:33--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:47:33--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:47:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 0,2
+2015-07-06 19:47:37--->USE dreamshop
+2015-07-06 19:47:37--->set names utf8
+2015-07-06 19:47:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:37--->select count(*) from goods where cat_id in (10,11,12)
+2015-07-06 19:47:37--->SELECT * FROM category WHERE cat_id=10
+2015-07-06 19:47:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (10,11,12) order by add_time limit 0,2
+2015-07-06 19:47:40--->USE dreamshop
+2015-07-06 19:47:40--->set names utf8
+2015-07-06 19:47:40--->SELECT * FROM goods WHERE goods_id=20
+2015-07-06 19:47:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:44--->USE dreamshop
+2015-07-06 19:47:44--->set names utf8
+2015-07-06 19:47:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:44--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 19:47:44--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 19:47:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:44--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:44--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 19:47:47--->USE dreamshop
+2015-07-06 19:47:47--->set names utf8
+2015-07-06 19:47:47--->USE dreamshop
+2015-07-06 19:47:47--->set names utf8
+2015-07-06 19:47:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 19:47:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 19:47:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 19:47:51--->USE dreamshop
+2015-07-06 19:47:51--->set names utf8
+2015-07-06 19:47:51--->SELECT * FROM goods WHERE goods_id=10
+2015-07-06 19:47:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 19:47:54--->USE dreamshop
+2015-07-06 19:47:54--->set names utf8
+2015-07-06 19:47:54--->SELECT * FROM goods WHERE goods_id=10
+2015-07-06 19:47:54--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 10
+2015-07-06 19:47:57--->USE dreamshop
+2015-07-06 19:47:57--->set names utf8
+2015-07-06 19:47:57--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 10
+2015-07-06 20:00:49--->USE dreamshop
+2015-07-06 20:00:49--->set names utf8
+2015-07-06 20:00:49--->SELECT * FROM goods WHERE goods_id=10
+2015-07-06 20:00:49--->SELECT goods_id, goods_name, thumb_img , shop_price, market_price FROM goods WHERE goods_id = 10
+2015-07-06 20:00:52--->USE dreamshop
+2015-07-06 20:00:52--->set names utf8
+2015-07-06 20:00:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:00:52--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:00:52--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:00:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:00:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:00:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:00:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:02:46--->USE dreamshop
+2015-07-06 20:02:46--->set names utf8
+2015-07-06 20:02:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:46--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:02:46--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:02:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:02:55--->USE dreamshop
+2015-07-06 20:02:55--->set names utf8
+2015-07-06 20:02:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:55--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:02:55--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:02:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:55--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 2,2
+2015-07-06 20:02:57--->USE dreamshop
+2015-07-06 20:02:57--->set names utf8
+2015-07-06 20:02:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:57--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:02:57--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:02:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:57--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 4,2
+2015-07-06 20:02:58--->USE dreamshop
+2015-07-06 20:02:58--->set names utf8
+2015-07-06 20:02:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:58--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:02:58--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:02:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:58--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:02:58--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 6,2
+2015-07-06 20:03:01--->USE dreamshop
+2015-07-06 20:03:01--->set names utf8
+2015-07-06 20:03:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:01--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:03:01--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:03:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:01--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:01--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 2,2
+2015-07-06 20:03:02--->USE dreamshop
+2015-07-06 20:03:02--->set names utf8
+2015-07-06 20:03:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:02--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:03:02--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:03:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:03:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:00--->USE dreamshop
+2015-07-06 20:04:00--->set names utf8
+2015-07-06 20:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:00--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:00--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:00--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:00--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:03--->USE dreamshop
+2015-07-06 20:04:03--->set names utf8
+2015-07-06 20:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:03--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:03--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:03--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:03--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:05--->USE dreamshop
+2015-07-06 20:04:05--->set names utf8
+2015-07-06 20:04:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:05--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:05--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:07--->USE dreamshop
+2015-07-06 20:04:07--->set names utf8
+2015-07-06 20:04:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:07--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:07--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:07--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:07--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:08--->USE dreamshop
+2015-07-06 20:04:08--->set names utf8
+2015-07-06 20:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:08--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:08--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:08--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:08--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:10--->USE dreamshop
+2015-07-06 20:04:10--->set names utf8
+2015-07-06 20:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:10--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:10--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 2,2
+2015-07-06 20:04:11--->USE dreamshop
+2015-07-06 20:04:11--->set names utf8
+2015-07-06 20:04:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:11--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:11--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:11--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:11--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 4,2
+2015-07-06 20:04:19--->USE dreamshop
+2015-07-06 20:04:19--->set names utf8
+2015-07-06 20:04:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:19--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:19--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:19--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 4,2
+2015-07-06 20:04:21--->USE dreamshop
+2015-07-06 20:04:21--->set names utf8
+2015-07-06 20:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:21--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:21--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:21--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:21--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 2,2
+2015-07-06 20:04:22--->USE dreamshop
+2015-07-06 20:04:22--->set names utf8
+2015-07-06 20:04:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:22--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:22--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:22--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:22--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:25--->USE dreamshop
+2015-07-06 20:04:25--->set names utf8
+2015-07-06 20:04:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:25--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:25--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:26--->USE dreamshop
+2015-07-06 20:04:26--->set names utf8
+2015-07-06 20:04:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:26--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:26--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:28--->USE dreamshop
+2015-07-06 20:04:28--->set names utf8
+2015-07-06 20:04:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:28--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:28--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:51--->USE dreamshop
+2015-07-06 20:04:51--->set names utf8
+2015-07-06 20:04:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:51--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:51--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:51--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:54--->USE dreamshop
+2015-07-06 20:04:54--->set names utf8
+2015-07-06 20:04:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:54--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:54--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:54--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:54--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:04:56--->USE dreamshop
+2015-07-06 20:04:56--->set names utf8
+2015-07-06 20:04:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:56--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:04:56--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:04:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:04:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:05:02--->USE dreamshop
+2015-07-06 20:05:02--->set names utf8
+2015-07-06 20:05:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:02--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:05:02--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:05:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:02--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:02--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 4,2
+2015-07-06 20:05:13--->USE dreamshop
+2015-07-06 20:05:13--->set names utf8
+2015-07-06 20:05:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:13--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:05:13--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:05:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 2,2
+2015-07-06 20:05:15--->USE dreamshop
+2015-07-06 20:05:15--->set names utf8
+2015-07-06 20:05:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:15--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:05:15--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:05:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:15--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:15--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:05:17--->USE dreamshop
+2015-07-06 20:05:17--->set names utf8
+2015-07-06 20:05:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:17--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:05:17--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:05:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:17--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:17--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:05:19--->USE dreamshop
+2015-07-06 20:05:19--->set names utf8
+2015-07-06 20:05:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:19--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:05:19--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:05:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:19--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:05:19--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:06:10--->USE dreamshop
+2015-07-06 20:06:10--->set names utf8
+2015-07-06 20:06:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:10--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:06:10--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:06:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:06:14--->USE dreamshop
+2015-07-06 20:06:14--->set names utf8
+2015-07-06 20:06:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:14--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:06:14--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:06:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:14--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:14--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:06:16--->USE dreamshop
+2015-07-06 20:06:16--->set names utf8
+2015-07-06 20:06:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:16--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:06:16--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:06:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:16--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:16--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:06:23--->USE dreamshop
+2015-07-06 20:06:23--->set names utf8
+2015-07-06 20:06:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:06:23--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:06:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:06:30--->USE dreamshop
+2015-07-06 20:06:30--->set names utf8
+2015-07-06 20:06:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:30--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:06:30--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:06:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:30--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:30--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:06:35--->USE dreamshop
+2015-07-06 20:06:35--->set names utf8
+2015-07-06 20:06:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:35--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:06:35--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:06:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:06:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:07:51--->USE dreamshop
+2015-07-06 20:07:51--->set names utf8
+2015-07-06 20:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:51--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:07:51--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:51--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:51--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:07:55--->USE dreamshop
+2015-07-06 20:07:55--->set names utf8
+2015-07-06 20:07:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:55--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:07:55--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:07:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:55--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:55--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:07:56--->USE dreamshop
+2015-07-06 20:07:56--->set names utf8
+2015-07-06 20:07:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:56--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:07:56--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:07:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:07:57--->USE dreamshop
+2015-07-06 20:07:57--->set names utf8
+2015-07-06 20:07:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:57--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:07:57--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:07:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:57--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:57--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:07:59--->USE dreamshop
+2015-07-06 20:07:59--->set names utf8
+2015-07-06 20:07:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:59--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:07:59--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:07:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:59--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:07:59--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:23--->USE dreamshop
+2015-07-06 20:08:23--->set names utf8
+2015-07-06 20:08:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:23--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:23--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:23--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:23--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:25--->USE dreamshop
+2015-07-06 20:08:25--->set names utf8
+2015-07-06 20:08:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:25--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:25--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:25--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:25--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:26--->USE dreamshop
+2015-07-06 20:08:26--->set names utf8
+2015-07-06 20:08:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:26--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:26--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:26--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:26--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:08:27--->USE dreamshop
+2015-07-06 20:08:27--->set names utf8
+2015-07-06 20:08:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:27--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:27--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:27--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:27--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:08:28--->USE dreamshop
+2015-07-06 20:08:28--->set names utf8
+2015-07-06 20:08:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:28--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:28--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:28--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:28--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:08:29--->USE dreamshop
+2015-07-06 20:08:29--->set names utf8
+2015-07-06 20:08:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:29--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:29--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:29--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:29--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:31--->USE dreamshop
+2015-07-06 20:08:31--->set names utf8
+2015-07-06 20:08:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:31--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:31--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:31--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:31--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:32--->USE dreamshop
+2015-07-06 20:08:32--->set names utf8
+2015-07-06 20:08:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:32--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:32--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:32--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:33--->USE dreamshop
+2015-07-06 20:08:33--->set names utf8
+2015-07-06 20:08:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:33--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:33--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:08:35--->USE dreamshop
+2015-07-06 20:08:35--->set names utf8
+2015-07-06 20:08:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:35--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:35--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:37--->USE dreamshop
+2015-07-06 20:08:37--->set names utf8
+2015-07-06 20:08:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:37--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:37--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:40--->USE dreamshop
+2015-07-06 20:08:40--->set names utf8
+2015-07-06 20:08:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:40--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:40--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:08:46--->USE dreamshop
+2015-07-06 20:08:46--->set names utf8
+2015-07-06 20:08:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:46--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:46--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:46--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:46--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:08:47--->USE dreamshop
+2015-07-06 20:08:47--->set names utf8
+2015-07-06 20:08:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:47--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:47--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:08:49--->USE dreamshop
+2015-07-06 20:08:49--->set names utf8
+2015-07-06 20:08:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:49--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:49--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:08:50--->USE dreamshop
+2015-07-06 20:08:50--->set names utf8
+2015-07-06 20:08:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:50--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:08:50--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:08:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:50--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:08:50--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:11:05--->USE dreamshop
+2015-07-06 20:11:05--->set names utf8
+2015-07-06 20:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:05--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:11:05--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:05--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:05--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:11:09--->USE dreamshop
+2015-07-06 20:11:09--->set names utf8
+2015-07-06 20:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:09--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:11:09--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:09--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:09--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:11:10--->USE dreamshop
+2015-07-06 20:11:10--->set names utf8
+2015-07-06 20:11:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:10--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:11:10--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:11:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:10--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:11:10--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:32--->USE dreamshop
+2015-07-06 20:13:32--->set names utf8
+2015-07-06 20:13:32--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:32--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:32--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:33--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:33--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:34--->USE dreamshop
+2015-07-06 20:13:34--->set names utf8
+2015-07-06 20:13:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:34--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:34--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:34--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:34--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:13:35--->USE dreamshop
+2015-07-06 20:13:35--->set names utf8
+2015-07-06 20:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:35--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:35--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:35--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:35--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:13:36--->USE dreamshop
+2015-07-06 20:13:36--->set names utf8
+2015-07-06 20:13:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:36--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:36--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:36--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:36--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:37--->USE dreamshop
+2015-07-06 20:13:37--->set names utf8
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:37--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:37--->USE dreamshop
+2015-07-06 20:13:37--->set names utf8
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:37--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:37--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:39--->USE dreamshop
+2015-07-06 20:13:39--->set names utf8
+2015-07-06 20:13:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:39--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:39--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:39--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:39--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:13:40--->USE dreamshop
+2015-07-06 20:13:40--->set names utf8
+2015-07-06 20:13:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:40--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:40--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:40--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:40--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 2,2
+2015-07-06 20:13:41--->USE dreamshop
+2015-07-06 20:13:41--->set names utf8
+2015-07-06 20:13:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:41--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:13:41--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:13:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:41--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:41--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 4,2
+2015-07-06 20:13:43--->USE dreamshop
+2015-07-06 20:13:43--->set names utf8
+2015-07-06 20:13:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:43--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:13:43--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:13:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:43--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:43--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:13:53--->USE dreamshop
+2015-07-06 20:13:53--->set names utf8
+2015-07-06 20:13:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods order by add_time limit 5
+2015-07-06 20:13:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,5
+2015-07-06 20:13:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:13:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,5
+2015-07-06 20:17:56--->USE dreamshop
+2015-07-06 20:17:56--->set names utf8
+2015-07-06 20:17:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:17:56--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:17:56--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:17:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:17:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:17:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:17:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:18:20--->USE dreamshop
+2015-07-06 20:18:20--->set names utf8
+2015-07-06 20:18:20--->SELECT COUNT(*) FROM user WHERE username='lijun'
+2015-07-06 20:18:20--->insert into user(username,email,passwd,regtime) value ('lijun','lijun@admin.com','e10adc3949ba59abbe56e057f20f883e','1436185100')
+2015-07-06 20:20:48--->USE dreamshop
+2015-07-06 20:20:48--->set names utf8
+2015-07-06 20:20:48--->SELECT user_id, username, email, passwd FROM user WHERE username='lijun'
+2015-07-06 20:23:07--->USE dreamshop
+2015-07-06 20:23:07--->set names utf8
+2015-07-06 20:23:07--->SELECT user_id, username, email, passwd FROM user WHERE username='lijun'
+2015-07-06 20:23:13--->USE dreamshop
+2015-07-06 20:23:13--->set names utf8
+2015-07-06 20:23:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:23:13--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:23:13--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:23:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:23:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:23:13--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:23:13--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:24:19--->USE dreamshop
+2015-07-06 20:24:19--->set names utf8
+2015-07-06 20:24:19--->SELECT COUNT(*) FROM user WHERE username='lijun'
+2015-07-06 20:26:17--->USE dreamshop
+2015-07-06 20:26:17--->set names utf8
+2015-07-06 20:26:17--->SELECT user_id, username, email, passwd FROM user WHERE username='lijun'
+2015-07-06 20:26:17--->insert into user(username,email,passwd,regtime) value ('lijun','lijun@aa.com','e10adc3949ba59abbe56e057f20f883e','1436185577')
+2015-07-06 20:27:31--->USE dreamshop
+2015-07-06 20:27:31--->set names utf8
+2015-07-06 20:27:31--->SELECT COUNT(*) FROM user WHERE username='lijun'
+2015-07-06 20:28:35--->USE dreamshop
+2015-07-06 20:28:35--->set names utf8
+2015-07-06 20:28:35--->SELECT COUNT(*) FROM user WHERE username='GongBiao'
+2015-07-06 20:28:47--->USE dreamshop
+2015-07-06 20:28:47--->set names utf8
+2015-07-06 20:28:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:47--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:28:47--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:28:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:47--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:47--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:28:48--->USE dreamshop
+2015-07-06 20:28:48--->set names utf8
+2015-07-06 20:28:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:48--->select count(*) from goods where cat_id in (4,5,6)
+2015-07-06 20:28:48--->SELECT * FROM category WHERE cat_id=4
+2015-07-06 20:28:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:48--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:48--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (4,5,6) order by add_time limit 0,2
+2015-07-06 20:28:49--->USE dreamshop
+2015-07-06 20:28:49--->set names utf8
+2015-07-06 20:28:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:49--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 20:28:49--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 20:28:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:49--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:49--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 0,2
+2015-07-06 20:28:52--->USE dreamshop
+2015-07-06 20:28:52--->set names utf8
+2015-07-06 20:28:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:52--->select count(*) from goods where cat_id in (7,8,9)
+2015-07-06 20:28:52--->SELECT * FROM category WHERE cat_id=7
+2015-07-06 20:28:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:52--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:52--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (7,8,9) order by add_time limit 0,2
+2015-07-06 20:28:53--->USE dreamshop
+2015-07-06 20:28:53--->set names utf8
+2015-07-06 20:28:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:53--->select count(*) from goods where cat_id in (1,2,3)
+2015-07-06 20:28:53--->SELECT * FROM category WHERE cat_id=1
+2015-07-06 20:28:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:53--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:53--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (1,2,3) order by add_time limit 0,2
+2015-07-06 20:28:56--->USE dreamshop
+2015-07-06 20:28:56--->set names utf8
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->select count(*) from goods where cat_id in (5)
+2015-07-06 20:28:56--->SELECT * FROM category WHERE cat_id=5
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (5) order by add_time limit 0,2
+2015-07-06 20:28:56--->USE dreamshop
+2015-07-06 20:28:56--->set names utf8
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->select count(*) from goods where cat_id in (6)
+2015-07-06 20:28:56--->SELECT * FROM category WHERE cat_id=6
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->SELECT cat_id, cat_name, parent_id FROM category
+2015-07-06 20:28:56--->select goods_id,goods_name,shop_price,market_price,thumb_img from goods where cat_id in (6) order by add_time limit 0,2

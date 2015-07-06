@@ -13,6 +13,36 @@ require('./include/init.php');
 //接收传过来的栏目ID
 $cat_id = isset($_GET['cat_id'])?$_GET['cat_id'] + 0 : 0;
 
+//接收传过来的页数
+$page = isset($_GET['page'])?$_GET['page'] + 0 : 1;
+if($page < 1){
+	$page = 1;
+}
+
+//取出当前栏目下的商品总数
+$goodsModel = new GoodsModel();
+$total = $goodsModel->catGoodsCount($cat_id); //总条数
+
+//每页显示2个
+$perpage = 2;
+
+if($page > ceil($total / $perpage)){ //如果传过来的page数大于计算出来的总页数就让它等于1
+	$page = 1;
+}
+
+$offset = ($page - 1) * $perpage; //计算偏移值
+/*
+echo $offset,'<--开始取>',$perpage,'<br />';
+exit;
+*/
+
+//开始调用分页类
+$pagetool = new PageTool($total, $page, $perpage); 
+$pagecode = $pagetool->show(); //获取处理后的页码数代码
+
+
+
+
 //查找栏目
 $cat = new CatModel();
 $category = $cat->find($cat_id);
@@ -35,7 +65,7 @@ $nav = $cat->getTree($cat_id);
 
 //取出栏目下的商品
 $goods = new GoodsModel();
-$goodlist = $goods->catGoods($cat_id);
+$goodlist = $goods->catGoods($cat_id, $offset, $perpage);
 
 /*
 echo '<pre>';

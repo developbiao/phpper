@@ -47,8 +47,8 @@ class UserModel extends Model{
 	根据用户查询用户信息
 	*/
 
-	public function checkUser($username, $passwd){
-		if($passwd == ''){ //没有passwd参数的时候
+	public function checkUser($username, $passwd=false){
+		if(!$passwd){ //没有passwd参数的时候
 			$sql = 'SELECT COUNT(*) FROM ' . $this->table . " WHERE username='" . $username . "'";
 			return $this->db->getOne($sql);
 		}else{

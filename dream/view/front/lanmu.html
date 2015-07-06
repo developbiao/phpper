@@ -226,14 +226,10 @@ var select_spe = "请选择商品属性";
 <div style=" height:25px; background:#e6eaf3;height:25px; overflow:hidden">
   <form method="get" action="http://www.zhongyis.com/category.php" name="selectPageForm">
    <div class="pagebar" id="pager">
-    <span style="margin-right:10px;" class="f_l f6">总计 <b>54</b>  个记录</span>
-    <span class="page_now">1</span>
-    <a href="#">[2]</a>
-    <a href="#">[3]</a>
-    <a href="#">[4]</a>
-    <a href="#">[5]</a>
-
-    <a href="http://www.zhongyis.com/category.php?id=17&amp;price_min=0&amp;price_max=0&amp;page=2&amp;sort=last_update&amp;order=DESC" class="next">下一页</a>    </div>
+    <span style="margin-right:10px;" class="f_l f6">总计 <b><?php echo $total;?></b>  个记录</span>
+     <a href="category.php?cat_id=<?php echo $cat_id;?>&page=<?php echo --$page;?>" class="prev">上一页</a> 
+    <?php echo $pagecode;?>
+    <a href="category.php?cat_id=<?php echo $cat_id;?>&page=<?php echo ++$_GET['page'];?>" class="next">下一页</a>    </div>
   </form>
   <script language="JavaScript" type="Text/Javascript">
   &lt;!--

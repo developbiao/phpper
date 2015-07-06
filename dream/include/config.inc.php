@@ -11,7 +11,7 @@ $_CFG = array();
 $_CFG['host'] = 'localhost';
 $_CFG['user'] = 'root';
 $_CFG['pwd'] = '123456';
-$_CFG['db'] = 'boolshop';
+$_CFG['db'] = 'dreamshop';
 $_CFG['char'] = 'utf8';
 
 ?>
