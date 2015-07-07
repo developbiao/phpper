@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<script type="text/javascript">
+	function test(){
+		var oDiv= document.getElementsByTagName('div')[0];
+		alert(oDiv.innerHTML);
+	}
+</script>
+<style type="text/css">
+div{
+	width:500px;
+	height:300px;
+	border:solid 2px purple;
+}
+</style>
+<title>Editor的原理</title>
+</head>
+<body>
+	<div contentEditable="true">
+		hello editor ,hello moto! <br/>
+		工作原理，插入一个iframe,<br/>
+		并利用网页的contentEditable属性
+		使该iframe可以编辑，再利用js,来完成加粗，变色等效果。
+		最后再获取该区域的内容即可
+	</div>
+	<input type="button" value="编辑器的内容" onclick="test();"/>
+</body>
+</html>

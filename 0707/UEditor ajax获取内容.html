@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<script type="text/javascript">
+</script>
+<style type="text/css">
+div1{
+	width:500px;
+	height:300px;
+	border:solid 2px purple;
+}
+</style>
+<title>UEditor Ajax获取内容</title>
+</head>
+<body>
+	<div id="div1">
+		<pre>
+			编辑器的使用步骤:
+			1、引入:editor.config.js,和editor.all.js
+			var edit = new UE.uid.Editor();
+			edit.render("某个id");
+		</pre>
+	</div>
+
+	<!-- 待宣染的text输入框 -->
+	<form action="pross.php" method="post">
+		<textarea id="area"></textarea>
+		<input type="submit" value="提交" />
+		<input type="button" value="ajax获取内容" onclick="say();" />
+		<input type="button" value="获取纯文本" onclick="say2();" />
+	</form>
+
+	<script type="text/javascript" src="./ueditor/ueditor.config.js"></script>
+	<script type="text/javascript" src="./ueditor/ueditor.all.js"></script>
+	<script type="text/javascript">
+		//构造器可以指定参数
+		myedit = new UE.ui.Editor({initialFrameWidth:750, initialFrameHeight:200, initialContent:'美女老师我很想你哦！'});
+
+		//开始渲染
+		myedit.render("area");
+
+		function say(){
+			alert(myedit.getContent());	 //ajax获取内容
+		}
+
+		function say2(){
+			alert(myedit.getPlainTxt());
+		}
+	</script>
+</body>
+</html>
