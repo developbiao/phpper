@@ -200,6 +200,17 @@ if(count($items) !== $cnt){ //购物车里的商品数量，并没有全部写�
 
 $cart->clear();
 
+/*
+在线支付就是使用第三方支付平台的接口规范加密
+提交数据，计算MD5值
+*/
+$v_url = 'http://localhost/dream/recive.php'; //回调地址
+$md5key = '!@cd76dsaf%^&#$(12255'; //在有自己和第三方平台知道
+$md5info = md5($total . 'CNY' . $order_sn . '1009003' . $v_url . $md5key); //无缝拼接加盐生成MD5
+$v_md5info = strtoupper($md5info); //变成大写
+
+
+
 
 include(ROOT . 'view/front/order.html');
 

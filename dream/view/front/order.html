@@ -45,7 +45,21 @@
             </tr>
                         
             <tr>
-              <td bgcolor="#FFFFFF" align="center"><div style="text-align:center"><input type="button" value="立即使用支付宝支付"></div></td>
+              <td bgcolor="#FFFFFF" align="center">
+                <div style="text-align:center">
+                  <!-- 提交数据到第三方支付平台 -->
+                  <form action="http://localhost/0707/pay/index.php" method="post">
+                    商户编号：<input type="hidden" name="v_mid" value="1009003" /><br />
+                    订单编号: <input type="text" name="v_oid" value="<?php echo $order_sn;?>"/><br />
+                    订单总金额:<input type="hidden" name="v_amount" value="<?php echo $total;?>"/><br />
+                    货币种类:<input type="hidden" name="v_moneytype" value="CNY"/> <br />
+                    回调函数:<input type="hidden" name="v_url" value="<?php echo $v_url;?>"/><br/>
+                    <input type="hidden" name="v_md5info" value="<?php echo $v_md5info;?>"/><br />
+
+                    <input type="submit" value="立即在线支付" />
+                  </form>
+                </div>
+              </td>
             </tr>
                       </tbody></table>
                     <p style="text-align:center; margin-bottom:20px;">您可以 <a href="index.php">返回首页</a> 或去 <a href="user.php">用户中心</a></p>
