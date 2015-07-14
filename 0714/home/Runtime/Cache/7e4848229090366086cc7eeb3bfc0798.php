@@ -3,6 +3,7 @@
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
 <title>index</title>
 <body>
+	<p><a href="__URL__/Index/play">Index/play</a></p>
 	<h3>__ROOT__</h3>
 	<h3>__APP__</h3>
 	<h3>__URL__</h3>

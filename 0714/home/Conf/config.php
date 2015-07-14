@@ -4,6 +4,7 @@ return array(
 	'username' => '美女老师',
 	'TMPL_L_DELIMT' => '<{',
 	'TMPL_R_DELIMT' => '}>',
-	'DEFAULT_MODULE' => 'User'
+	'DEFAULT_MODULE' => 'User',
+	'URL_MODEL' => '2'
 );
 ?>
