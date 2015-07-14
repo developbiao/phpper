@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html lang="en">
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
 <title>index</title>

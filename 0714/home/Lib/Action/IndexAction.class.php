@@ -1,20 +1,16 @@
 <?php
-// 本类由系统自动生成，仅供测试用途
+//模板替换测试
 class IndexAction extends Action {
     public function index(){
-    	$user = M('User');
-    	$this->rows = $user->select();
+    	//echo "<img src='./Public/Images/phptools.jpg'/>";
     	$this->display();
     }
-
-    public function add(){
-    	$this->display();
-
-    }
-    public function insert(){
-    	echo '<pre>';
-    	print_r($_POST);
-    	echo '</pre>';
-
+    public function temp(){
+    	echo __ROOT__,'<br />';
+    	echo __APP__,'<br />';
+    	echo __URL__,'<br />';
+    	echo __ACTION__,'<br />';
+    	echo __PUBLIC__,'<br />';
+    	echo __TMPL__,'<br />';
     }
 }
