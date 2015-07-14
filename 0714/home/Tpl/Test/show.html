@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html"/>
+	<title>index</title>
+</head>
+<body>
+	<h3>用户信息</h3>
+	<foreach name="rows" item="row">
+		<h1>{$row['id']}---{$row['user']}----{$row.passwd}</h1>
+	</foreach>
+</body>
+</html>
