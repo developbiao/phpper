@@ -9069,3 +9069,9 @@ INFO: [ view_end ] --START--
 INFO: ShowPageTrace Behavior ::run [ RunTime:0.000613s ]
 INFO: [ view_end ] --END-- [ RunTime:0.000662s ]
 
+[ 2015-07-14T22:16:49+08:00 ] 0.0.0.0 /0714/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+NOTIC: [2048] Declaration of LoginAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') D:\Code\PHP\0714\Home\Lib\Action\LoginAction.class.php 第 15 行.
+
