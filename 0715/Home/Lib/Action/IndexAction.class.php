@@ -9,8 +9,16 @@ class IndexAction extends Action {
 		echo '<pre>';    
 		*/
 		//获取模块和操作常量
+		/*
 		echo MODULE_NAME,'<br />';
 		echo ACTION_NAME;
+		*/
+	    //success error跳转
+    	//$this->success('yes', 'Say', 5); //这样访问会有路径不全的问题找不到模块
+    	$this->success('yes', U('Say'), 5); //使用在U来解决
+
+
+
     }
 
     public function test(){
@@ -21,6 +29,21 @@ class IndexAction extends Action {
     	//echo 'Index/show';
     	//echo __INFO__;
     	//echo __EXT__; //获取后缀
+
+    	//echo U('Say', '', 'aps', 1);//加了第四个参数跳转了
+
+    	//重定向redirect
+    	$this->redirect('Test/demo', '', 10, '页面跳转中~'); //10秒后跳转
+    }
+
+
+    //自定义跳转到站外
+    public function test1(){
+    	echo  "<script>location='http://www.baidu.com'</script>";
+    }
+
+    public function test2(){
+    	$this->error('错了吧', U('Say'), 5);
     }
 
     public function Say(){
@@ -37,4 +60,5 @@ class IndexAction extends Action {
     public function myerror(){
     	$this->display('myerror');
     }
+
 }

@@ -7,7 +7,7 @@
 
 class EmptyAction extends Action{
 	public function index(){
-		echo '空的';	
+		echo '<h3>啊哦~没有找到'.MODULE_NAME.'模块!</h3>';	
 	}
 }
 ?>

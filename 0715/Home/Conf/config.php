@@ -1,7 +1,7 @@
 <?php
 return array(
 	//'配置项'=>'配置值'
-	'URL_MODEL' => '2',
+	'URL_MODEL' => '1',
 	'TMPL_L_DELIMT' => '<{',
 	'TMPL_R_DELIMT' => '}>',
 	'DEFAULT_MODULE' => 'Index',
