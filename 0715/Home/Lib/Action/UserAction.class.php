@@ -49,5 +49,8 @@ class UserAction extends Action{
 		echo htmlspecialchars_decode('aa&lt;b&gt;&quot;bbb&quot;&lt;/b&gt;cc');
 	}
 
+
+
+
 }
 ?>
