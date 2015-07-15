@@ -327,6 +327,9 @@ class DbMysql extends Db{
      * @return string
      */
     public function escapeString($str) {
+        if(get_magic_quotes_gpc($str)){
+            return $str;
+        }
         if($this->_linkID) {
             return mysql_real_escape_string($str,$this->_linkID);
         }else{

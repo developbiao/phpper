@@ -61,4 +61,19 @@ class IndexAction extends Action {
     	$this->display('myerror');
     }
 
+    //A跨模块调用
+    public function test03(){
+        //$test = new TestAction();
+        //实例化TestAction
+        $test = A('Test');
+        $test->demo();
+    }
+
+    //R跨模块调用方法
+
+    public function test04(){
+
+        R('Test/SayHello');
+    }
+
 }
