@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>报错信息</title>
+</head>
+<body>
+	<h3>报错信息:</h3>
+	<?php
+		echo '<h3>异常文件名:'.$e['file'].'</h3>';
+		echo '<h3>异常发生的行数:'.$e['line'].'</h3>';
+		echo '<h3>异常信息:'.$e['message'].'</h3>';
+		echo '<h3>异常详细:'.$e['trace'].'</h3>';
+	?>
+</body>
+</html>
