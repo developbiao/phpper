@@ -1,0 +1,12 @@
+[ 2015-07-15T08:41:57+08:00 ] 0.0.0.0 /0714/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001517s ]
+NOTIC: [2048] Declaration of LoginAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') D:\Code\PHP\0714\Home\Lib\Action\LoginAction.class.php 第 15 行.
+
+[ 2015-07-15T11:23:03+08:00 ] 0.0.0.0 /0714/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+NOTIC: [2048] Declaration of LoginAction::show() should be compatible with Action::show($content, $charset = '', $contentType = '', $prefix = '') D:\Code\PHP\0714\Home\Lib\Action\LoginAction.class.php 第 15 行.
+
