@@ -7,8 +7,12 @@
 
 class UserAction extends Action{
 
-
 	public function index(){
+		echo 'hello moto';
+	}
+
+	//自动验证测试
+	public function test04(){
 		$_SESSION['scode'] = 'abc';
 		$_POST['username'] = 'user7';
 		$_POST['password'] = '614319951';
