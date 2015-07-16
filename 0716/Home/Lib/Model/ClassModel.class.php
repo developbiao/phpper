@@ -8,5 +8,6 @@
 class ClassModel extends Model{
 	//自定义表名
 	protected $tableName = 'student';
+	
 }
 ?>

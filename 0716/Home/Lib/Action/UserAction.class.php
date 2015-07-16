@@ -7,7 +7,53 @@
 
 class UserAction extends Action{
 
+
 	public function index(){
+		$_SESSION['scode'] = 'abc';
+		$_POST['username'] = 'user7';
+		$_POST['password'] = '614319951';
+		$_POST['repassword'] = '614319951';
+		$_POST['vcode'] = 'abcd';
+		$_POST['email'] = 'developbia@gmail.com';
+		$_POST['num'] = '787';
+
+		$stu = D('Student');
+		if($stu->create()){
+			$stu->add();
+		}else{
+			echo '<pre>';
+			print_r($stu->getError()); 
+			echo '<pre>';
+			//echo $stu->getError(); //打印错误
+		}
+		/*
+		echo '<pre>';
+		print_r($stu);
+		echo '<pre>';
+		*/
+
+
+	}
+
+	//自动填充测试
+	public function test03(){
+		$_POST['user'] = 'user6';
+		$_POST['passwd'] = '3276';
+
+		$stu = D('Student');
+		$stu->create();
+		/*		
+		echo '<pre>';
+		print_r($stu);
+		echo '<pre>';
+		*/
+		echo $stu->add();
+
+
+	}
+
+	//create创建数据对象智能过滤post表单不符字段
+	public function test02(){
 		$_POST['username'] = 'xiaomin';
 		$_POST['password'] = '123456';
 		$_POST['submit'] = '提交';
