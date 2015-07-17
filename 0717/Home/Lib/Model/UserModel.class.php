@@ -12,7 +12,7 @@ class UserModel extends RelationModel{
 					//'mapping_type' => HAS_ONE,
 					'mapping_type' => HAS_MANY,
 					'class_name' => 'Tel', //关联模型类
-					'foreign_key' => 'user_id',
+					'foreign_key' => 'user_id', //关联的依据
 					'mapping_name' => 'teltable', //自定义映射过来的表名
 					'mapping_fields' => 'code', //取指定映射字段
 					//'as_fields' => 'code' //取指定映射字段到当前表

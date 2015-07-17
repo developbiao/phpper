@@ -1,1 +1,11 @@
-<?php if (!defined('THINK_PATH')) exit();?>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Show</title>
+</head>
+<body>
+	<h3>Index/show</h3>
+	<?php if($age >3){ echo "<h3>你可以看小电影了</h3>"; } ?>
+</body>
+</html>

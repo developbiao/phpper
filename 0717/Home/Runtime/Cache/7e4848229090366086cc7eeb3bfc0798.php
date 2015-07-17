@@ -22,5 +22,6 @@
 	date('Y-m-d H:i:s', time());
 	<h3><?php echo (date('Y-m-d H:i:s', $time)); ?></h3>
 	<h3><?php echo date('Y-m-d H:i:s', time());?></h3>
+	<h3><?php echo (($info)?($info):'然而非常有用'); ?></h3>
 </body>
 </html>

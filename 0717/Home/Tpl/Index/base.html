@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Base模板</title>
+<style type="text/css">
+div{
+	margin:0 auto;
+	width:500px;
+	height:200px;
+	background:#ccc;
+	margin-bottom:20px;
+	overflow: auto;
+}
+#div1{
+	background:#474747;
+}
+#div2{
+	background:#ABCDEF;
+}
+#div1{
+	background:#efefef;
+}
+</style>
+</head>
+<body>
+	<center>
+		<h3>BBC最大中文站点</h3>
+	</center>
+	<div id="div1">
+		<block name="c1"></block>
+	</div>
+	<div id="div2">
+		<block name="c2"></block>
+	</div>
+	<div id="div3">
+		<block name="c3"></block>
+	</div>
+	<p><a href="__URL__/demo">demo</a> | <a href="__URL__/show">show</a></p>
+</body>
+</html>

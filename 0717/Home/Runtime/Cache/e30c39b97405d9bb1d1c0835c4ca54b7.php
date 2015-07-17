@@ -5,22 +5,19 @@
 <title>index</title>
 </head>
 <body>
-	<h1>User/index</h1>
-	<!--系统变量 -->
-	<h3><?php echo (date('Y-m-d g:i a',time())); ?></h3>
-	<h3><?php echo (C("app_satus")); ?></h3>
-	<h3><?php echo C('TMPL_L_DELIM');?></h3>
-	<h3><?php echo (C("TMPL_R_DELIM")); ?></h3>
-	<h3><?php echo (HOSTNAME); ?></h3>
-	<h3><?php echo (C("TMPL_L_DELIM")); ?></h3>
-	<h3><?php echo (C("TMPL_R_DELIM")); ?></h3>
+	<h1>查看用户</h1>
+	<hr>
+	<table width='500px' border='1px' cellspacing='0'>
+			<tr>
+				<td>ID</td>
+				<td>用户名</td>
+			</tr>
+		<?php if(is_array($rows)): foreach($rows as $key=>$val): ?><tr>
+				<td><?php echo ($val["id"]); ?></td>
+				<td><?php echo ($val["username"]); ?></td>
+			</tr><?php endforeach; endif; ?>
+	</table>
 
-	<hr />
-	<h3>模板函数测试</h3>
-	<h3><?php echo (substr(strtoupper($name ),0, 4)); ?></h3>
-	<h3><?php echo substr(strtoupper($name), 0, 4);?></h3>
-	date('Y-m-d H:i:s', time());
-	<h3><?php echo (date('Y-m-d H:i:s', $time)); ?></h3>
-	<h3><?php echo date('Y-m-d H:i:s', time());?></h3>
+
 </body>
 </html>

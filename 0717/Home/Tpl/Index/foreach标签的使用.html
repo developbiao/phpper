@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Show</title>
+</head>
+<body>
+	<h3>Index/show</h3>
+	<!-- foreach标签的使用-->
+	<foreach name="rows" item="val">
+		<if condition='$key % 2 eq 0'>
+			<h3 style="background:#abcdef"><{$val.username}></h3>
+			<else/>
+			<h3><{$val.username}></h3>
+		</if>
+	</foreach>
+
+</body>
+</html>
