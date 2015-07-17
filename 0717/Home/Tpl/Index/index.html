@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+</head>
+<body>
+	<h1>Index/index</h1>
+	<!--系统变量 -->
+	<h3><{$Think.now}></h3>
+	<h3><{$Think.config.app_satus}></h3>
+	<h3><{:C('TMPL_L_DELIM')}></h3>
+	<h3><{$Think.config.TMPL_R_DELIM}></h3>
+	<h3><{$Think.const.HOSTNAME}></h3>
+	<h3><{$Think.ldelim}></h3>
+	<h3><{$Think.rdelim}></h3>
+
+	<hr />
+	<h3>模板函数测试</h3>
+	<h3><{$name | strtoupper | substr=0, 4}></h3>
+	<h3><{:substr(strtoupper($name), 0, 4)}></h3>
+	date('Y-m-d H:i:s', time());
+	<h3><{$time|date='Y-m-d H:i:s', ###}></h3>
+	<h3><{:date('Y-m-d H:i:s', time())}></h3>
+</body>
+</html>
