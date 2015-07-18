@@ -1,17 +1,18 @@
 <?php
 // 本类由系统自动生成，仅供测试用途
-class IndexAction extends Action {
+class IndexAction extends CommonAction {
 
 	public function index(){
-		//判断有没有登陆
-		if(!session('login')){
-			$this->success('您还没有登陆!', U('Login/index')); //跳到登陆页面
-			exit;
-		}
+		//判断有没有登陆自动调用_initialize
 		$user = M('User');
 		$this->rows=$user->order('id')->select();
 		$this->display();
 	}
+
+	public function show(){
+		$this->display();
+	}
+
 	//session的测试
     public function demo01(){
     	//echo session_id();

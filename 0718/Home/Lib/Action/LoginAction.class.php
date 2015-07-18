@@ -8,6 +8,10 @@
 class LoginAction extends Action{
 
 	public function index(){
+		if(session('login')){
+			$this->success('您已经登陆过了', U('Index/index'), 5);
+			exit;
+		}
 		$this->display();
 	}
 
@@ -28,6 +32,38 @@ class LoginAction extends Action{
 		}
 	}
 
+
+	//用户注册
+
+	public function register(){
+		$this->display();
+	}
+
+	//添加用户
+	public function insert(){
+		$user = D('User');
+		$_POST['password'] = md5($_POST['password']);
+		$_POST['repassword'] = md5($_POST['repassword']);
+		if($user->create()){
+			if($user->add()){
+				session('username', $_POST['username']);
+				session('login', 1);
+				$this->success('注册成功！', U('Index/index'));
+			}
+		}else{
+			echo '<pre>';
+			print_r($user->getError());
+			echo '<pre>';
+		}
+	}
+
+
+	//生成图像验证码
+	public function verify(){
+		import('ORG.Util.Image');
+		Image::buildImageVerify(4, 1, 'png', 50, 25);
+	}
+
 	//用户退出
 
 	public function logout(){
@@ -41,6 +77,7 @@ class LoginAction extends Action{
 	}
 
 	public function test(){
+
 	}
 
 }

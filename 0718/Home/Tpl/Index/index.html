@@ -8,7 +8,7 @@
 	<h3>Index/index</h3>
 	<h3>欢迎来到梦想之城!</h3>
 	<foreach name="rows" item="val">
-		<if condition="$val.username eq perter">
+		<if condition="$val.username eq $_SESSION['username']">
 			<h3><{$val['username']}></h3>
 		</if>
 	</foreach>
