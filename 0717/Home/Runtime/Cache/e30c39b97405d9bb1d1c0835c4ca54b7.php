@@ -17,6 +17,7 @@
 				<td><?php echo ($val["username"]); ?></td>
 			</tr><?php endforeach; endif; ?>
 	</table>
+	<h3><?php echo ($time); ?></h3>
 
 
 </body>

@@ -6,8 +6,13 @@
 */
 class UserAction extends Action{
 	public function index(){
+		if(!S('rows')){
 		$user = M('User'); //取数据
-		$this->rows = $user->select();
+		$rows = $user->select();
+		S('rows', $rows, 10); //小模块缓存$rows
+	}
+		$this->rows = S('rows');
+		$this->time = time();
 		$this->display();
 	}
 
@@ -16,6 +21,4 @@ class UserAction extends Action{
 		$this->display();
 
 	}
-}
-
 ?>
