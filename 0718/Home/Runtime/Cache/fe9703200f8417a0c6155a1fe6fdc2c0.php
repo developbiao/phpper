@@ -1,0 +1,16 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Login</title>
+</head>
+<body>
+	<h3>用户登陆</h3>
+	<hr/>
+	<form action="__URL__/check" method="post">
+		<p>用户名：<input type="text" name="username"/></p>
+		<p>密码:<input type="password" name="password"/></p>
+		<p><input type="submit" value="登陆"</p>
+	</form>
+</body>
+</html>

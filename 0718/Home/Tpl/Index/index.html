@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+</head>
+<body>
+	<h3>Index/index</h3>
+	<h3>欢迎来到梦想之城!</h3>
+	<foreach name="rows" item="val">
+		<if condition="$val.username eq perter">
+			<h3><{$val['username']}></h3>
+		</if>
+	</foreach>
+	<hr/>
+	<h1><a href="__APP__/Login/logout">退出</a></h1>
+</body>
+</html>
