@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+</head>
+<body>
+	<h3>Index/index</h3>
+	<h3>遇见你真好!</h3>
+	<hr/>
+	<table width="500px" border="1px" cellspacing="0"/>
+	<tr>
+		<td>学号</td>
+		<td>姓名</td>
+	</tr>
+	<foreach name="rows" item="val">
+		<tr>
+			<td><{$val.id}></td>
+			<td><{$val.username}></td>
+		</tr>
+	</foreach>
+	<table>
+		<h3><{$show}></h3>
+</body>
+</html>
+

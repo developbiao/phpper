@@ -1,0 +1,11 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+</head>
+<body>
+	<h3>User/index</h3>
+	<h3>your Time is limited so dont't waste it living some one else's life!</h3>
+</body>
+</html>
