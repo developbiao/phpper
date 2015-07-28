@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Client</title>
+<script src="./js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+$("document").ready(function (){
+	var url="server.php?inAjax=1&do=checkMember&username=xiaogou";
+	var data={};
+	$.get(url, data, function(res) {
+
+		var jsonObj = eval("("+ res +")");
+		$("#username").val(jsonObj.username);
+		$("#groupname").val(jsonObj.groupname);
+		$("#uid").val(jsonObj.uid);
+		
+	});
+});
+</script>
+
+<div>
+	用户名:<input type="text" name="username" id="username"/><br/>
+	用户组:<input type="text" name="groupname" id="groupname"/><br/>
+	UID:<input type="text" name="uid" id="uid"/>
+</div>
+</body>
+</html>

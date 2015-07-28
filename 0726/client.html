@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Client</title>
+<script src="./js/jquery.js" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+	$("document").ready(function(){
+		var url = "server.php";
+		var data = {"do":"first"};
+		$.getJSON(url, data, function(res) {
+			$("#username").val(res.username);
+			$("#password").val(res.password);
+		});
+
+		var data = {"do": "second"};
+		$.getJSON(url, data, function(res) {
+			$("#members").val(res.third.members.username);
+		});
+
+		var data={"do":"third"};
+		$.getJSON(url,data,function(res){
+			//$("#address").val(res.address[1].username);
+			$("#address").val(res.address.third.members.username);
+		});
+
+	});
+</script>
+<div>
+	<h3>一维数组巩固练习</h3>
+	<input type="text" name="username" id="username" /><br />
+	<input type="password" name="password" id="password"/><br />
+
+	<hr />
+	<h3>多数组实战（展示一组会员信息）</h3>
+	<textarea id="members"></textarea>
+
+	<h3>放对象里面的数值</h3>
+	<hr />
+	<textarea id="address"></textarea>
+</div>
+</body>
+</html>
