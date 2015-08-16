@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+<script src="./prototype.js"></script>
+</head>
+<body>
+	<inpu type="text" value="hello jquery"/>
+	<script type="text/javascript">
+	/*
+	使Jquery与其它库共存
+	*/
+		Jquery.noConflict();
+		alert('这是jquery弹出的' + Juqery('#a').val());
+		alert('这是prototype弹出的' + $F('a'));
+	</script>
+
+</body>
+</html>
+

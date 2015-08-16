@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>demo1</title>
+<script src="./jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<p id="p">2222222</p>
+	<script type="text/javascript">
+		var p = $('p');
+		//用jquery选择器得到的对象，就是jquery对象
+
+		alert(p.toString());
+		//jquery对象不能使用DOM对象中的方法，只能使用jquery的方法
+		//如果DOM对象中的方法在jquery中被必写过，那么还是可以使用Demo对象的方法
+	</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function (){
+		//$('div').next().css('color', '#ABCDEF');
+		$('div~p').css('color', 'green');
+	});
+</script>
+</head>
+<body>
+	<div>这个是div标签</div>
+	<p>这个是p标签</p>
+	<span>这个是span标签</span>
+	<p>我是上面p的朋友<p>
+</body>
+</html>
+

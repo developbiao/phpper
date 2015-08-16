@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<input type="text" id="name" value="walter" />
+	<script type="text/javascript">
+		/*
+		jquery 对象转换成DEMO对象
+		*/
+		var input = $('#name');
+		//第一种方法 使用get(index)的方法
+		//alert(input.get(0).value);
+
+		//第二种方法  使用索引, index
+		alert(input[0].value);
+	</script>
+
+</body>
+</html>

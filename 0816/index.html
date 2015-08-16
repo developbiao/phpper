@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<p><span>我是</span>第1<span>个标签</span><p>
+	<p>我是第2个标签<p>
+	<p>我是第3个标签<p>
+	<p class="sp">我是第4个标签<p>
+	<p>我是第5个标签<p>
+	<p>我是第7个标签<p>
+	<p>我是第8个标签<p>
+<script type="text/javascript">
+	$(function (){
+		//偶数选择器，从零开始计数
+		//$('p:even').css('background', 'red');
+
+		//奇数选择器
+		$('p:odd').css('background', 'red');
+	});
+</script>
+</body>
+</html>

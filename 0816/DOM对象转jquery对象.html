@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<input type="text" id="name" value="caiyuan" />
+	<script type="text/javascript">
+	/*
+	DOM对象转jquery对象
+	*/
+	var input = document.getElementById('name');
+
+	//DOM$()把DEMO对象包装起来就OK了
+	alert($(input).val());
+	</script>
+</body>
+</html>
+
