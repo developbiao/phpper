@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="./jquery-2.1.1.min.js"></script>
+</head>
+<body>
+	<ul>
+		<li>我非常的喜欢你</li>
+		<li>我非常的喜欢你</li>
+		<li>我非常的喜欢你</li>
+		<li>我非常的喜欢你</li>
+		<li class="disable">我非常的喜欢你</li>
+		<li class="disable">我非常的喜欢你</li>
+		<li>真的爱你</li>
+	</ul>
+	<a href="#" id="alike">更多Love</a>
+<script type="text/javascript">
+ $(function(){
+            $("#alike").click(function(){
+                var text = $("#alike").text();
+                if(text == "更多Love"){
+                    $("#alike").html("简化");
+                    $("li[class=disable]").show();
+                }else{
+                    $("#alike").html("更多Love");
+                    $("li[class=disable]").hide();
+                }
+            });
+        });
+
+</script>
+</body>
+</html>
