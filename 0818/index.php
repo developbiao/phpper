@@ -44,10 +44,11 @@ class Consistent implements hash, distribution{
 		//如array(13亿=>q, 8亿=>b, 24->c);
 		//添加虚拟节点
 		for($i=0; $i<$this->_mul; $i++){
-
+			
 			$this->_postion[$this->_hash($node . '_' . $i)] = $node;
 		}
 		//$this->_nodes[$this->_hash($node)] = $node;
+		//生成虚拟节点是的key是无序的，对虚拟节点排序就实现了均匀分布在圆环上
 		$this->sortPos();
 	}
 
@@ -86,6 +87,10 @@ $con = new Consistent();
 $con->addNode('a');
 $con->addNode('b');
 $con->addNode('c');
+
+
+echo '删除一台服务器a<br />';
+$con->delNode('a');
 
 echo '所有的服务器如下:<br />';
 $con->printPos();
