@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+<title>index</title>
+<script type="text/javascript">
+ $.ajax({
+ 	dataType:"json",
+ 	url: 'www.lifebiao.com/xxxx';
+ 	date:{username:user_name, limit:limit, start_date:data_start, end_date:date_end}
+ 	.done(function(data)){
+ 		console.log(data);
+ 		usersModel.data(data);
+ 	}
+ 	.fail(function ()){
+ 		alert("Failed to get data");
+ 	}
+ });
+</script>
+</head>
+<body>
+</body>
+</html>

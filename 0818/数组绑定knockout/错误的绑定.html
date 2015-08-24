@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="knockout-3.3.0.js"></script>
+</head>
+<body>
+<table> 
+<thead> 
+<tr> 
+<td>Name</td> 
+<td>Amount</td> 
+<td>Price</td> 
+</tr> 
+</thead> 
+<tbody data-bind="foreach: items"> 
+<tr> 
+<td data-bind="text: product.name"></td> 
+<td><select data-bind="options:[1,2,3,4,5,6],value: amount"></select></td> 
+<td data-bind="text: subTotal"></td> 
+</tr> 
+</tbody> 
+</table> 
+<h3>Order Price:<span data-bind="text: price"></span></h3> 	
+
+<script type="text/javascript">
+var products=[{name:"Thinkpad X1",price:9000}, 
+{name:"Hp ProBook",price:5555}, 
+{name:"Mouse",price:45} ]; 
+
+function Order() { 
+	var self = this; 
+	self.items = ko.observableArray([ 
+//This data should load from server 
+new Item(products[0], 1), 
+new Item(products[1],2)]); 
+	self.price = ko.computed(function () { 
+		var p=0; 
+		for (var i = 0; i < self.items().length; i++) { 
+			var item = self.items()[i]; 
+			p += item.product.price * item.amount(); 
+		} 
+		return p; 
+	}, self); 
+}
+
+function Item(product, amount) { 
+	var self = this; 
+	this.product = product; 
+	this.amount = ko.observable(amount); 
+	this.subTotal = ko.computed(function () { 
+		return self.amount() * self.product.price; 
+	}, self); 
+}
+</script>
+</body>
+</html>

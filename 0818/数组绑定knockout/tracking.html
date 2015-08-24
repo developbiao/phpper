@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="knockout-3.3.0.js"></script>
+</head>
+<body>
+	<div>
+		<p data-bind="text:firstName"></p>
+		<p data-bind="text:lastName"></p>
+		<input data-bind="value:firstName"></p>
+		<input data-bind="value:lastName"></p>
+		<p data-bind="text:fullName"></p>
+		<p><button data-bind="click:capitalizeLastName">Caps</button></p>
+	</div>
+<script type="text/javascript">
+//定义一个View模型
+function ViewModel(){
+	this.firstName = ko.observable("Cheng");
+	this.lastName = ko.observable("GuangXi");
+
+	this.fullName = ko.computed(function (){return this.lastName() + "" + this.firstName();}, this);
+	this.capitalizeLastName = function (){
+		this.lastName(this.lastName().toUpperCase());
+	}
+}
+ko.applyBindings(new ViewModel());
+</script>
+</body>
+</html>
