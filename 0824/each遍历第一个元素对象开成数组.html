@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		var arr=[];
+
+		$("h3").each(function (i){
+
+			arr[i] = $(this).html();
+		});
+
+
+		alert(arr.join('-'));
+
+	});
+</script>
+</head>
+<body>
+	<h3>header1</h3>
+	<h3>header2</h3>
+	<h3>header3</h3>
+	<h3>header4</h3>
+	<h3>header5</h3>
+</body>
+</html>

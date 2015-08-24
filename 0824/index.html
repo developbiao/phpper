@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+	//jquery中的数据缓存
+	$(document).ready(function (){
+		$("h3").each(function (i){
+			$(this).data("prt", {"name":"xiaomei" + i, "age":"22" + i} );
+		});
+
+		$("h3").click(function (){
+			alert($(this).data('prt').name +"=>"+ $(this).data('prt').age);
+		});
+
+
+	});
+</script>
+</head>
+<body>
+	<h3>header1</h3>
+	<h3>header2</h3>
+	<h3>header3</h3>
+	<h3>header4</h3>
+	<h3>header5</h3>
+</body>
+</html>
