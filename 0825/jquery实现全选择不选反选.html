@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" charset="utf-8"/>
+	<script src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			//全选
+			$("#select_all").click(function (){
+				$("#content>:checkbox").attr("checked", true);
+			});
+
+			//不选
+			$("#select_not").click(function (){
+				$("#content>:checkbox").attr("checked", false);
+			});
+
+
+			//反选
+			$("#select_fan").click(function (){
+				$("#content>:checkbox").each(function (){
+					this.checked = !this.checked;
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="content">
+		<input type="checkbox" />苹果<br />
+		<input type="checkbox" />香蕉<br />
+		<input type="checkbox" />西瓜<br />
+		<input type="checkbox" />葡萄<br />
+		<input type="checkbox" />菠萝<br />
+		<input type="checkbox" />桃子<br />
+		<button id="select_all">全选</button>
+		<button id="select_not">不选</button>
+		<button id="select_fan">反选</button>
+	</div>
+</body>
+</html>
+
+
+
+
+

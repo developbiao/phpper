@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" charset="utf-8"/>
+	<script src="./jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			//code
+			$("#s1").click(function (){
+				//clone添加
+				//$("#s1 :selected").clone().appendTo($("#s2"));
+				$("#s1 :selected").appendTo($("#s2"));
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="content">
+	<from action="" id="fromid">
+		<select name="" id="s1" size="10">
+			<option value="">苹果</option>
+			<option value="">西瓜</option>
+			<option value="">香蕉</option>
+			<option value="">桃子</option>
+			<option value="">葡萄</option>
+			<option value="">菠萝</option>
+		</select>
+		<select name="" id="s2" size="10">
+		</select>
+	</from>
+	<button>选择</button>
+	</div>
+</body>
+</html>
+
+
+
+
+
