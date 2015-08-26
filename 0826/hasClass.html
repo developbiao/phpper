@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+.protected{
+	width:200px;
+	height:200px;
+	background:purple;
+}
+</style>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		$("h3").each(function (i){
+			if(!$(this).hasClass("hello")){
+				//$(this).css({"color":"green"});
+				//$(this).css({"color":"#f00"})
+				$(this).css("color", "red");
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<h3>1111111111</h3>
+	<h3>2222222222</h3>
+	<h3 class="hello">3333333333</h3>
+	<h3>4444444444</h3>
+	<h3>5555555555</h3>
+	<div class="protected"></div>
+	<div></div>
+</body>
+
+</html>
