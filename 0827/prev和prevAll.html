@@ -1,0 +1,32 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+</style>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		//write code...
+		$("div:eq(0)>h1:eq(2)").click(function (){
+			$(this).prevAll().css({"color":"blue"});
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<h1>01</h1>
+		<h1>02</h1>
+		<h1>03</h1>
+	</div>
+	<div>
+		<h1>04</h1>
+		<h1>05</h1>
+	</div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+</style>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function (){
+		//write code...
+		$("#h02").click(function (){
+			//andSelf是它前面前一个人
+			$(this).parentsUntil("body").next().andSelf().css({"background":"#CCC"});
+		});
+	});
+</script>
+</head>
+<body>
+	<div>
+		<h1>01</h1>
+		<h1 id="h02">02</h1>
+		<h1>03</h1>
+	</div>
+	<div>
+		<h1>04</h1>
+		<h1>05</h1>
+	</div>
+</body>
+</html>
+
