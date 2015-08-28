@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#content{
+	width:200px;
+	height:200px;
+	border:2px solid black;
+	background:#ABCDEF;
+	float:left;
+}
+
+#warp{
+	width:200px;
+	height:200px;
+	border:2px solid black;
+	background:#272822;
+	margin-left:50px;
+	float:left;
+}
+
+</style>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("#content").mouseenter(function (){
+		$(this).css({"background":"purple"});
+	});
+
+	$("#content").mouseleave(function (){
+		$(this).css({"background": "#ABCDEF"});
+	});
+
+	var oDiv = $("#warp").get(0);
+	oDiv.onmouseover = function (){
+		oDiv.style.background="#CCC";
+	};
+
+	oDiv.onmouseout = function (){
+		oDiv.style.background="#272822";
+	};
+
+});
+</script>
+<title>Jquery Learn</title>
+</head>
+<body>
+	<div id="content">
+	</div>
+
+	<div id="warp">
+	</div>
+</body>
+</html>
