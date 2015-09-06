@@ -29,7 +29,7 @@ order by ndate desc;
         return $dates;
     }
 
-$date_start = '2014-06-01';
+$date_start = '2015-06-01';
 $date_end = '2015-06-04';
 $dates = date_range($date_start, $date_end, '+1 day', 'Y-m-d');
 
@@ -40,15 +40,15 @@ $result = array();
 for($i=1; $i<=9; $i++){
 	$key = sprintf("lesson%s", $i); //lesson
 	foreach($dates as $day){
-		$result[$key][$day] = 0; //数据初始化为0
-		if(!empty($list)){
+		$result[$key][] = 0; //数据初始化为0
+		$data_exists = false;
 		foreach($list as $ele){
 			if($ele['day'] == $day && $ele['lesson'] == $i){
-				$result[$key][$day] = $ele['total'];
+				$result[$key][] = $ele['total'];
+				$data_exists = true;
 			}
-		}
-		}else{
-			$return[$key][$day] = 0;   //day 可以在项目去掉
+			if($data_exists)
+				break;
 		}
 	}
 
