@@ -1,0 +1,6 @@
+--创建NPC表
+CREATE TABLE `wcgrouprobot`(
+`id` int PRIMARY KEY AUTO_INCREMENT,
+`user_id` INT DEFAULT NULL,
+`identify` TINYINT DEFAULT NULL
+)engine=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,55 @@
+CREATE TABLE goods(
+gid INT,
+name VARCHAR(20),
+num SMALLINT
+);
+
+CREATE TABLE ord(
+oid INT,
+gid INT,
+much SMALLINT
+);
+
+INSERT INTO goods VALUES
+(1, 'cat', 34),
+(2, 'dog', 65),
+(3, 'horse', 21)
+
+
+//create trigger 创建第一个trigger
+CREATE trigger t1
+AFTER
+INSERT
+ON ord
+for each row
+BEGIN
+UPDATE goods SET num=num-2 WHERE gid=1;
+END;
+
+
+//设置mysql定界符
+delimiter
+
+//查看triggle
+SHOW triggers;
+
+
+//创建第二个trigger
+CREATE trigger t2
+AFTER
+INSERT
+ON ord
+for each row
+BEGIN
+UPDATE goods SET num=num-new.much WHERE gid=new.gid;
+END$
+
+//创建第三个trigger 
+CREATE trigger t3
+AFTER
+DELETE
+ON ord
+for each row
+BEGIN
+UPDATE goods SET num=num+old.much WHERE gid=old.gid;
+END$
