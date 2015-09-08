@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#btn{
+	position:relative;
+	left:100px;
+}
+</style>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("#btn").click(function (){
+		$("img").animate({
+			opacity:0.5,
+			left:"700px",
+		}, 1000);
+	});
+
+});
+</script>
+</head>
+<body>
+	<img src="a.png" alt=""/>
+	<button id="btn">点击</button>
+</div>
+</body>
+</html>
