@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+	#main{
+		width:500px;
+		height:300px;
+		background:#ccc;
+		border:2px solid #0f0;
+		margin:0 auto;
+		position:absolute;
+		top:50%;
+		left:50%;
+		top:150px;
+		margin-left:-250px;
+		margin-top:100px;
+		display:none;
+		text-align:center;
+	}
+	a{
+		text-decoration:none;
+		color:#fff;
+		margin-right:20px;
+	}
+
+	form{
+		margin-top:50px;
+	}
+
+	#content{
+		background:#000;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+
+</style>
+<script src="./jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	x = $(document).width();
+	y = $(document).height();
+	$("a").click(function (){
+		$("#content").css({"width":x + "px", "height":y + "px", "opacity":0.6});
+		$("#main").show(1000);
+	});
+
+	$("form").submit(function (){
+		var formstr = $(this).serialize();
+		$.post("index.php", formstr, function(data){
+			if(data == "yes"){
+				$("#main").hide(1000);
+				$("#content").fadeOut(1000);
+				$("#aid").html("欢迎"+$("#userid").val()+" 登陆");
+			}
+		});
+		return false;
+	});
+
+});
+</script>
+</head>
+<body>
+	<div style="width:100%; height:50px; background:#272822; line-height:50px; font-size:20px">
+		<span style="float:right"><a id="aid" href="javascript:return false;">登录</a></span>
+	</div>
+	<div id="content">
+	</div>
+	<div id="main">
+		<img src="a.png"/>
+		<form acton="">
+			用户名:<input type="text" name="username" id="userid"/>
+			<br/>
+			密码:<input type="text" name="password" id="passid"/>
+			<br/>
+			<input type="submit" value="登陆"/>
+			<input type="reset" value="重置" style="margin-left:50px"/>
+		</form>
+	</div>
+</body>
+</html>
