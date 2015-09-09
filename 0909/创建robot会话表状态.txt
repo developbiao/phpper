@@ -1,0 +1,12 @@
+#robot 会话状态表
+#记录机器人的会话状态
+id  -- ID
+robot_id  --机器人id
+status    --机器人状态  0, 1 
+
+CREATE TABLE `wcgrouprobotstatus`(
+`id` INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+`robot_id` INT UNSIGNED DEFAULT NULL,
+`status` INT UNSIGNED DEFAULT NULL
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
