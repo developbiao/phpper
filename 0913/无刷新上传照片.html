@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!-- 使用ifarme实现微博无刷新上传照片 -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("#fileid").change(function (){
+		$(this).parent().submit();
+	});
+});
+</script>
+</head>
+<body>
+	<h2>发微博</h2>
+	<form action="send.php" method="post">
+		<textarea name="txtname" id="" cols="70" rows="10"></textarea>
+		<input type="hidden" name="imgname" id="hid"/>
+		<br>
+		<input type="submit" value="发布">	
+	</form>
+	<form action="upload.php" method="post" enctype="multipart/form-data" target="winupload">
+		<input type="file" name="imgname" id="fileid"/>
+	</form>
+	<div id="uploadimg">
+	</div>
+	<iframe src="" name="winupload" style="display:none"></iframe>
+</body>
+</html>
