@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- 
+	@Describe:上传文件页面
+-->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>多文件上传</title>
+</head>
+<body>
+	<h3>请选择要上传的文件:</h3>
+	<form action="doAction.php" method="post" enctype="multipart/form-data">
+		请选择你要上传的文件(可多选):<input type="file" name="myFile[]" multiple="multiple"/><br />
+		<input type="submit" value="提交"/>
+	</form>
+</body>
+</html>
