@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<script src="./jquery.js"></script>
+<style type="text/css">
+table{
+	margin:10px;
+}
+td{
+	border:1px solid #396;
+	padding:10px;
+}
+
+</style>
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("table tr td:nth-child(2)").each(function(){
+				$(this).hide();
+			});
+
+		});
+	</script>
+	<table>
+		<tr>
+			<td>col 1</td>
+			<td>col 2</td>
+			<td>col 3</td>
+			<td>col 4</td>
+		</tr>
+		<tr>
+			<td>col 1</td>
+			<td>col 2</td>
+			<td>col 3</td>
+			<td>col 4</td>
+		</tr>
+		<tr>
+			<td>col 1</td>
+			<td>col 2</td>
+			<td>col 3</td>
+			<td>col 4</td>
+		</tr>
+		<tr>
+			<td>col 1</td>
+			<td>col 2</td>
+			<td>col 3</td>
+			<td>col 4</td>
+		</tr>
+	</table>
+</body>
+</html>
