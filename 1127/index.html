@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	foo('A', 'B');
+};
+
+//foo(a[, b], c)
+//接收2~3 个参数,b是可选参数，如果只传2个参数，b默认为null;
+//要把中间的参数b变为“可选”参数，就只能通过arguments判断，然后重新调整参数并赋值。
+function foo(a, b, c){
+	if(arguments.length === 2){
+		//实际拿到的参数是a和b，c为undefined
+		c = b;
+		b = null; //b变成默认值
+		alert(a);
+		alert(b);
+		alert(c);
+	}
+}
+
+
+
+</script>
+</head>
+<body>
+	<h3>JavaScript Test</h3>
+</body>
+</html>

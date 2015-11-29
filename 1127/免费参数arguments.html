@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	function foo(x){
+		alert(x);
+		for(var i=0; i<arguments.length; i++){
+			alert(arguments[i]);
+		}
+	}
+
+	foo(10, 20, 30, 40, 50);
+};
+</script>
+</head>
+<body>
+	<h3>JavaScript Test</h3>
+</body>
+</html>
+

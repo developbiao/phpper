@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	myfunc = function (num){
+		if(typeof num !== 'number'){
+			throw 'Not a number';
+		}
+		if(num > 0){
+			return num;
+		}else
+		{
+			return -num;
+		}
+
+	};
+
+	//var tmp = myfunc(7);
+	var tmp = myfunc(7, 'nihao', 'ppp');
+	//tmp = myfunc('aaaa');	 //trow 异常
+	//tmp = myfunc();参数少也没有问题只是return undefine
+	alert(tmp);
+};
+</script>
+</head>
+<body>
+	<h3>JavaScript Test</h3>
+</body>
+</html>
+

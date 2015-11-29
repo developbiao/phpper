@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	//var tmp = abs('Na'); //uncaugth exception:pram not number
+	var tmp = abs(-11);
+	alert(tmp);
+};
+
+//自定义abs函数
+function abs(){
+	if(arguments.length === 0){
+		return 0;
+	}
+	var x = arguments[0];
+	if(typeof x !== 'number'){
+		throw 'param not number';
+	}
+	return x >= 0? x : -x;
+
+}
+</script>
+</head>
+<body>
+	<h3>JavaScript Test</h3>
+</body>
+</html>
+
