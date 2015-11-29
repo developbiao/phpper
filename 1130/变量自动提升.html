@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	foo();
+};
+
+// 变量提升
+function foo(){
+	var x = 'Hello, ' + y;
+	alert(x);
+	var y = 'Bob'; //提升变量y的申明
+}
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
+

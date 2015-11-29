@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+/*
+这说明JavaScript实际上只有一个全局作用域。任何变量（函数也视为变量），如果没有在当前函数作用域中找到，就会继续往上查找，最后如果在全局作用域中也没有找到，则报ReferenceError错误。
+*/
+'use strict';
+window.onload = function (){
+	window.alert('调用window.alert()');
+
+	//把alert保存到另一个变量:
+	var old_alter = window.alert;
+	//给alert赋一个新函数
+	window.alert = function (){}
+	alert('无法用alert()显示了');
+	//old_alter('旧的可以显示!');
+	window.alert = old_alter;
+	alert('又可以alert()了!');
+};
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	MYAPP.show();	
+	console.log(MYAPP.version);
+};
+
+//解决命令空间冲突
+var MYAPP = {};
+
+//其它变量
+MYAPP.name = 'mymac';
+MYAPP.version = 1.0;
+
+//其它函数
+MYAPP.foo = function() {
+	return 'foo';
+}
+
+MYAPP.show = function () {
+	alert('show me now!');
+}
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>
+
