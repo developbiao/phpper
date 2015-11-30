@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+/*
+函数绑定到对象，称为该对象的方法
+*/
+window.onload = function (){
+	console.log(xiaoming.name);
+	console.log(xiaoming.age());
+	console.log(getAge()); //单独调用的getAge指向的是window对象 NaN
+};
+
+function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+}
+
+var xiaoming = {
+	name : '小明',
+	birth : 1993,
+	age : getAge
+};
+
+</script>
+</head>
+<body>
+</body>

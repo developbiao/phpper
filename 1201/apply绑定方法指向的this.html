@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	console.log(xiaoming.age());
+	console.log(getAge.apply(xiaoming, [])); //25, this指向xiaoming 参数为空
+};
+
+function getAge() {
+	var y = new Date().getFullYear();
+	return y - this.birth;
+}
+
+var xiaoming = {
+	name: '小明',
+	birth: 1990,
+	age: getAge
+};
+
+
+</script>
+</head>
+<body>
+</body>
+

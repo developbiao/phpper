@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	console.log(xiaoming.name);
+	console.log(xiaoming.age());
+	console.log(getAge()); //单独调用的getAge指向的是window对象 NaN
+	var fn = xiaoming.age();
+	console.log(fn());
+};
+
+function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+}
+
+var xiaoming = {
+	name : '小明',
+	birth : 1993,
+	age : getAge  //不能写成getAge()
+};
+
+
+</script>
+</head>
+<body>
+</body>

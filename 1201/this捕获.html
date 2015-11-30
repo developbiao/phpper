@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	console.log(xiaoming.age());
+};
+
+//this捕获，解决找不到this
+var xiaoming = {
+	name : '小明',
+	birth : 1990,
+	age : function (){
+		var that = this; //在方法内部一开始就捕获this
+		function getAgeFromBirth() {
+			var y = new Date().getFullYear();
+			return y - that.birth; //此时的that就是this
+		}
+
+		return getAgeFromBirth();
+	}
+};
+
+</script>
+</head>
+<body>
+</body>
+

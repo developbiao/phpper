@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+/*
+函数绑定到对象，称为该对象的方法
+*/
+window.onload = function (){
+	console.log(xiaoming.age);
+	console.log(xiaoming.age());
+};
+	var xiaoming = {
+		name : '小明',
+		brith: 1990,
+		age : function (){
+			var y = new Date().getFullYear();
+			return y - this.brith;
+		}
+	};
+
+</script>
+</head>
+<body>
+</body>
