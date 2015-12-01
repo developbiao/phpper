@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	parseInt('10');
+	parseInt('20');
+	parseInt('30');
+
+	alert('一共调用了parseInt:' + count + '次');
+};
+
+var count = 0;
+var oldParseInt = parseInt; //保存原函数
+
+window.parseInt = function () {
+	count += 1;
+
+	return oldParseInt.apply(null, arguments)//调用原函数
+};
+
+
+</script>
+</head>
+<body>
+</body>
+

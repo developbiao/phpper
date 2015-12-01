@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+//高阶函数
+window.onload = function (){
+	//var new_arr = arr.map(pow); //map/reduce
+	var new_arr = arr.map(function (x){
+		return x * x;
+	});
+
+	//reduce 的用法
+	var total = arr.reduce(function (x, y){
+		return x + y;
+	});
+	console.log(new_arr);
+	console.log(total);
+};
+
+function pow(x){
+	return x * x;
+}
+
+
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+

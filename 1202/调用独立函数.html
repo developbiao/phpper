@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	console.log(xiadongmei.age());
+	console.log(getAge.apply(xiadongmei, [])); //调用独立函数
+};
+
+function getAge() {
+	var y = new Date().getFullYear();
+	return y - this.birth;
+}
+
+var xiaoming = {
+	name: '小明',
+	birth: 1990,
+	age: getAge
+};
+
+var xiadongmei = {
+	name : '夏冬梅',	
+	birth: 1982,
+	age: getAge
+};
+
+
+</script>
+</head>
+<body>
+</body>
+
