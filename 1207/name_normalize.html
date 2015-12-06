@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+'use strict';
+
+function normalize(arr){
+	return arr.map(function (str){
+		return str.substring(0, 1).toUpperCase() + str.substring(1).toLowerCase();
+	});
+}
+
+window.onload = function (){
+		// 测试:
+	if (normalize(['adam', 'LISA', 'barT']).toString() === ['Adam', 'Lisa', 'Bart'].toString()) {
+	    alert('测试通过!');
+	}
+	else {
+	    alert('测试失败!');
+	}
+};
+
+</script>
+</head>
+<body>
+	<h3>JavaScript Learn</h3>
+</body>
+</html>

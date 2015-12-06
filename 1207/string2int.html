@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" Content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+'use strict';
+
+//字符串转整数
+function string2int(str){
+	var arr = []; //准备一个数组
+	for(let i of str){
+		arr.push(i);
+	}
+
+	//字符串数组转int
+	arr = arr.map(function (x){
+		return x - '0';
+	});
+
+	//reduce数组转整数
+	return arr.reduce(function (x, y){
+		return x * 10 + y;	
+	});
+}
+
+window.onload = function (){
+	// 测试:
+	if (string2int('0') === 0 && string2int('12345') === 12345 && string2int('12300') === 12300) {
+		if (string2int.toString().indexOf('parseInt') !== -1) {
+			alert('请勿使用parseInt()!');
+		} else if (string2int.toString().indexOf('Number') !== -1) {
+			alert('请勿使用Number()!');
+		} else {
+			alert('测试通过!');
+		}
+	}
+	else {
+		alert('测试失败!');
+	}
+};
+
+</script>
+</head>
+<body>
+	<h3>JavaScript Learn</h3>
+</body>
+</html>
