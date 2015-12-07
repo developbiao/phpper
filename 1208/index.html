@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+var arr = ['Google', 'Apple', 'Microsoft'];
+
+//忽略大小写来排序
+arr.sort(function (s1, s2){
+	var x1 = s1.toUpperCase();
+	var x2 = s2.toUpperCase();
+
+	if(x1 < x2){
+		return -1;
+	}
+	if(x1 > x2){
+		return 1;
+	}
+	return 0;
+});
+
+alert(JSON.stringify(arr)); // ['apple', 'Google', 'Microsoft'];
+
+};
+
+
+</script>
+</head>
+<body>
+	<h3>12月8号Continue Learn Js</h3>
+</body>
+</html>

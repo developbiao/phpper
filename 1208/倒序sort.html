@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+var arr = [10, 20, 1, 2];
+arr.sort(function (x, y){ //高阶函数
+	if(x < y){
+		return 1
+	}
+	if(x > y){
+		return -1;
+	}
+	if(x == y){
+		return 0;
+	}
+});
+
+alert(JSON.stringify(arr)); //[1, 2, 10, 20];
+
+};
+
+
+</script>
+</head>
+<body>
+	<h3>12月8号Continue Learn Js</h3>
+</body>
+</html>

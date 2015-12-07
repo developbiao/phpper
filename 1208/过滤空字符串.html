@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function(){
+	//过滤空字符串
+	var arr = ['A', '', 'C', 'D', null, undefined];
+	var r = arr.filter(function (str){
+		return  str && str.trim(); //注意:IE9以下的版本没有trim
+	});
+
+	alert(r);
+};
+</script>
+</head>
+<body>
+	<h3>12月8号Continue Learn Js</h3>
+</body>
+</html>

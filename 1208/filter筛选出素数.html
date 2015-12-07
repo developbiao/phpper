@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+// 测试:
+var
+x,
+r,
+arr = [];
+for (x = 1; x < 100; x++) {
+	arr.push(x);
+}
+r = get_primes(arr);
+if (r.toString() === [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97].toString()) {
+	alert('测试通过!');
+} else {
+	alert('测试失败: ' + r.toString());
+}
+alert(JSON.stringify(r));
+};
+
+//尝试用filter()筛选出素数
+//[2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97]
+function get_primes(arr){
+	return arr.filter(function(x){
+		if (x<2)
+			return false;
+		if(x===2)
+			return true;
+		for(let i=2;i<=Math.sqrt(x);i++){
+			if(x%i ===0)
+				return false;
+		}
+		return true;
+	});
+}
+
+</script>
+</head>
+<body>
+	<h3>12月8号Continue Learn Js</h3>
+</body>
+</html>

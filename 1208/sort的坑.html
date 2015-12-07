@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//看上去正常的结果：
+	var arr = ['Google', 'Apple', 'Microsoft'].sort();
+	console.log(arr);
+	var arr = ['Google', 'apple', 'Microsoft'].sort(); //是因为字符串根据ASCII码进行排序
+	console.log(arr);
+	var arr = [1, 10, 2, 20]; //[ 1, 10, 2, 20 ]
+	console.log(arr);
+
+	//!!!如果不知道sort()方法的默认排序规则，直接对数字排序，绝对栽进坑里！
+
+
+};
+
+
+</script>
+</head>
+<body>
+	<h3>12月8号Continue Learn Js</h3>
+</body>
+</html>
