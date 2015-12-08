@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	var results = count();
+	var	f1 = results[0]; 
+	var f2 = results[1];
+	var f3 = results[2];
+
+	//全部是16， 原因就是在于返回的函数引用了变量i，但他没有立即执行
+	//等到3个函数都返回i已经是4了
+	console.log(f1()); //16
+	console.log(f2()); //16
+	console.log(f3()); //16
+};
+
+
+//返回闭包时牢记一点就是：返回函数不要引用任何循环变量，或者不后续会发生变化的变量
+function count(){
+	var arr = [];
+	for(var i=1; i<=3; i++){
+		arr.push(function (){
+			return i * i;
+		});
+	}
+	return arr;
+}
+
+
+</script>
+</head>
+<body>
+	<h3>12月9号Continue Learn Js</h3>
+</body>
+</html>

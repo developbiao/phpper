@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//闭包 Closuer
+ var f = lazy_sum([1, 2, 3, 4, 5]);
+
+console.log(f());  //调用返回函数的函数f()
+ alert(f); //
+
+};
+
+
+//lazy_sum 返回函数
+function lazy_sum(arr){
+	var sum = function (){
+		return  arr.reduce(function (x, y) {
+			return x + y;
+		});
+	};
+
+	return sum;
+}
+
+</script>
+</head>
+<body>
+	<h3>12月9号Continue Learn Js</h3>
+</body>
+</html>
