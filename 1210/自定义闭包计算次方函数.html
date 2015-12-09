@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict'
+window.onload = function (){
+
+	var pow2 = make_pow(2); //定义一个2次方计算函数
+	var pow3 = make_pow(3); //定义一个3次方计算函数
+
+	console.log(pow2(5)); //25  使用延时函数
+	console.log(pow3(7)); //343
+};
+
+
+function make_pow(n){
+	return function (x){
+		return Math.pow(x, n);
+	}
+}
+
+
+</script>
+</head>
+<body>
+	<h3>12月10号Continue Learn Js</h3>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict'
+window.onload = function (){
+	//装包是携带状态的函数，可以完全对外隐藏起来
+	var c1 = create_counter();
+	console.log(c1.inc()); //1
+	console.log(c1.inc()); //2
+	console.log(c1.inc()); //3
+
+	var c2 = create_counter(10);
+	console.log(c2.inc()); //11
+	console.log(c2.inc()); //12
+	console.log(c2.inc()); //13
+
+};
+
+
+//封闭一个私有变量，JavaScript实现计数器功能
+
+function create_counter(initial){
+	var x = initial || 0;
+	return {
+		inc: function (){
+			return x += 1;
+		}
+	};
+}
+
+
+
+
+</script>
+</head>
+<body>
+	<h3>12月10号Continue Learn Js</h3>
+</body>
+</html>
