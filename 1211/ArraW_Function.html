@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	'use strict';
+	//箭头函数相当于匿名函数，并且简化了函数定义.
+	var fn1 = x => { //只有一个参数
+		if(x > 0){
+			return x * x;
+		}
+		else {
+			return -x * x;
+		}
+	}
+
+	console.log(fn1(-7));
+
+	//带多个参数的箭头函数
+	var fn2 = (x, y) => x * x + y * y;
+	console.log(fn2(9, 8));
+
+
+	//无参数的箭头函数
+	var fn3 = () => alert('Arraw Function!');
+
+	//立即执行的arraw function
+	(() => alert('I love Linx and PHP!'))();
+
+
+
+	//可变参数的arraw function
+	var fn4 = (x, y, ...rest) => {
+		var i, sum = x + y;
+		for(let i=0; i<rest.length; i++){
+			sum += rest[i];
+		}
+
+		return sum;
+	} 
+
+	console.log(fn4(7, 8, 9, 10));
+
+
+
+};
+
+</script>
+</head>
+<body>
+	<h3>12月11号Continue Learn 闭包CloseUre</h3>
+</body>
+</html>
