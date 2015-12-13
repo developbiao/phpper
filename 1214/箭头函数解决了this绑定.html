@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+	//console.log(obj.getAge());
+	console.log(obj1.name);
+	console.log(obj1.getAge());
+};
+
+//this 指向的问题
+var obj = {
+	birth:1990,
+	getAge:function (){
+		var b = this.birth;
+		var fn = function (){
+			return new Date().getFullYear - this.birth;  //this is undefined
+		};
+		return fn();
+	}
+};
+
+
+//箭头函数完修复了this的指向,this总是指向词法的作用域，也就是外层的调用者obj
+
+var obj1 = {
+	name:'xiaoming',
+	birth:1990,
+	getAge:function (){
+		var b = this.birth; //1990
+		var fn = () => new Date().getFullYear() - this.birth;	
+		return fn();
+	}
+};
+
+
+</script>
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/14</h3>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+	alert(obj.getAge(2016)); //这一我发达起来
+};
+
+/*
+由于this在箭头函数中已经按照词法作用域绑定，所以使用call(),apply()时无法对this进行绑定
+*/
+var obj = {
+	birth:1993,
+	name:'biaoge',
+	getAge: function (year) {
+		var b = this.birth;
+		var fn = (y) => y - this.birth; //this birth仍然是1990
+		return fn.call({birth:2000}, year); //传入的第一个参数被忽略
+	}
+};
+
+
+</script>
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/14</h3>
+</body>
+</html>
