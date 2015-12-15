@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+/*标准对象*/
+'use strict';
+window.onload = function(){
+
+var number = parseFloat('1'); // 判断数字
+
+var arr = [1, 7 ,8]; //判断数组用Array.isArray
+console.log(Array.isArray(arr));
+
+var obj1 = null;  //判断null
+console.log(obj1 === null);
+
+//判断一个全局变量有没有定义
+var flag = typeof window.obj2 === 'undefined';
+console.log(flag);
+
+//判断内部变量
+
+var flag = typeof myvar === 'undefined';
+console.log(flag);
+
+
+};
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/16</h3>
+</body>
+</html>

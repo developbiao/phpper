@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	//第一种方法
+	var date = new Date(2003, 7, 3, 15, 10, 33); //自定义一个时间Sun Aug 03 2003 15:10:33 GMT+0800
+
+	//第二种方法
+	var date1 = Date.parse('2015-06-24T19:49:22.875+08:00'); //tiemstrap 1435146562875
+
+	//timstap 转日期
+	var date3 = new Date(date1);
+
+	var now = new Date();
+	console.log(now.toLocaleString()); // 本地时间 2015/12/16 上午7:21:05
+	console.log(now.toUTCString()); //Tue, 15 Dec 2015 23:22:12 GMT (UTC时间与本地时间相差6小时)
+
+	//获取当前时间戳
+	if(Date.now){
+		alert(Date.now()); //老版本IE没有Date.now
+	}else{
+		alert(new Date().getTime());
+	}
+
+
+};
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/16</h3>
+</body>
+</html>
