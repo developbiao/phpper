@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+//然而并没有什么卵用
+console.log(typeof new Number(123)); //对象
+console.log(new Number(123) === 123); //false
+
+console.log(typeof new Boolean(true)); //object
+console.log(new Boolean(true) === true); //false
+
+console.log(typeof new String('str'));
+console.log(new String('hello') === 'hello'); //false
+};
+
+
+
+
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/15</h3>
+</body>
+</html>

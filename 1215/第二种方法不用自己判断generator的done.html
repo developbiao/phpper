@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+
+//第二种方法不需要我们自己 判断done
+for(var x of fib(8)){
+	console.log(x);
+}
+
+};
+
+//generator
+function* fib(max){
+	var
+		t,
+		a = 0,
+		b = 1,
+		n = 1;
+		while(n < max){
+			yield a;
+			t = a + b;
+			a = b;
+			b = t;
+			n ++;	
+		}
+
+		return a;
+}
+
+
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/15</h3>
+</body>
+</html>
