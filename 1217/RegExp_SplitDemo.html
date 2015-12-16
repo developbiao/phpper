@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>RegExp</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	//test character split
+	var arr1 = 'a b   c   '.split(' ');
+
+	console.log('nomal: ' + arr1);
+
+	var arr2 = 'a b   c'.split(/\s+/);
+
+	console.log('regExp split:' + arr2);
+
+	var arr3 = 'a,b, c,,    d'.split(/[\s\,]+/)
+	console.log(arr3);
+
+	var arr4 = 'a, b;; c   d'. split(/[\s\,\;]+/); //Array [ "a", "b", "c", "d" ]
+	console.log(arr4);
+
+
+};
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/17</h3>
+</body>
+</html>
+

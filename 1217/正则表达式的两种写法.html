@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>RegExp</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	//第一个种方法直接写正则
+	var re1 =/ABC\-001/;
+
+	//第二种写法转义需要两个'\\'
+	var re2 = new RegExp('ABC\\-001');
+
+	console.log(re1);
+	console.log(re2);
+
+
+	var re3 = /^\d{3}\-\d{3,8}$/;
+
+	console.log(re3.test('010-1234')); //true
+	console.log(re3.test('010-1234x')); //false
+	console.log(re3.test('010 12345')); //false
+};
+</script> 
+</head>
+<body>
+	<h3>Practice JavaScript 2015/12/17</h3>
+</body>
+</html>
+
