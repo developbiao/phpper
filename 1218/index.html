@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+//JSON是JavaScript Object Notation的缩写
+
+var xiaoming = {
+	name: '小明',
+	age: 14,
+	gender: true,
+	height: 1.65,
+	grade: null,
+	'middle-schoold':'\"W3C\" Middle School',
+	skills:['JavaScript', 'Java', 'Pyton', 'Lisp']
+};
+
+//把value 值转成大写
+var json_str = JSON.stringify(xiaoming, convert, '  ');
+console.log(json_str);
+	
+};
+
+
+function convert(key, value){
+	if(typeof value === 'string'){
+		return value.toUpperCase();
+	}
+
+	return value;
+}
+</script>
+</head>
+<body>
+	<h3>正则表达式RgeExp 2015-12-18</h3>
+</body>
+</html>

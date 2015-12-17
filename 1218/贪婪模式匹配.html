@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+
+	//匹配出数字后面的0
+	//贪婪匹配
+	var re = /^(\d+)(0*)$/;
+	console.log(re.exec('102300'));
+
+	//非贪婪模式
+	var re = /^(\d+?)(0*)$/;
+	console.log(re.exec('102300'));
+
+};
+</script>
+</head>
+<body>
+	<h3>正则表达式RgeExp 2015-12-18</h3>
+</body>
+</html>

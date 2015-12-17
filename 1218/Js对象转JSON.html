@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+//JSON是JavaScript Object Notation的缩写
+
+var xiaoming = {
+	name: '小明',
+	age: 14,
+	gender: true,
+	height: 1.65,
+	grade: null,
+	'middle-schoold':'\"W3C\" Middle School',
+	skills:['JavaScript', 'Java', 'Pyton', 'Lisp']
+};
+
+var json_str = JSON.stringify(xiaoming);
+var json_str = JSON.stringify(xiaoming, '  '); //按缩进输出
+var json_str = JSON.stringify(xiaoming, ['name', 'skills', 'height'], '  ');  //第二个参数取要想的
+console.log(json_str);
+};
+</script>
+</head>
+<body>
+	<h3>正则表达式RgeExp 2015-12-18</h3>
+</body>
+</html>

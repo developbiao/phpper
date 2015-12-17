@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+
+	//全局搜索
+
+	var r1 = /test/g;
+
+	//等价于
+	var r2 = new RegExp('test', 'g');
+	
+	//test lastIndex
+
+	var s = 'JavaScript, VBScript, JScript and ECMAScript';
+	var re = /[a-zA-Z]+Script/g;
+
+	//使用全局匹配
+	//可多次执行exec()
+	console.log(re.exec(s));
+	console.log(re.lastIndex); 			//反回出现的lastIndex
+
+	console.log(re.exec(s)); 			//VBScript
+	console.log(re.lastIndex); 			//0
+
+
+	console.log(re.exec(s));
+	console.log(re.lastIndex);
+
+	console.log(re.exec(s));
+	console.log(re.lastIndex);
+
+	//直到返回没有结果
+	console.log(re.exec(s)); 			//null
+	console.log(re.lastIndex); 			//0
+
+};
+</script>
+</head>
+<body>
+	<h3>正则表达式RgeExp 2015-12-18</h3>
+</body>
+</html>
