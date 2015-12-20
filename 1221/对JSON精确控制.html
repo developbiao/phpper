@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function(){
+	//一个table缩进
+console.log(JSON.stringify(xiaoming, null, '\t'));
+//转大写
+//var json_str = JSON.stringify(xiaoming, convert, '\t');
+//alert(json_str);
+
+var json_str = JSON.stringify(xiaodong);
+console.log(json_str);
+
+};
+
+var xiaoming = {
+	name:'小明',
+	age:14,
+	gender:true,
+	height:1.65,
+	grate:null,
+	'middle-school':'\"W3C\" Middle School',
+	skills:['JavaScritp', 'Linux', 'PHP', 'CSS']
+};
+
+var xiaodong = {
+	name:'小东',
+	age:17,
+	gender:true,
+	height:1.9,
+	grate:null,
+	'middle-school':'\"WC3\" Middle Linux School',
+	toJSON:function(){ //toJSON对JSON精确控制
+
+		return {
+			'Student': this.name,
+			'Age':this.age
+		};
+	}
+};
+
+function convert(key, value){
+	if(typeof value === 'string'){
+		return value.toUpperCase();
+	}
+	return value;
+}
+
+
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript Json Daily 2015-12-21</h3>
+</body>
+</html>

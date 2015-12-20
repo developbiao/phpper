@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+
+window.onload = function (){
+	//prototype
+	xiaoming.__proto__ = Student;
+	console.log(xiaoming.name);
+	console.log(xiaoming.run());
+};
+
+var Student = {
+	name: 'Robot',
+	height: 1.6,
+	run: function (){
+		console.log(this.name + 'is runing...');
+	}
+};
+
+var xiaoming = {
+	name : '小明'
+};
+
+
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript Object Daily 2015-12-21</h3>
+</body>
+</html>
+
+
