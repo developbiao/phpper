@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+//使用new调用函数创建一个对象
+
+var xiaoming = new Student('小明');
+console.log(xiaoming.name);
+xiaoming.hello();
+
+//xiaoming --> Student.prototype --> Object.prototype --> null
+
+console.log(xiaoming.constructor === Student.prototype.constructor); //true;
+console.log(Student.prototype.constructor === Student); //true
+console.log(Object.getPrototypeOf(xiaoming) === Student.prototype); //true
+console.log(xiaoming instanceof Student); //true;
+
+};
+
+//创建一个Array对象
+//其原型链是:
+//arr---> Array.prototype ---> Object.prototype ---> null
+
+var arr = [1, 2, 3];
+
+
+//创建一个函数
+
+//函数也是一个对象，它的原型链是:
+//foo --> Funtion.prototype --> Obejct.prototype --> null
+function foo(){
+	return 0;
+}
+
+
+//构造函数
+
+function Student(name){
+
+	this.name = name;
+	this.hello = function (){
+		alert('Hello, ' + this.name);
+	}
+
+}
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript面向对象2015/12/22</h3>
+</body>
+</html>

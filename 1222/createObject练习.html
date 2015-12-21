@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+
+	var xiaodong = createStudent('小东');
+	xiaodong.run();
+
+	console.log(xiaodong.__proto__ === Student); 
+
+};
+
+
+var Student = {
+	name: 'Robot',
+	height: 175,
+	run: function (){
+		console.log(this.name + ' is runing~');
+	}
+};
+
+function createStudent(name){
+	//基于Student原型创建一个新对象
+	var obj = Object.create(Student);
+
+	//初始化新对象
+	obj.name = name;
+	return obj;
+}
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript面向对象2015/12/22</h3>
+</body>
+</html>

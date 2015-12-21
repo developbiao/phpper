@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	xiaoming.__proto__ = Student; //指向Student
+	xiaoming.__proto__ = Bird;  //指向Bird
+	xiaoming.fly(); //小明变成了鸟人
+
+
+};
+
+var Student = {
+	name: 'robot',
+	height: 1.6,
+	run: function (){
+		alert(this.name  + ' is runing~');	
+	}
+};
+
+var xiaoming = {
+	name: '小明'
+};
+
+var Bird = {
+	fly: function(){
+		console.log(this.name + ' is flying....');
+	}
+};
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript面向对象2015/12/22</h3>
+</body>
+</html>
