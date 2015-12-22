@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+// 测试:
+var kitty = new Cat('Kitty');
+var doraemon = new Cat('哆啦A梦');
+if (kitty && kitty.name === 'Kitty' && kitty.say && typeof kitty.say === 'function' && kitty.say() === 'Hello, Kitty!' && kitty.say === doraemon.say) {
+	alert('测试通过!');
+} else {
+	alert('测试失败!');
+}
+
+};
+
+
+//创建一个Cat函数
+function Cat(name){
+	this.name =name;
+}
+
+//共享一个方法
+Cat.prototype.say = function (){
+	return 'Hello, ' + this.name + '!';
+}
+
+
+
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript面向对象2015/12/23</h3>
+</body>
+</html>

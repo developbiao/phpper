@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+
+var xiaoming = createStudent({
+	name:'小明',
+	grade:8
+});
+
+var xiaotao = createStudent({
+	name:'小涛',
+	grade:3
+});
+
+console.log(xiaoming.name);
+console.log(xiaoming.grade);
+console.log(xiaotao.name);
+xiaoming.hello();
+
+};
+
+//编写一个createStudent函数
+function Student(props){
+	this.name = props.name || '匿名';	//默认值为匿名
+	this.grade = props.grade || 1; // 默认值为1
+}
+
+Student.prototype.hello = function (){
+	alert('Hello, ' + this.name + '!');
+};
+
+//创建Student对象方法
+function createStudent(props){
+	return new Student(props || {});
+}
+
+
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript面向对象2015/12/23</h3>
+</body>
+</html>
