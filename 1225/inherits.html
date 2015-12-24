@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+window.onload = function (){
+	//实现原型继承链
+	inherits(PrimaryStudent, Student);
+
+	//绑定其他方法到PrimaryStudent原型
+	PrimaryStudent.prototype.getGrade = function (){
+		return this.grade;
+	}
+
+	PrimaryStudent.prototype.Say = function (){
+		alert('Merry Christmas!');
+	}
+
+	var xiaohong = new PrimaryStudent({
+		name: '小红',
+		grade: 10
+	});
+
+	//调用自己的方法
+	xiaohong.Say();
+
+	console.log(xiaohong.grade);
+
+	//调用父对象的方法
+	  xiaohong.hello();
+
+};
+
+//把继承这个动作用inherits()函数封装起来隐藏F函数的定义，简化代码
+function inherits(Child, Parent){
+	var F = function (){};
+	F.prototype = Parent.prototype;
+	Child.prototype = new F();
+	Child.prototype.constructor = Child;
+}
+
+//Student 函数对象
+function Student(props){
+	this.name = props.name || 'Unnamed';
+}
+
+Student.prototype.hello = function (){
+
+	alert('Hello, ' + this.name + '!');
+};
+
+function PrimaryStudent(props){
+	Student.call(this, props);
+	this.grade = props.grade || 1;
+}
+
+</script>
+</head>
+<body>
+	<h3>Practice Learn JavaScript 原型继承 2015/12/25</h3>
+</body>
+</html>
