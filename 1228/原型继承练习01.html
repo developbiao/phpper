@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+
+	//实现原型继承链
+	inherits(PrimaryStudent, Student);
+
+	//绑定其它方法到PirmaryStudent原型
+	PrimaryStudent.prototype.getGrade = function (){
+		return this.grade;
+	}
+
+	PrimaryStudent.prototype.Say = function (){
+		alert('Happy New Year!');
+	}
+
+	var lijun = new PrimaryStudent({
+		name: 'S骏',
+		grade: 23 
+	});
+
+	//调用自己的方法
+	lijun.Say();
+
+	console.log(lijun.getGrade());
+
+
+};
+
+
+//继承方法封闭
+function inherits(Child, Parent){
+	var F = function (){};
+	F.prototype  = Parent.prototype;
+	Child.prototype = new F();
+	Child.prototype.constructor = Child;
+}
+
+//Studnet函数对象
+
+function Student(props){
+	this.name = props.name || 'Unnamed';
+}
+
+Student.prototype.hello = function (){
+	alert('Hello, ' + this.name + ' !');
+};
+
+
+//PimaryStudent对象
+function PrimaryStudent(props){
+	Student.call(this, props);
+	this.grade = props.grade || 1;
+}
+
+
+
+</script>
+</head>
+<body>
+	<h3>Learn JavaScript 2015/12/28</h3>
+</body>
+</html>
