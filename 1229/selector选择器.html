@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	//通过querySelector获取ID为q1的节点
+	var q1 = document.querySelector('#q1'); //document.querySelector
+
+	//通过querySelectorAll获取q1节点内符合条件的所有节点:
+
+	var ps = q1.querySelectorAll('div.highlighted > p');
+
+
+	alert(q1);
+
+};
+</script>
+</head>
+<body>
+	<h3>为遇上更好的自己而努力!</h3>
+	<div id="q1">
+		<p>我爱北京天安门!</p>
+		<p>但是我讨厌误码雾霾!</p>
+	</div>
+</body>
+</html>

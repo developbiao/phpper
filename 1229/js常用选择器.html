@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	//两个方法 
+	//getElementsByTagName
+	//getElementById
+	var menu = document.getElementById('drink_menu');
+	var drinks = document.getElementsByTagName('dt');
+	var i, s, menu, drinks;
+
+	menu = document.getElementById('drink_menu');
+	console.log(menu.tagName);
+	drinks = document.getElementsByTagName('dt');
+	s = '提供的饮料有';
+
+	for(i=0; i<drinks.length; i++){
+		s = s + drinks[i].innerHTML + ',';
+	}
+	alert(s);
+
+
+};
+</script>
+</head>
+<body>
+	<dl id="drink_menu" style="border:solid 1px #ccc; padding:6px">
+		<dt>摩卡</dt>
+		<dt>热摩卡</dt>
+		<dt>酸奶</dt>
+		<dt>北京老酸奶</dt>
+		<dt>果汁</dt>
+		<dt>鲜榨苹果汁</dt>
+		<dt>鲜榨西瓜汁</dt>
+	</dl>
+	<h3>为遇上更好的自己而努力!</h3>
+</body>
+</html>

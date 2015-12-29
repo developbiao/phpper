@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	var menu = document.getElementsByClassName('menu_class')[0];
+	//获取子元素
+	var menu_child = menu.children;
+	console.log(menu_child.length);
+	console.log(menu.firstElementChild); //first child
+	console.log(menu.lastElementChild); //last child
+
+};
+</script>
+</head>
+<body>
+	<h3>为遇上更好的自己而努力!</h3>
+	<dl class="menu_class">
+		<dt>鲜牛奶</dt>
+		<dt>鲜榨西瓜汁</dt>
+		<dt>宝宝奶昔</dt>
+	</dl>
+</body>
+</html>
