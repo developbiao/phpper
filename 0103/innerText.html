@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	//获取h3 
+	var h3 = document.getElementById("h-test");
+
+	//设置文本
+
+	//HTML被自动编码，无法设置一个<script>节点
+	h3.innerText = '<script>alert("Hi")</script>';
+	h3.innerText = "I Like You!";
+
+};
+</script>
+</head>
+<body>
+	<h3 id="h-test">2016为成为PHP工程师而努力奋斗！</h3>
+</body>
+</html>

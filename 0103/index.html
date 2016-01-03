@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+
+//获取<p> javasript</p>节点:
+var js = document.getElementById("test-js");
+
+//修改文本为JavaScript
+js.innerText = "JavaScript";
+
+//修改CSS为color: #ff0000, font-weight:bold
+js.style.color = "#ff0000";
+js.style.fontWeight = "bold";
+
+
+// 测试:
+if (js && js.parentNode && js.parentNode.id === 'test-div' && js.id === 'test-js') {
+    if (js.innerText === 'JavaScript') {
+        if (js.style && js.style.fontWeight === 'bold' && (js.style.color === 'red' || js.style.color === '#ff0000' || js.style.color === '#f00' || js.style.color === 'rgb(255, 0, 0)')) {
+            alert('测试通过!');
+        } else {
+            alert('CSS样式测试失败!');
+        }
+    } else {
+        alert('文本测试失败!');
+    }
+} else {
+    alert('节点测试失败!');
+}
+};
+</script>
+</head>
+<body>
+	<h3 id="h-test">2016为成为PHP工程师而努力奋斗！</h3>
+	<!-- HTML结构 -->
+<div id="test-div">
+  <p id="test-js">javascript</p>
+  <p>Java</p>
+</div>
+
+</body>
+</html>
