@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'usestrict';
+window.onload = function (){
+	var mon = document.getElementById('monday');
+	var tue = document.getElementById('tuesday');
+	console.log(mon.value); //1
+	console.log(tue.value); //2
+
+	console.log(mon.checked);
+	console.log(tue.checked);
+
+};
+</script>
+</head>
+<body>
+<h3>明天是:</h3>
+monday:<lable><input type="radio" name="weekday" id="monday" value="1"/></lable><br />
+tuesday:<lable><input type="radio" name="weekday" id="tuesday" value="2"/></lable>
+</body>
+</html>
