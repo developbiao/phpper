@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'usestrict';
+window.onload = function (){
+	//从零开始创建一个节点插入
+	var list  = document.getElementById('list');
+	var haskell = document.createElement('p');
+	haskell.id = 'haskell';
+	haskell.innerText = 'Haskell';
+	list.appendChild(haskell);
+};
+</script>
+</head>
+<body>
+	<h3>JavaScritp Dom 操作</h3>
+	<!-- HTML 结构 -->
+	<p id="js">JavaScritp</p>
+	<div id="list">
+		<p id="java">Java</p>
+		<p id="python"></p>
+		<p id="scheme">Scheme</p>
+	</div>
+</body>
+</html>

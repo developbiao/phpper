@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'usestrict';
+window.onload = function (){
+	var list = document.getElementById('list');
+	var ref  = document.getElementById('python');
+	var linux = document.createElement('p');
+	linux.id = 'linux';
+	linux.innerText = 'Linux';
+	//refrence 参照把linux节点插入到python之前
+	list.insertBefore(linux, ref);
+
+};
+</script>
+</head>
+<body>
+	<h3>JavaScritp Dom 操作</h3>
+	<!-- HTML 结构 -->
+	<div id="list">
+		<p id="java">Java</p>
+		<p id="python">python</p>
+		<p id="scheme">Scheme</p>
+	</div>
+</body>
+</html>
