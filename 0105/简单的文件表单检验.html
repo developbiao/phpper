@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+window.onload = function (){
+};
+
+
+//简单的表单校验
+function checkForm()
+{
+	var f = document.getElementById('test-file-upload');
+	var filename = f.value;
+
+	//endsWith检查后缀
+	if(!filename || !(filename.endsWith('.jpg') || filename.endsWith('.png') || filename.endsWith('.gif'))){
+		alert('Can only upload image file.');
+		return false;
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<form action="./doAction" type="multipart/from-data" method="post" onsubmit=" return checkForm();">
+<input type="file" id="test-file-upload"/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+</html>

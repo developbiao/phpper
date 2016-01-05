@@ -32,7 +32,22 @@ function checkRegisterForm()
 {
 	var username = document.getElementById("username");
 	var passwrod = document.getElementById("password");
-	var repassword = document.getElementById("repassword"):
+	var repassword = document.getElementById("repassword");
+
+	var usernameReg = /^[0-9a-zA-z]{3,10}$/;
+	var passwordReg = /^\w{6,20}$/;
+	if(!usernameReg.test(username.value)){
+		alert('用户名必须是3-10英文字母或数字');
+		return false;
+	}
+	if(!passwordReg.test(password.value)){
+		alert('口令必须是6-20位');
+	}
+	if(password.value !== repassword.value){
+		alert('两输入的口令必须一致');
+		return false;
+	}
+	
 	return true;	
 }
 

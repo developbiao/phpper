@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	border:3px solid purple;
+}
+</style>
+<!--<script src="http://api.money.126.net/data/feed/0000001,1399001?callback=refreshPrice" type="text/javascript"></script>-->
+<script type="text/javascript">
+window.onload = function (){
+
+	getPrice();
+	var btn_refresh = document.getElementById('btn_refresh');
+	btn_refresh.onclick = function (){
+		refreshPrice();
+		console.log('refresh ok');
+
+	};
+
+};
+
+//在页面中准备好回调函数
+function refreshPrice(data) {
+	var p = document.getElementById('test-jsonp');
+	p.innerHTML = '当前价格:' +
+		data['0000001'].name + ': ' + 
+		data['0000002'].price + '; ' + 
+		data['1399001'].name + ': ' +
+		data['1399001'].price;
+}
+
+function getPrice(){
+	var js = document.createElement('script');
+	var head = document.getElementsByTagName('head')[0];
+	js.src='http://api.money.126.net/data/feed/0000001,1399001?callback=refreshPrice';
+	head.appendChild(js);
+	console.log(js.src);
+}
+
+
+</script>
+</head>
+<body>
+<div id="div1">
+<input type="button" value="刷新" id="btn_refresh"/>
+</div>
+
+</body>
+</html>
