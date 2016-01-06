@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+h3{
+	border:2px solid purple;
+	font-size:20pt;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	console.log('before setTimeout()');
+	setTimeout(callback, 5000);//5称秒钟后执行
+	console.log('after setTimeout()');
+};
+
+function callback(){
+	alert('我会回来的');	
+}
+</script>
+</head>
+<body>
+<h3>JavaScript is Very Much!</h3>
+</body>
+</html>
