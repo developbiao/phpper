@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>canvas</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:500px;
+	height:500px;
+	border:2px solid #848484;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+'usestrict';
+window.onload = function(){
+	//绘制文本
+
+var  canvas = document.getElementById('test-text-canvas');
+var ctx = canvas.getContext('2d');
+
+ctx.clearRect(0, 0, canvas.width, canvas.height);
+ctx.shadowOffsetX = 2;
+ctx.shadowOffsetY = 2;
+ctx.shadowBlur = 2;
+ctx.shadowColor = '#666666';
+ctx.font = '20px Arial';
+ctx.fillStyle = '#333333';
+ctx.fillText('龚彪是未来出色的PHP工程师', 0, 60);
+
+};
+</script>
+</head>
+<body>
+<h3>HTML Canvas</h3>
+<div id="div1">
+	<canvas id="test-text-canvas">
+	</canvas>
+</div>
+</body>
+</html>

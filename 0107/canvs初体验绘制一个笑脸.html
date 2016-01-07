@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>canvas</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:500px;
+	height:500px;
+	border:2px solid #848484;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+'usestrict';
+window.onload = function(){
+	// test shape canvas 
+	var canvas = document.getElementById('test-shape-canvas');
+	// 获取RenderingCanvas2D对象
+	var ctx = canvas.getContext('2d');
+
+	//擦除(0,0) 位置大小为200*200的矩形区域变为透明
+	ctx.clearRect(0, 0, 200, 200); 
+
+	//设置颜色
+	ctx.fillStyle = '#000000';
+
+	//把位置10,10 大小为130*130矩形涂色
+	ctx.fillRect(10, 10, 130, 130);
+
+	//利用Path绘制复杂路径:
+	var path = new Path2D();
+	path.arc(75, 75, 50, 0, Math.PI*2, true);
+	path.moveTo(110, 75);
+	path.arc(75, 75, 35, 0, Math.PI, false);
+	path.moveTo(65, 65);
+	path.arc(60, 65, 5, 0, Math.PI*2, true);
+	path.moveTo(95, 65);
+	path.arc(90, 65, 5, 0, Math.PI*2, true);
+	ctx.strokeStyle = '#ffffff';
+	ctx.stroke(path);
+
+
+};
+</script>
+</head>
+<body>
+<h3>HTML Canvas</h3>
+<div id="div1">
+	<canvas id="test-shape-canvas">
+	</canvas>
+</div>
+</body>
+</html>

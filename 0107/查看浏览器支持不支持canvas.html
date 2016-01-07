@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>canvas</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+'usestrict';
+window.onload = function(){
+	var canvas = document.getElementById('test-canvas');
+	if(canvas.getContext){
+		alert('你的浏览器支持Canvas');
+	}else{
+		alert('你的浏览器不支持Canvas');
+	}
+};
+</script>
+</head>
+<body>
+<h3>HTML Canvas</h3>
+<canvas id="test-canvas" width="300" height="200">
+	<p>您的浏览器不支持Canvas</p>
+</canvas>
+</body>
+</html>
