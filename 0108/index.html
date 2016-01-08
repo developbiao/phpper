@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+    //仅选择JavaScript
+	var js = $('#para-1');
+	console.log(js.length);
+
+    //仅选择Erlang
+    var Erlang = $('p.color-red.color-green');
+    console.log(Erlang.length);
+
+    //选择JavaScript和Erlang
+    var js_and_er = $('p.color-red');
+    console.log(js_and_er.length);
+
+    //选择所有编程语言
+    var all_language = $('p[class^=color-]');
+    console.log(all_language.length);
+
+    //选择名字input
+    var input_name = $('input[name=name]');
+    console.log(input_name.length);
+
+
+    //选择邮件和名字input(多项选择用逗号分割)
+    var selectd = $('input[name=name],input[name=email]');
+    console.log(selectd.length);
+
+
+
+});
+</script>
+</head>
+<body>
+<h3>Learn Jquery</h3>
+<!-- HTML结构 -->
+<div id="test-jquery">
+    <p id="para-1" class="color-red">JavaScript</p>
+    <p id="para-2" class="color-green">Haskell</p>
+    <p class="color-red color-green">Erlang</p>
+    <p name="name" class="color-black">Python</p>
+    <form class="test-form" target="_blank" action="#0" onsubmit="return false;">
+        <legend>注册新用户</legend>
+        <fieldset>
+            <p><label>名字: <input name="name"></label></p>
+            <p><label>邮件: <input name="email"></label></p>
+            <p><label>口令: <input name="password" type="password"></label></p>
+            <p><button type="submit">注册</button></p>
+        </fieldset>
+    </form>
+</div>
+
+</body>
+</html>
