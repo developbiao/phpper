@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	//查找兄弟元素
+	var swift = $('#swift');
+	var scheme = swift.next();
+	//alert(scheme.get(0).innerHTML);
+	//var js = scheme.prev().prev().prev(); //可以链式操作用法
+	//alert(js.get(0).innerText);
+
+	//向上查找JavaScript
+	var js = swift.prev('.js');
+	alert(js.get(0).innerText);
+
+
+
+};
+</script>
+</head>
+<body>
+	<h3>Jquery查找和过滤</h3>
+	<ul class="lang">
+		<li class="js dy">JavaScript</li>
+		<li class="dy">Python</li>
+		<li id="swift">Swift</li>
+		<li class="dy">Scheme</li>
+		<li name="haskell">Haskell</li>
+	</ul>
+</body>
+</html>

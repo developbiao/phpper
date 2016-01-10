@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var ul = $('ul.lang'); //获取<ul>
+	var dy = ul.find('.dy'); //获取JavaScript,Python,Scheme
+	console.log(dy.length);
+	var swift = ul.find('#swift');
+	var haskell = ul.find('[name=haskell]');
+	console.log(haskell.get().innerText);
+};
+</script>
+</head>
+<body>
+	<h3>Jquery查找和过滤</h3>
+	<ul class="lang">
+		<li class="js dy">JavaScript</li>
+		<li class="dy">Python</li>
+		<li id="swift">Swift</li>
+		<li class="dy">Scheme</li>
+		<li name="haskell">Haskell</li>
+	</ul>
+</body>
+</html>
