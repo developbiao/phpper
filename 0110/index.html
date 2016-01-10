@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+//1、选择所有的语言
+var all_language = $('.test-selector [class^=lang-]');
+//alert(all_language.length);
+
+//2、选择所有的动态语言
+var dynamic_language = $('ul.test-lang>li');
+//alert(dynamic_language.length);
+
+
+//3、行动所有的静态语言
+var static_language = $('ol.test-lang li');
+alert(static_language.length);
+
+};
+</script>
+</head>
+<body>
+	<h3>Jquery选择器测试</h3>
+	<!-- HTML结构 -->
+	<div class="test-selector">
+		<ul class="test-lang">
+			<li class="lang-javascript">JavaScript</li>
+			<li class="lang-python">Python</li>
+			<li class="lang-lua">Lua</li>
+		</ul>
+		<ol class="test-lang">
+			<li class="lang-swift">Swift</li>
+			<li class="lang-java">Java</li>
+			<li class="lang-c">C</li>
+		</ol>
+	</div>
+</body>
+</html>

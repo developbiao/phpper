@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+window.onload = function (){
+	//Child Selector
+	$('ul.lang>li.lang-javascript'); //可以选择出[<li class="lang-javascript">JavaScript</li>];
+	$('div.testing>li.lang-javascript'); //[]，无法选出,因为<dibv>和<li>不构成父子关系 
+
+};
+</script>
+</head>
+<body>
+	<h3>HTML结构</h3>
+	<div class="testing">
+		<ul class="lang">
+			<li class="lang-javascript">JavaScritp</li>
+			<li class="lang-python">python</li> 
+			<li class="lang-lua">Lua</li>
+		</ul>
+	</div>
+</body>
+</html>

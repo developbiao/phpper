@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+window.onload = function (){
+	//Filter Selector
+	var lis = $('ul.lang li'); //选择出JavaScript、Python和Lua 3个节点
+	console.log(lis);
+
+	var js = $('ul.lang li:first-child'); //仅选出JavaScript
+	var lua = $('ul.lang li:last-child'); //仅选出Lua
+	var python = $('ul.lang li:nth-child(2)'); //选出第N个元素，N从1开始
+	console.log(python.get(0).innerText);
+
+	var lua = $('ul.lang li:nth-child(3)'); //选出lua
+	console.log(lua.get(0).innerText);
+
+
+};
+</script>
+</head>
+<body>
+	<h3>HTML结构</h3>
+	<div class="testing">
+		<ul class="lang">
+			<li class="lang-javascript">JavaScritp</li>
+			<li class="lang-python">python</li> 
+			<li class="lang-lua">Lua</li>
+		</ul>
+	</div>
+</body>
+</html>
