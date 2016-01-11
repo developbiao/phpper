@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	//使用函数过虑
+	var langs = $('ul.lang li');
+	var selectd = langs.filter(function (){
+		return this.innerHTML.indexOf('S') === 0; //返回S开头节点
+	});
+
+});
+</script>
+</head>
+<body>
+	<h3>Jquery查找和过滤</h3>
+	<ul class="lang">
+		<li class="js dy">JavaScript</li>
+		<li class="dy">Python</li>
+		<li id="swift">Swift</li>
+		<li class="dy">Scheme</li>
+		<li name="haskell">Haskell</li>
+	</ul>
+</body>
+</html>

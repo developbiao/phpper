@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	var div = $('#div1');
+	var bool = div.hasClass('hightlight'); //false //判断class是否存在
+	div.addClass('hightlight');  //添加class
+	div.addClass('menu');
+	div.removeClass('menu'); //删除class
+	console.log(bool);
+
+});
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<div id="div1">
+</div>
+
+</body>
+</html>

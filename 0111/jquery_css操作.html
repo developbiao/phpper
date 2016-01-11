@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//获取div的颜色
+	var div = $('#div1');
+	var color = div.css('background-color');
+	console.log(color);
+	//设置divr的颜色
+	div.css('background', 'red');	
+
+});
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<div id="div1">
+</div>
+
+</body>
+</html>

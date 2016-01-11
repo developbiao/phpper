@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	var langs = $('ul.lang li');
+	var a = langs.filter('.dy');
+	alert(a.get(1).innerText); //JavaScript、Python、Scheme
+});
+</script>
+</head>
+<body>
+	<h3>Jquery查找和过滤</h3>
+	<ul class="lang">
+		<li class="js dy">JavaScript</li>
+		<li class="dy">Python</li>
+		<li id="swift">Swift</li>
+		<li class="dy">Scheme</li>
+		<li name="haskell">Haskell</li>
+	</ul>
+</body>
+</html>

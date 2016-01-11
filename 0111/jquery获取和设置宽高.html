@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+.highlight {
+    color: #dd1144;
+    background-color: #ffd351;
+}
+#div1{
+	width:200px;
+	height:300px;
+	background:purple;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+
+//浏览器可视窗口大小
+console.log($(window).width()); 
+console.log($(window).height());
+
+//HTML文档大小
+console.log($(document).width());
+console.log($(document).height());
+
+//某个div的大小
+
+var oDiv = $("#div1");
+console.log(oDiv.width());
+console.log(oDiv.height());
+
+oDiv.width('400px')
+
+});
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<!-- HTML结构 -->
+<div id="test-highlight-css">
+    <ul>
+        <li class="py"><span>Python</span></li>
+        <li class="js"><span>JavaScript</span></li>
+        <li class="sw"><span>Swift</span></li>
+        <li class="hk"><span>Haskell</span></li>
+    </ul>
+</div>
+<div id="div1">
+</div>
+
+</body>
+</html>

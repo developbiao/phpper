@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+.highlight {
+    color: #dd1144;
+    background-color: #ffd351;
+}
+#div1{
+	width:200px;
+	height:300px;
+	background:purple;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	var
+    input = $('#test-input'),
+    select = $('#test-select'),
+    textarea = $('#test-textarea');
+
+input.val(); // 'test'
+input.val('abc@example.com'); // 文本框的内容已变为abc@example.com
+
+select.val(); // 'BJ'
+select.val('SH'); // 选择框已变为Shanghai
+
+textarea.val(); // 'Hello'
+textarea.val('Hi'); // 文本区域已更新为'Hi'
+
+});
+
+
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<input id="test-input" name="email" value="">
+    <select id="test-select" name="city">
+        <option value="BJ" selected>Beijing</option>
+        <option value="SH">Shanghai</option>
+        <option value="SZ">Shenzhen</option>
+    </select>
+    <textarea id="test-textarea">Hello</textarea><!-- HTML结构 -->
+</body>
+</html>

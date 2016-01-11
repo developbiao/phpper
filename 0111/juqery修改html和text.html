@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	var obj1 = $('#test-ul li.js');
+	var obj2 = $('#test-ul li[name=book]');
+	obj1.html('<span style="color:red">JavaScript</span>');
+	obj2.text('JavaScript & ECMAScript & Linux');
+});
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<!-- HTML结构 -->
+<ul id="test-ul">
+	<li class="js">JavaScritp</li>
+	<li name="book">Java &amp; JavaScritp</li>
+</ul>
+</body>
+</html>

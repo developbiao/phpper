@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+.highlight {
+    color: #dd1144;
+    background-color: #ffd351;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//使用css高亮js
+	$('#test-highlight-css .js').css('background-color', 'yellow').css('color','red');
+
+	//使用addClass高亮js
+	var obj = $('#test-highlight-css .js').addClass('highlight');
+
+
+});
+</script>
+</head>
+<body>
+<h3>Jquery Learn</h3>
+<!-- HTML结构 -->
+<div id="test-highlight-css">
+    <ul>
+        <li class="py"><span>Python</span></li>
+        <li class="js"><span>JavaScript</span></li>
+        <li class="sw"><span>Swift</span></li>
+        <li class="hk"><span>Haskell</span></li>
+    </ul>
+</div>
+
+</body>
+</html>
