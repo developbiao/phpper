@@ -13,18 +13,11 @@
 <script src="../lib/js/jquery.js"></script>
 <script type="text/javascript">
 'use strict';
-//牢记这是document对象的ready事件处理函数完全可以反复绑定事件
-$(function (){
-	//init...
-	console.log('init A...');
-});
-$(function (){
-	//init...
-	console.log('init B...');
-});
-$(function (){
-	//init...
-	console.log('init C...');
+$(document).ready(function (){
+	var oDiv = $('#div1');
+	oDiv.on('dblclick', function (){
+		oDiv.text('你好!');
+	});
 });
 </script>
 </head>

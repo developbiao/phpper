@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:300px;
+	height:200px;
+	background:#ABCDEF;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	var oDiv = $('#div1');
+
+	//mouse enter
+	/*
+	oDiv.on('mouseenter', function (){
+		alert('<h3>还在努力!</h3>');
+	});
+	*/
+	//mouse
+	/*
+	oDiv.on('mouseleave', function (){
+		alert('<h3>还在努力!</h3>');
+	});
+	*/
+
+	/*
+	鼠标事件
+		click: 鼠标单击时触发；
+		dblclick：鼠标双击时触发；
+		mouseenter：鼠标进入时触发；
+		mouseleave：鼠标移出时触发；
+		mousemove：鼠标在DOM内部移动时触发；
+		hover：鼠标进入和退出时触发两个函数，相当于mouseenter加上mouseleave。
+	*/
+
+
+	/*
+		键盘事件
+
+		键盘事件仅作用在当前焦点的DOM上，通常是<input>和<textarea>。
+
+		keydown：键盘按下时触发；
+		keyup：键盘松开时触发；
+		keypress：按一次键后触发。
+	*/
+
+
+});
+</script>
+</head>
+<body>
+	<!-- HTML结构 -->
+	<div id="div1">
+	</div>
+</body>
+</html>
+
+
+
