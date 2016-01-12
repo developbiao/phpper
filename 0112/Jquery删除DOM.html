@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+//删除节点
+//var li = $('#test-div>ul>li');
+//li.remove(); //所有<li>全被删除
+
+var li = $('#test-div>ul>li:first-child');
+li.remove(); //删除JavaScript
+
+});
+</script>
+</head>
+<body>
+	<div id="test-div">
+		<ul>
+			<li><span>JavaScript</span></li>
+			<li><span>Python</span></li>
+			<li><span>Swift</span></li>
+		</ul>
+	</div>
+</body>
+</html>
+

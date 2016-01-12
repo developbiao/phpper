@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+//除了列出的3种语言外，请再添加Pascal、Lua和Ruby，然后按字母顺序排序节点：
+/*
+var ul = $('#test-div>ul');
+ ul.append('<li><span>Pascal</span></li>');
+ ul.append('<li><span>Lua</span></li>');
+ ul.append('<li><span>Ruby</span></li>');
+ */
+
+ //添加DOM操作
+ var ul = $('#test-div>ul');
+
+ //添加map把数组中的元素append到ul中
+ ['Pascal', 'Lua', 'Ruby'].map(function (x){
+ 	ul.append('<li><span>' + x + '</span></li>');
+ });
+ //排序
+ var li = ul.find('li');
+ li.sort(function(x, y){
+ 	if($(x).text() > $(y).text()) return 1;
+ 	else return -1;
+ });
+
+ ul.append(li);
+
+
+
+
+// 测试:
+;(function () {
+    var s = $('#test-div>ul>li').map(function () {
+        return $(this).text();
+    }).get().join(',');
+    if (s === 'JavaScript,Lua,Pascal,Python,Ruby,Swift') {
+        alert('测试通过!');
+    } else {
+        alert('测试失败: ' + s);
+    }
+})();
+});
+</script>
+</head>
+<body>
+	<!-- HTML结构 -->
+	<div id="test-div">
+		<ul>
+			<li><span>JavaScript</span></li>
+			<li><span>Python</span></li>
+			<li><span>Swift</span></li>
+		</ul>
+	</div>
+</body>
+</html>
+

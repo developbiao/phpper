@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//创建DOM对象
+	var ul = $('#test-div>ul');
+	var ps = document.createElement('li');
+	ps.innerHTML = '<span>Pascal</span>';
+	//添加DOM对象
+	ul.append(ps);
+
+	//添加Jquery对象
+	ul.append($('#sheme'));
+
+	//添加函数对象
+	ul.append(function (index, html){
+		return '<li><span>Language -' + index + '</span></li>';
+	});
+
+	//在JavaScript后添加使用after
+	var js = $('#test-div>ul>li:first-child');
+	js.after('<li><span>PHP</span></li>');
+
+	var swift = js.next().next().next();
+	alert(swift.length);
+	swift.prepend('<li><span>Shell</span></li>');
+
+
+});
+</script>
+</head>
+<body>
+	<div id="test-div">
+		<ul>
+			<li><span>JavaScript</span></li>
+			<li><span>Python</span></li>
+			<li><span>Swift</span></li>
+		</ul>
+	</div>
+</body>
+</html>
+
