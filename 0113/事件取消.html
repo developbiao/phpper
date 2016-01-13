@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:300px;
+	height:300px;
+	background:#ABCDEF;
+	margin:0 auto;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	var oDiv = $('#div1');
+	//事件绑定
+	oDiv.click(hello);
+
+	//10秒种后解除绑定
+	setTimeout(function (){
+		oDiv.off('click', hello);
+	}, 10000);
+
+
+	/*
+	事件解除绑定总结：
+	1、事件解除只对非匿名绑定有效
+	2、带参数的如off('click') 解除click所有事件处理函数, off('click', hello)只取消click的hello处理函数
+	3、不带参数的off取消所有事件绑定
+	*/
+
+
+});
+function hello(){
+	alert('Hello!');
+}
+</script>
+</head>
+<body>
+	<h3>Jquery事件</h3>
+	<div id="div1">
+	</div>
+</body>
+</html>
+
+
+

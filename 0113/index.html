@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:300px;
+	height:300px;
+	background:#ABCDEF;
+	margin:0 auto;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+
+//无法弹出新窗口，将被浏览器屏蔽
+//浏览器安全限制，有些JavaScript代码只有在用户触发下才能执行
+//window.open('/');
+
+var button1 = $('#testPopupButton1');
+var button2 = $('#testPopupButton2');
+
+button1.click(function (){
+	popupTestWindow(); //ok
+});
+
+button2.click(function (){
+	//不立刻执行popupTestWindow,3秒钟后执行,会被浏览器拦截
+	setTimeout(popupTestWindow, 3000); 
+});
+
+
+
+});
+
+function popupTestWindow(){
+	window.open('/');
+}
+
+</script>
+</head>
+<body>
+	<h3>Jquery事件</h3>
+	<div id="div1">
+		<button id="testPopupButton1">Button1</button>
+		<button id="testPopupButton2">Button2</button>
+	</div>
+</body>
+</html>
+
+

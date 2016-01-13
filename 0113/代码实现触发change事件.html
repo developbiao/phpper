@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:300px;
+	height:300px;
+	background:#ABCDEF;
+	margin:0 auto;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+
+
+	//用户触发change事件
+	var oInput = $('#test-input');
+	oInput.change(function (){
+		console.log('changed...');
+	});
+
+	//JavaScrit去改动文本框不会触发change事件
+	//oInput.val('cange it!'); //无法触发
+
+
+	//希望代码触发change事件
+	oInput.val('change it');
+	oInput.change();
+
+
+
+});
+</script>
+</head>
+<body>
+	<h3>Jquery事件</h3>
+	<div id="div1">
+		text:<input type="text" id="test-input" name="test"/>
+	</div>
+</body>
+</html>
+
+
+
