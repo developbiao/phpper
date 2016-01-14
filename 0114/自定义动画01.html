@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#test-animate{
+	width:128px;
+	height:128px;
+	margin:300px auto;
+	background:#ccc;
+	background-image:url("./404.png");
+	background-repeat:no-repeat;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	var div = $('#test-animate');
+	div.animate({
+		opacity:0.25,
+		width:'256px',
+		height:'256px'
+
+	}, 3000); //在3秒钟内CSS过滤到设定值
+});
+</script>
+</head>
+<body>
+	<div id="test-animate">
+	</div>
+</body>
+</html>
+
+
+
+

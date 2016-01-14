@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#test-animates{
+	width:128px;
+	height:128px;
+	margin:300px auto;
+	background:#ccc;
+	background-image:url("./404.png");
+	background-repeat:no-repeat;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	//动画效果：slideDwon - 暂停 -放大 －暂停 - 缩水
+	var div = $('#test-animates');
+	div.slideDown(2000)
+	.delay(1000)
+	.animate({
+		width:'256px',
+		height:'256px'
+	}, 2000)
+	.delay(1000)
+	.animate({
+		width:'128px',
+		height:'128px'
+	}, 2000)
+	.delay(2000)
+	.animate({
+		width:'500px',
+		height:'500px'
+	}, 1000)
+});
+</script>
+</head>
+<body>
+	<div id="test-animates">
+	</div>
+</body>
+</html>
+
+
+
+

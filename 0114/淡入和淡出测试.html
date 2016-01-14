@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#test-show-hide{
+	width:128px;
+	height:128px;
+	margin:300px auto;
+	background:#ccc;
+	background-image:url("./404.png");
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	var div = $('#test-show-hide'); 
+	var btn1 = $('#btn1');
+	var btn2 = $('#btn2');
+	var btn3 = $('#btn3');
+
+	btn1.click(function (){
+		div.fadeOut('slow');	
+	});
+
+	btn2.click(function (){
+		div.fadeIn('slow');
+	});
+
+	btn3.click(function (){
+		div.fadeToggle('slow');
+	});
+});
+</script>
+</head>
+<body>
+	<button id="btn1">fadeOut</button>
+	<button id="btn2">fadeIn</button>
+	<button id="btn3">fadeToggle</button>
+	<div id="test-show-hide">
+	</div>
+</body>
+</html>
+
+
+
+
