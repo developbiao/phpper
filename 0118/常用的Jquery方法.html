@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//main
+	console.log(jqxhr);
+
+});
+
+//对常用的AJAX操作,Jquery提供了一些辅助方法，由于GET请求最常见，所以Jquery提供了
+//get()方法，可以这么写
+//自动编码构造出一个query string
+var jqxhr = $.get('https://www.so.com',{
+	name:'Bob Lee',
+	check:1
+});
+
+
+//POST
+//post()和get()类似，但是传入的第二个参数默认被序列化为
+//application/x-www-from-urlencoded
+var jqxhr  = $.post('path/to/response', {
+	name: 'Bob LeeJSON',
+	check: 1
+});
+
+
+//getJson
+var jqxhr = $.getJSON('path/to/resource', function {
+	name:'Bob Lee',
+	check:1
+}).done(function (data){
+	//data 已经被解析为JSON 对象
+});
+
+</script>
+</head>
+<body>
+	<h3>Jquery Ajax</h3>
+</body>
+</html>

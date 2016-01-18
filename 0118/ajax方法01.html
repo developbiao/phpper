@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//main
+});
+
+//ajaxLog
+function ajaxlog(s){
+	var txt = $('test-response-text');
+	txt.val(txt.val() + '\n' + s);
+}
+
+
+// ajax请求串连方法done, fail, always
+$('#test-response-text').val('');
+
+var jqxhr = $.ajax('./api/categories', {
+	dateType: 'json',
+}).done(function (data){
+	ajaxLog('成功, 发到数据: ' + JSON.stringify(data));
+}).fail(function (xhr, status){
+	ajaxLog('失败: '  + xhr.status + ', 原因: ' +  status);
+}).always(function (){
+	ajaxLog('请求完成：无论失败或者成功都会调用');
+});
+</script>
+</head>
+<body>
+	<h3>Jquery Ajax</h3>
+</body>
+</html>

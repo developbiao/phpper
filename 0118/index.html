@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+'use strict';
+$(document).ready(function (){
+	//编写Jquery插件
+	//给Jquery对象绑定一个新方法是通过扩展$.fn对象实现
+	//编写第一个扩展--heightlight1():
+	$.fn.highlight1 = function () {
+    // this已绑定为当前jQuery对象:
+    this.css('backgroundColor', '#fffceb').css('color', '#d85030');
+    return this;
+	}
+
+	$('test-heighlight1 span').highlight1();
+
+});
+
+</script>
+</head>
+<body>
+	<!-- HTML结构 -->
+<div id="test-highlight1">
+    <p>什么是<span>jQuery</span></p>
+    <p><span>jQuery</span>是目前最流行的<span>JavaScript</span>库。</p>
+</div>
+
+
+</body>
+</html>
