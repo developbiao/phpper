@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//memoize
+	//var num = factorial(10); //3628800 console.log(num);
+
+	//用memozie()就可以自动缓存函数计算结果
+	factorial2(10);
+	//第二次调用
+	factorial2(10); //2628800
+
+
+};
+
+function factorial(n){
+	console.log('start calculate ' + n + '!....');
+	var s = 1, i = n;
+	while(i > 1)
+	{
+		s = s * i;
+		i--;
+	}
+	console.log(n + ' != ' + s);
+	return s;
+}
+var factorial2 = _.memoize(function(n) {
+    console.log('start calculate ' + n + '!...');
+    var s = 1, i = n;
+    while (i > 1) {
+        s = s * i;
+        i --;
+    }
+    console.log(n + '! = ' + s);
+    return s;
+});
+
+</script>
+</head>
+<body>
+	<h3>JavaScript 是函数式编程</h3>
+</body>
+</html>
+

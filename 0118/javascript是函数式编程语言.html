@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	var a1 = [1, 4, 9, 16];
+	var a2 = a1.map(Math.sqrt);
+	var a3 = a2.filter((x) => {return x % 2 === 0;});
+	console.log(a2); //1, 2, 3, 4
+	console.log(a3); // 2, 4
+
+}
+
+
+</script>
+</head>
+<body>
+	<h3>JavaScript 是函数式编程</h3>
+</body>
+</html>
+

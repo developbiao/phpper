@@ -7,23 +7,13 @@
 <script type="text/javascript">
 'use strict';
 window.onload = function(){
-	//memoize
-	factorial(10);
-	console.log('-----------------');
-	var num = factorial(9);
-	alert(num);
-
-
+	//partial 定义偏函数
+	//使用_占位置固定第二个参数
+	var cube = _.partial(Math.pow, _, 3);
+	console.log(cube(3)); //27
+	console.log(cube(5)); //125
+	console.log(cube(10)); //1000
 };
-
-//缓存递归调用
-var factorial = _.memoize(function (n){
-	console.log('start calculate ' + n + '!...');
-	if(n < 2){
-		return 1;
-	}
-	return n * factorial(n - 1);
-});
 
 </script>
 </head>
@@ -31,3 +21,4 @@ var factorial = _.memoize(function (n){
 	<h3>JavaScript 是函数式编程</h3>
 </body>
 </html>
+

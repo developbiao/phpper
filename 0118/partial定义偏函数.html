@@ -7,27 +7,16 @@
 <script type="text/javascript">
 'use strict';
 window.onload = function(){
-	//memoize
-	factorial(10);
-	console.log('-----------------');
-	var num = factorial(9);
-	alert(num);
-
-
+	//partial 定义偏函数
+var pow2N = _.partial(Math.pow, 2);
+console.log(pow2N(3));
+console.log(pow2N(5));
+console.log(pow2N(8));
 };
-
-//缓存递归调用
-var factorial = _.memoize(function (n){
-	console.log('start calculate ' + n + '!...');
-	if(n < 2){
-		return 1;
-	}
-	return n * factorial(n - 1);
-});
-
 </script>
 </head>
 <body>
 	<h3>JavaScript 是函数式编程</h3>
 </body>
 </html>
+

@@ -7,27 +7,20 @@
 <script type="text/javascript">
 'use strict';
 window.onload = function(){
-	//memoize
-	factorial(10);
-	console.log('-----------------');
-	var num = factorial(9);
-	alert(num);
+	/*
+	var log = console.log; //TypeError: 'log' called on an object that does not implement interface Console.
+	太麻烦了
+	log.call(console, 'Hello world!');
+	*/
 
+	var log = _.bind(console.log, console);
+	log('Hello Moto, print log....');
 
 };
-
-//缓存递归调用
-var factorial = _.memoize(function (n){
-	console.log('start calculate ' + n + '!...');
-	if(n < 2){
-		return 1;
-	}
-	return n * factorial(n - 1);
-});
-
 </script>
 </head>
 <body>
 	<h3>JavaScript 是函数式编程</h3>
 </body>
 </html>
+

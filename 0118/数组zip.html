@@ -7,23 +7,15 @@
 <script type="text/javascript">
 'use strict';
 window.onload = function(){
-	//memoize
-	factorial(10);
-	console.log('-----------------');
-	var num = factorial(9);
-	alert(num);
+var names = ['Adm', 'Lisa', 'Bart'];
+var scores = [85, 92, 59];
+//zip
+var arr = _.zip(names, scores);
+//unzip
+var unzip = _.unzip(arr);
+alert(JSON.stringify(unzip));
+}
 
-
-};
-
-//缓存递归调用
-var factorial = _.memoize(function (n){
-	console.log('start calculate ' + n + '!...');
-	if(n < 2){
-		return 1;
-	}
-	return n * factorial(n - 1);
-});
 
 </script>
 </head>
@@ -31,3 +23,4 @@ var factorial = _.memoize(function (n){
 	<h3>JavaScript 是函数式编程</h3>
 </body>
 </html>
+

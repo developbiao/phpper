@@ -7,23 +7,21 @@
 <script type="text/javascript">
 'use strict';
 window.onload = function(){
-	//memoize
-	factorial(10);
-	console.log('-----------------');
-	var num = factorial(9);
-	alert(num);
+	var a1 = [1, 4, 9, 16];
+	var a2 = _.map(a1, (x) => x * x);
+	var max = _.max(a1);
+	var min = _.min(a1);
+	var fist = _.first(a1);
+	var last = _.last(a1);
 
+	//flatten
+	//把多维数组变成一维数组
+	var arr = [1, 2, [3, 4, 5,[6,7,8]]]; //1,2,3,4,5,6,6,8
+	var arr = _.flatten(arr);
+	alert(arr);
 
-};
+}
 
-//缓存递归调用
-var factorial = _.memoize(function (n){
-	console.log('start calculate ' + n + '!...');
-	if(n < 2){
-		return 1;
-	}
-	return n * factorial(n - 1);
-});
 
 </script>
 </head>
@@ -31,3 +29,4 @@ var factorial = _.memoize(function (n){
 	<h3>JavaScript 是函数式编程</h3>
 </body>
 </html>
+
