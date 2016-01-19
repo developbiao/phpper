@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//mapObject()就是针对object的map版本
+	var obj = {a: 1, b: 2, c: 3};
+	//注意传入的函数签名,value在前，key在后
+	var obj1 = _.mapObject(obj, (v, k) => 100 + v);
+	console.log(obj1);
+};
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Objects</h3>
+</center>
+</body>
+</html>
+

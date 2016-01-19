@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+var obj1 = {name: 'Bob', skills:{Java:90, JavaScript:99}};
+var obj2 = {name: 'Bob', skills:{JavaScript:99, Java:90}};
+
+console.log(obj1 === obj2); //false
+console.log(_.isEqual(obj1, obj2));
+
+};
+
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Objects</h3>
+</center>
+</body>
+</html>
+
+

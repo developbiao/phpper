@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	var a = {
+		name: 'gongbiao',
+		age: 17
+	};
+
+	
+	//把多个object的key-value合并到第一个object并返回
+	_.extend(a, {age:22, city:'Ya\'an'});
+	console.log(a);
+
+};
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Objects</h3>
+</center>
+</body>
+</html>
+
+

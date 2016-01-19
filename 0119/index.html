@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//underscore chain支持链式操作
+	var arr =
+	 _.chain([1, 4, 9, 16 ,25])
+	.map(Math.sqrt)
+	.filter(x => x % 2 === 1)
+	.value();
+
+	alert(JSON.stringify(arr));
+
+
+};
+
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Objects</h3>
+</center>
+</body>
+</html>
+

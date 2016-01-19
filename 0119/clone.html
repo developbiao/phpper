@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+var source = {
+	name: '小明',
+	age: 20,
+	skills:['JavaScript', 'CSS', 'HTML']
+};
+
+//复制一个对象coloe
+var copied = _.clone(source);
+alert(JSON.stringify(copied, null ,' '));
+};
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Objects</h3>
+</center>
+</body>
+</html>
+
+

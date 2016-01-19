@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	//2秒后调用fool();
+	//_.delay(fool, 2000);
+
+	//延迟delay调用函数有参数，把参数也传进去
+	var log = _.bind(console.log, console);
+	_.delay(log, 5000, 'Hello', 'World!');
+	//5秒后打印Hello,World
+
+};
+
+function fool()
+{
+	alert('ok!');
+}
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Functions</h3>
+</center>
+</body>
+</html>
+

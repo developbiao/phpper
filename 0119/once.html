@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script src="../lib/js/underscore.js"></script>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+register();
+register();
+register();
+register();
+
+};
+
+//once 保证函数只执行一次
+var register = _.once(function (){
+	alert('Register ok!');
+});
+
+</script>
+</head>
+<body>
+<center>
+	<h3>underscore Functions</h3>
+</center>
+</body>
+</html>
+
