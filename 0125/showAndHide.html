@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>ShowAndHide</title>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:200px;
+	background:#ABCDEF;
+	display:none;
+}
+</style>
+<script type="text/javascript">
+function showHide()
+{
+	var oDiv = document.getElementById('div1');
+	if(oDiv.style.display == 'block'){
+		oDiv.style.display = 'none';
+	}else{
+		oDiv.style.display = 'block';
+	}
+}
+
+</script>
+</head>
+<body>
+	<input type="button" value="ClikeMe" onclick="showHide();" />
+	<div id="div1">
+	</div>
+</body>
+</html>

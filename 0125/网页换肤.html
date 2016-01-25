@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type:text/html" charset="utf-8"/>
+<title>网页换肤</title>
+<link id="link1" rel="stylesheet" type="text/css" href="css1.css"/>
+<script type="text/javascript">
+function skin1(){
+	var link1 = document.getElementById('link1');
+	link1.href = 'css1.css';
+}
+
+function skin2(){
+	var link1 = document.getElementById('link1');	
+	link1.href = 'css2.css';
+}
+</script>
+</head>
+<body>
+	<input type="button" value="皮肤1" onclick="skin1()"/>
+	<input type="button" value="皮肤2" onclick="skin2()"/>
+</body>
+</html>
