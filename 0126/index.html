@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>getElementsByTagName</title>
+<style type="text/css">
+div{
+	width:200px;
+	height:200px;
+	float:left;
+	margin:10px;
+	border:2px dashed black;
+}
+</style>
+<script type="text/javascript">
+function changeBlue()
+{
+	oDivs = document.getElementsByTagName('div');	
+	for(var i=0; i<oDivs.length;  i++)
+	{
+		oDivs[i].style.background = '#ABCDEF';
+	}
+}
+</script>
+</head>
+<body>
+	<input type="button" value="全变blue"  onclick="changeBlue();"/>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>	
+</html>

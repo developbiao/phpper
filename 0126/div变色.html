@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Div变色</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+function toChangeColor(color)
+{
+	var oDiv = document.getElementById('div1');
+	oDiv.style.background = color;
+}
+</script>
+</head>
+<body>
+	<input type="button" value="变绿" onclick="toChangeColor('green');"/>
+	<input type="button" value="变红" onclick="toChangeColor('red');"/>
+	<input type="button" value="变紫" onclick="toChangeColor('purple');"/>
+	<div id="div1" >
+	</div>
+</body>	
+</html>

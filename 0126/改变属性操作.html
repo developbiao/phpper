@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>改变文字</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oInput = document.getElementsByTagName('input')[0];
+	oInput.value = 'GongBiao';
+	oInput.title = 'User Name'; //input 有title属性
+	oInput['value'] = 'Jokey'; 
+
+}
+</script>
+</head>
+<body>
+	用户名:<input type="text" name="username" id="username"/>
+</body>	
+</html>

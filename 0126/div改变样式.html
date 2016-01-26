@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>Div改变样式</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+function changeDivStyle(name, value)
+{
+	var oDiv = document.getElementById('div1');
+	oDiv.style[name] = value;
+}
+</script>
+</head>
+<body>
+	<input type="button" value="变宽" onclick="changeDivStyle('width', '400px');"/>
+	<input type="button" value="变红" onclick="changeDivStyle('background','red');"/>
+	<input type="button" value="变紫" onclick="changeDivStyle('background','purple');"/>
+	<div id="div1" >
+	</div>
+</body>	
+</html>
