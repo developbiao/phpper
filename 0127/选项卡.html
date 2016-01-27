@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1 .active {background:yellow}
+#div1 div{
+	width:200px;
+	height:200px;
+	background:#CCC;
+	border:1px solid #999;
+	display:none;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var oDiv = document.getElementById('div1');
+	var aBtn = document.getElementsByTagName('input');
+	var aDiv = oDiv.getElementsByTagName('div');
+
+	for(var i=0; i<aBtn.length; i++){
+		aBtn[i].index = i;
+		aBtn[i].onclick = function(){
+			for(var i=0; i<aBtn.length; i++){
+				aBtn[i].className = '';
+				aDiv[i].style.display = 'none';
+			}
+			this.className = 'active';
+			aDiv[this.index].style.display = 'block';
+			//console.log(this.index);
+		}
+	}
+}
+</script>
+</head>
+<body>
+<div id="div1">
+	<input class="active" type="button" value="教育"/>
+	<input type="button" value="培训" />
+	<input type="button" value="招生" />
+	<input type="button" value="出国" />
+	<div style="display:block;">1111</div>
+	<div>2222</div>
+	<div>3333</div>
+	<div>4444</div>
+</div>	
+</body>
+</html>

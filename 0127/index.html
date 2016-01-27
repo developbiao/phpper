@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1 {
+	width:200px;
+	height:200px;
+	border:1px solid black;
+}
+.box{
+	background:red;
+}
+</style>
+<script type="text/javascript">
+function toRed(){
+	var oDiv = document.getElementById('div1');
+	oDiv.className = 'box';
+}
+
+//style操作的是行间样式
+function toGreen(){
+	var oDiv = document.getElementById('div1');
+	oDiv.style.background = 'green';
+	//alert(oDiv.style.background);
+}
+</script>
+</head>
+<body>
+<input type="button" value="变红" onclick="toRed();"/>
+<input type="button" value="变绿" onclick="toGreen();"/>
+<div id="div1">
+</div>	
+</body>
+</html>
