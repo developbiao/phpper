@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:#ABCDEF;
+	border:2px solid black;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+
+	var oDiv = document.getElementById('div1');
+	var btn = document.getElementsByTagName('input')[0];
+	btn.onclick = function (){
+		oDiv.innerHTML = '努力学习，天天向上，虽然下班很累但是还是要坚持学习！<br />提交代码到GitHub是自己的成长记录!';
+	};
+};
+</script>
+</head>
+<body>
+	<input type="button" value="InertText" />
+	<div id="div1">
+	</div>
+</body>
+</html>
