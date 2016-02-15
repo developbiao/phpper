@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JavaScript简易日历 - 智能课堂 - www.zhinengshe.com</title>
+<link href="zns_style.css" rel="stylesheet" type="text/css" />
+<script>
+window.onload = function (){
+
+	var messages = [
+	'过完年了，又开始上班了',
+	'我是追张玲梅还是追李华阳呢',
+	'李华阳是我青春的记忆',
+	'张玲梅又是我第一个表白的女生',
+	'可现在张玲梅变了，这几年变化太大了',
+	'她回到学校实习了，是件好事，又有了追她的机会',
+	'2222222222',
+	'3333333333',
+	'3333333333',
+	'3333333333',
+	'3333333333',
+	'3333333333',
+	];
+
+	var oDiv = document.getElementById('tab');
+	var aLi = oDiv.getElementsByTagName('li');
+	var oTxt = oDiv.getElementsByTagName('div')[0];
+
+	for(var i=0; i<aLi.length; i++){
+		aLi[i].index = i;
+		aLi[i].onmouseover = function(){
+			for(var i=0; i<aLi.length; i++){
+				aLi[i].className = '';
+			}
+			this.className = 'active';
+			oTxt.innerHTML = '<h2>' + (this['index'] + 1) + '月' + messages[this['index']] +'～</p>'
+		}
+	}
+
+
+};
+</script>
+</head>
+
+<body>
+
+<div id="tab" class="calendar">
+
+    <ul>
+        <li class="active"><h2>1</h2><p>JAN</p></li>
+        <li><h2>2</h2><p>FER</p></li>
+        <li><h2>3</h2><p>MAR</p></li>
+        <li><h2>4</h2><p>APR</p></li>
+        <li><h2>5</h2><p>MAY</p></li>
+        <li><h2>6</h2><p>JUN</p></li>
+        <li><h2>7</h2><p>JUL</p></li>
+        <li><h2>8</h2><p>AUG</p></li>
+        <li><h2>9</h2><p>SEP</p></li>
+        <li><h2>10</h2><p>OCT</p></li>
+        <li><h2>11</h2><p>NOV</p></li>
+        <li><h2>12</h2><p>DEC</p></li>
+    </ul>
+    
+    <div class="text">
+        <h2></h2>
+        <p></p>
+    </div>
+
+</div>
+
+</body>
+</html>
