@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oTxt = document.getElementsByTagName('input')[0];
+	var oBtn = document.getElementsByTagName('input')[1];
+	oBtn.onclick = function (){
+		var week = parseInt(oTxt.value);
+		switch(week){
+			case 1: alert('今天是星期一');
+			break;
+			case 2: alert('今天是星期二');
+			break;
+			case 3: alert('今天是星期三');
+			break;
+			case 4: alert('今天是星期四');
+			break;
+			case 5: alert('今天是星期五');
+			break;
+			case 6: alert('今天是星期六');
+			break;
+			case 7: alert('今天是星期日');
+			break;
+			default:
+			alert('非法数据');
+		}
+	};
+};
+</script>
+</head>
+<body>
+	请输入星期数:<input type="text" name="week" />
+	<input type="button" value="计算" />
+</body>
+</html>
