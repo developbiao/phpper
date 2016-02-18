@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:300px;
+	background:purple;
+}
+</style>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	//alert(oDiv.currentStyle.width);
+	alert(getComputedStyle(oDiv, false).width);
+
+};
+</script>
+</head>
+<body>
+	<div id="div1">
+	</div>
+</body>
+</html>
+

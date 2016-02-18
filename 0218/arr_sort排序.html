@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+var arr = [12, 8, 99, 19, 112];
+arr.sort(function (n1, n2){
+	if(n1 < n2){
+		return -77; //只要是个负数
+	}else if(n1 > n2){
+		return 1; //只是个正数
+	}else{
+		return 0; //只要是0
+	}
+});
+
+alert(arr);
+
+};
+</script>
+</head>
+<body>
+	<h3>JavaSript Learn</h3>
+</body>
+</html>
