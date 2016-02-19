@@ -1,0 +1,26 @@
+<?php
+/*
+@Describe:测试百分比落点测试
+*/
+header('Content-Type:text/html; charset=utf-8');
+$data = array(70, 40, 25, 5);
+
+//$rand_num = rand(0, 100);
+$rand_num = 75;
+$index = count($data) - 1;
+
+for($i=0; $i<count($data); $i++){
+	if($rand_num >= $data[$i]){
+		$index = $i;
+		break;
+	}
+}
+
+$result = $data[$index];
+
+echo 'rand_num is: '  . $rand_num . '<br />';
+echo 'point is : '  . $result . '<br />';
+
+
+
+?>
