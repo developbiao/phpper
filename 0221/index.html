@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type:text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+//测试心跳
+window.onload = function (){
+	var oBody = document.getElementsByTagName('body')[0];
+	var oBtn1 = document.getElementById('btn1');
+	var oBtn2 = document.getElementById('btn2');
+	var timer = null;
+	var num = 0;
+
+	oBtn1.onclick = function (){
+		timer = setInterval(function (){
+			num ++;
+			var node = document.createElement('h5');
+			var ohr = document.createElement('hr');
+			var textnode = document.createTextNode(num);
+			node.appendChild(textnode);
+			oBody.appendChild(node);
+			oBody.appendChild(ohr);
+			//oBody.innerHTML = '<h5>' + num +'</h5>';
+		}, 1000);
+	};
+
+	oBtn2.onclick = function (){
+		clearInterval(timer);
+	};
+};
+</script>
+</head>
+<body>
+<h3>测试心跳...</h3>
+<input type="button" id="btn1"  value="开始"/> 
+<input type="button" id="btn2" value="STOP" />
+</body>
+</html>
