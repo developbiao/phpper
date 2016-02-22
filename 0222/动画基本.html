@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+*, body{
+	margin:0px;
+}
+body{
+	background:black;
+	font-size:50px;
+	color:white;
+}
+
+#div1{
+	width:100px;
+	height:100px;
+	background:#CC0033;
+	position:absolute;
+}
+
+</style>
+<script type="text/javascript">
+'use strict';
+setInterval(function (){
+	var oDiv = document.getElementById('div1');	
+	oDiv.style.left = oDiv.offsetLeft + 10 + 'px';
+}, 30)
+</script>
+</head>
+<body>
+	<div id="div1">
+	</div>
+</body>
+</html>

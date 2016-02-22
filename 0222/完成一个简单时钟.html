@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+body{
+	background:black;
+	font-size:50px;
+	color:white;
+}
+#content{
+	width:30%;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+/*简易时钟*/
+window.onload = function(){
+	pick();
+	setInterval(pick, 1000)
+};
+
+function pick(){
+	var date = new Date();
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
+	var str_time = numberToDouble(hours) + numberToDouble(minutes) + numberToDouble(seconds);
+
+	var aImg = document.getElementsByTagName('img');
+	for(var i=0; i < aImg.length; i++){
+		aImg[i].src = './img/' + str_time.charAt(i) + '.png';
+	}
+}
+//number to double
+function numberToDouble(num){
+	if(num < 10){
+		return '0'  + num;
+	}
+	return  '' + num;
+}
+
+</script>
+</head>
+<body>
+	<div id="content">
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+		:
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+		:
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+	</div>
+</body>
+</html>

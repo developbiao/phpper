@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+body{
+	background:black;
+	font-size:50px;
+	color:white;
+}
+#content{
+	width:30%;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+/*简易时钟*/
+window.onload = function(){
+	var str_time = '213922';
+	var aImg = document.getElementsByTagName('img');
+	for(var i=0; i < aImg.length; i++){
+		aImg[i].src = './img/' + str_time.charAt(i) + '.png';
+	}
+
+};
+</script>
+</head>
+<body>
+	<div id="content">
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+		:
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+		:
+		<img src="./img/0.png"/>
+		<img src="./img/0.png"/>
+	</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:75px;
+	height:75px;
+	background:purple;
+	margin:20px;
+	float:left;
+}
+#div2{
+	width:150px;
+	height:200px;
+	background:#ABCDEF;
+	float:left;
+	display:none;
+}
+</style>
+<script type="text/javascript">
+window.onload = function(){
+	var oDiv1  = document.getElementById('div1');
+	var oDiv2  = document.getElementById('div2');
+
+	oDiv1.onmouseover = function(){
+		oDiv2.style.display = 'block';	
+	};
+	oDiv1.onmouseout = function(){
+		oDiv2.style.display = 'none';
+	};
+
+};
+</script>
+</head>
+<body>
+	<div id="div1">
+	</div>
+	<div id="div2">
+	</div>
+</body>
+</html>
