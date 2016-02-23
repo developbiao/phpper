@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+* {margin:0; padding:0}
+#div1{
+	width:712px; 
+	height:108px;
+	margin:100px auto;
+	background:red;
+	position:relative;
+	overflow:hidden;
+}
+
+#div1 ul{
+	position:absolute; 
+	left:0;
+	top:0;
+}
+
+#div1 ul li{
+	float:left;
+	width:178px;
+	height:108px;
+	list-style:none;
+}
+
+</style>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	var oUl = document.getElementsByTagName('ul')[0];
+	var aLi = document.getElementsByTagName('li');
+
+	//复制一份ul内的所有图片拼接成两份
+	oUl.innerHTML += oUl.innerHTML;
+	//计算oul的长度
+	oUl.style.width = aLi[0].offsetWidth * aLi.length + 'px';
+
+	var speed = -5;
+
+	function move(){
+		if(oUl.offsetLeft < -oUl.offsetWidth / 2){
+			oUl.style.left = '0px';
+		}
+		if(oUl.offsetLeft > 0){
+			oUl.style.left = -oUl.offsetWidth / 2 + 'px';
+		}
+		oUl.style.left = oUl.offsetLeft + speed + 'px';
+	}
+
+	//开始滚动
+	var timer = setInterval(move, 30);
+	var btn_left = document.getElementsByTagName('button')[0];
+	var btn_right = document.getElementsByTagName('button')[1];
+
+	oDiv.onmouseover = function (){
+		clearInterval(timer);
+	}
+
+	oDiv.onmouseout = function (){
+		timer = setInterval(move, 30);
+	};
+
+	btn_left.onclick = function (){
+		speed = -5;
+
+	};
+
+	btn_right.onclick = function (){
+		speed = 5;
+		
+	};
+};
+</script>
+</head>
+<body>
+	<button>向左走</button>
+	<button>向右走</button>
+	<div id="div1">
+		<ul>
+			<li><img src="./images/1.jpg"/></li>
+			<li><img src="./images/2.jpg"/></li>
+			<li><img src="./images/3.jpg"/></li>
+			<li><img src="./images/4.jpg"/></li>
+		</ul>
+	</div>
+</body>
+</html>
