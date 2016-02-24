@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type:text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oUl = document.getElementsByTagName('ul')[0];
+	if(oUl.firstElementChild){
+		alert(oUl.firstElementChild);
+	}else{
+		alert(oUl.firstChild);
+	}
+
+};
+</script>
+</head>
+<body>
+	<ul>
+		<li>111</li>
+		<li>222</li>
+		<li>333</li>
+		<li>444</li>
+		<li>555</li>
+		<li>666</li>
+	</ul>
+</body>
+</html>

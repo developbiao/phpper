@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type:text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oUl = document.getElementsByTagName('ul')[0];
+	var aA = oUl.getElementsByTagName('a'); 
+	for(var i=0; i <aA.length; i++){
+		aA[i].onclick = function (){
+			this.parentNode.style['display'] = 'none';
+		}
+	}
+
+};
+</script>
+</head>
+<body>
+	<ul>
+		<li>11111<a href="javascript:;">Hide</a></li>
+		<li>2222<a href="javascript:;">Hide</a></li>
+		<li>3333<a href="javascript:;">Hide</a></li>
+		<li>4444<a href="javascript:;">Hide</a></li>
+		<li>5555<a href="javascript:;">Hide</a></li>
+		<li>6666<a href="javascript:;">Hide</a></li>
+		<li>7777<a href="javascript:;">Hide</a></li>
+	</ul>
+</body>
+</html>
