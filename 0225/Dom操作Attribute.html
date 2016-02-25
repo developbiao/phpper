@@ -1,0 +1,38 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+#content{
+	width:200px;
+	height:200px;
+	background:#FFFF00;
+	position:relative;
+}
+
+#div2{
+	width:70px;
+	height:70px;
+	background:#0066CC;
+	top:50px;
+	left:50px;
+	position:absolute;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+ var oDiv = document.getElementById('div2');
+ var attribute_id = oDiv.getAttribute('id');
+ oDiv.setAttribute('class', 'red');
+ oDiv.removeAttribute('id');
+};
+</script>
+</head>
+<body>
+	<div id="content">
+		<div id="div2">
+		</div>
+	</div>
+</body>
+</html>

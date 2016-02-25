@@ -1,0 +1,38 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+#main{
+	width:100px;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+var oUl = document.getElementById('ul1');
+var oBtn = document.getElementById('btn1');	
+
+oBtn.onclick = function (){
+	if(oUl.children.length)
+		oUl.removeChild(oUl.children[0]);	
+};
+};
+
+</script>
+</head>
+<body>
+	<div id="main">
+		<button id="btn1">删除最后一个</button>
+		<ul id="ul1">
+			<li>1111111</li>
+			<li>222222</li>
+			<li>333333</li>
+			<li>444444</li>
+			<li>555555</li>
+		</ul>
+	</div>
+</body>
+</html>
+

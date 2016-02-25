@@ -1,0 +1,32 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oUl = document.getElementById('ul1');
+	var aLi = oUl.getElementsByTagName('li');
+	for(var i=0; i<aLi.length; i++){
+		if(aLi[i].className == 'box'){
+			aLi[i].style.background='#CC99CC';
+		}
+	}
+};
+</script>
+</head>
+<body>
+	<div id="main">
+		<ul id="ul1">
+			<li calss="box">好想好好的睡一觉</li>
+			<li></li>
+			<li class="box">离你的距离还有多远</li>
+			<li>期待...</li>
+			<li class="box">什么时候有一个女朋友</li>
+
+		</ul>
+	</div>
+</body>
+</html>

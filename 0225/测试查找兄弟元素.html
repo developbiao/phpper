@@ -1,0 +1,25 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oBody = document.getElementsByTagName('body')[0];
+	var oH3 = oBody.lastElementChild;
+	var oTest = oH3.previousElementSibling.previousElementSibling;
+	alert(oTest.innerText); //33333
+}
+</script>
+</head>
+<body>
+	<h3>Every Thing is ok!</h3>
+	<h3>11111</h3>
+	<h3>22222</h3>
+	<h3>33333</h3>
+	<h3>44444</h3>
+	<h3>55555</h3>
+</body>
+</html>

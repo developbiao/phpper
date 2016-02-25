@@ -1,0 +1,58 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+#main{
+	width:100px;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+var oUl = document.getElementById('ul1');
+var oBtn = document.getElementById('btn1');	
+
+//创建碎片对象
+var oFrag = document.createDocumentFragment();
+
+//普通创建li
+oBtn.onclick = function (){
+	var start_time = Date.now();
+	for(i=0; i<10000; i++){
+		var node = document.createElement('li');
+		var node_text = document.createTextNode('测试碎片...');
+		node.appendChild(node_text);
+		if(oUl.children.length){
+			oFrag.insertBefore(node, oUl.children[0]);
+		}
+		else
+		{
+			oFrag.appendChild(node);
+		}
+
+	}
+	oUl.appendChild(oFrag);
+	var end_time = Date.now();
+	var cons_time = end_time - start_time;
+	alert(cons_time);
+};
+};
+
+/*
+测试结果：
+Fragemnt创建耗时:80ms
+*/
+
+</script>
+</head>
+<body>
+	<div id="main">
+		<button id="btn1">Fragment测试创建</button>
+		<ul id="ul1">
+		</ul>
+	</div>
+</body>
+</html>
+

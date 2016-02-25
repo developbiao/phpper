@@ -1,0 +1,39 @@
+<!DOCTYPE HMTL>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+#main{
+	width:100px;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+var oUl = document.getElementById('ul1');
+var oBtn = document.getElementById('btn1');	
+
+oBtn.onclick = function (){
+	var oLi = document.createElement('li'); 	
+	var oLiText = document.createTextNode('hahaah')
+	oLi.appendChild(oLiText);
+	aLi = oUl.getElementsByTagName('li');
+	if(aLi.length){
+		oUl.insertBefore(oLi, aLi[0]);
+	}else{
+		oUl.appendChild(oLi);
+	}
+};
+};
+
+</script>
+</head>
+<body>
+	<div id="main">
+		<button id="btn1">创建li</button>
+		<ul id="ul1">
+		</ul>
+	</div>
+</body>
+</html>
