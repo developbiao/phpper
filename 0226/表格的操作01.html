@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	var oTab = document.getElementById('tab1');
+	//alert("我喜欢的女生" + oTab.getElementsByTagName('tbody')[0].getElementsByTagName('tr')[4].getElementsByTagName('td')[1].innerText);
+
+	//表格的专门操作的属性
+	//tBodies
+	//rows
+	//cells
+	alert(oTab.tBodies[0].rows[4].cells[1].innerText + '喜欢我');
+
+
+};
+</script>
+</head>
+<body>
+	<center>
+		<table id="tab1" border="1px" width="500px">
+			<thead>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>年龄</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Blue</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>张三</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>李四</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>王麻子</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>左耳</td>
+					<td>17</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>
