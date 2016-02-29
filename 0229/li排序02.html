@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>排序</title>
+<style type="text/css">
+#ul1{background:green}
+#ul2{background:yellow}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oBtn = document.getElementById('btn1');
+	var oUl1 = document.getElementById('ul1');
+	var oUl2 = document.getElementById('ul2');
+
+	oBtn.onclick = function (){
+		var oLi = oUl1.children[0];
+		//把上面的移动到了下面
+		oUl1.appendChild(oLi);
+	};
+};
+</script>
+</head>
+<body>
+	<h3>li排序</h3>
+	<input type="button" value="移动" id="btn1"/>
+	<ul id="ul1">
+		<li>香蕉</li>
+		<li>苹果</li>
+		<li>草莓</li>
+	</ul>
+	<ul id="ul2">
+	</ul>
+</body>
+</html>

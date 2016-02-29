@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>表单</title>
+<script type="text/javascript">
+window.onload = function (){
+	//阻止默认提交事件可以return false
+	var form1 = document.getElementById('form1');
+	form1.onsubmit = function (){
+		return false;
+	}	
+	form1.onreset = function (){
+		alert('动感超人，哈哈~~~~');
+		return true;
+	};
+};
+</script>
+</head>
+<body>
+	<form id="form1" action="http://www.lifebiao.com">
+		用户名:<input type="text"  name="username" id="name"/><br/>
+		密码:<input type="password" name="password" id="pass"/>
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重置"/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>排序</title>
+<style type="text/css">
+#ul1{background:green}
+#ul2{background:yellow}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	//对li从小到大排序
+	var oBtn = document.getElementById('btn1');
+	var oUl1 = document.getElementById('ul1');
+	var oUl2 = document.getElementById('ul2');
+
+	oBtn.onclick = function (){
+		var aLi = oUl1.getElementsByTagName('li');
+		var arr = [];
+
+		for(var i=0; i<aLi.length; i++){
+			arr[i] = aLi[i];
+		}
+
+		arr.sort(function (li1, li2){
+			var n1 = parseInt(li1.innerText);
+			var n2 = parseInt(li2.innerText);
+			return n1 - n2;
+		});
+
+		for(var i=0; i<arr.length; i++){
+			console.log('该把 ' + arr[i].innerText + '插入到最后');
+			oUl1.appendChild(arr[i]);	
+		}
+	};
+};
+</script>
+</head>
+<body>
+	<h3>li排序</h3>
+	<input type="button" value="移动" id="btn1"/>
+	<ul id="ul1">
+		<li>33</li>
+		<li>31</li>
+		<li>11</li>
+		<li>89</li>
+	</ul>
+</body>
+</html>

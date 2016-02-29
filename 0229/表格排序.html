@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	var oTab = document.getElementById('tab1');
+	var oBtn = document.getElementById('btn1');
+
+
+	var rows = new Array();
+	oBtn.onclick = function (){
+		for(var i=0; i<oTab.tBodies[0].rows.length; i++){
+			rows[i] = oTab.tBodies[0].rows[i];
+		}
+
+		rows.sort(function (row1, row2){
+			var n1 = parseInt(row1.cells[2].innerText);
+			var n2 = parseInt(row2.cells[2].innerText);
+			return n1 - n2;
+		});
+
+		//restart append child
+
+		for(var i=0; i<rows.length; i++)
+			oTab.tBodies[0].appendChild(rows[i]);
+
+		};
+};
+</script>
+</head>
+<body>
+	<center>
+	<input type="button" id="btn1" value="排序"/>
+		<table id="tab1" border="1px" width="500px">
+			<thead>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>年龄</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Blue</td>
+					<td>27</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>张三</td>
+					<td>24</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>李四</td>
+					<td>25</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>王麻子</td>
+					<td>38</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>左耳</td>
+					<td>17</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>张玲梅</td>
+					<td>16</td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>
+
+

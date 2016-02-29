@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	//表格的添加
+	var oTab = document.getElementById('tab1');
+	var oName = document.getElementById('name');
+	var oAge = document.getElementById('age');
+	var oBtn = document.getElementById('btn1');
+
+	oBtn.onclick = function (){
+		var oTr = document.createElement('tr');
+
+		//create cell id
+		var oTd = document.createElement('td');
+		var oTxt = document.createTextNode(oTab.tBodies[0].rows.length + 1);
+		oTd.appendChild(oTxt);
+		oTr.appendChild(oTd);
+
+		//create cell name
+		oTd = document.createElement('td');
+		oTxt = document.createTextNode(oName.value);
+
+		oTd.appendChild(oTxt);
+		oTr.appendChild(oTd);
+
+		//create cell age
+		oTd = document.createElement('td');
+		oTxt = document.createTextNode(oAge.value);
+
+		oTd.appendChild(oTxt);
+		oTr.appendChild(oTd);
+
+		//add remove option button
+		oTd = document.createElement('td');
+		oTd.innerHTML = '<button>remove</button>';
+
+		//add Click event
+		oTd.getElementsByTagName('button')[0].onclick = function (){
+			oTab.tBodies[0].removeChild(this.parentNode.parentNode);
+		};
+
+		oTr.appendChild(oTd);
+		oTab.tBodies[0].appendChild(oTr);
+	};
+
+};
+</script>
+</head>
+<body>
+	<center>
+	姓名:<input type="text" id="name"/>
+	年龄:<input type="text" id="age"/>	
+	<input type="button" id="btn1" value="添加"/>
+		<table id="tab1" border="1px" width="500px">
+			<thead>
+				<td>ID</td>
+				<td>姓名</td>
+				<td>年龄</td>
+				<td>操作</td>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Blue</td>
+					<td>27</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>张三</td>
+					<td>24</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>李四</td>
+					<td>25</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>王麻子</td>
+					<td>38</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>左耳</td>
+					<td>17</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>张玲梅</td>
+					<td>16</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</center>
+</body>
+</html>
+
