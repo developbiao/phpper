@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+	position:absolute;
+}
+</style>
+<script type="text/javascript">
+//Demo 简单的运动
+window.onload = function (){
+	var timer = null;
+	var oBtn = document.getElementById('btn1');
+	var oBtn_off = document.getElementById('btn2');
+	oBtn.onclick = function (){
+		timer = startMove();
+	};
+
+	oBtn_off.onclick = function (){
+		clearInterval(timer);
+	};
+
+};
+
+function startMove(){
+	clearInterval(timer);
+	var oDiv = document.getElementById('div1');
+	var timer = setInterval(function (){
+
+		oDiv.style.left = oDiv.offsetLeft + 10 + 'px';
+	}, 30);
+	return timer;
+}
+
+</script>
+</head>
+<body>
+	<input type="button" value="start move" id="btn1"/>
+	<input type="button" value="stop move" id="btn2"/>
+	<div id="div1">
+	</div>
+</body>
+</html>
