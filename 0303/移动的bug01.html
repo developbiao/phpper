@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	position:absolute;
+	background:purple;
+	top:100px;
+	left:0px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	//移动的bug1 offsetLeft加到超出解决
+	var oDiv = document.getElementById('div1');
+	var btn1 = document.getElementById('btn1');
+	var timer = null;
+	var speed = 7;
+	btn1.onclick = function (){
+		timer = setInterval(function (){
+			if(oDiv.offsetLeft >= 300)
+				clearInterval(timer);
+			else{
+				oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+			}
+		}, 30)
+	};
+};
+</script>
+</head>
+<body>
+	<h3>运动测试</h3>
+	<input type="button" value="移动" id="btn1"/>
+	<div id="div1">
+	</div>
+</body>
+</html>
