@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style style="text/css">
+#div1 {
+	position:relative;
+	width:200px;
+	height:200px;
+	background:url('./beautiful_teacher.jpg') no-repeat 5px 5px;
+	background-size:200px;
+	filter:alpha(opacity:30);
+	opacity:0.3;
+}
+</style>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	oDiv.onmouseover = function (){
+		startMove(100);
+	};
+
+	oDiv.onmouseout = function (){
+		startMove(30);
+	};
+
+};
+
+
+var timer = null;
+var alpha = 30;
+var speed = 0;
+function startMove(iTarget){
+	var oDiv = document.getElementById('div1');
+	clearInterval(timer);
+	timer = setInterval(function() {
+		if(alpha < iTarget){
+			speed = 10;
+		}
+		else{
+			speed = -10;
+		}
+		if(alpha == iTarget){
+			clearInterval(timer);
+		}else{
+			alpha += speed;
+			//兼容IE
+			oDiv.style.filter = 'alpha(opacity:'+ alpha +')';
+			//兼容Firefox 和Chrome
+			oDiv.style.opacity = alpha / 100;
+		}
+	}, 300);
+}
+
+var timer = null;
+
+function startMove2(){
+	var oDiv = document.getElementById('div1');
+	//确保只有一个定时器
+	clearInterval(timer);
+	timer = setInterval(function (){
+		if(oDiv.offsetLeft >= 500){
+			clearInterval(timer);
+		}
+		else{
+			oDiv.style.left = oDiv.offsetLeft + 1 + 'px';
+		}
+
+	}, 30);
+}
+</script>
+</head>
+<body>
+	<h3>Program runing is ok!</h3>
+	<input type="button" value="开始移动" onclick="startMove2();"/>
+	<div id="div1">
+	</div>
+</body>
+</html>
