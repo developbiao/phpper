@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<link rel="stylesheet" href="../lib/ueditor/themes/default/css/ueditor.css"/>
+<!-- 配置文件 -->
+<script type="text/javascript" src="../lib/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="../lib/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+window.onload = function (){
+var ue = UE.getEditor('trivalEditor', {
+toolbars: [
+    ['fullscreen', 'source', 'undo', 'redo', 'bold']
+]	
+});
+};
+</script>
+</head>
+<body>
+	<h3>UEditor Demo</h3>
+
+	<!-- 加载编辑器的容器 -->
+	<script type="text/plain" id="trivalEditor" style="width:500px;height:200px">
+	</script>
+	<!--
+	<div id="trivalEditor" style="width:500px; height:200px">
+	</div>
+-->
+</body>
+</html>
