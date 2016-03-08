@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" charset="utf-8"/>
+<title>右侧悬浮框</title>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:150px;
+	position:absolute;
+	background:red;
+	right:0px;
+	bottom:0px;
+}
+</style>
+<script type="text/javascript">
+//悬浮框根随的原理其实就是在重新计算div的style top
+window.onscroll = function (){
+	var oDiv = document.getElementById('div1');
+	//获取scroll的高
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	document.title = scrollTop;
+	oDiv.style.top = document.documentElement.clientHeight - oDiv.offsetHeight + scrollTop + 'px';
+};
+</script>
+</head>
+<body style="height:2000px">
+	<div id="div1">
+	</div>
+</body>
+</html>
+

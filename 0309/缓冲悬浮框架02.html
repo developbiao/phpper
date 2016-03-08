@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" charset="utf-8"/>
+<title>右侧悬浮框</title>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:150px;
+	position:absolute;
+	background:red;
+	right:0px;
+	bottom:0px;
+}
+</style>
+<script type="text/javascript">
+//悬浮框根随的原理其实就是在重新计算div的style top
+window.onscroll = function (){
+	var oDiv = document.getElementById('div1');
+	//获取scroll的高
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	document.title = scrollTop;
+	//oDiv.style.top = document.documentElement.clientHeight - oDiv.offsetHeight + scrollTop + 'px';
+
+	//加入缓冲
+	var iTarget = document.documentElement.clientHeight - oDiv.offsetHeight + scrollTop;
+
+	//开始运动
+	startMove(iTarget);
+
+};
+
+var timer = null;
+function startMove(iTarget){
+	var oDiv = document.getElementById('div1');
+	clearInterval(timer);
+	timer = setInterval(function (){
+		var speed = (iTarget - oDiv.offsetTop) / 3; //控制速度被除数越大缓冲越明显
+		speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+		if(oDiv.offsetTop == iTarget){
+			clearInterval(timer);
+		}else{
+			oDiv.style.top = oDiv.offsetTop + speed + 'px';
+		}
+
+	}, 30);
+}
+</script>
+</head>
+<body style="height:2000px">
+	<div id="div1">
+	</div>
+</body>
+</html>
+
