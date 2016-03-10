@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+div {
+	width:200px;
+	height:200px;
+	margin:20px;
+	float:left;
+	background:yellow;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oDiv1 = document.getElementById('div1');
+	var oDiv2 = document.getElementById('div2');
+
+	//change height
+	oDiv1.onmouseover = function (){
+		startMove(oDiv1, 400);
+	};
+	oDiv1.onmouseout = function (){
+		startMove(oDiv1, 200);
+	};
+
+
+	//change width
+	oDiv2.onmouseover = function (){
+		startMove2(oDiv2, 400);
+	};
+
+	oDiv2.onmouseout = function (){
+		startMove2(oDiv2, 200);
+	};
+};
+
+//运动框架函数
+function startMove(obj, iTarget){
+	clearInterval(obj.timer);
+	obj.timer = setInterval(function (){
+		var speed = (iTarget - obj.offsetHeight) / 7;
+		speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+
+		if(obj.offsetHeight == iTarget){
+			clearInterval(obj.timer);
+		}else{
+			obj.style.height = obj.offsetHeight + speed + 'px';
+		}
+
+	});
+}
+
+//变宽函数
+function startMove2(obj, iTarget){
+	clearInterval(obj.timer);
+	obj.timer = setInterval(function (){
+		var speed = (iTarget - obj.offsetWidth)	/ 6;
+		speed = speed > 0 ? Math.ceil(speed) : Math.floor(speed);
+		if(obj.offsetWidth == iTarget){
+			clearInterval(obj.timer);
+		}else{
+			obj.style.width = obj.offsetWidth + speed + 'px';
+		}
+	}, 30);
+}
+
+</script>
+</head>
+<body>
+	<div id="div1">变高</div>
+	<div id="div2">变宽</div>
+</body>
+</html>

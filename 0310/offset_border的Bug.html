@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	border:1px solid black;
+	background:#FF0033;
+}
+</style>
+<script type="text/javascript">
+setInterval(startMove, 300);
+
+function startMove(){
+	var oDiv = document.getElementById('div1');	
+	oDiv.style.width = oDiv.offsetWidth - 1 + 'px';
+	//oDiv.style.width = oDiv.offsetWidth - 2 + 'px';
+}
+
+</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>

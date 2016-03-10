@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;	
+	height:200px;
+	border:1px solid black;
+	background:#FF0033;
+}
+</style>
+<script type="text/javascript">
+setInterval(startMove, 300);
+
+function startMove(){
+	var oDiv = document.getElementById('div1');	
+	oDiv.style.width = oDiv.offsetWidth - 1 + 'px';
+	//oDiv.style.width = oDiv.offsetWidth - 2 + 'px';
+
+	/*
+		1.解析1px 的border 影响了width，实际的width是202px	
+		当加回1px border的时候反而变大了
+		202 - 1 = 201
+		>>-----------------
+		这个时候加一1px的border
+		201 + 2 = 203
+		203 - 1 = 202
+		>>------------------
+		202 + 2 = 204
+		204 - 1 = 203
+		.................
+
+
+	*/
+}
+
+</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>
