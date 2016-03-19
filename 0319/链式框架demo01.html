@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:100px;
+	background:#0099CC;
+	filter:alpha(opacity:30);
+	opacity:0.3;
+}
+</style>
+<script type="text/javascript" src="./move.js"></script>
+<script type="text/javascript">
+window.onload = function (){
+	//链式运动框架Demo
+	var oDiv = document.getElementById('div1');
+	oDiv.onmouseover = function (){
+		startMove(oDiv, 'width', 300, function(){
+			startMove(oDiv, 'height', 300, function (){
+				startMove(oDiv, 'opacity', 100);
+			});
+		});
+	};
+
+	oDiv.onmouseout = function (){
+		startMove(oDiv, 'opacity', 30, function (){
+			startMove(oDiv, 'height', 100, function() {
+				startMove(oDiv, 'width', 100);
+			})
+		});
+	};
+};
+</script>
+</head>
+<body>
+	<div id="div1"></div>
+</body>
+</html>
