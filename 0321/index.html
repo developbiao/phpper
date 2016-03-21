@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:100px;
+	background-image:url('./show_gril.jpg');
+	background-color:#ABCDEF;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+	position:absolute;
+}
+</style>
+<script type="text/javascript">
+//div鼠标跟随
+document.onmousemove = function (ev){
+	var oEvent = ev || event;
+
+	var scrollTop = document.documentElement.scrollTop
+	|| document.body.scrollTop; 
+
+	var oDiv = document.getElementById('div1');
+	oDiv.style.left = oEvent.clientX + 'px';
+	oDiv.style.top = oEvent.clientY + scrollTop + 'px';
+};
+</script>
+</head>
+<body style="height:3000px">
+	<div id="div1">
+	</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<script type="text/javascript">
+window.onload = function (){
+	document.onclick = function (event){
+			//获取点击坐标IE
+			//alert(event.clientX + ',' + event.clientY); //Chrome没问题
+
+			//FF
+			alert(event.clientX + ',' + event.clientY);
+
+
+	};
+};
+</script>
+</head>
+<body style="border:1px solid black">
+</body>
+</html>

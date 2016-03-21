@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:400px;
+	height:200px;
+	background:#ccc;
+	display:none;
+}
+</style>
+<script type="text/javascript">
+/*
+事件传递造成的Bug
+*/
+window.onload = function (){
+	var oBtn = document.getElementById('btn1');
+	var oDiv = document.getElementById('div1');
+	oBtn.onclick = function (){
+		oDiv.style.display = 'block';
+		alert('onclik button');
+	};
+
+	document.onclick = function (){
+		oDiv.style.display = 'none';
+		alert('onclick document');
+	};
+
+};
+</script>
+</head>
+<body>
+	<input type="button" value="显示" id="btn1"/>
+	<div id="div1">
+	</div>
+</body>
+</html>
