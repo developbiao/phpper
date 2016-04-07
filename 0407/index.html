@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>impress Learn</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<link href="./demo/styles.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="impress">
+		<div class="step" data-x="0" data-y="0">
+			My first slide. My Name is GongBiao
+		</div>
+		<div class="step" data-x="500" data-y="100">
+			This is slide 2. It slides lfet 500 pixels.
+		</div>
+		<div class="step" data-x="500" data-y="-400">
+			This is slide 3. It slides down 400 pixels.
+		</div>
+		<div class="step" data-x="500" data-y="-800" data-scale="0.5">
+			This is slide 4. It scanles everything up by a factor of 2.
+		</div>
+		<div class="step" data-x="-100" data-y="-800" data-rotate-x="60" data-rotate-y="60" data-rotate-z="30">
+			Hello Moto~
+		</div>
+		<div class="step" data-x="-2600" data-y="-800" data-rotate-x="30" data-rotate-y="-30" data-rotate-z="-90" data-scale="4">
+			This is slide 7 and it has a 3D transition AND a sacle.
+		</div>
+	</div>
+<script type="text/javascript" src="./demo/impress.js"></script>
+<!--
+	 call `impress().init()` function to initalize impress.js presentation.
+ -->
+<script type="text/javascritp">
+impress().init();
+</script>
+</body>
+</html>
