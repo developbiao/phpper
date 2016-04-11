@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+div{
+	width:10px;
+	height:10px;
+	position:absolute;
+	background:purple;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+};
+
+function getPos(ev){
+	var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+	var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+	return {x: ev.clientX + scrollTop, y: ev.clientY + scrollTop}
+}
+
+document.onmousemove = function (ev){
+	var aDiv = document.getElementsByTagName('div');
+	var oEvent = ev || event;
+
+	var pos = getPos(ev);
+
+	//其它div依次跟随上一个div
+	for(var i=aDiv.length - 1; i>0; i--){
+		aDiv[i].style.left = aDiv[i - 1].offsetLeft + 'px';
+		aDiv[i].style.top = aDiv[i - 1].offsetTop + 'px';
+	}
+
+	//第一个div的位置
+	aDiv[0].style.left = pos.x + 'px';
+	aDiv[0].style.top = pos.y + 'px';
+
+};
+
+
+</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

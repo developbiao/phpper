@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style>
+#div1{ width:100px; height:100px; background:red; position:absolute;}
+</style>
+<script>
+
+window.onload = function(){
+        var oDiv = document.getElementById('div1');
+        var json = {};
+        
+        document.onkeydown = function(ev){
+        
+                var oEvent = ev || window.event;
+
+                switch(oEvent.keyCode){
+                        case 37:
+                                json.name = 'L';
+                        break;
+                        case 38:
+                                json.name = 'T';
+                        break;
+                        case 39:
+                                json.name = 'R';
+                        break;
+                        case 40:
+                                json.name = 'B';
+                        break;
+                }
+        
+        };
+
+        setInterval(function(){
+                
+                if(json.name){
+                        switch(json.name){
+                                case 'L':
+                                        oDiv.style.left = oDiv.offsetLeft - 10 +'px';
+                                break;
+                                case 'T':
+                                        oDiv.style.top = oDiv.offsetTop - 10 +'px';
+                                break;
+                                case 'R':
+                                        oDiv.style.left = oDiv.offsetLeft + 10 +'px';
+                                break;
+                                case 'B':
+                                        oDiv.style.top = oDiv.offsetTop + 10 +'px';
+                                break;
+                        }
+                }
+                
+        },30);
+        
+        document.onkeyup = function(){
+                json.name = '';
+        };
+};
+
+</script>
+</head>
+
+<body>
+<div id="div1"></div>
+</body>
+</html>
+
