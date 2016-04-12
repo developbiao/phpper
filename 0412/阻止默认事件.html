@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oTxt = document.getElementsByTagName('input')[0];
+	//阻止默认事件，什么都不能输入
+	oTxt.onkeydown = function (){
+		return false;
+	};
+};
+</script>
+</head>
+<body>
+	用户UID:<input type="text" name="user_id"/>
+</body>
+</html>

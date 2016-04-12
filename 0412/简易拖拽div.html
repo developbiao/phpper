@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+	position:absolute;
+	cursor:'hand';
+}
+</style>
+<script type="text/javascript">
+'use strict';
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	var disX = 0;
+	var disY = 0;
+
+	oDiv.onmousedown = function (ev){
+		var oEvent = ev || event;
+		disX = oEvent.clientX - oDiv.offsetLeft;
+		disY = oEvent.clientY - oDiv.offsetTop;
+		oDiv.style.cursor = 'hand';
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+
+			//计算div新的坐标位置
+			oDiv.style.left = oEvent.clientX - disX + 'px';
+			oDiv.style.top = oEvent.clientY - disY + 'px';
+		}
+
+		document.onmouseup = function (){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+	};
+};
+</script>
+</head>
+<body>
+	<div id="div1"></div>	
+</body>
+</html>

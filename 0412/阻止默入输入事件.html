@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oTxt = document.getElementsByTagName('input')[0];
+	//阻止默认事件，只能输入数字，并且允许左右移动+backspace
+	oTxt.onkeydown = function (ev){
+		var oEvent = ev || event;
+		if(oEvent.keyCode !=8 && 
+			oEvent.keyCode !=37 &&
+			oEvent.keyCode != 39 &&
+			(oEvent.keyCode < 47 || oEvent.keyCode > 57)){
+			return false;
+		}
+	};
+};
+</script>
+</head>
+<body>
+	用户UID:<input type="text" name="user_id"/>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#div1{
+	width:200px;
+	height:300px;
+	position:absolute;
+	background:#CCC;
+	border:2px solid black;
+	display:none;
+}
+
+li{
+	line-height:30px;
+	background:#484848;
+}
+</style>
+<script type="text/javascript">
+document.oncontextmenu = function (ev){
+	var oDiv = document.getElementById('div1');
+	oDiv.style.display = 'block';
+	var oEvent = ev || event;
+	oDiv.style.left = oEvent.clientX + 'px';
+	oDiv.style.top = oEvent.clientY + 'px';
+	return false;
+};
+
+document.onclick = function (){
+	var oDiv = document.getElementById('div1');
+	oDiv.style.display = 'none';
+};
+</script>
+</head>
+<body>
+	<div id="div1">
+		<ul>
+			<li>新建文件</li>
+			<li>删除文件</li>
+			<li>恢复文件</li>
+			<li>时空倒流</li>
+		</ul>
+	</div>
+</body>
+</html>
