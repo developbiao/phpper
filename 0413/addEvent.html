@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	//下面的操作向一个button同时绑定了onclick事件
+	var oBtn = document.getElementById('btn1');
+
+	//IE兼容attachEvent	
+	if(oBtn.attachEvent){
+		oBtn.attachEvent('onclick', function (){
+			alert('aaa');	
+		});
+
+		oBt.attachEvent('onclick', function (){
+			alert('bbb');
+		});
+	}
+
+
+	//Chrome Firefox attach Event
+
+	oBtn.addEventListener('click',  function (){
+		alert('aaaa');
+	}, false);
+
+	oBtn.addEventListener('click', function (){
+		alert('bbbb');
+	} , false);
+};
+</script>
+</head>
+<body>
+	<input type="button" id="btn1" value="button"/>
+</body>
+</html>

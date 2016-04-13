@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:purple;
+	position:absolute;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oDiv = document.getElementById('div1');		
+	var dst_x = 0;
+	var dst_y = 0;
+
+	oDiv.onmousedown = function (ev){
+		var oEvent = ev || event;
+		dst_x = oEvent.clientX - oDiv.offsetLeft;
+		dst_y = oEvent.clientY - oDiv.offsetTop;
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+
+			var left = oEvent.clientX - dst_x;
+			if(left < 0){
+				left = 0;
+			}else if(left > document.documentElement.clientWidth - oDiv.offsetWidth)
+			{
+				left = document.documentElement.clientWidth - oDiv.offsetWidth;	
+			}
+
+			var top = oEvent.clientY - dst_y;
+			if(top < 0){
+				top = 0;
+			}else if(top > document.documentElement.clientHeight - oDiv.clientHeight){
+				top = document.documentElement.clientHeight - oDiv.clientHeight;
+			}
+
+			oDiv.style.left = left + 'px';
+			oDiv.style.top = top + 'px';
+		};
+
+		//清除mousemove事件
+		document.onmouseup = function (){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+
+		//阻止firefox移动的bug
+		return false;
+	};
+};
+</script>
+</head>
+<body>
+	<div id="div1">
+	</div>	
+</body>
+</html>

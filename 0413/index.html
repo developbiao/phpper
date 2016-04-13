@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	//下面的操作向一个button同时绑定了onclick事件
+	var oBtn = document.getElementById('btn1');
+
+	myAddEvent(oBtn, 'click', function (){
+		alert('hahah');
+	});
+
+	myAddEvent(oBtn, 'click', function (){
+		alert('bbb');
+	})
+
+};
+
+
+//自定兼容的事件绑定函数
+function myAddEvent(obj, ev, fn){
+	if(obj.addEvent){
+		obj.attachEvent('on' + ev, fn);
+	}else{
+		obj.addEventListener(ev, fn, false);
+	}
+}
+
+</script>
+</head>
+<body>
+	<input type="button" id="btn1" value="button"/>
+</body>
+</html>
