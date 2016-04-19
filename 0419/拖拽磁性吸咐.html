@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:100px;
+	height:100px;
+	background:#CC0033;
+	position:absolute;
+	_cursor:wait;
+	cursor:help;
+}
+#div2{
+	width:500px;
+	height:500px;
+	position:relative;
+	background:#99CC66;
+	margin:0 auto;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	/*
+	Demo:拖指拽磁性吸咐
+	*/
+	var oDiv = document.getElementById('div1');	
+	var oDiv2 = document.getElementById('div2');
+
+	var disX = 0;
+	var disY = 0;
+
+	oDiv.onmousedown = function (ev){
+		var oEvent = ev || event;
+		disX = oEvent.clientX - oDiv.offsetLeft;
+		disY = oEvent.clientY - oDiv.offsetTop;
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+			var l = oEvent.clientX - disX;
+			var t = oEvent.clientY - disY;
+
+			if(l < 100){
+				l = 0;
+			}else if(l + 100 > oDiv2.offsetWidth - oDiv.offsetWidth){
+				l = oDiv2.offsetWidth - oDiv.offsetWidth;
+			}
+
+			if(t < 100){
+				t = 0;
+			}else if(t + 100 > oDiv2.offsetHeight - oDiv.offsetHeight){
+				t = oDiv2.offsetHeight - oDiv.offsetHeight;
+			}
+
+			oDiv.style.left = l + 'px';
+			oDiv.style.top = t + 'px';
+		}
+	}
+
+	oDiv.onmouseup = function (){
+		document.onmousemove = null;
+		document.onmouseup = null;
+	}
+
+	return false;
+
+};
+</script>
+</head>
+<body>
+	<div id="div2">
+		<div id="div1">
+		</div>
+	</div>
+</body>
+</html>

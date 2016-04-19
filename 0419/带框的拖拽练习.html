@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#div1{
+	width:200px;
+	height:200px;
+	background:yellow;
+	position:absolute;
+}
+.box{
+	border:2px dashed black;
+	position:absolute;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oDiv = document.getElementById('div1');
+	document.onmousedown = function (ev){
+		var oEvent = ev || event;
+
+		var disX = oEvent.clientX - oDiv.offsetLeft;
+		var disY = oEvent.clientY - oDiv.offsetTop;
+
+		var oBox = document.createElement('div');
+		oBox.className = 'box';
+		oBox.style.width = oDiv.offsetWidth - 4 + 'px';
+		oBox.style.height = oDiv.offsetHeight - 4 + 'px';
+
+		//initlazie box postion
+		oBox.style.left = oDiv.offsetLeft + 'px';
+		oBox.style.top = oDiv.offsetTop + 'px';
+
+
+		//添加拖拽框
+		document.body.appendChild(oBox);
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+			var left = oEvent.clientX - disX;
+			var top = oEvent.clientY - disY;
+
+			oBox.style.left = left + 'px';
+			oBox.style.top = top + 'px';
+		};
+
+		document.onmouseup = function (){
+			document.onmousemove = null;
+			document.onmouseup = null;
+
+			oDiv.style.left = oBox.offsetLeft + 'px';
+			oDiv.style.top = oBox.offsetTop + 'px';
+
+			//移除拖拽框
+			document.body.removeChild(oBox);
+		};
+
+		return false; //chrom, ff, IE9
+
+	};
+};
+</script>
+</head>
+<body>
+	<div id="div1">
+	</div>
+</body>
+</html>
