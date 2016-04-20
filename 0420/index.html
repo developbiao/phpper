@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>scroll bar</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#parent{
+	width:600px;
+	height:20px;
+	background:#CCC;
+	position:relative;
+	margin:0 auto;
+	margin-top:200px;
+	cursor:help;
+}
+
+#div1{
+	width:20px;
+	height:20px;
+	background:#FF6666;
+	position:absolute;
+	cursor:pointer;
+}
+
+#div2{
+	width:400px;
+	height:300px;
+	border:2px solid black;
+	position:relative;
+	margin:0 auto;
+	margin-top:30px;
+	overflow:hidden;
+}
+
+#div3{
+	position:absolute;
+	left:0;
+	top:0;	
+	padding:4px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oParent = document.getElementById('parent');
+	var oDiv = document.getElementById('div1');
+	var oDiv2 = document.getElementById('div2');
+	var oDiv3 = document.getElementById('div3');
+
+	oDiv3.style.top =  -130 + 'px';
+
+	oDiv.onmousedown = function (ev){
+		var oEvent = ev || event;
+		var disX = oEvent.clientX - oDiv.offsetLeft;
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+			var left = oEvent.clientX - disX;
+
+			//检查超出范围
+			if(left < 0){
+				left = 0;
+			}else if(left > oParent.offsetWidth - oDiv.offsetWidth){
+				left = oParent.offsetWidth - oDiv.offsetWidth;
+			}
+
+			oDiv.style.left = left + 'px'; 
+
+			// 计算缩放比
+			var scale = left / (oParent.offsetWidth - oDiv.offsetWidth);	
+
+			//控制div3文本滚动
+			//oDiv3.offsetHeight - oDiv2.offsetHeight 计算出可以拖拽的距离
+			oDiv3.style.top = -scale * (oDiv3.offsetHeight - oDiv2.offsetHeight) + 'px';
+			//document.title = oDiv3.style.top;
+
+
+		};
+
+
+		document.onmouseup = function (){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+	};
+
+	//加入点击控制滚动小滑块的位置
+	oParent.onclick = function (ev){
+		var oEvent = ev || event;
+		var left = oEvent.clientX - oParent.offsetLeft;
+		document.title = left;
+		if(left < 0){
+			left = 0;
+		}else if(left > oParent.offsetWidth - oDiv.offsetWidth){
+			left = oParent.offsetWidth - oDiv.offsetWidth;
+		}
+
+		var scale = left / (oParent.offsetWidth - oDiv.offsetWidth);
+
+		oDiv.style.left = left + 'px';
+		oDiv3.style.top = -scale * (oDiv3.offsetHeight - oDiv2.offsetHeight) + 'px';
+	};
+};
+</script>
+</head>
+<body>
+	<div id="parent">
+		<div id="div1"></div>
+	</div>
+	<div id="div2">
+		<div id="div3">
+			What business today wants to introduce more risk into their life?
+In our world of instant access to information, smartphones and tablets can help in so many ways. What if you had an application that helped you evaluate a technology partner? Until the day this killer app exists, consider whether your current technology partner is excelling in the following areas:
+
+1. Solid stable roadmap: Do they offer a solid, stable roadmap of products and solutions? Are the products sized for your business and affordable? Is the product roadmap clear? Do you have confidence that your partner is committed to their roadmap, not facing uncertainty and change?
+2. Technology that works: Does their technology help deliver services faster for your business? Does the technology work well together? Can you easily expand and scale as your business grows, or do you need a forklift upgrade?
+3. Experience: Do they have a proven track record as trusted advisors dedicated to the success of your business? Does your partner understand your business?
+
+If the answer to any of these is no, it may be time to look for a new partner that will provide the stability and technology to ensure your success now and into the future.
+
+Watch for red flags that indicate you may need to make a change: frequent changes in the product roadmap or unclear answers and commitments to technology plans; different processes and business cultures that are forced to change, merge, or integrate; and signs of increasing complexity in the vendor’s organization such as not getting quick responses to your questions.
+
+Choose a technology partner that offers a blend of the right products, technology and experience
+Businesses often face limited resources in terms of both budget and staff. Poor technology decisions introduce risk and are simply are not affordable for small and midsize businesses. Choose a partner that offers purpose-built products that include the features your business needs, at the right price. Products should be designed to be simple to deploy and manage by IT generalists on your staff. The overall portfolio should offer a solid, resilient foundation of high-performing servers, scalable storage, and networking designed to work well together. Lastly, the best partners offer robust expertise, experience and a support network that companies with limited budgets and resources can rely on.
+
+Enter the risk-free zone
+When you evaluate technology partners, take a look at Hewlett Packard Enterprise. You can take advantage of a fully integrated and stable portfolio of simple, low-risk servers, storage, networking and services, backed with a worldwide network of local channel partners and a proven track record of helping customers. HPE’s stable, proven roadmaps are made to fit your needs at every stage of your company’s development. The HPE Just Right IT portfolio is designed specifically for small and midsize businesses to take the guesswork and risk out of IT and free you up to do what you do best: innovate and pursue business opportunities. 
+		</div>
+	</div>
+</body>
+</html>

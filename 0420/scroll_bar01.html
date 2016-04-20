@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>scroll bar</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<style type="text/css">
+#parent{
+	width:600px;
+	height:20px;
+	background:#CCC;
+	position:relative;
+	margin:0 auto;
+	margin-top:200px;
+}
+
+#div1{
+	width:20px;
+	height:20px;
+	background:#FF6666;
+	position:absolute;
+	cursor:pointer;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	var oParent = document.getElementById('parent');
+	var oDiv = document.getElementById('div1');
+
+	oDiv.onmousedown = function (ev){
+		var oEvent = ev || event;
+		var disX = oEvent.clientX - oDiv.offsetLeft;
+
+		document.onmousemove = function (ev){
+			var oEvent = ev || event;
+			var left = oEvent.clientX - disX;
+
+			//检查超出范围
+			if(left < 0){
+				left = 0;
+			}else if(left > oParent.offsetWidth - oDiv.offsetWidth){
+				left = oParent.offsetWidth - oDiv.offsetWidth;
+			}
+
+			oDiv.style.left = left + 'px'; 
+		};
+
+		document.onmouseup = function (){
+			document.onmousemove = null;
+			document.onmouseup = null;
+		};
+	};
+};
+</script>
+</head>
+<body>
+	<div id="parent">
+		<div id="div1"></div>
+	</div>
+</body>
+</html>
