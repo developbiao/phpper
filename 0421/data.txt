@@ -1,0 +1,1 @@
+[{wish:'MacBookPro'}, {wish:'Bicycle'}, {wish:'Some Money'}]

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Ajax的使用</title>
+	<meta http-equiv="Content-Type" content-type="text/html" charset="utf-8" />
+	<script type="text/javascript" src="./ajax.js"></script>
+	<script type="text/javascript">
+	/*
+		@Describe:读取文本练习
+		加了时间阻止缓存
+	*/
+	window.onload = function (){
+		var oBtn = document.getElementById('btn1');
+
+		oBtn.onclick = function (){
+			ajax('readme.txt?time=' + new Date().getTime(), function (str){
+				alert(str);		
+			}, function (){
+				alert('失败了！');
+			});	
+		};
+
+	};
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="读取文本内容" />
+</body>
+</html>

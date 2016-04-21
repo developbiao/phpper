@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Ajax的使用</title>
+	<meta http-equiv="Content-Type" content-type="text/html" charset="utf-8" />
+	<script type="text/javascript" src="./ajax.js"></script>
+	<script type="text/javascript">
+	window.onload = function (){
+		var oBtn = document.getElementById('btn1');
+		//读取数组
+		oBtn.onclick = function (){
+			ajax('arr2.txt?time=' + new Date().getTime(), function (str){
+				var arr = eval(str);
+				//alert(typeof arr);
+				alert(arr[2].wish);
+			}, function (){
+				alert('失败了！');
+			});	
+		};
+
+	};
+	</script>
+</head>
+<body>
+	<input id="btn1" type="button" value="读取文本内容" />
+</body>
+</html>
