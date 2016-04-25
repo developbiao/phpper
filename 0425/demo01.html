@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<script type="text/javascript">
+	window.onload = function (){
+		var oBtn = document.getElementById('btn1');
+		oBtn.onclick = function (){
+			//1.create Ajax Object
+			if(window.XMLHttpRequest){
+				var oAjax = new XMLHttpRequest();
+			}else{
+				var oAjax = new ActiveXObject("Micorosoft.XMLHTTP");
+			}
+
+			//2.connect server
+			oAjax.open('GET', 'file1.txt', true);
+
+			//3. send request
+			oAjax.send();
+
+			//4. revice call back
+			oAjax.onreadystatechange = function (){
+				if(oAjax.readyState == 4){
+					if(oAjax.status == 200){//sucess
+						alert('成功: ' + oAjax.responseText);
+					}else{
+						alert('失败: ' + oAjax.status);
+					}
+				}
+			};
+		};
+	};
+
+</script>
+</head>
+<body>
+	<input type="button" value="点击" id="btn1"/>
+</body>
+</html>
