@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+	<script type="text/javascript">
+
+		//javascript 里面的构造器
+		function createPerson(name, age){
+			var obj = new Object();
+			obj.name = name;
+			obj.age = age;
+
+			obj.sayHello = function (){
+				alert('Hello my name is :' + this.name + ' Im' + this.age + 'years old');
+				obj.play = function (){
+					alert('I like cook!');
+				};
+			};
+
+			return obj;
+		}
+
+		var xiaoming = createPerson('xiaoming', 16);
+		xiaoming.sayHello();
+		xiaoming.play();
+
+	</script>
+</head>
+<body>
+</body>
+</html>

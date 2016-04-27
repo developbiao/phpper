@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+	<script type="text/javascript">
+		var arr1 = new Array(20, 30, 40, 50);
+		var arr2 = new Array(33, 77, 99);
+		//array 的prototype上面加方法
+		Array.prototype.sum = function(){
+			var result = 0;
+			for(var i=0; i<this.length; i++){
+				result += this[i];
+			}
+			return result;
+		};
+
+		alert(arr1.sum());
+		alert(arr2.sum());
+	</script>
+</head>
+<body>
+</body>
+</html>
