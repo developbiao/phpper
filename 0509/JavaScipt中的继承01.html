@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>index</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+	<script type="text/javascript">
+	//JavaScript中的继承
+
+	//一个方法在Js中就是一个对象
+	function A(name, hobbie){
+		this.abc = 12;
+		this.name = name;
+		this.hobbie = hobbie
+	}
+
+	A.prototype.show = function (){
+		alert('My name is ' + this.name + 'My hobbie is ' + this.hobbie);
+	};
+
+	//B继承A
+	function B(){
+		//call方法继承参数
+		A.call(this, 'gongbiao', 'Dance');
+	}
+
+	//全部继承了
+	//prototype继承方法
+	B.prototype = A.prototype;
+	var obj = new B();
+	obj.show();
+</script>
+</head>
+<body>
+</body>
+</html>
