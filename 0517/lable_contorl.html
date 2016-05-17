@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lable control</title>
+    <script type="text/javascript">
+        function setValue(){
+            var lable = document.getElementById('lable');
+            //设置lable.control属性失败
+            //var textbox = lable.control;
+            var textbox = document.getElementById('txt-zip');
+            textbox.value="000111";
+        }
+    </script>
+</head>
+<body>
+    <from>
+       <lable id="lable">
+          邮编:<input type="text" id="txt-zip" maxlength="6" name="postcode" placeholder="请输入邮编"/>
+            <small>请输入6位数邮编</small>
+       </lable>
+        <input type="button" value=" 设置默认值" id="btn1" onclick="setValue()"/>
+    </from>
+</body>
+</html>
