@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>progress</title>
+    <script type="text/javascript">
+        function btn(){
+            var i = 0;
+            function thread_one(){
+                if(i < 100){
+                    i ++;
+                    //update progress value
+                    updateProgress(i);
+                }
+            }
+
+            setInterval(thread_one, 100);
+        }
+
+        function updateProgress(newValue){
+            var progressBar = document.getElementById('p');
+            //progressBar.getElementsByTagName("span")[0].textContent = newValue;
+            var span = document.getElementById('s1');
+            span.textContent = newValue;
+            progressBar.value = newValue;
+
+        }
+    </script>
+</head>
+<body>
+    <section>
+       <h3>progerss元素的作用</h3>
+        <p>完成的百分比<progress id="p" max="100" height="300"></progress><span id="s1">0</span>%</p>
+        <br />
+        <input type="button" value="click" onclick="btn()"/>
+    </section>
+</body>
+</html>

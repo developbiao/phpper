@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>figure Element Demo</title>
+    <script type="text/javascript">
+        function detail_onclick(detail){
+           var ele_p = document.getElementsByTagName('p');
+            if(detail.open){
+                for(var i=0; i<ele_p.length; i++){
+                    ele_p[i].style.visibility = "visible";
+                }
+            }else{
+                for(var i=0; i<ele_p.length; i++){
+                    ele_p[i].style.visibility = "hidden";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <figure>
+        <img src="lzh001.jpg" width="200" height="300"/>
+        <img src="lzh002.jpg" width="200" height="300"/>
+        <figcaption>Gril I love You</figcaption>
+    </figure>
+    <br />
+    <!-- details 标签 -->
+    <details id="detail" onclick="detail_onclick(this)">
+        <summary>35号最青涩美好的青春</summary>
+        <p id="p1" style="visibility: hidden;">泽慧我很想你~</p>
+        <p id="p2" style="visibility: hidden;">你是我永远最美好的回忆...</p>
+    </details>
+</body>
+</html>
