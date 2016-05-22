@@ -1,0 +1,106 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-size:12px;
+	font-family:  微软雅黑;
+}
+
+a{
+	text-decoration:none;
+}
+
+.main{
+	width:970px;
+	margin:0 auto;
+}
+
+.header{
+	height:50px;
+	background:#272822 url('../image/logo.png') no-repeat 0px 0px;
+	line-height:50px;
+	padding-left:170px;
+	padding-right:5px;
+	color:#fff;
+
+}
+.header a{
+	color:#ffffff;
+}
+
+.header a:hover{
+	color:#0ff;	
+}
+.header .header-right{
+	float:right;
+}
+.ads{
+	width:100%;
+	height:200px;
+	background:#ABCDEF;
+}
+.content{
+	width:100%;
+}
+
+.title{
+	height:30px;
+	line-height:30px;
+	padding:0px 5px;
+	background:#FEAA2D;
+}
+.title-left{
+	float:left;
+}
+
+.title-right{
+	float:right;
+}
+
+.info{
+	background:#069;
+	width:100%;
+	height:200px;
+
+}
+.shop{
+	float:left;
+	margin-left:18px;
+}	
+.shop img{
+	width:220px;
+	height:190px;
+}
+
+.footer{
+	width:100%;
+	height:50px;
+	background:#272822;
+	line-height:50px;
+}
+
+.footer ul{
+	list-style-type:none;
+	padding-left:330px;
+}
+.footer ul li{
+	float:left;
+	margin-left:10px;
+	color:#fff;
+}
+.footer ul li a{
+	color:#fff;
+}
+.footer ul li a:hover{
+ 	color:#0cc;	
+}
+
+.nav{
+	width:100%;
+	height:5px;
+}
+
+.ads img{
+	width:100%;
+	height:200px;
+}
+
