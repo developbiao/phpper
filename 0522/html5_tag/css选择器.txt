@@ -1,0 +1,27 @@
+CSS样式
+选择器
+框模型
+
+伪类选择器
+1):hover
+2):active
+3):first-child
+4):last_child
+5):nth-child(number)
+6):nth-last-child(number)
+7):selection
+8):focus
+9):before
+10):after
+11):first-letter
+12):first-line
+14):not
+15):checked
+
+关系选择器
+1)ele1 ele2     //父元素里面的后代元素 
+2)ele1, ele2    //组合选择器2个元素
+3)ele1>ele2     //父元素里面的子元素
+4)ele1+ele2		//紧挨着前一个元素的后一个元素 
+
+
