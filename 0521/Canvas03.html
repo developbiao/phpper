@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas03</title>
+    <script type="text/javascript">
+        window.onload = function (){
+           draw('canvas');
+        };
+       function draw(id){
+           var canvas = document.getElementById(id);
+           var context = canvas.getContext("2d");
+           var dx = 150;
+           var dy = 150;
+           var s = 100;
+           context.beginPath();
+           context.fillStyle = "rgb(100, 255, 100)";
+           context.strokeStyle = "rgb(0, 0, 100)";
+           var x = Math.sin(0);
+           var y = Math.cos(0)
+           var dig = Math.PI / 15 * 11;
+           for(var i =0; i<20; i++){
+               var x = Math.sin(i * dig);
+               var y = Math.cos(i * dig);
+               context.lineTo(dx + x * s, dy + y* s);
+          }
+
+           context.closePath();
+           context.fill();
+           context.stroke();
+       }
+
+
+    </script>
+</head>
+<body>
+    <canvas id="canvas" width="300px" height="400px"></canvas>
+</body>
+</html>

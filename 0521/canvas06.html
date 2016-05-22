@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas06</title>
+    <script type="text/javascript">
+        function draw(id){
+            var canvas = document.getElementById(id);
+            var context = canvas.getContext("2d");
+            if(canvas == null){
+                return false;
+            }
+
+            var g1 = context.createRadialGradient(400, 0, 0, 400, 0, 400);
+            g1.addColorStop(0.1, "rgb(255,255,0)");
+            g1.addColorStop(0.3, "rgb(255,0,0)");
+            g1.addColorStop(1, "rgb(0,255,0)");
+            context.fillStyle = g1;
+            context.fillRect(0, 0, 500, 500);
+
+        }
+    </script>
+</head>
+<body onload="draw('canvas')">
+    <canvas id="canvas" width="500px" height="500px"></canvas>
+</body>
+</html>

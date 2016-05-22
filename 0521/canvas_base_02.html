@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>displayCoordinates</title>
+    <style type="text/css">
+       body{
+           font-size:70%;
+           font-family:verdana, Helvetica, arial, sans-serif;
+           margin:0px;
+       }
+        #coordiv{
+            float:left;
+            width:300px;
+            height:100px;
+            border:1px solid #c3c3c3;
+        }
+    </style>
+    <script type="text/javascript">
+        //获取坐标信息
+        function getCoordinates(e){
+            var x = e.clientX;
+            var y = e.clientY;
+            document.getElementById('xycoordinates').innerHTML = "Coordinates:(" + x + "," + y + ")";
+        }
+
+        //消除坐标信息
+        function clearnCoordinate(){
+           document.getElementById('xycoordinates').innerHTML ="";
+        }
+
+    </script>
+</head>
+<body>
+    <h3>把鼠标悬停在下面的矩形上可以看到坐标</h3>
+    <div id="coordiv" onmousemove="getCoordinates(event);" onmouseout="clearnCoordinate();"></div>
+    <br />
+    <br />
+    <br />
+    <!-- 打印坐标  -->
+    <div id="xycoordinates"></div>
+</body>
+</html>
