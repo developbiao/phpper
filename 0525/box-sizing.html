@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>index</title>
+	<style type="text/css">
+		body{
+			/*
+			margin:0px;
+			padding-left:150px;
+			padding-top:100px;
+			*/
+			background:#455A64;
+		}	
+		.content{
+			width:970px;
+			margin:0 auto;
+		}
+		.box1{
+			width:50%;
+			height:100px;
+			background:red;
+			float:left;
+			border:5px solid red;
+			box-sizing:border-box;
+		}
+		.box2{
+			width:50%;
+			height:100px;
+			background:black;
+			float:left;
+			border:5px solid purple;
+			/*忽略边框所占的空间*/
+			box-sizing:border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box1"></div>
+		<div class="box2"></div>
+	</div>
+</body>
+</html>

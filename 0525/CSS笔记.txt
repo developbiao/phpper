@@ -1,0 +1,24 @@
+/*
+@Describe:Css样式
+@Student:GongBiao
+@Date:2016/05/25
+*/
+CSS 倒影
+box-refect
+
+CSS 过渡
+trasition:background 3s;
+
+CSS 多列
+column-count
+column-gap
+column-rule
+
+
+
+CSS 用户界面
+resize
+box-sizing
+outline-offset
+
+
