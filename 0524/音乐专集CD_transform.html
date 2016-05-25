@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+		img{
+			transform:translate(100px, 0px) rotate(180deg);
+			border-radius:130px;
+			border:1px solid white;
+		}
+	</style>
+	<script type="text/javascript">
+	/*
+	音乐专集封面CD
+	*/
+	window.onload = function (){
+		var oImg = document.getElementsByTagName('img')[0];
+		var speed  = 1;
+		var s = 0;
+		setInterval(function (){
+			s += speed;
+			oImg.style.transform = 'translate(300px, 50px) rotate('+s+'deg)';
+		}, 20);
+	};
+
+	</script>
+</head>
+<body>
+	<img src="../0522/image/shop2.png" id="girl" />
+</body>
+</html>
