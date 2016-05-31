@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Range01</title>
+    <script type="text/javascript">
+        // 其实就是获取选中的内容
+        function testShowRange(){
+            var html;
+            var showRangeDiv = document.getElementById('showRange');
+            var selection = document.getSelection();
+            if(selection.rangeCount> 0){
+                html = "您选取了>" + selection.rangeCount + "<内容<br />"
+                for(var i=0; i<selection.rangeCount; i++){
+                    var range = selection.getRangeAt(i);
+                    html += "第" + (i + 1) + "段内容为: " + range + "<br />";
+                }
+                showRangeDiv.innerHTML = html;
+            }
+        }
+    </script>
 </head>
 <body>
-
+Selection对象与Rnage对象的使用
+<input type="button" value="点击我" onclick="testShowRange()"/>
+<div id="showRange">
+</div>
 </body>
 </html>

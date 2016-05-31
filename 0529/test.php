@@ -15,7 +15,7 @@ $data = array(
 //echo Response::xmlEncoding(200, 'success', $data);
 
 //接收客户端指定需要的格式
-$type = isset($_GET['format']) ? $_GET['format'] : Response::JSON;
+$type = isset($_GET['format']) ? $_GET['format'] : Response::XML;
 
 
 Response::show(200, 'success', $data, $type);

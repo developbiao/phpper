@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<script type="text/javascript">
+	window.onload = function (){
+		var oBtn = document.getElementById('btn1');
+		//IE11 已经抛弃了attachEvent
+		/*
+		oBtn.attachEvent('onclick', function (){
+				alert('hello');
+				});
+		oBtn.attachEvent('onclick', function (){
+				alert('world');
+				});
+		*/
+
+		oBtn.addEventListener('click', function (){
+				alert('hello');
+				}, false);
+		oBtn.addEventListener('click', function (){
+				alert('world');
+				}, false);
+	};
+</script>
+</head>
+<body>
+	<input type="button" value="button" id="btn1"/>
+</body>
+</html>

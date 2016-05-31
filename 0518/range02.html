@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Range02</title>
+    <style type="text/css">
+        #div1{
+            width:500px;
+            height:500px;
+            background:#ABCDEF;
+        }
+    </style>
+    <script type="text/javascript">
+        //range 测试删除内容和删除元素
+        function deleteRangeContent(onlyContent){
+            var div = document.getElementById('div1');
+            //创建range对象
+            var rangeObj = document.createRange();
+            if(onlyContent){//删除内容
+                rangeObj.selectNodeContents(div);
+                rangeObj.deleteContents();
+            }else{//删除元素
+               rangeObj.selectNode(div);
+                rangeObj.deleteContents();
+            }
+
+        }
+    </script>
 </head>
 <body>
-
+    <input type="button" value="删除内容" onclick="deleteRangeContent(true)" />
+    <input type="button" value="删除元素" onclick="deleteRangeContent(false)" />
+    <div id="div1">
+        哈哈哈，嘻嘻 学习HMTL5
+    </div>
 </body>
 </html>

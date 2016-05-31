@@ -6,6 +6,9 @@
 	<script type="text/javascript" src="./ajax.js"></script>
 	<script type="text/javascript">
 	window.onload = function (){
+		/*
+			@Describe:Ajax请求数据并创建Demo元素
+		*/
 		var oBtn = document.getElementById('btn1');
 		var oUl = document.getElementById('ul1'); 
 		oBtn.onclick = function (){
@@ -16,7 +19,6 @@
 					oLi.innerHTML = '愿望:<strong>'  + data[i].wish + '</strong>';
 					oUl.appendChild(oLi);
 				}
-
 			}, function (){
 				alert('Request Faild!');
 			});

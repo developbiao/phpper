@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Json命名空间</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+	<script type="text/javascript">
+		var time_game = {};
+		time_game.site = {};
+		time_game.common = {};
+		time_game.handler = {};
+	
+		time_game.site.doIt = function (){
+			alert('aaaaa');
+		};
+		time_game.common.doIt = function (){
+			alert('bbbbb');
+		}
+		time_game.handler.doIt = function (){
+			alert('cccc');
+		}
+
+		time_game.site.doIt();
+		time_game.common.doIt();
+		time_game.handler.doIt();
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<link rel="stylesheet" href="../lib/umeditor/themes/default/css/umeditor.css"/>
+<script type="text/javascript" src="../lib/umeditor/third-party/jquery.min.js"></script>
+<script type="text/javascript" src="../lib/umeditor/umeditor.config.js"></script>
+<script type="text/javascript" src="../lib/umeditor/umeditor.js"></script>
+<script type="text/javascript" src="../lib/umeditor/lang/en/en.js"></script>
+<script type="text/javascript">
+$(function(){
+	window.um = UM.getEditor('trivalEditor', {
+		/*传入配置参数，可配置参数列表umeditor.config.js*/
+		toolbar:['source | undo redo | image ']
+	});
+
+});
+
+</script>
+</head>
+<body>
+	<h3>UMEditor Demo</h3>
+	<script type="text/plain" id="trivalEditor" style="width:500px;height:200px">
+	</script>
+</body>
+</html>

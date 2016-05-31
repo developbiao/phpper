@@ -2,9 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>视频的播放</title>
+    <script type="text/javascript">
+       window.onload = function (){
+           var oVideo = document.getElementById('video');
+           var btn_play_pause = document.getElementById('btn_play_pause');
+           var btn_big = document.getElementById('btn_big');
+           var btn_small = document.getElementById('btn_small');
+
+           //控制播放和暂停
+           btn_play_pause.onclick = function (){
+                if(oVideo.paused){
+                    oVideo.play();
+                }else{
+                    oVideo.pause();
+                }
+           }
+
+           //控制放大画面
+           btn_big.onclick = function (){
+                oVideo.width = 800;
+                oVideo.height =800;
+           };
+
+           //控制缩小画面
+           btn_small.onclick = function (){
+               oVideo.width = 400;
+               oVideo.height = 400;
+           };
+       };
+    </script>
 </head>
 <body>
-
+    <h3>视频的播放</h3>
+    <!--<video id="video" name="movie" src="./raw/abc.ogg" controls="controls"></video>-->
+    <!-- 为了支持Firefox和Chrome可以使用source 标签 -->
+    <input type="button" name="btn_play_pause" id="btn_play_pause" value="Play/Pause" />
+    <input type="button" name="btn_big" id="btn_big"  value="Big"/>
+    <input type="button" name="btn_small" id="btn_small" value="Small" />
+    <br />
+    <video id="video" name="movie" controls="controls">
+        您的浏览器不支持视频播放
+        <source src="raw/abc.mp4">
+        <source src="raw/abc.ogg">
+    </video>
 </body>
 </html>
