@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>CSS属性选择器</title>
+	<style>
+		body {
+		  background: #ebebeb;
+		}
+		form {
+			width: 200px;
+			margin:20px auto;
+		}
+		div {
+			margin-bottom:20px;
+		}
+		/*not 选择器*/
+		input:not([type="submit"]){
+			border:1px solid red;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="#">
+  <div>
+    <label for="name">Text Input:</label>
+    <input type="text" name="name" id="name" placeholder="John Smith" />
+  </div>
+  <div>
+    <label for="name">Password Input:</label>
+    <input type="text" name="name" id="name" placeholder="John Smith" />
+  </div>
+  <div>
+    <input type="submit" value="Submit" />
+  </div>
+</form>  ​
+</body>
+</html>
