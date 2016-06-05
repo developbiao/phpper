@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>:first-of-type</title>
+<style type="text/css">
+.wrapper {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.wrapper > p,
+.wrapper > div {
+  margin: 10px 0;
+  background: green;
+  color: #fff;
+  padding: 5px;
+}
+
+/*first-of-type 与first-child类似 但是它限定了元素的类型*/
+.wrapper > div:first-of-type {
+  background: orange;
+}
+</style>
+</head> 
+<body>
+<div class="wrapper">
+  <p>我是第一个段落</p>
+  <p>我是第二个段落</p>
+  <div>我是第一个Div元素</div>
+  <div>我是第二个Div元素</div>
+  <p>我是第三个段落</p>
+  <p>我是第四个段落</p>
+  <div>我是第三个Div元素</div>
+  <div>我是第四个Div元素</div>
+</div>
+</body>
+</html>

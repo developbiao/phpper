@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>属性选择器</title>
+<style type="text/css">
+div{
+  margin:20px;
+}
+input[type="text"]:enabled{
+  background:#ccc;
+  border:2px solid red; 
+}
+</style>
+</head> 
+<body>
+<form action="#">
+ 
+  <div>
+    <label for="enabled">可用输入框:</label>
+    <input type="text" id="enabled" />
+  </div>
+
+  <div>
+    <label for="disabled">禁用输入框:</label>
+    <input type="text" id="enabled" placeholder="已禁用" disabled="disabled" />
+  </div>
+  
+ </form>  
+ </body>
+ </html>
