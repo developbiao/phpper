@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/*
+	ajax请求练习02
+	[
+		url
+		data
+		dataType
+		callback
+	]
+	*/
+	$(document).ready(function (){
+		$("#driver").click(function (event){
+			var username = $("#username").val();
+			var hobby = $("#hobby").val();	
+			$.ajax({
+				type:'post',
+				url:'./result01.php',
+				data:{'username':username, 'hobby':hobby},
+				dataType:'json',
+				success:function (data){
+				 $('#stage').html('<h3>UserName:' + data.username + '</h3>');
+				 $('#stage').append('<h3>Hobby: ' +data.hobby+ '</h3>');
+				},
+			});
+		});
+	});
+
+	</script>
+</head>
+<body>
+	<h3>get data form server:</h3>
+	<div id="stage" style="background-color:#ABCDEF">
+		STAGE
+	</div>
+	UserName:<input type="text" id="username" name="username" /><br />
+	Hobby:<input type="text" id="hobby" name="hobby" /> <br />
+	<input type="button" id="driver" value="get Data" name="driver" />
+</body>
+</html>

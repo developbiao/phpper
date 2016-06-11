@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/*
+	向服务器请求Json数据测试
+	parameter
+	URL
+	data
+	callback
+	*/
+	$(document).ready(function (){
+		$('#driver').click(function (event){
+			$.getJSON('./resultjson.php', function(jd){
+				$('#stage').html('<h3>Name' + jd.name +'</h3>');
+				$('#stage').append('<h3>Age' + jd.age +'</h3>');
+				$('#stage').append('<h3>' + jd.sex + '</h3>');
+			});
+		});
+	});
+	</script>
+</head>
+<body>
+	<h3>Click on the button to load json data</h3>
+	<div id="stage" style="background-color:#ABCDEF;">
+		STAGE
+	</div>
+	<input type="button" id="driver" value="Load Data" />
+</body>
+</html>

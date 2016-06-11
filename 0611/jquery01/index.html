@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/*
+	ajax通过传参数向服务器请求数据
+	*/
+	$(document).ready(function (){
+		$("#driver").click(function (event){
+			var name = $("#username").val();
+			$("#stage").load('./result01.php', {"name":name});
+		});
+	});
+	</script>
+</head>
+<body>
+	<h3>Enter your name and click on the button</h3>
+	<div id="stage" style="background-color:#ABCDEF;">
+		STAGE
+	</div>
+	UserName:<input type="text" id="username" name="username" />
+	<input type="button" id="driver" value="Show Result" />
+</body>
+</html>
