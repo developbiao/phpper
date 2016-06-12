@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		$('.wrapper div:empty').css('width', '200px');
+		$('.wrapper div:empty').css('height', '100px');
+		$('.wrapper div:empty').css('background-color', 'black');
+	}
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<div><img /></div>
+	<div>    </div>
+	<!-- empty element -->
+	<div></div>
+	<div>heheheh</div>
+	<input type="button" value="Trigger"  onclick="f1();"/>
+</div>
+</body>
+<html>

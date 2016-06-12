@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//1.$('#id属性值')
+		$('#username').css('color', 'red');
+
+		//2.$('标签名') 
+		$('span').css('background', 'orange');
+
+
+		//3.$('.class属性名')
+		$('.apple').css('color', 'purple');
+
+		//4.$('*') 通配符选择器
+		//$('*').css('background', 'gray');
+
+		//5.$('s1, s2, s3') 联合选择器selector
+		$('#username, .apple, h5').css('font-size', '20px');
+	}
+	</script>
+</head>
+<body>
+	<h3>基础选择器(灵感来源于CSS样式选择器)</h3>
+	<input type="text" name="username" id="username" value="Jquery so easy!" />
+	<p>Today is Sunday</p>
+	<div class="apple">We are studying jquery</div>
+	<span>This is ChengDu</span><br />
+	<h5>Beatuiful Girl I love you</h5>
+	<input type="button" value="trigger" onclick="f1();"/>
+</body>
+<html>

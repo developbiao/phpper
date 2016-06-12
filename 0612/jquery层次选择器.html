@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//$('s1 s2')
+		//$('div span').css('background-color', 'red') //父子选择器之派生选择器
+
+		//$('s1 > s2')
+		$('div > span').css('background-color', 'purple');
+
+		//$('s1 + s2') 紧挨着的
+		$('div + span').css('background-color', '#ABCDEF');
+
+		//$('s1 ~ s2') 后面所有的兄弟元素
+		$('p ~ span').css('background-color', 'red');
+
+	}
+	</script>
+</head>
+<body>
+	<h3>层次选择器</h3>
+	<div>
+		<span>张飞</span>
+		<p>
+			<span>赵云</span>
+		</p>
+		<span>关羽</span>
+	</div>	
+	<p>The One</p>
+	<span>曹操</span>
+	<p>吕布</p>
+	<span>孙权</span>
+	<div>小乔</div>
+	<span>大乔</span>
+	<br />
+	<input type="button" value="Trigger"  onclick="f1();"/>
+</body>
+<html>

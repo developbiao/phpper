@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//$(':has(selecttor)')
+		$('div:has(.orange)').css('background-color', 'orange');
+		console.log($('div:has(.orange)'));
+	}
+	</script>
+</head>
+<body>
+	<h1>内容过滤选择器</h1>
+	<div>has 查找这个元素下面是否有</div>
+	<div>I love 泽慧</div>
+	<div></div>
+	<div><img /></div>
+	<div>      </div>
+	<div><p class="orange">aaaaaaaa</p></div>
+	<div><span class="orange">bbbbbbb</span></div>
+
+	<input type="button" value="触发" onclick="f1()" />
+
+</body>
+<html>

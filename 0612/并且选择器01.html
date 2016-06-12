@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//$('h4:first').css('background-color', 'green');	
+		//$('h4:last').css('background-color', 'blue');	
+		//$('h4:even').css('background-color', 'purple');
+		//$('h4:odd').css('background-color', '#ABCDEF');
+		//$('h4:eq(2)').css('background-color', 'red'); //下标是从0开始计算
+		//$('h4:gt(2)').css('color', 'pink'); //great than  
+		$('h4:lt(4)').css('background', 'yellow'); //less than
+
+		$(':header:not(h4)').css('background', 'green');
+
+		//var girl = $('li:not(.like, .dislike)').css('background-color', 'purple');
+		var girl = $('li:not(.like, .dislike)').text();
+		alert('you love gril she is ' + girl);
+	}
+	</script>
+</head>
+<body>
+	<h3>并且选择器</h3>
+	<h4>11111111</h4>
+	<h4>22222222</h4>
+	<h4>3333333</h4>
+	<h4>55555555</h4>
+	<h4>66666666</h4>
+	<h3>Chose you like gril?</h3>
+	<ul>
+		<li class="like">美女老师</li>
+		<li class="love">刘泽慧</li>
+		<li class="like">小乔</li>
+		<li class="like">大乔</li>
+		<li class="like">汪洋</li>
+		<li class="dislike">张玲梅</li>
+	</u>
+	<br />
+	<input type="button" value="Trigger"  onclick="f1();"/>
+</body>
+<html>
