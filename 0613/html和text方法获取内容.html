@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		margin:0 auto;
+	}
+	.wrapper > div{
+		width:200px;
+		height:200px;
+		background:#ABCDEF;
+	}
+	.apple{
+		width:300px;
+		height:200px;
+		border:2px solid blue;
+	}	
+	.orange{
+		background-color:orange;
+		border:2px dotted red;
+	}
+	.pear{
+		font-size:30px;
+		border-radius:5px;
+	}
+
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//设置html
+	function f1(){
+		$('.wrapper div').html("<a href='http://www.google.com'>访问google</a>");
+		var content = $('.wrapper div').text();
+		console.log(content);
+	}
+
+	//设置文本内容
+	function f2(){
+		//如果和tag标签转实例直接显示html标签
+		$('.wrapper div').text("<h3>I Iolve you</h3>")
+		var content = $('.wrapper div').text();
+		console.log(content);
+
+	}
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div>this is jquery subject</div>
+	</div>
+	<h3>&lt你好&gt</h3>
+	<input type="button" value="获取内容"  onclick="f1();" /><br />
+	<input type="button" value="获取text内容"  onclick="f2();" />
+</body>
+<html>

@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:300px;
+		background-color:#ABCDEF;
+		border:3px dashed blue;
+
+	}
+	</style>
+	<link href="./outstyle.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//获取样式
+	function f1(){
+		console.log($('.wrapper').css('width'));
+		console.log($('.wrapper').css('height'));
+		console.log($('.wrapper').css('background-color'));
+		console.log($('.wrapper').css('font-size'));
+		//console.log($('.wrapper').css('border'));
+		console.log($('.wrapper').css('border-right'));
+		console.log($('.wrapper').css('border-bottom-color'));
+		console.log($('.wrapper').css('border-right-width'));
+
+		/*
+			jquery 1.4.4版本不能直接获得复合样式均可获得
+			需要拆分:
+			border--->border-left(top/right/bottom)
+			border-left-color
+			broder-left-color-width
+			margin-left(top/right/bottom)
+			padding----->padding-left(top/right/bottom)
+			background---->(background-color/image)
+		*/
+	}
+
+	//设置样式
+	function f2(){
+		$('.wrapper').css('border-bottom', '10px');
+		$('.wrapper').css('border-right-wdith', '5px');
+		$('.wrapper').css('border-right-style', 'dotted');
+		$('.wrapper').css('margin-left', '50px');
+	}
+
+	//批量设置样式.jquery设置的是行内样式
+	function f3(){
+		var obj_style = {'width':'100px', 'height':'100px', 'background-color':'purple'};
+		$('.wrapper div').css(obj_style);
+	}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<h3>CSS操作</h3>
+		<div>this is jquery subject</div>
+	</div>
+		<input type="button" value="获取样式" onclick="f1();" />
+		<input type="button" value="设置样式" onclick="f2();" />
+		<input type="button" value="批量设置样式" onclick="f3();" />
+</body> 
+<html>
