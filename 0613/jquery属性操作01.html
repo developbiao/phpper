@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//获得得选中情况
+		//$('checked') 过滤出被选中的复选杠，单选按
+		//获取属性值
+		console.log($('#username').attr('type'));
+		//修改属性值
+		//$('#username').attr('name', 'login_name');
+
+		$('#username').attr('address', 'Ya\'An');
+		console.log($('#username').attr('address'));
+
+	}
+	</script>
+</head>
+<body>
+	<h3>属性操作</h3>
+	<input type="text" value="hello world" name="username" id="username" />
+	<input type="button" value="触发" onclick="f1()" />
+
+</body>
+<html>

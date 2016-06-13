@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		margin:0 auto;
+	}
+	.wrapper > div{
+		width:200px;
+		height:200px;
+		background:#ABCDEF;
+	}
+	.apple{
+		width:300px;
+		height:200px;
+		border:2px solid blue;
+	}	
+	.orange{
+		background-color:orange;
+		border:2px dotted red;
+	}
+	.pear{
+		font-size:30px;
+		border-radius:5px;
+	}
+
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//设置属性,是覆盖式的
+	function f1(){
+		$('.wrapper > div').attr('class', 'apple');
+		$('.wrapper > div').attr('class', 'orange');
+		$('.wrapper > div').attr('class', 'pear');
+
+	}
+
+	//设置class
+	function f2(){
+		$('.wrapper > div').addClass('apple');
+		$('.wrapper > div').addClass('orange');
+		$('.wrapper > div').addClass('pear');
+
+	}
+
+	//删除class
+	function f3(){
+		$('.wrapper > div').removeClass('orange');
+		$('.wrapper > div').removeClass('apple');
+		$('.wrapper > div').removeClass('pear');
+	}
+
+	//class toggle开关效果
+	function f4(){
+		$('.wrapper > div').toggleClass('orange');
+	}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div>this is jquery subject</div>
+	</div>
+	<input type="button" value="设置属性"  onclick="f1();" />
+	<input type="button" value="添加Class"  onclick="f2();" />
+	<input type="button" value="删除Class"  onclick="f3();" />
+	<input type="button" value="Toggle Class"  onclick="f4();" />
+</body>
+<html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		$('#username').attr('address', 'shimian');
+	}
+
+
+	//批量添加属性
+	function f2(){
+		var obj = {name:'tel', class:'apple', address:'ChengDu', email:'developbiao@gmail.com', value:'Web前后端人才'};
+		$('#username').attr(obj);
+	}
+
+	//删除属性
+	function f3(){
+		$('#username').removeAttr('value');
+	}
+
+	//函数修改
+	function f4(){
+		$('#username').attr('value', function (){
+			return '好好学习天天向上';
+		})
+	}
+	</script>
+</head>
+<body>
+	<h3>属性操作</h3>
+	<input type="text" value="hello world" name="username" id="username" />
+	<input type="button" value="触发" onclick="f1()" /><br />
+	<input type="button" value="批量添加修改属性" onclick="f2();" /><br />
+	<input type="button" value="删除属性" onclick="f3();" /><br />
+	<input type="button" value="函数修改" onclick="f4();" /><br />
+</body>
+<html>
