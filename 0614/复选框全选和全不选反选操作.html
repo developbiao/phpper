@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:300px;
+		border:2px dotted green;
+
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//全选 
+	function selectAll(){
+		//$('.hobby').attr('checked', true);	
+		$('.hobby').prop('checked', true);
+	}
+
+	//全不选
+	//根据官方的建议：具有 true 和 false 两个属性的属性，如 checked, selected 或者 disabled 使用prop()，其他的使用 attr()
+	function cancelAll()
+	{
+		//$('.hobby').attr('checked', false);
+		$('.hobby').prop('checked', false);
+	}
+
+	//反选 
+	function reverse(){
+		for(var i=0; i<$('.hobby').length; i++){
+			//判断当前复选框选中情况
+			var flag = $('.hobby:eq('+i+')').prop('checked');
+			$('.hobby:eq('+i+')').prop('checked', !flag);
+		}
+	}
+
+
+	</script>
+</head>
+<body>
+	<h3>请选择你的hobby</h3>
+	<div class="wrapper">
+		<h3>爱好:</h3>
+		<input type="checkbox" class="hobby" value="1" name="hobby" />篮球&nbsp;
+		<input type="checkbox" class="hobby" value="2" name="hobby" />足球&nbsp;
+		<input type="checkbox" class="hobby" value="3" name="hobby" />排球&nbsp;
+		<input type="checkbox" class="hobby" value="4" name="hobby" />乒乓球&nbsp;
+		<br />
+		<input type="button" value="全选" onclick="selectAll();" />
+		<input type="button" value="全不选" onclick="cancelAll();" /> 
+		<input type="button" value="反选" onclick="reverse();" />
+	</div>
+</body> 
+<html>

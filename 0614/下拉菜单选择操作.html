@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:300px;
+		border:2px dotted green;
+
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+	function f1(){
+		//获得选中情况
+		//console.log($('option:selected').val()); //单选情况
+		//获得多个选择项
+		console.log($('select').val());	 //["1", "2", "3"]
+	}
+	</script>
+</head>
+<body>
+	<h3>下拉菜单操作</h3>
+	<div class="wrapper">
+		选择你会的技能：
+		<select multiple="multiple">
+			<option value="0">请选择</option>
+			<option value="1">Java</option>
+			<option value="2">Python</option>
+			<option value="3">Linux</option>
+			<option value="4">PHP</option>
+			<option value="5">C#</option>
+		</select>
+	</div>
+	<input type="button" value="获取选中项" onclick="f1();" />
+</body> 
+<html>

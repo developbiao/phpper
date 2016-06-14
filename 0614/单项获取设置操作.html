@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:300px;
+		border:2px dotted green;
+
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+	//获取选中情况
+	function f1(){
+		console.log($('.sex:checked').val());
+	}
+	//设置选中项
+	function f2(){
+		//$(全部单项按钮).val([value值元素])
+		$('.sex').val(['male']);
+	}
+	</script>
+</head>
+<body>
+	<h3>单选项操作</h3>
+	<div class="wrapper">
+		性别
+		<input type="radio" class="sex" name="sex" value="male" />男生&nbsp;
+		<input type="radio" class="sex" name="sex" value="female" />女生&nbsp;
+		<input type="radio" class="sex" name="sex" value="secret" />保密&nbsp;
+	</div>
+	<input type="button" value="获取选中项" onclick="f1();" />
+	<input type="button" value="设置选中项" onclick="f2();" />
+</body> 
+<html>
