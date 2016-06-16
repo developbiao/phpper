@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:300px;
+		border:2px dotted green;
+
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+		function f1(){
+			var wrapper = document.getElementsByTagName('div')[0];
+			$(wrapper).css('background', 'lightgreen');
+		}
+	</script>
+</head>
+<body>
+	<h3>Jquery对象</h3>
+	<div class="wrapper">
+		hello
+	</div>
+	<input type="button" value="Toggle" onclick="f1();" />
+</body> 
+<html>
