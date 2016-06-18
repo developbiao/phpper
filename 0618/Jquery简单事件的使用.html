@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:200px;
+		margin:0 auto;
+		background-color:lightblue;
+	}
+	#apple{
+		width:200px;
+		height:200px;
+		background:pink;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		//传入了参数是设置事件
+		$('#apple').click(function (){
+			console.log('click touch me');	
+		});	
+
+		$('#apple').mouseover(function (){
+			this.style.backgroundColor = 'green';	
+		});
+
+		$('#apple').mouseout(function (){
+			$(this).css('background-color', 'purple');
+		});
+	});
+
+
+	//间接调用想触发的事件只写事件名
+	function f1(){
+		$('#apple').mouseout();
+	}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<h3>Jquery简单事件</h3>
+	<div id="apple"></div>
+	<input type="button" value="toggle" onclick="f1();"/>
+	</div>
+</body>
+</html>

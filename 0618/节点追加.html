@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:400px;
+		height:400px;
+		border:2px dotted green;
+		margin:0 auto;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/*
+	@describe:主动追加
+	新节点追加
+	*/
+	function f1(){
+		//append()后置追加
+		$("#shu").append("<li>马超</li>");
+		//preappend()前置追加
+		$("#shu").prepend("<li>赵云</li>");
+
+		//从已有节点追加(节点发生物理位置移动)
+		//$("#shu").append($("#gai"));
+
+		$("#shu").prepend($("#gai"));
+
+	}
+
+	/*
+	@descirbe:被动追加
+	//appendTo() 后置追加
+	//prependTo 前置追加
+	//新节点追加
+	*/
+	function f2(){
+		$("<li>诸葛亮</li>").appendTo('#shu');
+		$("<li>孙尚香</li>").prependTo('#shu');
+
+		//从已有的节点追加
+		$("#wu li:eq(1)").prependTo('#shu');
+
+	}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<h3>节点追加父子</h3>
+	<ul id="shu">
+		<li>刘备</li>
+		<li>张飞</li>
+		<li>关羽</li>
+	</ul>
+	<ul id="wu">
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li id="gai">黄盖</li>
+	</ul>
+	<input type="button" value="追加1" onclick="f1();"/>	
+	<input type="button" value="追加2" onclick="f2();"/>	
+	</div>
+</body>
+</html>

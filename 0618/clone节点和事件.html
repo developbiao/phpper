@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:400px;
+		height:400px;
+		border:2px dotted green;
+		margin:0 auto;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		//#shu里面的li设置click事件css() attr()
+		//$("#shu li").css("background-color", "#ABCDEF");
+
+		//click()方法本身有遍历机制，会为每个li都设置click事件
+		$("#shu li").click(function (){
+			//alert(this.innerText);
+			//click pople对应的文本信息
+			alert($(this).html());
+			this.style.backgroundColor = 'green';
+		});
+	});
+
+	/**
+	//clone"关羽"给 吴国一份
+	*/	
+	function f1(){
+		//true 复制事件 flase只复制节点
+		var clone_guan = $("#guan").clone(true);
+		$("#wu").append(clone_guan);
+	}
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<h3>节点复制操作</h3>
+	<ul id="shu">
+		<li>刘备</li>
+		<li id="fei">张飞</li>
+		<li id="guan">关羽</li>
+	</ul>
+	<ul id="wu">
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li id="gai">黄盖</li>
+	</ul>
+	<input type="button" value="节点复制操作" onclick="f1();"/>	
+	</div>
+</body>
+</html>
+

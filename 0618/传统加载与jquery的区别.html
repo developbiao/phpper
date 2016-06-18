@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//jquery加载事件与传统加载事件区别
+	//传统加载事件只能设置一个，多赋值前者覆盖后者
+	/*
+	window.onload = function (){
+		console.log('abc');
+	}
+	window.onload = function (){
+		console.log('def');
+	}
+	//output jquery
+	*/
+
+
+	//juqery加载事件可以加载多个
+	$(document).ready(function (){
+		console.log("aaaaa")
+	});
+
+	$(document).ready(function (){
+		console.log("bbbbb")
+	});
+
+	$(document).ready(function (){
+		console.log("ccccc")
+	});
+
+	$(document).ready(function (){
+		console.log("ddddd")
+	});
+
+	</script>
+</head>
+<body>
+</body>
+</html>

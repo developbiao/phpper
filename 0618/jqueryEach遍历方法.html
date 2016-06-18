@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:300px;
+		height:200px;
+		margin:0 auto;
+		background-color:lightblue;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+		//1.遍历对象
+		//$.each(对象, function(k对象属性变量, v对象属性值变量))
+		 var cat = {name:'kitty',age:5,climb:function(){console.log('在爬树');}};
+		 var cat = {name:'kitty', age:3, climb:function(){console.log('MiaoMiao爬树...');}};
+		jQuery.each(cat, function(k, v){
+				console.log(k + '-----' + v);
+		});
+
+		console.log('--------遍历数组-------------')
+		var skill = ['PHP', 'JavaScript', 'Linux', 'Jquery'];
+		$.each(skill, function (m, n){
+			console.log(m + '-----' + n);
+		});
+
+		//3.遍历jquery对象
+		//$('li').each(function (){w dom对象下标索引值, f表达具体的每个dom对象})
+		function f1(){
+			$('li').each(function (w, f){
+				console.log(w + '-------' + f.innerText);
+			});
+		}
+
+
+	</script>
+</head>
+<body>
+	<h3>each 遍历方法</h3>
+	<div class="wrapper">
+		<ul>
+			<li>刘</li>
+			<li>汪</li>
+			<li>张</li>
+		</ul>
+	<input type="button" value="toggle" onclick="f1();"/>
+	</div>
+</body>
+</html>

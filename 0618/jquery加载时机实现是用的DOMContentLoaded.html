@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//jquery加载事件是对 DOMContentLoaded/onload的封装
+	//DOMContentLoaded加载事件执行时机与jquery的一致
+	document.addEventListener("DOMContentLoaded", function (){
+		alert('hello');
+		//$('img').attr('src', './default.jpg');
+	});
+
+	window.onload = function (){
+		var oImg = document.getElementsByTagName('img')[0];
+		oImg.setAttribute('src', 'generate.php');
+	}
+
+	</script>
+</head>
+<body>
+	<h3>加载事件执行时机</h3>
+	<img src="generate.php" alt="show" />
+</body>
+</html>

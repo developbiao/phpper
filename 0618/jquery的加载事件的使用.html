@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//1.jquery  加载事件处理函数
+
+	$(document).ready(function (){
+		console.log(11111);
+	});
+
+	//2.第二种方法,创建一个juqery，内部没有dom组成部分
+	$().ready(function (){
+		console.log(22222);
+	});
+
+	//3.第三种方法,这种方式执行速度没有第一种快,rootjQuery有冰封装的 
+	$(function (){
+		console.log(333333);
+	})
+	</script>
+</head>
+<body>
+</body>
+</html>

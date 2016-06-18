@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//加载事件加载时机
+	/*
+	window.onload = function (){
+		alert('加载document完成!');
+	}
+	*/
+	$(document).ready(function (){
+		alert("jquery加载时机内存Dom树绘制完成就加载\n");	
+	});
+
+	</script>
+</head>
+<body>
+	<h3>加载事件执行时机</h3>
+	<img src="generate.php" alt="show" />
+</body>
+</html>
