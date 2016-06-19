@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:400px;
+		height:400px;
+		border:2px dotted green;
+		margin:0 auto;
+	}
+	#content{
+		width:300px;
+		height:300px;
+		padding:0 auto;
+		position:relative;
+		background:lightgreen;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+	//通过一个json对象同时绑定多个不同事件
+	$(document).ready(function (){
+		var jn = {
+			click:function (){
+				console.log('美女老师好想亲你一口~');
+			},
+			mouseover:function (){
+				console.log('我轻轻的来了...');
+			},
+			mouseout:function (){
+				console.log('我又轻轻的走了');
+			}
+		};
+
+		$('#content').bind(jn); //类似attr(json), css(json);
+	});
+
+
+	//取消所有事件绑定
+	function cancelBindAll(){
+		$('#content').unbind();
+	} 
+
+	function cancelBindMouseOut(){
+		$('#content').unbind('mouseout');
+	}
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<h3>事件绑定操作</h3>
+	<div id="content"></div>
+	<input type="button" value="取消事件绑定" onclick="cancelBindAll();" />
+	<input type="button" value="取消事件绑定mouseout" onclick="cancelBindMouseOut();" />
+
+	</div>
+</body>
+</html>
+

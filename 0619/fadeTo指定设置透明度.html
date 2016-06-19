@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	.wrapper{
+		width:400px;
+		height:400px;
+		border:2px dotted green;
+		margin:0 auto;
+	}
+	#one {
+		width:300px;
+		height:200px;
+		background-color:blue;
+		font-size:35px;
+		font-weight:bold;
+		position:absolute;
+		left:40px;
+		top:40px;
+	}
+	#two {
+		width:300px;
+		height:200px;
+		background-color:green;
+		font-size:35;x
+		font-weight:bold;
+		left:70px;
+		top:80px;
+		position:absolute;
+	}
+
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery1.4.4.js"></script>
+	<!-- code -->
+	<script type="text/javascript">
+	//fadeTo 控制透明度
+	 function setAlpha(){
+	 	$('#two').fadeTo(0, 0.5);
+	 }
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	<h3>动画效果-指定透明度</h3>
+	<div id="one">this is one div</div>
+	<div id="two">this is two div</div>
+	<input type="button" value="设置透明度" onclick="setAlpha();" />
+	</div>
+</body>
+</html>
+
