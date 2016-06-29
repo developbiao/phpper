@@ -15,14 +15,19 @@
 <script type="text/javascript" src="../lib/js/jquery.js"></script>
 <script type="text/javascript" src="../lib/bootstrap/js/bootstrap.js"></script>
 <style type="text/css">
+.row div{
+	background-color:lightblue;
+	height:200px;
+	border:1px solid black;
+}
 </style>
 </head>
 <body>
 	<div class="container">
-		<blockquote class="blockquote-reverse">
-			<p>Lorem ipsum dolor sit amet, consecteture adipiscing elit. Integer posureerat a  ante.</p>
-			<footer>Someone famous in  <cite title="周杰伦">爱在西元前</cite></footer>
-		</blockquote>
+		<div class="row">
+			<div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+			<div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+		</div>
 	</div>	
 </body>
 </html>
