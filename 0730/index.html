@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DemoEcharts-Base01</title>
+		<script src="../lib/js/echarts.min.js"></script>
+		<!-- 
+			Echart练习示例代码参考来源
+	   		https://gtihub.com/shengxinjing/imooc-echarts
+		-->
+	</head>
+	<body>
+		<div id="main" style="width:600px; height:400px;">
+		</div>		
+	</body>
+	<script type="text/javascript">
+		//基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('main'));
+
+		//指定图表的配置项和数据
+		var option = {
+			legend:{
+				show:true,
+				data:['汽车速度']	
+			},
+			tooltip:{
+				formatter:"{a} <br/> {b} : {c}%"
+			},
+			toolbox:{
+				show:true,
+				feature:{
+					restore:{},
+					saveAsImage:{}
+				}
+			},
+			series:[
+				{
+					name:'Speed',
+					type:'gauge',
+					detail:{formatter:'{value}%'},
+					data:[{value:32, name:'速度'}]
+				}
+			]
+		};
+
+		//指定图表的配置项和数据
+		//使用刚指定的配置项和数据显示图表
+		myChart.setOption(option);
+
+		//动态的显示数据图表
+		setInterval(function (){
+			option.series[0].data[0].value=(Math.random() * 100).toFixed(2) - 0;
+			myChart.setOption(option, true);
+		}, 500);
+
+	</script>
+</html>

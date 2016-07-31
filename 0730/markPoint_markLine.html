@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DemoEcharts-Base01</title>
+		<script src="../lib/js/echarts.min.js"></script>
+	</head>
+	<body>
+		<div id="main" style="width:600px; height:400px;">
+		</div>		
+	</body>
+		<script type="text/javascript">
+			//基于准备好的demo,初始charts实例
+		var myChart = echarts.init(document.getElementById('main'));	
+		//指定图表的配置项和数据
+		var option = {
+			//title 配置
+			title:{
+				show:true,
+				text:'Ecahrts 入门示例',
+				subtext:'我要学习好Echarts',
+				left:'left',
+				borderColor:'red',
+				borderWidth:2,
+				textStyle:{
+					fontFamily:'微软雅黑',
+					fontSize:14
+				}
+
+			},
+			//弹窗配置
+			tooltip:{
+				show:true,
+				trigger:'axis'
+			},	
+
+			//toolbox 配置
+			toolbox:{
+				show:true,
+				feature:{
+					saveAsImage:{
+						show:true
+					},
+					magicType:{
+						type:['line', 'bar', 'stack', 'tiled']
+					},
+					dataView:{
+						show:true
+					},
+					dateZoom:{
+						show:true
+					},
+					saveAsImage:{
+						show:true	
+					},
+					restore:{
+						show:true
+					}
+
+				}
+			},
+			//图表
+			legend:{
+				data:['销量']
+			},
+
+			//x轴配置
+			xAxis:{
+				data:["衬衫", "羊毛衫", "雪纺衫", "高跟鞋", "袜子"]
+			},
+			//y轴配置
+			yAxis:{},
+
+			//数据序列
+			series:[{
+				name:'销量',
+				type:'bar',
+				data:[5, 20 ,36, 10, 10, 20],
+				markPoint:{
+					data:[
+						{type:'max', name:'最大值', symbol:'roundRect'},
+						{type:'min', name:'最小值', symbol:'pin'}
+					]
+				},
+				markLine:{
+					data:[
+						{type:'average', name:'平均值'}
+					]
+				}
+			},{
+				name:'产量',
+				type:'line',
+				data:[7, 20, 88, 27, 45, 53]	
+			}]
+
+		};
+
+		//使用刚指定的配置项和数据显示图表
+		myChart.setOption(option);
+		</script>
+</html>
+
