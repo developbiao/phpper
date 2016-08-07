@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.css" />
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../lib/js/holder.js"></script>
+	<!-- custom style -->
+	<style type="text/css">
+	</style>
+	<!-- custom javascript -->
+</head>
+<body>
+	<div class="container">
+		<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#mymodal">Launch demo modal</button>
+		<div id="mymodal" class="modal fade">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close" data-dismiss="modal">x</span>
+						<h3 class="lead">Modal Heading</h3>
+					</div>
+					<div class="modal-body">
+						<h4>Overflowing</h4>
+						<p>
+							Ad leggings keytar, brunch id art party dolor labore. Pitchfork yr enim lo-fi before they sold out qui. Tumblr farm-to-table bicycle rights whatever. Anim keffiyeh carles cardigan. Velit seitan mcsweeney's photo booth 3 wolf moon irure. Cosby sweater lomo jean shorts, williamsburg hoodie minim qui you probably haven't heard of them et cardigan trust fund culpa biodiesel wes anderson aesthetic. Nihil tattooed accusamus, cred irony biodiesel keffiyeh artisan ullamco consequat.
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" id="ok_btn">Ok</button>
+						<button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript">
+		$("#ok_btn").click(function (){
+			alert('Hello modal!');	
+		});
+	</script>
+</html>

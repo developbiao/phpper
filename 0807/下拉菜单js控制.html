@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.css" />
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../lib/js/holder.js"></script>
+	<!-- custom style -->
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="dropdown">
+			<a id="dLable" class="btn btn-default" href="#">
+				Dropdown trigger
+				<span class="caret"></span>
+			</a>
+			</button>
+			<ul class="dropdown-menu" aria-labelledby="dLabel">
+				<li>123<li>
+				<li>123<li>
+				<li>123<li>
+			</ul>
+		</div>
+	</div>
+</body>
+	<!-- custom javascript -->
+	<script type="text/javascript">
+	$("#dLable").toggle(
+		function (){
+			$(".dropdown").show();	
+		},
+		function (){
+			$(".dropdown").hide();
+		}
+	);
+	</script>
+</html>
