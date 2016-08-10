@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+//小明真是个淘气的孩子
+var xiaoming = {
+	name: '小明',
+	birth:1990,
+	school:'No.1 Middle School',
+	height:1.70,
+	weight:65,
+	socre:null,
+	'hobby':'Dance'
+};
+
+var xiaohong = {
+    name: '小红',
+    'middle-school': 'No.1 Middle School'
+};
+
+//console.log(xiaohong.middle-school);
+//middle-scholl 不是一个有效的变量，使用数组索引的方式访问
+//console.log(xiaohong['middle-school']);
+//访问不存在的访问undefined
+//console.log(xiaohong.age);
+
+//JavaScript的对象是动态类型
+xiaohong.age = 18;
+xiaohong.school = '石棉职业中学';
+xiaohong.badhabit = '抽烟';
+console.log('添加属性后');
+console.log(xiaohong);
+
+//删除属性
+delete xiaohong.badhabit;
+console.log('删除属性操作');
+console.log(xiaohong);
+
+//属性检测
+console.log('name' in xiaohong);
+//不过要小心，如果in判断一个属性的存在，这个属性不一定是该对象的，可能是继承的
+console.log('toString' in xiaohong);
+
+console.log("hasOwnProperty 方法 ");
+console.log(xiaoming.hasOwnProperty('name'));
+
+
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>
+

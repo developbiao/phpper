@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+
+//let ES6 引入的只能在{}中有效
+{
+ 	var a = 1;
+ 	let b = 2;	
+}
+console.log(a);
+//console.log(b); // Uncaught ReferenceError: b is not defined
+
+for(var i=0; i<10; i++){
+  var a = 1;
+  let b = 3;	
+}
+
+//const 即constants  常量只能读不能写
+const c = 5;
+console.log(c);
+c = 13; //Uncaught SyntaxError: Unexpected string
+console.log(c);
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>

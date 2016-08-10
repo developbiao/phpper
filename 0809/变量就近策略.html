@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+//同时存在相同的全局变量和局部变量就使用，采取就近原则
+ var mars = 'cool';
+ function scope(){
+ 	var mars = 'handsome';
+ 	console.log(mars); 
+ }
+ scope();
+
+
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>
+

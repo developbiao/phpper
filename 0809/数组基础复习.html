@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+'use strict';
+/*
+//可以改变数组索引的长度
+var arr=[1, 2, 3];
+console.log(arr.length);
+arr.length = 6;
+console.log(arr.length);
+arr.length = 1;
+console.log(arr);
+*/
+//数组不越界也会改变数组的长度 
+/*
+var arr = [1, 2, 3];
+arr[5] = 'x';
+console.log(arr);
+*/
+// 返回数组的索引
+/*
+var arr = [10, 20, 'hello', 30];
+console.log(arr.indexOf(10));
+console.log(arr.indexOf('hello'));
+console.log(arr.indexOf('apple'));
+*/
+
+//slice
+/*
+var arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+console.log(arr.slice(0, 3));
+console.log(arr.slice(3));
+*/
+
+//slice copy array
+/*
+console.log('-------------');
+var aCopy = arr.slice();
+console.log(aCopy);
+console.log(aCopy === arr);
+*/
+/*
+var arr = [1, 2, 3];
+arr.unshift('a');
+arr.unshift('b', 'c');
+console.log(arr);
+
+arr.shift();
+arr.shift();
+console.log(arr);
+*/
+
+/*
+//数组的翻转
+var arr = ['one', 'hello', 'world'];
+arr.reverse();
+console.log(arr);
+*/
+//splice方法是修改Array万能的方法 
+/*
+var arr = ['Micorosoft', 'Apple', 'Yahoo', 'AOL', 'Excite', 'Oracle'];
+//splice(start起始点, end删除结束点, ... 添加内容);
+//
+arr.splice(0, 3, 'Google', 'DuckDuckGo');
+console.log("删除并添加");
+console.log(arr); //["Google", "DuckDuckGo", "AOL", "Excite", "Oracle"]
+
+arr.splice(3, 1);
+console.log("只删除"); //["Google", "DuckDuckGo", "AOL", "Oracle"]
+console.log(arr);
+
+
+arr.splice(arr.length, 0, 'Bing');
+console.log("只添加");
+console.log(arr);
+*/
+
+//concat
+/*
+var arr = ['A', 'B', 'C'];
+var added = arr.concat(1, 2, 3, 'BBB');
+console.log(added);
+*/
+
+/*
+var arr = ['A', 'B', 'C'];
+console.log(arr.join('$--')); //A$--B$--C
+*/
+
+var arr = ['小明', '小红', '大军', '阿黄'];
+var first_arr = arr.splice(0, arr.length - 1);
+var first_str = first_arr.join(',');
+
+var str = `欢迎 ${first_str} 和${arr[arr.length - 1]}同学`;
+alert(str);
+
+
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>
+

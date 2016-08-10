@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+//引用稍后声明的变量不会引发异常称为 hoisting 变量提升 返回undefine
+/*
+例子1
+*/
+console.log(a === undefined);
+var a  = 3;
+console.log(a);
+/*
+例子2
+*/
+var luffy =  "my love";
+(function (){
+	console.log(luffy); //undefined
+	var luffy = "one piece";
+})();
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>
+
