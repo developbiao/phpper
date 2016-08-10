@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+//Set 和Map类似，也是一组key集合，但不存储value,由于key不能重复
+var s1 = new Set(); //empty set
+var s2 = new Set([1, 2, 3, '3']);
+
+//可以重复添加
+s2.add(4);
+s2.add(4);
+s2.add(4);
+
+console.log(s2);
+
+s2.delete('3');
+
+s2.add(3);
+console.log(s2);
+
+</script>
+</head>
+<body>
+	<h3>JavaScript is very much!</h3>
+</body>
+</html>
+
