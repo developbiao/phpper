@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script type="text/javascript">
+'use strict';
+//解决闭包引用循环变量问题
+function count(){
+	var arr = [];
+	for(var i=1; i<=3; i++){
+		arr.push(function (n) {
+			return function (){
+				return n * n;
+			}
+		}(i));
+	}
+	return arr;
+}
+var results = count();
+var f1 = results[0];
+var f2 = results[1];
+var f3 = results[2]
+console.log(f1()); //1
+console.log(f2()); //4
+console.log(f3()); //9
+
+
+//创建一个匿名函数并立即执行
+(function (x){
+	alert(x * x);
+})(8);
+</script>
+</head>
+<body>
+	<h3>Continue JavaScript Learn</h3>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script type="text/javascript">
+'use strict';
+ //var arr = [10, 20, 1, 2];
+//arr 默认排序是按照字符来排序的，数字也不例外
+/*
+ arr = arr.sort(function (x, y){
+ 	if(x < y){
+ 		return -1;
+ 	}
+ 	if(x > y){
+ 		return 1
+ 	}
+ 	return 0;
+
+ });
+*/
+//字符串排序
+var arr = ['Google', 'apple', 'Microsoft'];
+arr = arr.sort(function (x, y){
+	x = x.toLowerCase();
+	y = y.toLowerCase();
+
+	if(x < y){
+		return -1;
+	}
+	if(x > y){
+		return 1;
+	}
+	return 0;
+});
+
+ alert(arr);
+
+</script>
+</head>
+<body>
+	<h3>Continue JavaScript Learn</h3>
+</body>
+</html>

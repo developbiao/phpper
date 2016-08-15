@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script type="text/javascript">
+'use strict';
+function create_counter(initial){
+	var x = initial || 0;
+	return {
+		inc:function (){
+			x += 1;
+			return x;
+		}
+	}
+}
+
+var c1 = create_counter();
+console.log(c1.inc());
+console.log(c1.inc());
+console.log(c1.inc());
+
+var c2 = create_counter(10);
+console.log(c2.inc());
+console.log(c2.inc());
+console.log(c2.inc());
+</script>
+</head>
+<body>
+	<h3>Continue JavaScript Learn</h3>
+</body>
+</html>

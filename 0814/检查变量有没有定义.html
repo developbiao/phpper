@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>index</title>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<script type="text/javascript">
+'use strict';
+function area_of_circle(r, pi)
+{
+	//第一种方法检查变量有没有定义
+	/*
+	if(!pi)
+	{
+		pi = 3.14;	
+	}
+	*/
+
+	//第二种方法检查变量有有没有定义
+	/*
+	if(arguments.length === 1)
+	{
+		pi = 3.14;	
+	}
+	*/
+	//使用typeof来检查有没有定义pi
+	pi = typeof(pi) == 'undefined' ? 3.14 : pi;
+
+	return pi * r * r ;
+ 	return 0;	
+}
+// 测试:
+if (area_of_circle(2) === 12.56 && area_of_circle(2, 3.1416) === 12.5664) {
+    alert('测试通过');
+} else {
+    alert('测试失败');
+}
+</script>
+</head>
+<body>
+</body>
+</html>
