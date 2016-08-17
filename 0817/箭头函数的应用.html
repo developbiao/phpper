@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript">
+	'use strict';
+	//this 指向错误
+	var obj = {
+    birth: 1990,
+    getAge: function () {
+        var b = this.birth; // 1990
+        var fn = function () {
+            return new Date().getFullYear() - this.birth; // this指向window或undefined
+        };
+        return fn();
+   	 }
+	};
+
+	//箭头函数修改this指向错误
+	var obj = {
+		birth: 1993,
+		getAge: function () {
+			var b = this.birth; //1993
+			console.log(b);
+			//箭头函数根据上下文指定
+			var func = () => new Date().getFullYear() - this.birth; 
+			return func(); //23
+     	}
+	};
+	console.log(obj.getAge()); 
+
+
+	</script>
+</head>
+<body style="background-color:#333; color:white">
+	<h3>JavaScript function Learn</h3>
+</body>
+</html>

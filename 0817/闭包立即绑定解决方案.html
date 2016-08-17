@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript">
+	'use strict';
+	//一定要绑定解决方案
+	function count() {
+		var arr = [];
+		for (var i=1; i<=3; i++)
+		{
+			arr.push((function (n){
+				return function (){
+					return n * n;
+				}
+			})(i));
+		}
+		return arr;
+	}
+
+	var results = count();
+	console.log(results);
+	//alert(results);
+	var f1 = results[0];
+	var f2 = results[1];
+	var f3 = results[2];
+
+	console.log(f1()); // 1
+	console.log(f2()); // 4 
+	console.log(f3()); // 9 
+
+	</script>
+</head>
+<body style="background-color:#333; color:white">
+	<h3>JavaScript function Learn</h3>
+</body>
+</html>

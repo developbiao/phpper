@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript">
+	'use strict';
+	// 当一个函数返回了一个函数后，内内部局部变量还被新函数引用
+	// 所以返回闭包时牢记：返回函数不要引用任何循环变量，或者后续会发生变化的变量
+	function count() {
+		var arr = [];
+		for (var i=1; i<=3; i++)
+		{
+			arr.push(function (){
+				return i * i;
+			});
+		}
+		return arr;
+	}
+
+	var results = count();
+	console.log(results);
+	//alert(results);
+	var f1 = results[0];
+	var f2 = results[1];
+	var f3 = results[2];
+
+	console.log(f1()); // 16
+	console.log(f2()); // 16
+	console.log(f3()); // 16
+
+	</script>
+</head>
+<body style="background-color:#333; color:white">
+	<h3>JavaScript function Learn</h3>
+</body>
+</html>

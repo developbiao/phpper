@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript">
+	'use strict';
+	//Arrow Function
+	//var fn = x => x * x;
+	//alert(fn(8));
+
+	//无参数的
+	//var fun = () => alert('你好');
+	//fun(); //你好
+
+	//只有一个参数的
+	//var fun = num => alert(3 * num);
+	//fun(3); //9
+
+	//多个参数的,arrow function return语句都省略了
+	//var fun = (x, y, z) => x + y + z;
+	//var num = fun(3, 6, 8);
+	//alert(num);
+
+	//可变参数,和带判断就需要花括号, 需要返回的要写return
+	var fun = (x, y, ...rest) => {
+		var i, sum = x + y;
+		for(i=0; i<rest.length; i++){
+			sum += rest[i];
+		}
+		return sum;
+	};
+
+	alert(fun(1, 2, 3, 4, 5));
+
+
+	</script>
+</head>
+<body style="background-color:#333; color:white">
+	<h3>JavaScript function Learn</h3>
+</body>
+</html>
