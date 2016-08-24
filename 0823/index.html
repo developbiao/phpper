@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>index</title>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<style type="text/css">
+		input{
+			width:160px;
+			height:40px;
+			border:none;
+			background:url('./images/rectangle-icon.png') no-repeat center center;
+		}	
+		a{
+			display:inline-block;
+			width:100px;
+			height:40px;
+			text-decoration:none;
+			line-height:40px;
+			background:url('./images/button_src.png');
+			color:#FFF;
+		}
+		a:hover{
+			background-position:0 -80px;
+		}
+		a:hover span{
+			background-position:right -120px;	
+		}
+		span{
+			display:inline-block;
+			height:40px;
+			background:url('images/button_src.png') right -80px;
+
+		}
+	</style>
+</head>
+<body>
+<input type="button" value="按钮" />
+<input type="submit" value="提交" />
+<input type="reset" value="提交" />
+<br />
+<br />
+<a href="javascript:;"><span>Button</span></a>
+</body>
+</html>
