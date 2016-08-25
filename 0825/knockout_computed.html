@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/knockout.js"></script>
+</head>
+<body>
+	<p>First name: <strong data-bind="text: firstName"></strong></p>
+	<p>Last name: <strong data-bind="text: lastName"></strong></p>
+	<p>First name:<input data-bind="value: firstName"/></p>
+	<p>Last name:<input data-bind="value: lastName" /></p>
+	<lable>setp 03</lable>
+	<p>Full name: <strong data-bind="text: fullName"></strong></p>
+</body>
+<script type="text/javascript">
+function AppViewMode()
+{
+	this.firstName = ko.observable("Joky");
+	this.lastName = ko.observable("Bill");
+	//computed very ofent, you'll want to combine or convert multiple
+	this.fullName = ko.computed(function (){
+        return this.firstName() + " " + this.lastName();
+    }, this);
+}
+ko.applyBindings(new AppViewMode());
+</script>
+</html>

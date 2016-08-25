@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<script type="text/javascript" src="../lib/js/knockout.js"></script>
+</head>
+<body>
+	<div>
+		<h3 data-bind="text:firstName"></h3>
+		<h3 data-bind="text:lastName"></h3>
+	</div>
+</body>
+<script type="text/javascript">
+//define data view model
+function ViewModel()
+{
+	this.firstName = 'Gong';	
+	this.lastName = 'Biao';
+}
+ko.applyBindings(new ViewModel());
+</script>
+</html>
