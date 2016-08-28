@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>Learn knockout</title>
+	<script type="text/javascript" src="../lib/js/knockout.js"></script>
+</head>
+<body>
+	<h3>Your seat reservations</h3>
+	<table>
+		<thead>
+			<tr>
+				<th>Passenger name</th>
+				<th>Meal</th>
+				<th>Surcharge</th>
+			</tr>
+		</thead>
+		<tbody data-bind="foreach: seats"> 
+			<tr>
+				<td data-bind="text: name"></td>
+				<td data-bind="text: meal().mealName"></td>
+				<td data-bind="text: meal().price"></td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- step 2 -->
+	<button data-bind="click: addSeat">Reserve another seat</button>
+</body>
+<script type="text/javascript">
+// Class to represent a row in the seat reservations grid
+function SeatReservation(name, initalMeal){
+	var self = this;
+	self.name = name;
+	self.meal = ko.observable(initalMeal);
+}
+
+// Overall viewmodel for this screen, along with initial state
+function ReservationsViewmodel(){
+	var self = this;
+
+	// Non-editable catalog data -would come from the server
+	self.avaliableMeals = [
+		{mealName: "Standard (sandwich)", price: 0},
+		{mealName: "Premium (lobster)", price:34.95},
+		{mealName: "Ultimate (whole zebra)", price:290}
+	];
+
+	// Editable data
+	self.seats = ko.observableArray([
+		new SeatReservation("Steve", self.avaliableMeals[0]),
+		new SeatReservation("Bert", self.avaliableMeals[1])
+		]);
+
+	 //Operations  支持动态的添加数据
+      self.addSeat = function (){
+          self.seats.push(new SeatReservation("Gongbiao", self.availableMeals[2]));
+      };
+
+}
+
+ko.applyBindings(new ReservationsViewmodel());
+
+</script>
+</html>
