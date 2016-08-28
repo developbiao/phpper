@@ -3,7 +3,11 @@ header('content-type:text/html; charset=utf-8');
 
 $query_str = 'index.php?username=haah&age=17&hobby=meimei&laolao&teacher=wenjing';
 $username = "imooc&gongbiao";
+
+//使用urlencode'后面修复'&再加字符串的问题
 $queryString = 'username=' . urlencode($username) . '&age=17';
+
+
 echo "<h3>{$query_str}</h3>";
 
 echo "<a href='index.php?{$queryString}'>测试网站url</a>";

@@ -1,5 +1,4 @@
 <?php
-
 class regexTool {
 	
 	private $validate = array(
