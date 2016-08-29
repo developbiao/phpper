@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+function checkname(){
+	// ajax方式用户名校验	
+
+	// 1.获取用户名信息
+	var name = document.getElementById('username').value;
+
+	//可能存在的用户用户输入不合法的数据gongbiao&height=170&hobby=run
+
+	//对传递的特殊符号进行编码处理
+	name = encodeURIComponent(name);
+
+	// 转义后的请求http://localhost/0829/demo01.php?name=gongbiao%26height%3D170%26hobby%3Drun
+
+	// 2. ajax校验
+	var xhr = new XMLHttpRequest();
+	// ajax事件设置，以便接收返回信息
+	xhr.onreadystatechange = function (){
+		if(xhr.readyState == 4){
+			alert(xhr.responseText);	
+		}
+	}
+	xhr.open('get', './demo01.php?name=' + name);
+	xhr.send(null);
+}
+</script>
+<style type="text/css">
+.content{
+	margin:0 auto;
+	width:80%;
+	height:20%;
+	background:#CCC;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h3>Ajava之用户名校验(get方式)</h3>
+		<p>用户名:<input type="text" id="username" onblur="checkname()" /></p>
+		<p>密码:<input type="text" id="usertel" /></p>
+	</div>
+</body>
+</html>
