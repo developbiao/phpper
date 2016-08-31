@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+var xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function (){
+	if(xhr.readyState == 4){
+		alert(xhr.responseText);
+	}
+};
+xhr.open('get', './demo01.php', true); //true 异步, false同步
+xhr.send(null);
+</script>
+<style type="text/css">
+.content{
+	margin:0 auto;
+	width:80%;
+	height:20%;
+	background:#ABCDEF;
+}
+</style>
+</head>
+<body>
+	<div class="content">
+		<img src="./girl.png" width="500" height="800" />
+	</div>
+</body>
+</html>
