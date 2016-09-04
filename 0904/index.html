@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="../lib/js/knockout.js"></script>
+</head>
+<body>
+	<!-- readout -->
+	<div class="radout">
+		<h3>Waht's in the model?</h3>
+		<table>
+			<tr>
+				<td class="lable1">Text value:</td>
+				<td data-bind="text: stringValue"></td>
+			</tr>
+			<tr>
+				<td class="lable1">Password:</td>
+				<td data-bind="text: passwordValue"></td>
+			</tr>
+			<tr>
+				<td class="lable1">Bool value:</td>
+				<td data-bind="text:booleanValue() ? 'true' : 'false'"></td>
+			</tr>
+			<tr>
+				<td class="lable1">Selected option:</td>
+				<td data-bind="text: selectedOptionValue"></td>
+			</tr>
+			<tr>
+				<td class="Multi-selected options">Multi-selected options</td>
+				<td data-bind="text: multipleSelectedOptionValues"></td>
+			</tr>
+			<tr>
+				<td class="lable1">Radio button selection:</td>
+				<td data-bind="text: radioSelectedOptionValue"></td>
+			</tr>
+		</table>
+	</div>
+
+	<!-- HTML controls -->
+	<h3>HTML controls</h3>
+	<table>
+		<tr>
+			<td class="lable1">Text value (updates on change):</td>
+			<td><input data-bind="value: stringValue" /></td>
+		</tr>
+		<tr>
+			<td class="lable1">Text value (updates on keystroke):</td>
+			<td><input data-bind="value: stringValue, valueUpdate: 'afterkeydown'" /></td>
+		</tr>
+		<tr>
+			<td class="lable1">Password</td>
+			<td><input type="password" data-bind="value: passwordValue" /></td>
+		</tr>
+		<tr>
+			<td class="lable1">Checkbox:</td>
+			<td><input type="checkbox" data-bind="checked: booleanValue" /></td>
+		</tr>
+		<tr>
+			<td class="lable1">Drop-down list:</td>
+			<td><select data-bind="options: optionValues, value: selectedOptionValue"></select></td>
+		</tr>
+		<tr>
+			<td class="lable1">Multi-select drop-down list:</td>
+			<td><select multiple="multiple" data-bind="options: optionValues, selectedOptions: multipleSelectedOptionValues"></select></td>
+		</tr>
+		<tr>
+			<td class="lable1">Radio buttons:</td>
+			<td>
+				<lable><input type="radio" value="Banana" data-bind="checked: radioSelectedOptionValue" />
+				</lable>
+				<lable><input type="radio" value="Apple" data-bind="checked: radioSelectedOptionValue" />
+				</lable>
+				<lable><input type="radio" value="Orange" data-bind="checked: radioSelectedOptionValue" />
+				</lable>
+			</td>
+		</tr>
+
+	</table>
+</body>
+<script type="text/javascript">
+// View model
+var viewModel = {
+	stringValue : ko.observable("GongBiao"),
+	passwordValue : ko.observable("mypass"),
+	booleanValue: ko.observable(true),
+	optionValues : ['Banana', 'Apple', 'Orange'],
+	selectedOptionValue : ko.observable("Banana"),
+	multipleSelectedOptionValues : ko.observable(["Orange", "Apple"]),
+	radioSelectedOptionValue : ko.observable("Orange")
+};
+ko.applyBindings(viewModel);
+/*
+@Describe: control types
+@Refrence
+http://knockoutjs.com/examples/controlTypes.html
+*/
+</script>
+</html>

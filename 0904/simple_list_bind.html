@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="../lib/js/knockout.js"></script>
+</head>
+<body>
+	<h3>Simple list</h3>
+	<form data-bind="submit: addItem">
+		New item:
+		<input data-bind="value: itemToAdd, valueUpdate: 'afterkeydown'" />
+		<button type="submit" data-bind="enable: itemToAdd().length > 0" />Add</button>
+		<p>Your items:</p>
+		<select multiple="multiple" width="200" data-bind="options: items"></select>
+	</form>
+</body>
+<script type="text/javascript">
+//View model
+var SimpleListModel = function (items){
+ 	this.items = ko.observableArray(items);	
+ 	this.itemToAdd = ko.observable("");
+ 	this.addItem = function (){
+ 		if(this.itemToAdd() != ""){ // Adds the item. Writting to the "items" observableArray causes any associated UI to update.
+ 			this.items.push(this.itemToAdd());
+ 			this.itemToAdd("");
+ 		}
+ 	}.bind(this);
+};
+
+ko.applyBindings(new SimpleListModel(["Alpha", "Beta", "Gamma"]));
+</script>
+</html>
