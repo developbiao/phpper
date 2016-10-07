@@ -343,9 +343,208 @@ a{text-decoration:none;}
 	background-position:0 -213px;
 }
 
+/*导航*/
 
+.navBox{
+	height:26px;
+	border-bottom:3px solid #E5E5E5;
+}
+.nav{
+	font-size:16px;
+	font-family:"Microsoft YaHei";		
+	_margin-right:-14px;
+}
+.nav li{
+	float:left;
+	margin-right:21px;
+	position:relative;
+	white-space:nowrap;
+}
+.nav li a{
+	color:#555555;
+	height:26px;
+	float:left;
+}
+.nav li span{
+	float:left;
+	padding:0 5px;
+}
+.navMenu{
+	float:left;
+}
+.nav .active{
+	color:#05A5DF;
+	border-bottom:3px solid #05A5DF;
+	position:relative;
+	margin-bottom:-3px;
+}
+.font14{
+	font-size:14px;
+}
+.navShow{
+	position:absolute;
+	right:-10;
+	top:26px;	
+	border:1px solid #DDDDDD;
+	background:#FFF;
+	padding:15px 15px 0 15px;
+	display:none;
+}
+.navMenu{
+	position:relative;
+	float:left;
+	padding-right:13px;
+}
+.triangle{
+	position:absolute;
+	right:0;
+	top:9px;
+	width:8px;
+	height:4px;
+	overflow:hidden;
+	background:url(../images/icon/triangle.png) left center no-repeat;
 
+}
+.nav_list{
+	text-align:center;
+}
+.nav .nav_list li{
+	float:none;
+	margin-right:0;
+	margin-bottom:15px;
+}
+.nav .nav_list a{
+	float:none;
+}
 
+/*个人中心*/
+.navRight li{
+	margin-right:0;
+	margin-left:12px;
+	font-size:14px;
+}
+
+/*主题内容*/
+.leftArea{
+	width:660px;
+}
+.ykAd{
+	width:310px;
+}
+
+/*通用的大列表样式*/
+.imgList_b{
+	width:420px;
+	height:240px;
+	position:relative;
+}
+.imgItem img{
+	width:420px;
+	height:240px;
+	display:block;
+}
+.imgItemTxt{
+	position:absolute;
+	left:0;
+	bottom:0;
+	height:56px;
+	width:410px;
+	background:url('../images/imgBig_gradual.png') left bottom repeat-x;
+	padding:34px 5px 0 5px;
+}
+.play{
+	width:58px;
+	height:56px;
+	background:url(../images/icon/play.png) left center no-repeat;	
+	position:relative;
+	top:-14px;
+}
+.play a{
+	width:48px;
+	height:56px;
+	display:inline-block;
+}
+.txt{
+	font-family:"Microsoft YaHei";
+	font-size:16px;
+}
+.txt h3{
+	line-height:34px;
+}
+.txt a{
+	color:#FFF;
+	font-weight:normal;
+}
+.txt p{
+	font-family:"宋体";
+	font-size:12px;
+}
+.txt p span{
+	margin-right:9px;
+}
+.userName{
+	color:#FFF;
+}
+.times,
+.discuss{
+	color:#B9B9B9;
+}
+.pl{
+	padding-left:70px;
+}
+.userIcon{
+	padding-left:16px;
+	background:url(../images/icon/userName.png) left center no-repeat;
+}
+.timesIcon{
+	padding-left:16px;
+	background:url(../images/icon/times.png) left center no-repeat;
+}
+.discussIcon{
+	padding-left:16px;
+	background:url(../images/icon/discuss.png) left center no-repeat;
+}
+/*小的通用部分*/
+.imgList{
+	width:200px;
+	height:100px;
+	position:relative;
+}
+.smImg img{
+	width:200px;
+	height:100px;
+	display:block;
+}
+.smTxtBox{
+	height:40px;
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:url(../images/imgSm_bg.png) left bottom repeat-x;	
+}
+.smTxt{
+	position:absolute;
+	left:0;
+	width:100%;
+	bottom:0;
+	padding-bottom:5px;
+	font-size:14px;
+	font-family:"Microsoft YaHei";
+}
+.smTxt a{
+	color:#FFF;
+}
+.txt_l{
+	padding-left:5px;
+}
+.smTxt_r{
+	text-align:right;
+	padding-right:5px;
+}
+.txt_r{
+	color:#DBDBDB;
+}
 
 
 
@@ -365,4 +564,12 @@ a{text-decoration:none;}
 }
 .fr{
 	float:right;
+}
+.hr_19{
+	height:19px;
+	overflow:hidden;
+}
+.hr_20{
+	height:20px;
+	overflow:hidden;
 }
