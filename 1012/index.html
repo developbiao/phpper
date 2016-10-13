@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	#show_time{
+		background:#000;
+		color:#fff;
+		text-align:center;	
+	}
+	</style>
+	<script type="text/javascript">
+	var App = {
+		debug:true,
+		log:function (msg){
+			if(this.debug){
+				console.log(msg);
+			}
+		},
+		alert:function (msg){
+			if(this.debug){
+				alert(msg);
+			}
+		}
+	};
+
+	window.onload = function (){
+		setInterval(function (){
+			var d = new Date();
+			var year = d.getFullYear();
+			var month = d.getMonth() + 1;
+			var day = d.getDate();
+			var hour = d.getHours();
+			var minute = d.getMinutes();
+			var second = d.getSeconds();
+			var time = year + '-' + toDouble(month) + '-' + toDouble(day) + '  ' + toDouble(hour) + ':'  + toDouble(minute) + ':' + toDouble(second);
+
+			var objh1 = document.getElementById('show_time');
+			objh1.innerHTML = time;
+			App.log('.....' + second);
+
+		}, 1000);
+	};
+
+	function toDouble(num){
+		if(num >=0 && num <10){
+			num = '0' + num;
+		}
+		return num;
+	}
+
+	//自定义日志的启用和禁用
+	App.debug = false;
+	App.alert('hello');	
+	</script>
+</head>
+<body>
+	<h1 id="show_time">显示时间</h1>
+	<h3>11111</h3>
+	<h3>22222</h3>
+	<h3>33333</h3>
+	<h3>44444</h3>
+</body>
+</html>
