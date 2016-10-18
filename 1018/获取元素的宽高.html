@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	 .div1{
+	 	width:300px;
+	 	height:300px;
+	 	background:yellow;
+	 	border:2px solid purple;
+	 }
+	</style>
+	<script type="text/javascript">
+	window.onload = function (){
+		var div1 = document.getElementsByClassName('div1')[0];
+		//获取div元素的可视宽高
+		alert(div1.clientWidth + ',' + div1.clientHeight);	
+
+		//获取div元素包含本身的宽高
+		alert(div1.offsetWidth + ',' + div1.offsetHeight);
+	};
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="div1">
+		</div>
+	</div>
+</body>
+</html>
