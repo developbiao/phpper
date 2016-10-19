@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	#div1{
+		width:300px;
+		height:300px;
+		background:#474849;
+	}
+	</style>
+	<script type="text/javascript">
+	 function toRed(){
+		var oDiv1 = document.getElementById('div1');	
+		oDiv1.style.background = 'red';
+	}
+	function toGreen(){
+		var oDiv1 = document.getElementById('div1');
+		oDiv1.style.background = 'green';
+		oDiv1.style.width = '200px';
+		oDiv1.style.height = '200px';
+	}
+	</script>
+</head>
+<body>
+	<input type="button" value="toRed" onclick='toRed()' />
+	<input type="button" value="toGreen" onclick='toGreen()' />
+	<div id="div1">
+	</div>
+</body>
+</html>

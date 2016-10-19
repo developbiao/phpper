@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	div[name='my_div']{
+		float:left;
+		margin-right:10px;
+	}
+	</style>
+	<script type="text/javascript">
+		window.onload = function (){
+			var aDivs = document.getElementsByName('my_div');	
+			for(i=0; i<aDivs.length; i++){
+				aDivs[i].style.width = '200px';
+				aDivs[i].style.height = '200px';
+				aDivs[i].style.background = '#FFAAD7';
+			}
+		};
+	</script>
+</head>
+<body>
+	<div name="my_div"></div>	
+	<div name="my_div"></div>	
+	<div name="my_div"></div>	
+</body>
+</html>
