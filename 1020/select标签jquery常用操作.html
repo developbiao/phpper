@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
+<title>index</title>
+<style type="text/css">
+.highlight {
+    color: #dd1144;
+    background-color: #ffd351;
+}
+#div1{
+	width:200px;
+	height:300px;
+	background:purple;
+}
+</style>
+<script src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+/*
+@Describe: select 选择标签最佳实践
+参考
+http://www.cnblogs.com/QQJnet/archive/2011/12/11/2284174.html
+*/
+'use strict';
+$(document).ready(function (){
+	//给select添加一个change事件
+	$("#select_id").change(function (){
+		//1. 获取select选择的value
+		var checkValue = $("#select_id").val();	
+		console.log("checked value:" + checkValue);
+		//2. 获取select选中的text
+		var checkText = $("#select_id").find("option:selected").text();
+		console.log("selected text:" + checkText);
+		//3. 获取选择的索引
+		var checkIndex = $("#select_id").get(0).selectedIndex;
+		console.log("selected index:" + checkIndex);
+
+		//4.获取最大index值
+		var maxIndex = $("#select_id option:last").attr("index");
+		console.log("max index:" + maxIndex); //??
+	});
+
+});
+
+</script>
+</head>
+<body>
+<h3>SELECT标签中获取选中的option</h3>
+    <select id="select_id" name="city">
+        <option value="BJ" selected>Beijing</option>
+        <option value="SH">Shanghai</option>
+        <option value="SZ">Shenzhen</option>
+    </select>
+</body>
+</html>
+
