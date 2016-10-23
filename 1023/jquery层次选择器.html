@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:26px;
+	}
+	div{
+		border:2px solid black;
+	}
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//$(s1 s2) 派生选择器,不考虑层级关系
+		//$('div span').css('background-color', 'blue');
+
+		//$(s1 > s2)   //父子选择器选择s1里面的所有child 子元素节点
+		//$('div > span').css('background-color', 'green'); //张飞、关羽
+
+		//$(s1 + s2) 紧紧挨着的
+		//$('div + span').css('background-color', 'red'); //div的小兄弟
+
+		//$('s1 ~ s2') 获取s1后续全部兄弟节点s2
+
+		$('div ~ span').css('color', 'red');
+
+
+	}
+	</script>
+</head>
+<body>
+
+	<h3>层次选择器</h3>
+	<div>
+		<span>张飞</span>
+		<p>
+			<span>赵云</span>
+		</p>
+		<span>关羽</span>
+	</div>
+	<span>Div小兄弟</span><br />
+	<p>some pppppp</p>
+	<span>曹操</span>
+	<p>吕布</p>
+	<span>孙权</span>
+	<span>飞流</span>
+	<div>小乔</div>
+	<span>大乔</span>
+	<br />
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>

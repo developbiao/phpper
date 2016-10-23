@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:26px;
+	}
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/**
+	@Describe: 练习并且选择器
+	*/
+	function f1(){
+		//许多选择器都可以 以作为"并且"选择器使用
+		//$(s1s2s3s4s5) ---> 并且选择器(保证不会有歧义)
+		//$(s1,s2,s3,s4,s5) --->联合选择器
+		//$("li.hero").css("background-color", "#474849");
+
+		$(":header.hero").css("background-color", "orange");
+
+	}
+	</script>
+</head>
+<body>
+	<h3>并且过滤选择器</h3>
+	<h3 class="hero">并且选择器001</h3>
+	<h3 class="hero">并且选择器007</h3>
+	<h3>许多选择器都可以作为并且选择器使用</h3>
+	<ul>
+		<li>刘备</li>
+		<li id="zhang">张飞</li>
+		<li class="hero">关羽</li>
+		<li id="zhao">赵云</li>
+
+		<li class="hero">孙权</li>
+		<li>周瑜</li>
+		<li class="hero">黄盖</li>
+		<li>吕蒙</li>
+	</ul>
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>

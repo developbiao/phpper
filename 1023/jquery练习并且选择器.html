@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:26px;
+	}
+	.big_size{
+		font-size:36px;
+		background-color:#ABCDEF;
+	}
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/**
+	@Describe: 练习并且选择器
+	*/
+	function f1(){
+		//:header选择器
+		//$(':header').css('background-color', 'purple');
+
+		//[1] :first找到第一个
+		//选择li元素的同时还需要选择第一个
+		//$('li:first').attr('class', 'big_size');
+
+		//[2] :last找到最后一个
+		//选择li元素的同时还需要选择最后一个
+		//$('li:last').attr('class', 'big_size');
+
+		//[3] :eq(下标) 下标选择器，下标从0计算, equal()
+		//$("li:eq(2)").css('color', 'red');
+
+		//[4] :gt(索引值) 下标大于条件索引值, great than
+		//$("li:gt(1)").attr('class', 'big_size');
+
+		//[5] :lt(索引值) 下标小于条件索引值, less than
+		//$("li:lt(2)").css('background-color', 'orange');
+
+		//[6] :even  下标索引值等于偶数的
+		//$("li:even").css({"background-color":"red", "font-weight":"bold"});
+
+		//[7] :odd  下标索引值是奇数的
+		//$("li:odd").css("background-color", "#474849");
+
+		//[8] :not(选择器) 去除与"选择器"匹配的元素
+		$("li:not(#zhao,#zhang)").attr('class', 'big_size');
+
+	}
+	</script>
+</head>
+<body>
+	<h3>并且过滤选择器</h3>
+	<h3>学习Jquery基础</h3>
+	<h3>复习Jquery基础</h3>
+	<h3>为了更好的发展</h3>
+	<h3>生活是一种旅行</h3>
+	<ul>
+		<li>刘备</li>
+		<li id="zhang">张飞</li>
+		<li>关羽</li>
+		<li id="zhao">赵云</li>
+
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li>黄盖</li>
+		<li>吕蒙</li>
+	</ul>
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>

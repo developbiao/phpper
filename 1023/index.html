@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:26px;
+	}
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/**
+	@Describe: 表单操作 
+	*/
+	function f1(){
+		//获得复选框选中情况
+		//console.log($("input:lt(4):checked").length);
+
+		//获取单选按钮选中的姓别
+		//console.log($("input:gt(3):lt(3):checked").val());
+
+		//获取下拉列表中的选中情况(":selected")
+		console.log($("option:selected").text());
+
+
+	}
+	</script>
+</head>
+<body>
+	<h3>表单选中选择器</h3>
+	爱好：
+	<input type="checkbox" name="hobby[]" value="篮球" /> 篮球&nbsp;&nbsp;	
+	<input type="checkbox" name="hobby[]" value="排球" /> 排球&nbsp;&nbsp;	
+	<input type="checkbox" name="hobby[]" value="足球" /> 足球&nbsp;&nbsp;	
+	<input type="checkbox" name="hobby[]" value="乒乓球" /> 乒乓球&nbsp;&nbsp;	
+	<br /><br />
+	性别:
+	<input type="radio" name="sex" value="男" />&nbsp;&nbsp;
+	<input type="radio" name="sex" value="女" />&nbsp;&nbsp;
+	<input type="radio" name="sex" value="保密" />&nbsp;&nbsp;
+	学历:
+	<select>
+		<option value="0">请选择</option>
+		<option value="1">小学</option>
+		<option value="2">中学</option>
+		<option value="3">大学</option>
+	</select>
+	<br /><br />
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>

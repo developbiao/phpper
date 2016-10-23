@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function f1(){
+		//1. $('#id属性')
+		$('#username').css('color', 'red');
+
+		//2. $('tag标签名')tag标签选择器
+		$('input').css('background-color', 'blue');
+
+		//3. $('.class属性值') class类别选择器
+		$('.apple').css('background-color', '#ABCDEF');
+
+		//4. $('*')通配符选择器
+		$('*').css('font-size', '26px');
+
+		$('p, #username, .apple').css('font-family', 'Microsoft YaHei');
+		
+	}
+	</script>
+</head>
+<body>
+	<h3>基本选择器(灵感来源于css样式选择器)</h3>
+	<input type="text" name="username" value="GongBiao" id="username" /><br />
+	<p>Today is Sunday</p>
+	<div class="apple">We are studing jquery</div>
+	<span>this is ChengDu</span><br />
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:26px;
+	}
+	</style>
+	<script type="text/javascript" src= "../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	/**
+	@Describe: 内容选择器
+	*/
+	function f1(){
+		//[1]、$(":contains(text)")  包含内容选择器
+		//$("div:contains(ChengDu)").css("background-color", "#474849"); //获取包含成都的元素
+
+		//[2]、$(":empty") 获取空标签元素
+		$("div:empty").css({"width":"200px", "height":"100px", "background-color":"pink"});
+
+		//[3]、$(":has(selector)") 含有选择器
+		//var aObjs = $("div:has(.orange)");
+		//console.log(aObjs);
+
+		//[4]、$(":parent"); 获取元素的父元素
+		var aObjs = $(":parent");
+		console.log(aObjs);
+
+	}
+	</script>
+</head>
+<body>
+	<h3>内容过滤选择器</h3>
+	<div>ChengDu is great city</div>
+	<div>I love ChengDu</div>
+	<div></div><!--这是一个空标签 -->
+	<div>      </div>
+	<div><p class="orange"></p></div>
+	<div><span class="orange"></span></div>
+	<input type="button" value="触发" onclick="f1()" />
+</body>
+</html>
