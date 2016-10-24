@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	.big_size{
+		font-size:36px;
+		color:red;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function addClass(){
+		$("ul>li").addClass('big_size');
+	}
+
+	function removeClass(){
+		$("ul>li").removeClass('big_size');
+	}
+
+	function toggleClass(){
+		$("ul>li").toggleClass('big_size');
+	}
+	</script>
+</head>
+<body>
+	<h3>Juqery属性操作</h3>
+	<input type="button" value="添加样式" onclick="addClass()" />
+	<input type="button" value="删除样式" onclick="removeClass()" />
+	<input type="button" value="Toggle" onclick="toggleClass()" />
+	<ul>
+		<li>11111</li>
+		<li>22222</li>
+		<li>33333</li>
+	</ul>
+
+</body>
+</html>

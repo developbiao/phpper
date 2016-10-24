@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	table{
+		width:700px;
+		border:1px solid black;
+		margin:auto;
+		border-collapse:collapse;
+	}
+	td{
+		border:1px solid black;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$("table tr:first").css({"background-color":"green", "font-weight":"bold"});
+			$("table tr:not(:first):odd").css("background-color","yellow");
+		});
+	</script>
+</head>
+<body>
+	<h3>表格格行变色</h3>
+	<table>
+		<tr>
+			<td>ID</td>
+			<td>课程</td>
+			<td>时间</td>
+		</tr>
+		<tr>
+			<td>001</td>
+			<td>English</td>
+			<td>09:10</td>
+		</tr>
+		<tr>
+			<td>002</td>
+			<td>数学</td>
+			<td>10:20</td>
+		</tr>
+		<tr>
+			<td>003</td>
+			<td>语文</td>
+			<td>11:00</td>
+		</tr>
+		<tr>
+			<td>004</td>
+			<td>语文</td>
+			<td>13:00</td>
+		</tr>
+		<tr>
+			<td>005</td>
+			<td>PHP</td>
+			<td>15:00</td>
+		</tr>
+	</table>
+</body>
+</html>

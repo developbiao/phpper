@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	#apple{
+		width:300px;
+		height:200px;
+		background:#474849;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//dom 对象转jquery
+	function domToJquery(){
+		var oDiv = document.getElementById('apple');
+		$(oDiv).css('background', '#ABCDEF');
+	}
+
+	//jquery对象转dom
+	function jqueryToDom()
+	{
+		var obj = $("#apple")[0];
+		obj.style.background='red';
+	}
+	</script>
+</head>
+<body>
+	<h3>Jquery与Dom对象的相互转换</h3>
+	<div id="apple">	
+	</div> 
+	<input type="button" value="DomToJquery" onclick="domToJquery()" />
+	<input type="button" value="jqueryToDom" onclick="jqueryToDom()" /><br />
+</body>
+</html>

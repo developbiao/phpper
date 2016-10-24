@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	//选择全部
+	function selectAll(){
+		//$("input[name='hobby']").attr("checked", true);
+		$("input[name='hobby']").prop("checked", true);
+	}
+
+	//全不选
+	function notSelectAll()
+	{
+		$("input[name='hobby']").attr("checked", false);		
+	}
+
+	// 反选是重点,遍历全部，判断状态
+	function reverse()
+	{
+		/*	
+		for(var i=0; i<$("input[name='hobby']").length; i++){
+			var flag = $("input[name='hobby']:eq("+i+")").attr("checked");	
+			$("input[name='hobby']:eq("+i+")").attr("checked", !flag);
+		}
+		*/
+		/*
+		for(var i=0; i<$(".hby").length; i++){
+			//判断当前复选框的状态
+			var flag = $('.hby:eq('+i+')').attr('checked');
+			$('.hby:eq('+i+')').attr('checked', !flag);
+		}
+		*/
+
+		$("input[type='checkbox']").each(function (){
+			$(this).attr("checked", !this.checked);
+		});		
+	}
+
+
+	</script>
+</head>
+<body>
+	<h3>Juqery操作全选，全不选、反选操作</h3>
+	<input type="button" value="全选" onclick="selectAll()" />
+	<input type="button" value="不选" onclick="notSelectAll()"/>
+	<input type="button" value="反选" onclick="reverse()"/>
+	<br />
+
+	<input type="checkbox" class="hby" name="hobby"	 value="1" />看电影&nbsp;&nbsp;
+	<input type="checkbox" class="hby" name="hobby"  value="2" />打游戏&nbsp;&nbsp;
+	<input type="checkbox" class="hby" name="hobby"  value="3" />弹钢琴&nbsp;&nbsp;
+	<input type="checkbox" class="hby" name="hobby"  value="4" />种花&nbsp;&nbsp;
+</body>
+</html>

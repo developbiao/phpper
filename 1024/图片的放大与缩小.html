@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	function zoom(){
+		//获得图片原宽度、高度
+		var width = $('img').width();
+		var height = $('img').height();
+
+		//new height = (new_w * yuan_h) /yuan_w
+		var new_width = width + 5;
+		var new_height = (new_width * height) / width;
+
+		//设置图片的新高度和宽度
+		$('img').width(new_width);
+		$('img').height(new_height);
+	}
+
+	//缩小
+	function narrow(){
+		var width = $('img').width();
+		var height = $('img').height();
+
+		var new_width = width - 5;
+		var new_height = (new_width * height) / width;
+
+		$('img').width(new_width);
+		$('img').height(new_height);
+
+	}
+
+	function changeToBig()
+	{
+		setInterval(function (){
+			zoom();
+		}, 200);
+	}
+	
+	</script>
+</head>
+<body>
+	<h3>图片放大缩小</h3>
+	<img src="flower.jpg" alt="flower" width='200' height='280' />
+	<br /><br />
+	<input type="button" value="Zoom" onclick="changeToBig()" />
+	<input type="button" value="Narrow" onclick="narrow()" /> 
+</body>
+</html>
