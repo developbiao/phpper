@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+		function execute(){
+			//[1] $([name])
+			$("[name]").css('color', 'red');
+
+			//[2] $([name=value])
+			$("[value*=gmail]").css('background-color', 'green');
+
+			//[3] $([name^=value]) 以什么什么开头
+			//$("[value^=133]").css('font-size', '22px');
+
+			//[4] $([name$=value]) 以什么什么结尾
+			$("[value$=ing]").css('background-color', 'pink');
+
+			//[5] $([name*=value])
+			$("[type*=text]").css('font-family', 'Microsoft YaHei');
+
+			//[6] $(name!=value)
+			$("[class!=apple]").css('font-weight', 'bold');
+
+			//[7] $([][][]) 并且关系的选择器
+			//我们需要的结果:有class属性, “并且” class属性值不等于apple
+			//$(s1s2s3s4...) 并且关系选择器
+			//$(s1,s2,s3,s4)
+			$("[class][class!=apple]").css('background-color', '#474849');
+		}
+	</script>
+</head>
+<body>
+	<h3>属性选择器</h3>
+	<p><input type="text" name="username" value="lingling" /></p>
+	<p><input type="text" id="email" class="apple" value="lingling@gmail.com" /></p>
+	<p><input type="text" value="13383232378" /></p>
+	<input type="button" value="trigger"  onclick="execute()"/>
+</body>
+</html>

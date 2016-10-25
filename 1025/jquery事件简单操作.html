@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	#apple{
+		width:300px;
+		height:200px;
+		background-color:pink;
+	}
+	.big_size{
+		width:500px;
+		height:500px;
+		background-color:red;	
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function (){
+			$('#apple').click(function (){
+				console.log('hello');
+				$(this).css('background-color', 'red');
+			});
+
+			$('#apple').mouseover(function (){
+				$(this).height(300);
+			});
+
+		});
+
+		/*
+		$(function (){
+				$(this).addClass('big_size');
+			});
+
+		});
+		*/
+
+		function execute(){
+			$('#apple').click();
+		}
+	</script>
+</head>
+<body>
+	<h3>Jquery简单事件操作</h3>
+	<div id="apple">
+	</div>
+	<input type="button" value="手动触发已绑定的click事件"  onclick="execute()"/>
+</body>
+</html>

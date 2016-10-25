@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	#apple{
+		width:300px;
+		height:200px;
+		background-color:pink;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', function (){
+		//先显示ok现显示图片
+		alert('ok');
+	});
+
+	//window onload dom 准备就绪才显示
+	/*
+	window.onload = function (){
+		alert('window onload');
+	};
+	*/
+	</script>
+</head>
+<body>
+	<h3>Jquery加载事件原理</h3>
+	<img src="./test.php" alt="loading picture" />
+</body>
+</html>

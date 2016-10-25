@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	#apple{
+		width:300px;
+		height:200px;
+		background-color:pink;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function (){
+		$('li').each(function (key, value){
+			$(this).css('color', 'red');
+			console.log('key:'+key+'<---value:'+value+'--->');
+		});
+	});
+
+	function f1(){
+		//key---value 的遍历方式
+		var cat = {name:'Kitty', age:3, climb:function (){console.log('在睡觉----^_^');}}	
+		jQuery.each(cat, function (key, value){
+			console.log(key + '---->' + value);
+		});
+	}
+
+	function f2(){
+		//遍历数组key是索引
+		var arr = ['purple', 'green', 'lightblue', 'lightgreen', 'pink'];
+		jQuery.each(arr, function (key, value){
+			console.log('Key:'+key+'---value:'+value+'---');
+		});
+	}
+	</script>
+</head>
+<body>
+	<h3>Jquery遍历方法</h3>
+	<div id="apple"></div>
+	<ul>
+		<li>美好的生活</li>
+		<li>运动精神</li>
+		<li>热爱生命</li>
+	</lu>
+	<input type="button" value="遍历Json对象" onclick="f1()" /><br />
+	<input type="button" value="遍历数组" onclick="f2()" /><br />
+</body>
+</html>

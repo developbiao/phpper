@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	*{
+		font-size:16px;
+	}
+	</style>
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript">
+		//主动追加	
+		function f1(){
+			//append() 后置追加
+			$("#shu").append("<li>马超</li>");	
+
+			//prepend() 前置追
+			$("#shu").prepend("<li>赵云</li>");
+
+			//在已有的节点追点(节点发生物理位置移动)
+			$("#shu").append($("#wu"));
+
+		}
+
+		//被动追加
+		function f2(){
+			//appendTo 后置追加
+			//prependTo 前置追加
+			//新节点追加
+			$("<li>诸葛亮</li>").appendTo("#shu");	
+			$("<li>孙尚香</li>").prependTo("#shu");
+
+			//已有节点追加
+			$("#wu li:eq(1)").appendTo("#shu");
+		}
+	</script>
+</head>
+<body>
+	<h3>Jquery节点追加操作(父子)</h3>
+	<h4>苏的领地</h4>
+	<ul id="shu">
+		<li>刘备</li>
+		<li>张飞</li>
+		<li>关羽</li>
+	</ul>
+	<hr />
+	<h4>吴的领地</h4>
+	<ul id="wu">
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li id="gai">黄盖</li>
+	</ul>
+	<input type="button" value="追加1"  onclick="f1()"/>
+	<input type="button" value="追加2"  onclick="f2()"/>
+</body>
+</html>
