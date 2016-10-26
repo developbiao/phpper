@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+</style>
+<script type="text/javascript" src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+function f1(){
+	//黄盖----替换----关羽
+	//主动替换relaceAll();
+	//$("#gai").replaceAll("#guan");
+
+	//被动替换(可以理解选择中的元素想被谁替换)
+	$("#shu li:first").replaceWith($("#wu li:last"));
+
+}
+</script>
+</head>
+<body>
+	<h3>子节点操作</h3>
+	<h4>苏的天下</h4>
+	<ul id="shu">
+		<li>刘备</li>
+		<li>张飞</li>
+		<li id="guan">关羽</li>
+	</ul>
+	<hr />
+	<h4>吴的天下</h4>
+	<ul id="wu">
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li id="gai">黄盖</li>
+	</ul>
+	<input type="button" value="替换" onclick="f1()" />
+</body>
+</html>

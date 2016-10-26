@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+</style>
+<script type="text/javascript" src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+//删除指定节点
+function f1(){
+	$("#shu li:first, #gai").remove();
+}
+
+//删除父节点内的所有子节点
+function f2(){
+	$("#shu").empty();	
+}
+</script>
+</head>
+<body>
+	<h3>子节点操作删除</h3>
+	<h4>苏的天下</h4>
+	<ul id="shu">
+		<li>刘备</li>
+		<li>张飞</li>
+		<li id="guan">关羽</li>
+	</ul>
+	<hr />
+	<h4>吴的天下</h4>
+	<ul id="wu">
+		<li>孙权</li>
+		<li>周瑜</li>
+		<li id="gai">黄盖</li>
+	</ul>
+	<input type="button" value="删除指定节点" onclick="f1()" />
+	<input type="button" value="父元素清空节点" onclick="f2()" />
+</body>
+</html>

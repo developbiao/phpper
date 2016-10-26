@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+.content{
+	width:300px;
+	height:200px;
+	background-color:lightblue;
+}
+</style>
+<script type="text/javascript" src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	$("#yaan").delegate('li', 'mouseover', function (){
+		$(this).css('background-color', '#CCC');
+	});
+	$("#yaan").delegate('li', 'mouseout', function (){
+		$(this).css('background-color', '#FFF');
+	});
+});
+
+function f1(){
+	$("#yaan").append("<li>天全</li>");
+}
+</script>
+</head>
+<body>
+	<h3>事件委派</h3>
+	<ul id="yaan">
+		<li>石棉县</li>
+		<li>芦山县</li>
+		<li>汉源县</li>
+	</ul>
+	<input type="button" value="添加天全县" onclick="f1()" />
+</body>
+</html>

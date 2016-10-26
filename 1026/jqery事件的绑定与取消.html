@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+.content{
+	width:300px;
+	height:200px;
+	background-color:lightblue;
+}
+</style>
+<script type="text/javascript" src="../lib/js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function (){
+	//[1]、绑定单个事件
+	/*
+	$(".content").bind('click', function (){
+		$(this).css('background-color', 'red');	
+	});
+	*/
+
+	//[2]、绑定多个事件
+	/*
+	$(".content").bind('mouseover click', function (){
+		$(this).css('background', 'purple');
+	});
+	*/
+
+	//[3], 一个对像同时绑定多个事件处理函数
+	var json_event = {
+		mouseover:function (){
+			console.log('轻轻的我来了....');
+		},
+		mouseout:function (){
+			console.log('我挥一挥衣袖~~~');
+		},
+		click:function (){
+			$(this).css('height', '50px');
+			console.log('不带走一片云彩~');
+		}
+	};
+
+	$(".content").bind(json_event);
+});
+
+//取消指定事件
+function f1(){
+	$(".content").unbind("click");
+}
+
+//取消所有事件
+function f2(){
+	$(".content").unbind();
+}
+
+//删除特点函数的绑定
+/*
+function f3(){
+	$(".content").unbind('mouseover', toRed());	
+	console.log('第三种取消必须是有名函数');
+}
+Uncaught refrenceError:toRed
+
+function toRead(){
+	$(".content").css('background', 'purple');	
+}
+*/
+
+
+
+</script>
+</head>
+<body>
+	<h3>事件绑定</h3>
+	<div class="content">
+	</div>
+	<input type="button" value="取消click事件绑定" onclick="f1()" />
+	<input type="button" value="取消所有事件绑定" onclick="f2()" />
+	<input type="button" value="取消mouseover并变红" onclick="f3()" />
+</body>
+</html>
