@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+#result{
+	width:300px;
+	height:200px;
+	background-color:#ABCDEF;
+}
+</style>
+<script type="text/javascript">
+/*
+@Describe:理解了Ajax方法的使用
+ajax对象成员
+属性:
+resonseText: 以字符串形式接收服务器端返回的信息
+readyState:
+	0: 刚创建ajax对象
+	1: 已经调用open方法 
+	2: 已经调用send方法 
+	3: 已经返回部分数据
+	4: 请求完成，数据返回完整
+
+onreadystatechange: 事件，当前ajax状态readySate发生变化的时候要触发执行
+为了获得较多的状态，最好在创建好ajax对象后就设置,最多可感知(1~4)中状态
+
+方法:
+open()  创建新的http请求
+send()  报忧请求发送给服务器
+*/
+function f1(){
+	//ajax发起请求并接收返回的信息	
+	//[1] 创建对象
+	var xhr = new XMLHttpRequest();
+
+	//[4] 给Ajax设置事件 
+	xhr.onreadystatechange = function (){
+		if(xhr.readyState == 4){
+			//把服务器端返回的信息显示到页面上
+			document.getElementById('result').innerHTML = xhr.responseText;
+		}
+	};
+
+	//[2] 创建新的http请求
+	xhr.open('get', './response.php');
+
+	//[3] 发送请求
+	xhr.send(null);
+
+}
+
+</script>
+</head>
+<body>
+	<h3>Ajax向服务器发起请求</h3>
+	<div id="result">
+	</div>
+	<input type="button" value="触发Ajax请求" onclick="f1()" />
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript">
+if(typeof ActiveXObject !== 'undefined'){
+	//判断ajax对象存在不存在，很早的时候使用的这种方法来解决兼容问题
+	var xhr = new ActiveXObject("Msxml2.XMLHTTP.3.0");
+	alert(xhr);
+}else{
+	var xhr = new XMLHttpRequest();
+	console.log(xhr);
+}
+</script>
+</head>
+<body>
+		<h3>XMLHttp对象</h3>
+</body>
+</html>
