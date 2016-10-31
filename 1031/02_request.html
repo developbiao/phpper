@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	body{
+		font-size:26px;
+	}
+	#message{
+		width:300px;
+		height:200px;
+		background:#FFFF66;
+	}
+	</style>
+	<script type="text/javascript">
+	function f1(){
+		//[1]、创建ajax对象
+		var xhr = new XMLHttpRequest();
+
+		//[4]、 给ajax设置事件
+		xhr.onreadystatechange = function (){
+			if(xhr.readyState == 4){
+				var oDiv = document.getElementById('message');
+				oDiv.innerHTML = xhr.responseText;
+			}
+		};
+
+		//[2]、创建http请求
+		xhr.open('get', './02.php');
+
+		//[3]、发送请求
+		xhr.send(null);	
+
+	}
+	</script>
+</head>
+<body>
+	<h3>Ajax向服务器发送请求</h3>
+	<input type="button" value="触发写文件"  onclick="f1()"/>
+	<div id="message">
+	</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<style type="text/css">
+	body{
+		font-size:26px;
+	}
+	#message{
+		width:300px;
+		height:200px;
+		background:#FFFF66;
+	}
+	</style>
+	<script type="text/javascript">
+	// ajax方式用户名校验
+	function checkName(){
+
+		var name = document.getElementById('user_name').value;
+
+		//对传递的特殊符号(例如&,=等)进行编码处理
+		//同时对"中文"也会进行编码处理 
+		name = encodeURIComponent(name);
+
+
+		//[1]、创建ajax对象
+		var xhr = new XMLHttpRequest();
+
+		//[4]、 给ajax设置事件
+		xhr.onreadystatechange = function (){
+			if(xhr.readyState == 4){
+				var oDiv = document.getElementById('message');
+				oDiv.innerHTML = xhr.responseText;
+			}
+		};
+
+		//[2]、创建http请求
+		xhr.open('post', './03.php?name=' + name);
+
+		//[3]、发送请求
+		xhr.send(null);	
+
+	}
+	</script>
+</head>
+<body>
+	<h3>用户名校验</h3>
+	用户名:<input type="text" id="user_name" onblur="checkName()" /> 
+	<div id="message">
+	</div>
+</body>
+</html>
