@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+h3,div{width:700px; margin:auto;}
+h3{text-align:center}
+body{
+	font-size:26px;
+}
+</style>
+<script type="text/javascript">
+window.onload = function (){
+	showpage('./data.php');	
+};
+
+//使用ajax去获得分页数据
+function showpage(url){
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function (){
+		if(xhr.readyState == 4){
+			document.getElementById('result').innerHTML = xhr.responseText;
+			console.log('aa');
+		}
+	};
+	xhr.open('get', url);
+	xhr.send(null);
+}
+</script>
+</head>
+<body>
+	<h3>Ajax无刷新分页效果</h3>
+	<div id="result">
+	</div>
+</body>
+</html>
