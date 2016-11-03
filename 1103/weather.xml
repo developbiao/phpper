@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weather>
+	<city>
+		<name>成都</name>
+		<temp>10~13</temp>
+		<wind>北风</wind>
+	</city>
+	<city>
+		<name>上海</name>
+		<temp>3~8</temp>
+		<wind>西南风</wind>
+	</city>
+	<city>
+		<name>广州</name>
+		<temp>10~13</temp>
+		<wind>东风</wind>
+	</city>
+</weather>

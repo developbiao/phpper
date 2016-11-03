@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+body{
+	font-size:26px;
+}
+#result{
+	border:2px solid black;	
+	width:500px;
+	height:200px;
+}
+</style>
+<script type="text/javascript">
+//请求xml数据并解析
+function getWeather(){
+	var xhr = new XMLHttpRequest();	
+	xhr.onreadystatechange = function (){
+		if(xhr.readyState == 4){
+			//[1]、object XML 根节点对象的父节点对象
+			var xmldom = xhr.responseXML;	
+
+			//[2]、获取所有的城市节点
+			var citys = xmldom.getElementsByTagName('city');
+			/*
+			//查看dom身上可以操作的成员 
+			for(var key in citys[0]){
+				console.log(key);
+			}
+			*/
+
+			var content = '';
+			for(var i=0; i<citys.length; i++){
+				var name = citys[i].getElementsByTagName('name')[0].firstChild.nodeValue;
+				var temp = citys[i].getElementsByTagName('temp')[0].firstChild.nodeValue;
+				var wind = citys[i].getElementsByTagName('wind')[0].firstChild.nodeValue;
+				content += "城市: "+name+"---温度: "+temp+"---风向: "+wind+"<br/>";
+				//console.log(content);
+			}
+
+			var oDiv = document.getElementById('result');
+			oDiv.innerHTML = content;
+		}
+
+	}
+	xhr.open('get', './weather.xml');
+	xhr.send(null);
+
+}
+</script>
+</head>
+<body>
+	<h3>Ajax实现对XML的请求处理</h3>
+	<div id="result"></div>
+	<input type="button" value="请求xml天气信息" onclick="getWeather()" />
+</body>
+</html>
