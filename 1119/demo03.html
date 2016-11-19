@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<h3>AngulaJS Module Controller </h3>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		LastName: <input type="text" data-ng-model="lastName" /><br>
+		FirstName: <input type="text" data-ng-model="firstName" /><br>
+		FullName:<span>{{firstName + lastName}}<span>
+	</div>
+
+	<script type="text/javascript">
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function ($scope){
+			$scope.firstName = "Li";
+			$scope.lastName = "gang";
+			$scope.hobby = "Play Online game!";
+
+		});
+	</script>
+</body>
+</html>
