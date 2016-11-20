@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body data-ng-app="myApp">
+	<div hello-moto></div>
+	<hello-moto></hello-moto>
+	<!-- hello-moto -->
+</body>
+<script type="text/javascript">
+var myApp = angular.module("myApp", []);
+//可能使用的restrict 有A(atrribute), C(class) ,E(element) ,M(comment)
+myApp.directive("helloMoto", function (){
+	return{
+		restrict : "A", //只有属性才能调用
+		template: "<h3>这是一个自定义指令Hello Moto</h3>"
+	}
+});
+
+</script>
+</html>

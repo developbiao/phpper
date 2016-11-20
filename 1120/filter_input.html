@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body data-ng-app="myApp" data-ng-controller="namesCtrl">
+	<h3>AngularJs Input Filter</h3>
+	<p>search user: <input type="text" ng-model="test" /></p>
+
+	<ul>
+		<li data-ng-repeat="x in names | filter:test | orderBy:'age'">
+			{{ x.name + '--->' + x.country }}
+		</li>
+	</ul>
+</body>
+<script type="text/javascript" src="./namesController.js"></script>
+</html>

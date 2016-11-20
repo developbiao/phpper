@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body data-ng-app="myApp">
+	<h3>AngularJS Directive </h3>
+	<!-- element name call back directive -->
+	<my-directive>Hello</my-directive>
+
+	<!-- attribute call back directive -->
+	<div my-directive></div>
+
+	<!-- class name call back directive -->
+	<div class="scoreRanking"></div>
+
+	<!-- call back in comment -->
+	<p><strong>注意： </strong> 我们需要在该实例添加 <strong>replace</strong>,属性否则评论不可见</p>
+	<p><strong>注意:  </strong> 你必须设置 <b>restrict</b> 的值为 "M" 才能注释来调用命令</p>
+	<!-- 指令：my-comment -->
+	
+
+</body>
+<script type="text/javascript">
+var app = angular.module("myApp", []);
+app.directive("myDirective", function (){
+	return {
+		template: "<h3>My First Directive</h3>"
+	};
+});
+
+// restrict class name 
+app.directive("scoreRanking", function (){
+	return {
+		restrict: "C", // only class name call back
+		template: "<h3>Trivia ranking!</h3>"
+	};
+});
+
+app.directive("my-comment", function (){
+	return {
+		restrict : "M",
+		replace : true,
+		template : "<h3>自定义指定</h3>"
+	}
+});
+
+
+</script>
+</html>

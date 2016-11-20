@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<form data-ng-app="" name="myForm">
+		Email: <input type="email" name="user_email" data-ng-model="text" />
+		<span data-ng-show="myForm.user_email.$error.email">Please check your email Address!</span>
+	</form>
+</body>
+<script type="text/javascript">
+</script>
+</html>

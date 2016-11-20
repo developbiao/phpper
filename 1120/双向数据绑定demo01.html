@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		 UserName: <input type="text" data-ng-model="user_name" />
+		<h3>双向数据绑定:</h3>
+		<h3>寝室里面的小朋友：{{ user_name }}</h3>
+	</div>
+</body>
+<script type="text/javascript">
+//web app
+var app = angular.module("myApp", []);
+
+//controller
+app.controller("myCtrl", function ($scope){
+	$scope.user_name = "Li Jun";
+});
+</script>
+</html>
