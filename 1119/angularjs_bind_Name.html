@@ -6,11 +6,9 @@
 <script type="text/javascript" src="./angular.min.js"></script>
 </head>
 <body>
-	<h3>AngularJS Array Deom </h3>
-	<div data-ng-app="" data-ng-init="points=[1, 15, 19, 2, 40]">
-	<p>第四个值是 {{points[3]}}</p>
-	<h3>Second Value is:</h3>
-	<h3 data-ng-bind="points[1]"></h3>
+	<h3>AngularJS String </h3>
+	<div data-ng-app="" data-ng-init="person={firstName:'Li', lastName:'gang'}">
+	<p>姓名: <span data-ng-bind="person.firstName + ' ' + person.lastName"></span></p>
 	</div>
 </body>
 </html>
