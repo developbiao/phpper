@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		<h3>请选择网站</h3>	
+		<select data-ng-model="selectedSite">
+			<option data-ng-repeat="x in sites" value="{{x.url}}">{{x.site}}</option>
+		</select>
+		<h3>你的选择是：{{ selectedSite }}</h3>
+	</div>
+</body>
+<script type="text/javascript">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope){
+	$scope.sites = [
+	    {site : "Google", url : "http://www.google.com"},
+	    {site : "Runoob", url : "http://www.runoob.com"},
+	    {site : "Taobao", url : "http://www.taobao.com"}
+	];
+});
+</script>
+</html>

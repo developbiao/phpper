@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		<select data-ng-model="selectedCar" data-ng-options="x for (x, y) in cars">
+		</select>
+		<h3>你选择的爱车是：{{ selectedCar.brand }}</h3>
+		<h3>型号: {{ selectedCar.model }}</h3>
+		<h3>颜色: {{ selectedCar.color }}</h3>
+	</div>
+</body>
+<script type="text/javascript">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope){
+	$scope.cars = {
+		car01 : {brand : "Ford", model : "Mustange", color: "red"},
+		car02 : {brand : "Lamborghini", model : "Xtc800", color: "white"},
+		car03 : {brand : "Volvo", model : "XC90", color : "black"}
+	};
+});
+</script>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<form data-ng-app="" name="myForm" data-ng-init="myText='java770520@163.com'">
+	Email: <input type="email" name="myAdress" data-ng-model="myText" />
+	<h3>编辑邮箱地址，查看状态改变。</h3>
+	<h1>状态</h1>
+	<h3>Valida: {{ myForm.$valid }} (如果输入的值是合法的则为true)</h3>
+	<h3>Dirty: {{ myForm.$dirty }} (如果值改变了则为true)</h3>
+	<h3>Touched: {{ myForm.$touched }} (如果通过触屏点击则为true)</h3>
+	</form>
+</body>
+</html>

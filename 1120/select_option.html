@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		<h3>ng-options 指令的使用创建select</h3>	
+		<select data-ng-model="selectdName" data-ng-options="x for x in names">
+		</select>
+	</div>
+</body>
+<script type="text/javascript">
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function ($scope){
+	$scope.names = ['Google', 'LifeBiao', 'Cnet'];
+			
+});
+</script>
+</html>
