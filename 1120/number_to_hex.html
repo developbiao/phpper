@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" ng-controller="myCtrl">
+		<h3>自定义服务，用于转换16进制数</h3>	
+		<p>请输入要转的数值：<input type="text" data-ng-model="number" /></p>
+		<h3>Result:{{ hex }}</h3>
+	</div>
+</body>
+<script type="text/javascript">
+//TODO:: fix number to hex function 
+	var app = angular.module("myApp", []);	
+	app.controller("myCtrl", function ($scope, hexafy){
+		$scope.hex = hexafy.myFunc($scope.number);
+		//$scope.f1 = function (){ return $scope.number.toString(16)};
+	});
+
+	app.service('hexafy', function(){
+		this.myFunc= function (x){
+			return x.toString(16);
+		}
+	});
+</script>
+</html>

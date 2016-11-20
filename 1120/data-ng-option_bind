@@ -9,20 +9,19 @@
 </head>
 <body>
 	<div data-ng-app="myApp" data-ng-controller="myCtrl">
-		<select data-ng-model="selectedCar" data-ng-options="x for (x, y) in cars">
+		<h3>请选择网站-ng-options 绑定</h3>	
+		<select data-ng-model="selectedSite" data-ng-options="x for (x, y) in sites">
 		</select>
-		<h3>你选择的爱车是：{{ selectedCar.brand }}</h3>
-		<h3>型号: {{ selectedCar.model }}</h3>
-		<h3>颜色: {{ selectedCar.color }}</h3>
+		<h3>你的选择是：{{ selectedSite }}</h3>
 	</div>
 </body>
 <script type="text/javascript">
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function ($scope){
-	$scope.cars = {
-		car01 : {brand : "Ford", model : "Mustange", color: "red"},
-		car02 : {brand : "Lamborghini", model : "Xtc800", color: "white"},
-		car03 : {brand : "Volvo", model : "XC90", color : "black"}
+	$scope.sites ={ 
+		site01 : "Google",
+		site02 : "Runoob",
+		site03 : "Sogou"
 	};
 });
 </script>

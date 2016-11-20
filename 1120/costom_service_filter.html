@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<style type="text/css">
+</style>
+<script type="text/javascript" src="./angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-app="myApp" data-ng-controller="myCtrl">
+		<h3>过滤器中使用服务</h3>	
+		<ul>
+			<li data-ng-repeat="x in counts">{{ x | myFormat }}</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+var app = angular.module("myApp", []);
+app.controller("myCtrl", function($scope){
+	$scope.counts = [255, 251, 388];
+});
+
+//定义一个service
+app.service('hexafy', function (){
+	this.myFunc = function (x){
+		return x.toString(16);
+	}
+});
+
+//自定义过滤器
+app.filter('myFormat', ['hexafy', function(hexafy){
+	return function(x) {
+		return hexafy.myFunc(x);
+	};
+}]);
+</script>
+</html>
