@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+<title>index</title>
+<script type="text/javascript" src="./angular.min.js" /></script>
+</head>
+<body>
+	<h3>Eevnt test</h3>
+	<div data-ng-controller="EventController">
+	Root scope
+	<tt>MyEevent</tt> count: {{count}}
+	<ul>
+		<li data-ng-repeat="i in [1]" ng-controller="EventController">
+			<button data-ng-click="$emit('MyEvent')">
+				$broadcast('MyEvnet');
+			</button>	
+			Middle scope
+			<tt>MyEvent</tt> count: {{count}}
+			<ul>
+				<li data-ng-repeat="item in [1, 2]" data-ng-controller="EventController">
+					Leaf scope
+					<tt>MyEvnet</tt> count: {{count }}
+				</li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+	<script type="text/javascript">
+	//1.3   以后已经不支持定义 全局controller
+	function EventController($scope){
+		$scope.count = 0;
+		$scope.$on('MyEvent', function (){
+			$scope.count++;
+		});
+
+	}
+	</script>
+</body>
+</html>
