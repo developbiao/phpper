@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html lang="en" data-ng-app="MyCSSModule">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+	<style type="text/css">
+	.error{
+		background-color:red;
+	}
+	.warning{
+		background-color:yellow;
+	}
+	</style>
+</head>
+<body>
+	<div data-ng-controller="HeaderController">
+		<div ng-class='{error: isError, warning: isWarning}'>{{messageText}}</div>
+		<button data-ng-click='showError()'>Simulate Error</button>
+		<button data-ng-click='showWarning()'>Simulate Warning</button>
+	</div>
+</body>
+<script type="text/javascript" src="./NgClass.js"></script>
+</html>

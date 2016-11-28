@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html lang="en" data-ng-app="MyModule">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+	<style type="text/css">
+	body{
+		font-size:26px;
+	}
+	</style>
+</head>
+<body>
+	<h3>AngularJS 指令绑定</h3>
+	<div data-ng-controller="MyCtrl">
+		<h3>Ctrl:</h3>
+		<br>
+		<input type="text" data-ng-model="ctrlFlavor" />
+		<br>
+		<drink flavor="{{ctrlFlavor}}"></drink>
+		<!-- 双向绑定的方法 -->
+		<h3>Directive:</h3>
+		<wine flavor="ctrlFlavor"></wine>	
+
+		<h3>greeting</h3>
+		<greeting greet="sayHello({name:userName})"></greeting>
+		<greeting greet="sayHello({name:userName})"></greeting>
+		<greeting greet="sayHello({name:userName})"></greeting>
+	</div>
+</body>
+<script type="text/javascript" src="./NgDirectiveBind01.js"></script>
+</html>

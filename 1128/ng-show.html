@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang="en" data-ng-app="MyNgShowModule">
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="../lib/js/angular.min.js"></script>
+</head>
+<body>
+	<div data-ng-controller="DeathrayMenuController">
+		<button data-ng-click="toggleMenu()">Toggle Menu</button>
+		<ul data-ng-show='menuState.show'>
+			<li>每天好心情</li>
+			<li>高手往往一个打10个</li>		
+			<li>所有的成功都是从零开始的</li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript" src="./NgShow.js"></script>
+</html>
