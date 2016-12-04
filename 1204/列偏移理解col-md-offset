@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style style="text/css">
+        .show-grid [class ^="col-"] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+        <h3>Bootstrap 响应式实用工具</h3>
+            <div class="row show-grid">
+                <div class="col-md-6" style="background-color:#CCC">
+                    some text some text
+                </div>
+                <div class="col-md-2 col-md-offset-3" style="background-color:#ABCDEF">
+                    offset text
+                </div>
+            </div>
+        </div> 
+    </div>	
+</body>
+</html>

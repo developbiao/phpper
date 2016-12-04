@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <style style="text/css">
+        .show-grid [class ^="col-"] {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</head>
+<body>
+	<div class="container">
+        <h3>Bootstrap Grid</h3>
+        <b>嵌套：嵌套row所包含的列加起来应该等于12</b>
+            <div class="row show-grid">
+                <div class="col-md-9">
+                    Leve 1: .col-md-9
+                    <div class="row show-grid">
+                        <div class="col-md-6">Level 2: .col-md-6</div>
+                        <div class="col-md-6">
+                            Level 2: .col-md-6
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <h3>列排序: .col-md-push-*和.col-md-pull-*</h3>  
+          <div class="row show-grid">
+            <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+            <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+          </div>
+    </div>	
+</body>
+</html>
