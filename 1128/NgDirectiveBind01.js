@@ -1,10 +1,12 @@
 var MyModule = angular.module("MyModule", []);
 MyModule.controller("MyCtrl", function ($scope){
 	$scope.ctrlFlavor = '百事可乐';
-
+	$scope.sayHello = function (name){
+		alert("Hello " + name);
+	};
 });
 
-//属性的方式绑定
+//第一种属性的方式绑定
 MyModule.directive("drink", function (){
 	return {
 		restrict: 'AE',
@@ -21,6 +23,7 @@ MyModule.directive("drink", function (){
 	}
 });
 
+//第二种=号绑定方式
 MyModule.directive("wine", function (){
 	return {
 		restrict: 'AE',
@@ -28,5 +31,17 @@ MyModule.directive("wine", function (){
 			flavor: '='
 		},
 		template: '<input type="text" data-ng-model=flavor />'
+	}
+});
+
+//第三&符号的绑定方式
+MyModule.directive("greeting", function (){
+	return {
+		restrict: 'AE',
+		scope:{
+			greent:'&'
+		},
+		template: '<input type="text" data-ng-model="userName" /><br>' +
+		'<button data-ng-click="greet({name:userName})"></button>'
 	}
 });

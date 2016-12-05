@@ -1,4 +1,4 @@
-var MyModule = angular.module("MyModule", ['ngRoute']);
+var MyModule = angular.module("MyModule", []);
 MyModule.controller("MyCtrl", function ($scope){
 	$scope.title = "hello directive";
 });
