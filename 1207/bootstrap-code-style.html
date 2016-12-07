@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<title>index</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+	<h3>Bootstrap text learning</h3>
+	<p class="text-left">我想在左边</p>
+	<p class="text-right">疯子在右</p>
+	<p class="text-center">谁在中间呢</p>	
+	<p class="text-justify">What is justify? for CSS to be taken seriously by graphic artists. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet </p>
+	<ul>
+		<li>无序列表信息1</li>
+		<li>无序列表信息2</li>
+		<li>无序列表信息3</li>
+	</ul>
+	<ol>
+		<li>我是有序的1</li>
+		<li>我是有序的2</li>
+		<li>我是有序的3</li>
+	</ol>
+	<dl>
+		<dt>定义列表标题</dt>
+		<dd>我有什么用01</dd>	
+		<dd>我有什么用02</dd>	
+		<dd>我有什么用03</dd>	
+	</dl>
+
+	<h3>Code风格</h3>
+	<div>
+	Bootstrap的代码三种风格：<code>&lt;code&gt;</code>
+	、<code>&lt;pre&gt;</code>
+	、请使用<kbd>command + c</kbd>
+	</div>
+
+	<h3>pre风格：</h3>
+	<div>
+	<pre>
+	#include <stdio.h>
+	int main()
+	{
+		int a = 3;
+		int b = 4;
+		printf("%d\n",  a + b);	
+	}
+	</pre>
+	</div>
+	<h3>code风格:</h3>
+	<div><code>&lt;? php ?&gt;</code></div>
+	<h3>kbd键盘风格</h3>
+	<div>
+	在mac中你如果有剪切一个文件你需要这样操作，先按<kbd>command + c</kbd>然后到你想去文件夹，使用<kbd>command + option + v</kbd>这样文件就被成功剪切了
+	</div>
+
+	<h3>可以y轴滚动的代码，只有超过了340px</h3>
+	<pre class="pre-scrollable">
+		#include <reg52.h>
+
+sbit LED = P0 ^ 0;
+sbit ADDR0 = P1 ^ 0;
+sbit ADDR1 = P1 ^ 1;
+sbit ADDR2 = P1 ^ 2;
+sbit ADDR3 = P1 ^ 3;
+sbit ENLED = P1 ^ 4;
+
+
+void main()
+{
+	unsigned char count = 0;
+
+	ENLED = 0;
+	ADDR3 = 1;
+	ADDR2 = 1;
+	ADDR1 = 1;
+	ADDR0 = 0;
+
+	//设置定时器
+	TMOD = 0x01;
+	TH0 = 0xB8;
+	TL0 = 0x00;
+	TR0 = 1;
+
+	while(1)
+	{
+		if(TF0 == 1)
+		{
+			TF0 = 0;
+			TH0 = 0xB8;
+			count++;
+			if(count >= 50)
+			{
+				count = 0;
+				LED = ~LED;
+			}
+		}
+	}
+}
+
+
+/*
+   51单片机的晶振是11.0592M
+   机器周期数   12 / 11059200
+   x * 12 / 11059200 = 0.02s
+   x = 18432
+   TH0  = y
+   y + x = 65536;  	多少个机器周期才能使用TH0溢出
+   y = 47104;			  //初始化值0xB800 + 18432;
+   y = 0xB800;
+   */
+	</pre>
+
+
+</div>
+</body>
+</html>
