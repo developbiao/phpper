@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BootStrapForm</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+	<div class="container">
+	<h3>选择框控件</h3>
+	<form role="form">
+		<div class="form-group">
+			<select class="form-control">
+				<option>四川话也是话</option>
+				<option>普通话也是话</option>
+				<option>我们都在说中国话</option>
+			</select>
+		</div>	
+		<h4>multiple select</h4>
+		<select multiple="multiple" class="form-control">
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+		</select>
+	</form>
+	</div>
+</body>
+</html>
