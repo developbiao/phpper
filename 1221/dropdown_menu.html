@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>BootStrapMenuDropDown</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="../lib/js/jquery.js"></script>
+	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h3>DropDownMenu</h3>
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				请选择你喜欢的水果
+				<span class="caret"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-menu-left" role="menu" aira-labelledby="dropdownMenu1">
+				<li role="presentation" class="dropdown-header">首先的水果</li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">苹果</a></li>
+				<li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">香蕉</a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation" class="dropdown-header">次选的水果</li>
+				<li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">菠萝</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">樱桃</a></li>
+			</ul>
+		</div>
+
+	</div>
+</body>
+</html>
