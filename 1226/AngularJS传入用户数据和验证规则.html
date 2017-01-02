@@ -5,7 +5,6 @@
 	<title>angularJS Register</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
 	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="../lib/font-awesome/css/font-awesome.css" />
 	<script type="text/javascript" src="../lib/js/jquery.js"></script>
 	<script type="text/javascript" src="../lib/bootstrap/js/bootstrap.min.js"></script>
 	<style type="text/css">
@@ -28,14 +27,6 @@
 		height:auto;
 		margin:30px auto;
 	}
-	.input_result{
-		position:relative;
-		top:-27px;
-		left:180px
-	}
-	p.success{
-		color:#3c763d;
-	}
 	</style>
 </head>
 <body data-ng-app="myApp">
@@ -43,8 +34,10 @@
 	<div class="wrapper">
 	<h3>用户注册表单</h3>
 		<form name="signUpForm" data-ng-submit="submitForm()">
-			<div class="form-group" data-ng-class="{'has-success':signUpForm.username.$valid}">
+			<div class="form-group">
 				<lable>用户名：</lable>
+				<pre>合法: {{ signUpForm.username.$valid }}</pre>
+				<code>{{ userdata.username }}</code>
 				<input name="username"
 				 	   type="text"
 				  	   class="form-control"
@@ -53,8 +46,6 @@
 				  	   data-ng-maxlength="16"
 				  	   required
 				  	   >
-				  <!-- use awesome font give icon feedback -->
-				  <p class="fa fa-check input_result success" data-ng-if="signUpForm.username.$valid"></p>	   
 				  <p class="error" data-ng-if="signUpForm.username.$touched &&
 				  							  signUpForm.username.$error.required"
 				  							  >用户名不可为空</p>
@@ -62,8 +53,10 @@
 				 							 signUpForm.username.$error.maxlength) && signUpForm.username.$touched"
 				 							>用户名长度必需在4~16字符之间</p>
 			</div>
-			<div class="form-group" data-ng-class="{'has-success':signUpForm.password.$valid}">
+			<div class="form-group">
 				<lable>密码：</lable>
+				<pre>合法: {{ signUpForm.password.$valid }}</pre>
+				<code>{{ userdata.password }}</code>
 				<input name="password" 
 					   type="password"
 					   class="form-control"
@@ -72,7 +65,6 @@
 					   data-ng-maxlength="255"
 					   required
 					   >
-				<p class="fa fa-check input_result" data-ng-if="signUpForm.password.$valid"></p>	   
 				<p class="error" data-ng-if="signUpForm.password.$error.required &&	  
 				     						signUpForm.password.$touched">
 				     						密码不可为空</p>
@@ -82,8 +74,10 @@
 												密码的长度应该在6~255之间
 											</p>
 			</div>
-			<div class="form-group" data-ng-class="{'has-success':signUpForm.password2.$valid}">
+			<div class="form-group">
 				<lable>确认密码：</lable>
+				<pre>合法: {{ signUpForm.password2.$valid }}</pre>
+				<code>{{ userdata.password2 }}</code>
 				<input name="password2"
 				 	   type="password"
 				 	   class="form-control"
@@ -91,7 +85,6 @@
 				 	   compare="userdata.password"
 				 	   required
 				 	   >
-				<p class="fa fa-check input_result" data-ng-if="signUpForm.password2.$valid"></p> 	   
 				<p class="error" data-ng-if="signUpForm.password2.$error.compare && 
 				 							signUpForm.password2.$touched">
 				 							两次输入密码不一致</p>

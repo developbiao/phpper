@@ -45,6 +45,8 @@
 		<form name="signUpForm" data-ng-submit="submitForm()">
 			<div class="form-group" data-ng-class="{'has-success':signUpForm.username.$valid}">
 				<lable>用户名：</lable>
+				<pre>合法: {{ signUpForm.username.$valid }}</pre>
+				<code>{{ userdata.username }}</code>
 				<input name="username"
 				 	   type="text"
 				  	   class="form-control"
@@ -64,6 +66,8 @@
 			</div>
 			<div class="form-group" data-ng-class="{'has-success':signUpForm.password.$valid}">
 				<lable>密码：</lable>
+				<pre>合法: {{ signUpForm.password.$valid }}</pre>
+				<code>{{ userdata.password }}</code>
 				<input name="password" 
 					   type="password"
 					   class="form-control"
@@ -84,6 +88,8 @@
 			</div>
 			<div class="form-group" data-ng-class="{'has-success':signUpForm.password2.$valid}">
 				<lable>确认密码：</lable>
+				<pre>合法: {{ signUpForm.password2.$valid }}</pre>
+				<code>{{ userdata.password2 }}</code>
 				<input name="password2"
 				 	   type="password"
 				 	   class="form-control"
